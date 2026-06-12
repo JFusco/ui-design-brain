@@ -1,3 +1,28 @@
+# v1.1.0 — 2026-06-12
+
+## Summary (AI, bounded)
+- Enhanced documentation clarity for buttons and links in the UI design brain module (5c34a86).
+- Merged pull request fixing link-related issues (commit 077a3dd).
+- No breaking changes introduced in this version.
+
+## Highlights
+- commit: Merge pull request #2 from verndale/fix/link (077a3dd)
+- feat(ui-design-brain): Enhance button and link documentation clarity (5c34a86)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Enhance button and link documentation clarity (5c34a86)
+
+### Other (unknown)
+- commit: Merge pull request #2 from verndale/fix/link (077a3dd)
+
+## Full commit list
+- 077a3dd commit: Merge pull request #2 from verndale/fix/link
+- 5c34a86 feat(ui-design-brain): Enhance button and link documentation clarity
+
 # v1.0.0 — 2026-06-12
 
 ## Summary (AI, bounded)
