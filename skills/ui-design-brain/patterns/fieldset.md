@@ -2,6 +2,8 @@
 
 A container that groups related form fields under a shared label or legend.
 
+A Fieldset groups related inputs within a **Form** (see `form.md`).
+
 **Best practices:**
 - Use fieldsets to group related form fields under a descriptive legend
 - Style the legend as a section heading within the form

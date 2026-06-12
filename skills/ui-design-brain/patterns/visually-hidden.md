@@ -4,6 +4,8 @@
 
 Content that is hidden visually but remains accessible to screen readers and other assistive technology.
 
+A common use is the accessible label for an icon-only button (see `icon.md`).
+
 **Best practices:**
 - Use for screen-reader-only text that provides context invisible users don't need
 - Never use display:none or visibility:hidden — use a clip-rect technique

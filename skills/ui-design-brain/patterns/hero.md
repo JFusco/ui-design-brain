@@ -1,8 +1,10 @@
 ## Hero
 
-**Also known as:** Jumbotron  ·  Banner
+**Also known as:** Banner (hero area)  ·  Jumbotron  ·  Promo banner
 
 A prominent banner near the top of a page, typically featuring a full-width image or illustration with a headline.
+
+Here **Banner** means the promotional hero area; a page-level message banner is an **Alert** (see `alert.md`).
 
 **Best practices:**
 - Lead with a compelling headline — clarity over cleverness

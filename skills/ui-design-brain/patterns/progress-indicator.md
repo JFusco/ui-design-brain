@@ -1,8 +1,10 @@
 ## Progress indicator
 
-**Also known as:** Progress tracker  ·  Stepper  ·  Steps  ·  Timeline  ·  Meter
+**Also known as:** Meter  ·  Progress tracker  ·  Stepper (progress)  ·  Steps  ·  Timeline
 
 A visual display of how far a user has advanced through a multi-step process.
+
+Here **Stepper** means a multi-step progress tracker; the numeric +/- input control is the **Stepper** pattern (see `stepper.md`).
 
 **Best practices:**
 - Clearly distinguish completed, current, and upcoming steps

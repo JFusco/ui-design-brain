@@ -1,6 +1,10 @@
 ## Form
 
+**Also known as:** Form panel
+
 A collection of input controls that allows users to enter and submit structured data.
+
+Group related inputs with a **Fieldset** (see `fieldset.md`) under a legend; label each control with a **Label** (`label.md`).
 
 **Best practices:**
 - Use a single-column layout for most forms — it's faster to scan

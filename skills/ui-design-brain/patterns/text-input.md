@@ -1,6 +1,10 @@
 ## Text input
 
+**Also known as:** Text box  ·  Text field  ·  Textbox
+
 A single-line form field for entering short text values.
+
+Pair the field with a **Label** (`label.md`); add **Helper text** (`helper-text.md`) for format guidance and an **Error message** (`error-message.md`) for inline validation.
 
 **Best practices:**
 - Use appropriate input types (email, tel, url, number) for mobile keyboard optimization

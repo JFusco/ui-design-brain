@@ -2,6 +2,8 @@
 
 The persistent top-of-page region containing the site brand, primary navigation, and key actions.
 
+Primary navigation inside a header is the **Navigation** pattern (see `navigation.md`); for a content title (h1–h6) see **Heading** (`heading.md`), not Header.
+
 **Best practices:**
 - Keep the header height compact (56–72 px) to preserve content space
 - Place the logo/brand on the left, primary navigation in the center or right

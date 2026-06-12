@@ -8,6 +8,7 @@ A control that lets users select a color value.
 - Show a real-time preview of the selected color
 - Support copy-paste of hex/RGB/HSL values
 - Remember recently used colors for convenience
+- Make every control keyboard-operable (arrow keys on the spectrum and hue, number entry for hex/RGB), name it with an `aria-label`, and keep a hex/RGB field as a non-color fallback
 
 **Common layouts:**
 - Design tool color picker with spectrum, sliders, and input fields

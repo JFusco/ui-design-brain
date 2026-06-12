@@ -15,11 +15,13 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Checkbox
 - Color picker
 - Combobox
+- Context menu
 - Date input
 - Datepicker
 - Drawer
 - Dropdown menu
 - Empty state
+- Error message
 - Fieldset
 - File
 - File upload
@@ -27,6 +29,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Form
 - Header
 - Heading
+- Helper text
 - Hero
 - Icon
 - Image
@@ -35,6 +38,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - List
 - Modal
 - Navigation
+- Number input
 - Pagination
 - Popover
 - Progress bar
@@ -47,6 +51,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Segmented control
 - Select
 - Separator
+- Sidebar
 - Skeleton
 - Skip link
 - Slider

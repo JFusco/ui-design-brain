@@ -2,6 +2,8 @@
 
 A region at the bottom of a page or section containing copyright info, legal links, or secondary navigation.
 
+Footer links and secondary navigation use the **Navigation** pattern (see `navigation.md`).
+
 **Best practices:**
 - Organize links into clear columns by category
 - Include essential legal links: Privacy Policy, Terms of Service

@@ -1,8 +1,10 @@
 ## Badge
 
-**Also known as:** Tag  ·  Label  ·  Chip
+**Also known as:** Chip  ·  Label (tag/chip)  ·  Status badge  ·  Status chip  ·  Status pill  ·  Tag  ·  Tag pill
 
 A compact label that sits within or near a larger component to convey status, category, or other metadata.
+
+Here **Label** applies only in a tag/chip sense; a form-field label is the **Label** pattern (see `label.md`).
 
 **Best practices:**
 - Keep badge text to one or two words — they are labels, not sentences
