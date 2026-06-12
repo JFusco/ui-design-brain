@@ -8,6 +8,7 @@ A collapsible, nested hierarchy for browsing structured data like file trees or 
 - Support keyboard navigation: arrows to traverse, Enter to select, +/- to expand/collapse
 - Highlight the selected node and show a focus indicator
 - Lazy-load deep children for performance in large trees
+- Expose the tree ARIA pattern: `role="tree"`/`role="treeitem"` with `aria-expanded`, `aria-level`, and `aria-selected`
 
 **Common layouts:**
 - File/folder browser in a code editor or CMS

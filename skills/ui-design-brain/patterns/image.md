@@ -4,6 +4,8 @@
 
 A component for displaying embedded images within a page.
 
+A profile photo shown as an identity control is an **Avatar** (see `avatar.md`); Image is for content imagery such as product shots and featured images.
+
 **Best practices:**
 - Always provide meaningful alt text for accessibility
 - Use responsive images (srcset) to serve appropriate sizes

@@ -21,6 +21,7 @@
       { "name": "Banner", "context": "page-level message/notification" },
       "Callout",
       "Feedback",
+      "Inline notification",
       "Message",
       "Notification"
     ],
@@ -115,6 +116,16 @@
     "file": "patterns/combobox.md"
   },
   {
+    "name": "Context menu",
+    "slug": "context-menu",
+    "aliases": [
+      "Contextual menu",
+      "Long-press menu",
+      "Right-click menu"
+    ],
+    "file": "patterns/context-menu.md"
+  },
+  {
     "name": "Date input",
     "slug": "date-input",
     "aliases": [],
@@ -143,6 +154,8 @@
     "name": "Dropdown menu",
     "slug": "dropdown-menu",
     "aliases": [
+      "Kebab menu",
+      "Overflow menu",
       "Select menu"
     ],
     "file": "patterns/dropdown-menu.md"
@@ -152,6 +165,16 @@
     "slug": "empty-state",
     "aliases": [],
     "file": "patterns/empty-state.md"
+  },
+  {
+    "name": "Error message",
+    "slug": "error-message",
+    "aliases": [
+      "Field error",
+      "Inline error",
+      "Validation message"
+    ],
+    "file": "patterns/error-message.md"
   },
   {
     "name": "Fieldset",
@@ -205,6 +228,16 @@
     "file": "patterns/heading.md"
   },
   {
+    "name": "Helper text",
+    "slug": "helper-text",
+    "aliases": [
+      "Field hint",
+      "Hint text",
+      "Supporting text"
+    ],
+    "file": "patterns/helper-text.md"
+  },
+  {
     "name": "Hero",
     "slug": "hero",
     "aliases": [
@@ -242,6 +275,7 @@
     "aliases": [
       "Anchor",
       "Hyperlink",
+      "Text link",
       { "name": "CTA", "context": "navigates to a URL or page — a call-to-action styled as a button" }
     ],
     "file": "patterns/link.md"
@@ -268,11 +302,22 @@
     "name": "Navigation",
     "slug": "navigation",
     "aliases": [
+      "Hamburger menu",
       "Menu",
       "Nav",
       "Top nav"
     ],
     "file": "patterns/navigation.md"
+  },
+  {
+    "name": "Number input",
+    "slug": "number-input",
+    "aliases": [
+      "Number field",
+      "Numeric input",
+      "Spinbutton"
+    ],
+    "file": "patterns/number-input.md"
   },
   {
     "name": "Pagination",
@@ -379,6 +424,16 @@
     "file": "patterns/separator.md"
   },
   {
+    "name": "Sidebar",
+    "slug": "sidebar",
+    "aliases": [
+      "Collapsible sidebar",
+      "Side navigation",
+      "Sidebar navigation"
+    ],
+    "file": "patterns/sidebar.md"
+  },
+  {
     "name": "Skeleton",
     "slug": "skeleton",
     "aliases": [
@@ -447,6 +502,7 @@
     "slug": "text-input",
     "aliases": [
       "Text box",
+      "Text field",
       "Textbox"
     ],
     "file": "patterns/text-input.md"

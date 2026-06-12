@@ -2,6 +2,8 @@
 
 A placeholder shown when a view has no data to display, typically paired with a helpful action or suggestion.
 
+While content is still loading, show a **Skeleton** (see `skeleton.md`) rather than an empty state.
+
 **Best practices:**
 - Include a clear illustration or icon to soften the empty feeling
 - Write a helpful headline explaining the empty state

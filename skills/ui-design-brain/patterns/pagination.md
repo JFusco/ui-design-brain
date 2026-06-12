@@ -1,5 +1,7 @@
 ## Pagination
 
+**Also known as:** Page controls  ·  Page nav  ·  Pager
+
 A control for navigating between pages of content when data is split across multiple views.
 
 **Best practices:**

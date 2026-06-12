@@ -1,8 +1,8 @@
 ## Textarea
 
-**Also known as:** Textbox  ·  Text box
-
 A multi-line text field for longer content entry.
+
+Pair with a **Label** (`label.md`), **Helper text** (`helper-text.md`) for guidance such as character limits, and an **Error message** (`error-message.md`) for validation.
 
 **Best practices:**
 - Allow vertical resizing but consider setting a min and max height

@@ -1,8 +1,10 @@
 ## Drawer
 
-**Also known as:** Tray  ·  Flyout  ·  Sheet
+**Also known as:** Flyout  ·  Sheet  ·  Tray
 
 A panel that slides in from a screen edge to reveal secondary content or actions.
+
+A Drawer is non-modal and does **not** trap focus — let focus and Escape return to the page. When the user must finish before continuing, use a **Modal** (see `modal.md`).
 
 **Best practices:**
 - Use drawers for secondary content or focused sub-tasks that don't warrant a full page

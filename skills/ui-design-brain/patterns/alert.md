@@ -1,8 +1,10 @@
 ## Alert
 
-**Also known as:** Notification  ·  Feedback  ·  Message  ·  Banner  ·  Callout
+**Also known as:** Banner (page message)  ·  Callout  ·  Feedback  ·  Inline notification  ·  Message  ·  Notification
 
 A prominent message used to communicate important information or status changes to the user.
+
+For a brief, auto-dismissing, non-blocking message, use a **Toast** (see `toast.md`). Here **Banner** means a page-level message; a top-of-page promotional banner is a **Hero** (see `hero.md`).
 
 **Best practices:**
 - Use semantic color coding: red for errors, amber for warnings, green for success, blue for info

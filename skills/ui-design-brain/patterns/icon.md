@@ -2,6 +2,8 @@
 
 A small graphic symbol that communicates the purpose or meaning of an interface element at a glance.
 
+For an icon-only control, give it an accessible name — pair the icon with screen-reader-only text (see `visually-hidden.md`) or an `aria-label`.
+
 **Best practices:**
 - Use a consistent icon style throughout the product (outlined or filled, not mixed)
 - Size icons to align with adjacent text (typically 16–24 px)

@@ -1,8 +1,10 @@
 ## Modal
 
-**Also known as:** Dialog  ·  Popup  ·  Modal window
+**Also known as:** Dialog  ·  Modal window  ·  Popup
 
 An overlay that demands the user's attention — interaction is required before returning to the content beneath.
+
+For a non-blocking panel that slides in from an edge for a secondary task, use a **Drawer** (see `drawer.md`).
 
 **Best practices:**
 - Use modals sparingly — only for actions that require immediate attention or focused input

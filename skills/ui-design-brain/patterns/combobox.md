@@ -4,12 +4,15 @@
 
 A select-like input enhanced with a free-text field that filters available options as you type.
 
+For a plain value picker without free-text filtering, use a **Select** (see `select.md`).
+
 **Best practices:**
 - Show suggestions after 1–2 characters to reduce noise
 - Highlight matched text within each suggestion for scannability
 - Allow keyboard navigation (arrow keys + Enter) through the dropdown
 - Show a 'no results' message instead of an empty dropdown
 - Debounce input to avoid excessive API calls (200–300 ms)
+- Use `role="combobox"` with `aria-autocomplete="list"`, `aria-expanded`, and `aria-activedescendant` for the active option; announce result counts via a live region
 
 **Common layouts:**
 - Search bar with autocomplete suggestions

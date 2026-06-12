@@ -4,6 +4,8 @@
 
 A text element that identifies and describes a form input.
 
+A status tag/chip sometimes called a label is a **Badge** (see `badge.md`); this pattern covers form-field labels. For guidance text below a field, see **Helper text** (`helper-text.md`) and **Error message** (`error-message.md`).
+
 **Best practices:**
 - Always associate labels with their form inputs (htmlFor / id pairing)
 - Place labels above the input for vertical forms, beside for horizontal
