@@ -1,7 +1,8 @@
 {
   "name": "@verndale/ui-design-brain",
-  "version": "0.0.0-development",
-  "description": "Versioned catalog of production-grade UI component patterns (markdown + manifest) shared across Verndale AI tooling.",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Versioned catalog of production-grade UI component patterns (markdown + manifest) shared across Verndale AI tooling, distributed as an agent skill.",
   "license": "MIT",
   "author": "Verndale",
   "repository": {
@@ -14,46 +15,23 @@
     "components",
     "patterns",
     "catalog",
-    "accessibility"
+    "accessibility",
+    "agent-skill"
   ],
-  "files": [
-    "content",
-    "README.md",
-    "LICENSE",
-    "CHANGELOG.md"
-  ],
-  "exports": {
-    "./content/*": "./content/*",
-    "./patterns-manifest.json": "./content/patterns-manifest.json",
-    "./index.md": "./content/index.md",
-    "./package.json": "./package.json"
-  },
   "packageManager": "pnpm@10.33.0",
   "engines": {
     "node": ">=24.14.0"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "scripts": {
     "prepare": "husky",
     "commit": "ai-commit run",
     "pr:create": "ai-pr",
-    "release": "semantic-release",
-    "release:dry": "semantic-release --dry-run",
     "lint:commits:last": "commitlint --config node_modules/@verndale/ai-commit/lib/commitlint-preset.cjs --from=HEAD~1 --to=HEAD"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.2",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/commit-analyzer": "^13.0.1",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^12.0.8",
-    "@semantic-release/npm": "^13.1.5",
-    "@semantic-release/release-notes-generator": "^14.1.1",
     "@verndale/ai-commit": "^2.6.3",
     "@verndale/ai-pr": "^1.3.5",
-    "husky": "^9.1.7",
-    "semantic-release": "^25.0.3"
+    "husky": "^9.1.7"
   }
 }

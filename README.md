@@ -1,6 +1,6 @@
 # @verndale/ui-design-brain
 
-Versioned catalog of production-grade UI component patterns shared across Verndale AI tooling. This package is the **single source of truth** for the catalog so consuming repos can vendor identical content instead of hand-maintaining copies that drift.
+Versioned catalog of production-grade UI component patterns shared across Verndale AI tooling, distributed as an **agent skill**. This repo is the **single source of truth** for the catalog so consuming repos can vendor identical content instead of hand-maintaining copies that drift.
 
 ## Contents
 
@@ -8,48 +8,51 @@ Versioned catalog of production-grade UI component patterns shared across Vernda
 - [Who consumes it](#who-consumes-it)
 - [How consumers use it](#how-consumers-use-it)
 - [Updating the catalog](#updating-the-catalog)
-- [Releases](#releases)
 - [Contributing](#contributing)
 
 ## What ships
 
-The published package contains only the invariant catalog payload, under `content/`:
+The repo ships a single agent skill under `skills/`:
 
 ```
-content/
-├── index.md                 # entry point: narrow down likely components
-├── patterns-manifest.json   # canonical names, aliases, alias-resolution rules
-└── patterns/                # 60 per-pattern guidance files (accordion.md … visually-hidden.md)
+skills/ui-design-brain/
+├── SKILL.md                  # skill entry point (frontmatter + workflow)
+├── index.md                  # narrow down likely components
+├── patterns-manifest.json    # canonical names, aliases, alias-resolution rules
+└── patterns/                 # 60 per-pattern guidance files (accordion.md … visually-hidden.md)
 ```
 
-It deliberately does **not** ship a `SKILL.md` or a consumer-facing wrapper README — each consuming repo keeps its own wrapper (see below).
+This layout (`skills/<name>/SKILL.md`) is what the [`skills` CLI](https://github.com/vercel-labs/skills) discovers. The `SKILL.md` description is shared by every consumer, so it is written to read well for both spec/acceptance-criteria authoring and interface-code generation.
 
 ## Who consumes it
 
-- [`@verndale/ai-orchestration`](https://github.com/verndale/front-end-build-orchestration) — vendored at `frontend-ai/skills/ui-design-brain/` (keeps its own `SKILL.md` + pipeline README).
-- [`cumulative-conductor`](https://github.com/verndale/cumulative-conductor) (ba-cockpit) — vendored at `skills/_shared/ui-design-brain/` (keeps its own `_shared` README, no `SKILL.md`).
+- [`@verndale/ai-orchestration`](https://github.com/verndale/front-end-build-orchestration) — vendored at `frontend-ai/skills/ui-design-brain/`.
+- [`cumulative-conductor`](https://github.com/verndale/cumulative-conductor) (ba-cockpit) — vendored at `skills/ui-design-brain/`.
+
+Both hold a **real, committed copy** of the skill (not a submodule and not a symlink — those repos are themselves redistributed downstream as a git submodule / a `.plugin` zip, where a symlink target or nested submodule would not resolve).
 
 ## How consumers use it
 
-Consumers do **not** add this as a git submodule (those repos are themselves consumed downstream as submodules / plugin bundles, and a nested submodule breaks that). Instead they pin it as a dev dependency and vendor the content into their committed tree with a small sync script:
+Each consumer commits a small `sync-ui-design-brain.sh` that uses the `skills` CLI to vendor a fresh copy into its tree. The script installs with the allowed `claude-code` agent into a throwaway temp dir, then relocates the real files into the consumer's skill path:
 
 ```bash
-pnpm add -D @verndale/ui-design-brain@<exact-version>
-pnpm run uidb:sync      # copies content/ into the repo's catalog path; never touches the local wrapper
-pnpm run uidb:verify    # CI guard: fails if the committed copy drifts from the pinned version
+#!/usr/bin/env bash
+set -euo pipefail
+SRC="${1:-git@github.com:verndale/ui-design-brain.git}"   # pass a local path for pre-push dev
+TMP="$(mktemp -d)"
+( cd "$TMP" && npx skills add "$SRC" --copy --skill ui-design-brain -a claude-code -y )
+rm -rf skills/ui-design-brain          # (frontend-ai/skills/ui-design-brain in ai-orchestration)
+mv "$TMP/.claude/skills/ui-design-brain" skills/ui-design-brain
+rm -rf "$TMP"
 ```
 
-Because the version is pinned exactly and a CI check enforces `committed copy == pinned version`, the two repos cannot silently drift from each other.
+The resulting `patterns/` diff in each consumer is the human-reviewable record of the change. There is no machine lockfile in the repo — re-running the script IS the update.
 
 ## Updating the catalog
 
-1. Edit files under `content/` (add a pattern, update the manifest, refine guidance).
-2. Commit with a Conventional Commit (`pnpm commit`). A `feat:`/`fix:` triggers a release.
-3. After the release publishes, bump the pin in each consumer and run `pnpm run uidb:sync` there. The resulting `patterns/` diff in each consumer is the human-reviewable record of the change.
-
-## Releases
-
-Releases are automated with [semantic-release](https://semantic-release.gitbook.io/) on push to `main`: Conventional Commits drive the version bump, `CHANGELOG.md` is generated, and the package is published to npm with provenance. See [CONTRIBUTING.md](CONTRIBUTING.md).
+1. Edit files under `skills/ui-design-brain/` (add a pattern, update the manifest, refine guidance).
+2. Commit with a Conventional Commit (`pnpm commit`) and merge to `main`.
+3. In each consumer, run `pnpm uidb:sync` from the repo root (wraps the vendor script) and commit the diff. In ba-cockpit, also rebuild the `.plugin` bundle so the refreshed catalog ships.
 
 ## Contributing
 
