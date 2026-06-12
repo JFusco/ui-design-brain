@@ -1,3 +1,29 @@
+# v1.2.0 — 2026-06-12
+
+## Summary (AI, bounded)
+- Added new UI design patterns and updates as part of the ui-design-brain feature (16ff183)
+- Included general cleanup tasks merged in pull request #3 (150825b)
+- No breaking changes introduced in this release
+- Release version: v1.2.0, dated 2026-06-12
+
+## Highlights
+- commit: Merge pull request #3 from verndale/feat/cleanup (150825b)
+- feat(ui-design-brain): Add new UI design patterns and update (16ff183)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Add new UI design patterns and update (16ff183)
+
+### Other (unknown)
+- commit: Merge pull request #3 from verndale/feat/cleanup (150825b)
+
+## Full commit list
+- 150825b commit: Merge pull request #3 from verndale/feat/cleanup
+- 16ff183 feat(ui-design-brain): Add new UI design patterns and update
+
 # v1.1.0 — 2026-06-12
 
 ## Summary (AI, bounded)
