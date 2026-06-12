@@ -1,0 +1,507 @@
+[
+  {
+    "name": "Accordion",
+    "slug": "accordion",
+    "aliases": [
+      "Arrow toggle",
+      "Collapse",
+      "Collapsible",
+      "Collapsible sections",
+      "Details",
+      "Disclosure",
+      "Expandable",
+      "Expander"
+    ],
+    "file": "patterns/accordion.md"
+  },
+  {
+    "name": "Alert",
+    "slug": "alert",
+    "aliases": [
+      { "name": "Banner", "context": "page-level message/notification" },
+      "Callout",
+      "Feedback",
+      "Message",
+      "Notification"
+    ],
+    "file": "patterns/alert.md"
+  },
+  {
+    "name": "Avatar",
+    "slug": "avatar",
+    "aliases": [
+      "Portrait",
+      "Profile image",
+      "Profile photo",
+      "User avatar",
+      "User image"
+    ],
+    "file": "patterns/avatar.md"
+  },
+  {
+    "name": "Badge",
+    "slug": "badge",
+    "aliases": [
+      "Chip",
+      { "name": "Label", "context": "tag/chip context" },
+      "Status badge",
+      "Status chip",
+      "Status pill",
+      "Tag",
+      "Tag pill"
+    ],
+    "file": "patterns/badge.md"
+  },
+  {
+    "name": "Breadcrumbs",
+    "slug": "breadcrumbs",
+    "aliases": [
+      "Breadcrumb trail"
+    ],
+    "file": "patterns/breadcrumbs.md"
+  },
+  {
+    "name": "Button",
+    "slug": "button",
+    "aliases": [
+      "CTA"
+    ],
+    "file": "patterns/button.md"
+  },
+  {
+    "name": "Button group",
+    "slug": "button-group",
+    "aliases": [
+      "Toolbar"
+    ],
+    "file": "patterns/button-group.md"
+  },
+  {
+    "name": "Card",
+    "slug": "card",
+    "aliases": [
+      "Content tile",
+      "Tile"
+    ],
+    "file": "patterns/card.md"
+  },
+  {
+    "name": "Carousel",
+    "slug": "carousel",
+    "aliases": [
+      "Content slider"
+    ],
+    "file": "patterns/carousel.md"
+  },
+  {
+    "name": "Checkbox",
+    "slug": "checkbox",
+    "aliases": [],
+    "file": "patterns/checkbox.md"
+  },
+  {
+    "name": "Color picker",
+    "slug": "color-picker",
+    "aliases": [],
+    "file": "patterns/color-picker.md"
+  },
+  {
+    "name": "Combobox",
+    "slug": "combobox",
+    "aliases": [
+      "Autocomplete",
+      "Autosuggest"
+    ],
+    "file": "patterns/combobox.md"
+  },
+  {
+    "name": "Date input",
+    "slug": "date-input",
+    "aliases": [],
+    "file": "patterns/date-input.md"
+  },
+  {
+    "name": "Datepicker",
+    "slug": "datepicker",
+    "aliases": [
+      "Calendar",
+      "Datetime picker"
+    ],
+    "file": "patterns/datepicker.md"
+  },
+  {
+    "name": "Drawer",
+    "slug": "drawer",
+    "aliases": [
+      "Flyout",
+      "Sheet",
+      "Tray"
+    ],
+    "file": "patterns/drawer.md"
+  },
+  {
+    "name": "Dropdown menu",
+    "slug": "dropdown-menu",
+    "aliases": [
+      "Select menu"
+    ],
+    "file": "patterns/dropdown-menu.md"
+  },
+  {
+    "name": "Empty state",
+    "slug": "empty-state",
+    "aliases": [],
+    "file": "patterns/empty-state.md"
+  },
+  {
+    "name": "Fieldset",
+    "slug": "fieldset",
+    "aliases": [],
+    "file": "patterns/fieldset.md"
+  },
+  {
+    "name": "File",
+    "slug": "file",
+    "aliases": [
+      "Attachment",
+      "Download"
+    ],
+    "file": "patterns/file.md"
+  },
+  {
+    "name": "File upload",
+    "slug": "file-upload",
+    "aliases": [
+      "Dropzone",
+      "File input",
+      "File uploader"
+    ],
+    "file": "patterns/file-upload.md"
+  },
+  {
+    "name": "Footer",
+    "slug": "footer",
+    "aliases": [],
+    "file": "patterns/footer.md"
+  },
+  {
+    "name": "Form",
+    "slug": "form",
+    "aliases": [
+      "Form panel"
+    ],
+    "file": "patterns/form.md"
+  },
+  {
+    "name": "Header",
+    "slug": "header",
+    "aliases": [],
+    "file": "patterns/header.md"
+  },
+  {
+    "name": "Heading",
+    "slug": "heading",
+    "aliases": [],
+    "file": "patterns/heading.md"
+  },
+  {
+    "name": "Hero",
+    "slug": "hero",
+    "aliases": [
+      { "name": "Banner", "context": "top-of-page hero/promotional area" },
+      "Jumbotron",
+      "Promo banner"
+    ],
+    "file": "patterns/hero.md"
+  },
+  {
+    "name": "Icon",
+    "slug": "icon",
+    "aliases": [],
+    "file": "patterns/icon.md"
+  },
+  {
+    "name": "Image",
+    "slug": "image",
+    "aliases": [
+      "Picture"
+    ],
+    "file": "patterns/image.md"
+  },
+  {
+    "name": "Label",
+    "slug": "label",
+    "aliases": [
+      "Form label"
+    ],
+    "file": "patterns/label.md"
+  },
+  {
+    "name": "Link",
+    "slug": "link",
+    "aliases": [
+      "Anchor",
+      "Hyperlink"
+    ],
+    "file": "patterns/link.md"
+  },
+  {
+    "name": "List",
+    "slug": "list",
+    "aliases": [
+      "List view"
+    ],
+    "file": "patterns/list.md"
+  },
+  {
+    "name": "Modal",
+    "slug": "modal",
+    "aliases": [
+      "Dialog",
+      "Modal window",
+      "Popup"
+    ],
+    "file": "patterns/modal.md"
+  },
+  {
+    "name": "Navigation",
+    "slug": "navigation",
+    "aliases": [
+      "Menu",
+      "Nav",
+      "Top nav"
+    ],
+    "file": "patterns/navigation.md"
+  },
+  {
+    "name": "Pagination",
+    "slug": "pagination",
+    "aliases": [
+      "Page controls",
+      "Page nav",
+      "Pager"
+    ],
+    "file": "patterns/pagination.md"
+  },
+  {
+    "name": "Popover",
+    "slug": "popover",
+    "aliases": [],
+    "file": "patterns/popover.md"
+  },
+  {
+    "name": "Progress bar",
+    "slug": "progress-bar",
+    "aliases": [
+      "Progress"
+    ],
+    "file": "patterns/progress-bar.md"
+  },
+  {
+    "name": "Progress indicator",
+    "slug": "progress-indicator",
+    "aliases": [
+      "Meter",
+      "Progress tracker",
+      { "name": "Stepper", "context": "progress context" },
+      "Steps",
+      "Timeline"
+    ],
+    "file": "patterns/progress-indicator.md"
+  },
+  {
+    "name": "Quote",
+    "slug": "quote",
+    "aliases": [
+      "Block quote",
+      "Pull quote"
+    ],
+    "file": "patterns/quote.md"
+  },
+  {
+    "name": "Radio button",
+    "slug": "radio-button",
+    "aliases": [
+      "Radio",
+      "Radio group"
+    ],
+    "file": "patterns/radio-button.md"
+  },
+  {
+    "name": "Rating",
+    "slug": "rating",
+    "aliases": [],
+    "file": "patterns/rating.md"
+  },
+  {
+    "name": "Rich text editor",
+    "slug": "rich-text-editor",
+    "aliases": [
+      "RTE",
+      "WYSIWYG editor"
+    ],
+    "file": "patterns/rich-text-editor.md"
+  },
+  {
+    "name": "Search input",
+    "slug": "search-input",
+    "aliases": [
+      "Search"
+    ],
+    "file": "patterns/search-input.md"
+  },
+  {
+    "name": "Segmented control",
+    "slug": "segmented-control",
+    "aliases": [
+      "Toggle button group"
+    ],
+    "file": "patterns/segmented-control.md"
+  },
+  {
+    "name": "Select",
+    "slug": "select",
+    "aliases": [
+      "Dropdown",
+      "Select input"
+    ],
+    "file": "patterns/select.md"
+  },
+  {
+    "name": "Separator",
+    "slug": "separator",
+    "aliases": [
+      "Divider",
+      "Horizontal rule",
+      "Vertical rule"
+    ],
+    "file": "patterns/separator.md"
+  },
+  {
+    "name": "Skeleton",
+    "slug": "skeleton",
+    "aliases": [
+      "Skeleton loader"
+    ],
+    "file": "patterns/skeleton.md"
+  },
+  {
+    "name": "Skip link",
+    "slug": "skip-link",
+    "aliases": [],
+    "file": "patterns/skip-link.md"
+  },
+  {
+    "name": "Slider",
+    "slug": "slider",
+    "aliases": [
+      "Range input"
+    ],
+    "file": "patterns/slider.md"
+  },
+  {
+    "name": "Spinner",
+    "slug": "spinner",
+    "aliases": [
+      "Loader",
+      "Loading"
+    ],
+    "file": "patterns/spinner.md"
+  },
+  {
+    "name": "Stack",
+    "slug": "stack",
+    "aliases": [],
+    "file": "patterns/stack.md"
+  },
+  {
+    "name": "Stepper",
+    "slug": "stepper",
+    "aliases": [
+      "Counter",
+      "Nudger",
+      "Quantity"
+    ],
+    "file": "patterns/stepper.md"
+  },
+  {
+    "name": "Table",
+    "slug": "table",
+    "aliases": [],
+    "file": "patterns/table.md"
+  },
+  {
+    "name": "Tabs",
+    "slug": "tabs",
+    "aliases": [
+      "Content tabs",
+      "Section tabs",
+      "Tabbed interface",
+      "Tabset"
+    ],
+    "file": "patterns/tabs.md"
+  },
+  {
+    "name": "Text input",
+    "slug": "text-input",
+    "aliases": [
+      "Text box",
+      "Textbox"
+    ],
+    "file": "patterns/text-input.md"
+  },
+  {
+    "name": "Textarea",
+    "slug": "textarea",
+    "aliases": [],
+    "file": "patterns/textarea.md"
+  },
+  {
+    "name": "Toast",
+    "slug": "toast",
+    "aliases": [
+      "Snackbar"
+    ],
+    "file": "patterns/toast.md"
+  },
+  {
+    "name": "Toggle",
+    "slug": "toggle",
+    "aliases": [
+      "Lightswitch",
+      "Switch",
+      "Toggle button"
+    ],
+    "file": "patterns/toggle.md"
+  },
+  {
+    "name": "Tooltip",
+    "slug": "tooltip",
+    "aliases": [
+      "Toggletip"
+    ],
+    "file": "patterns/tooltip.md"
+  },
+  {
+    "name": "Tree view",
+    "slug": "tree-view",
+    "aliases": [],
+    "file": "patterns/tree-view.md"
+  },
+  {
+    "name": "Video",
+    "slug": "video",
+    "aliases": [
+      "Video player"
+    ],
+    "file": "patterns/video.md"
+  },
+  {
+    "name": "Visually hidden",
+    "slug": "visually-hidden",
+    "aliases": [
+      "Screenreader only"
+    ],
+    "file": "patterns/visually-hidden.md"
+  }
+]
