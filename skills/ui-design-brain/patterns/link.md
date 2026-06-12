@@ -4,6 +4,8 @@
 
 A clickable reference to another resource — either an external page or a location within the current document.
 
+A **link styled as a button** — a navigating call-to-action — is still a Link. Name it Link; the button styling is a visual treatment, not a change of primitive.
+
 **Best practices:**
 - Make link text descriptive — avoid 'click here' or 'learn more' in isolation
 - Underline links in body text for discoverability; nav links may rely on context
