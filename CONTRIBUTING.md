@@ -51,10 +51,13 @@ Each consumer commits a real copy, so the vendored content travels with that rep
 | --- | --- | --- |
 | [`.github/workflows/commitlint.yml`](.github/workflows/commitlint.yml) | PRs to `main`, pushes to non-`main` | Commitlint on PR title + commit range |
 | [`.github/workflows/pr.yml`](.github/workflows/pr.yml) | Pushes to non-`main`, `workflow_dispatch` | Dogfood: install deps, run **`pnpm run pr:create`** |
+| [`.github/workflows/release.yml`](.github/workflows/release.yml) | Pushes to `main` | `semantic-release`: version bump, `CHANGELOG.md`, Git tag + GitHub Release |
 
 Add repository secret **`PR_BOT_TOKEN`** (classic PAT with **`repo`**) if the default **`GITHUB_TOKEN`** is not enough for **`pr.yml`**.
 
-This repo is **not published to npm** — it is distributed as an agent skill via the `skills` CLI. `package.json` is `"private": true` and exists only to drive the Husky/commitlint tooling.
+Releases are driven by [`semantic-release`](.releaserc.cjs) on every push to `main` — Conventional Commit types decide the bump (`feat` → minor, `fix` → patch, `BREAKING` → major). Release notes are deterministic and structured via the local plugin [`scripts/commit-pr/semantic-release-structured-notes.cjs`](scripts/commit-pr/semantic-release-structured-notes.cjs); an optional bounded AI summary runs only when `RELEASE_NOTES_AI=true` and an endpoint/model/API key are configured. Preview locally with `pnpm release:dry`.
+
+This repo is **not published to npm** — it is distributed as an agent skill via the `skills` CLI. `package.json` is `"private": true` and `npmPublish` is `false`, so `semantic-release` versions and tags the repo (and updates `CHANGELOG.md`) without ever publishing a package.
 
 ## Installation
 
