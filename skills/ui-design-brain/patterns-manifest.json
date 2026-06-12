@@ -64,7 +64,7 @@
     "name": "Button",
     "slug": "button",
     "aliases": [
-      "CTA"
+      { "name": "CTA", "context": "triggers an in-page action — submit, open a dialog, toggle; does not navigate" }
     ],
     "file": "patterns/button.md"
   },
@@ -241,7 +241,8 @@
     "slug": "link",
     "aliases": [
       "Anchor",
-      "Hyperlink"
+      "Hyperlink",
+      { "name": "CTA", "context": "navigates to a URL or page — a call-to-action styled as a button" }
     ],
     "file": "patterns/link.md"
   },
