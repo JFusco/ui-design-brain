@@ -1,4 +1,4 @@
-# @verndale/ui-design-brain
+# UI Design Brain
 
 Versioned catalog of production-grade UI component patterns shared across Verndale AI tooling, distributed as an **agent skill**. This repo is the **single source of truth** for the catalog so consuming repos can vendor identical content instead of hand-maintaining copies that drift.
 
