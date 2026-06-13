@@ -1,3 +1,28 @@
+# v1.3.0 — 2026-06-13
+
+## Summary (AI, bounded)
+- Added CLAUDE.md file for agent guidance in the ui-design-brain feature (commit a5e247e)
+- Merged pull request #4 introducing new templates (commit 29770d3)
+- No breaking changes in this release
+
+## Highlights
+- commit: Merge pull request #4 from verndale/feat/templates (29770d3)
+- feat(ui-design-brain): Add CLAUDE.md for agent guidance (a5e247e)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Add CLAUDE.md for agent guidance (a5e247e)
+
+### Other (unknown)
+- commit: Merge pull request #4 from verndale/feat/templates (29770d3)
+
+## Full commit list
+- 29770d3 commit: Merge pull request #4 from verndale/feat/templates
+- a5e247e feat(ui-design-brain): Add CLAUDE.md for agent guidance
+
 # v1.2.0 — 2026-06-12
 
 ## Summary (AI, bounded)
