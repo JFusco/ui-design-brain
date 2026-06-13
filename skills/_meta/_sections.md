@@ -7,8 +7,8 @@
 > named skill, so nothing here loads at runtime or ships to consumers. To add a pattern, copy
 > [`_pattern-template.md`](_pattern-template.md) to `skills/ui-design-brain/patterns/<slug>.md`.
 >
-> Pairs with the repo [`CLAUDE.md`](../../CLAUDE.md): this file owns the **pattern-file section
-> structure**; `CLAUDE.md` owns the **catalog-integrity checklist** (manifest + index + README
+> Pairs with the repo [`AGENTS.md`](../../AGENTS.md): this file owns the **pattern-file section
+> structure**; `AGENTS.md` owns the **catalog-integrity checklist** (manifest + index + README
 > count) and the skill-authoring best-practices rule.
 
 ## Canonical structure
@@ -30,9 +30,16 @@ H2, not H1. Matches the manifest `name` verbatim; slug == kebab(name) == filenam
 
 ### Also known as
 Aliases separated by `·` with two spaces each side, in the **same order as the manifest** entry's
-`aliases`. Omit the whole line when there are none. The four context-scoped aliases (**Banner**,
-**CTA**, **Label**, **Stepper**) take a short parenthetical so intent is unambiguous, e.g.
-`CTA (in-page action)` vs `CTA (navigates)`.
+`aliases`. Omit the whole line when there are none.
+
+Four aliases are deliberately **context-scoped** — they resolve to a different canonical component
+depending on context, so give each a short parenthetical to disambiguate:
+- **Banner** → Alert / Hero
+- **CTA** → Button / Link
+- **Label** → Badge
+- **Stepper** → Progress indicator
+
+Example: `CTA (in-page action)` (Button) vs `CTA (navigates)` (Link).
 
 ### Definition
 One crisp sentence (em-dash elaboration common). Assume the reader knows general UI concepts.
@@ -55,4 +62,4 @@ accessibility/keyboard** bullet.
 - Always include ≥1 accessibility/keyboard bullet in **Best practices**.
 - Consistent terminology; forward slashes; no time-sensitive phrasing.
 - After creating the file, complete the catalog-integrity sync (manifest + `index.md` + README
-  count) — see [`../../CLAUDE.md`](../../CLAUDE.md) "Catalog integrity".
+  count) — see [`../../AGENTS.md`](../../AGENTS.md) "Catalog integrity".

@@ -24,6 +24,14 @@ A single agent skill, under `skills/ui-design-brain/`:
 
 The `SKILL.md` `description` is shared by every consumer, so keep it neutral enough to read well for both spec/acceptance-criteria authoring and interface-code generation.
 
+## Maintaining `AGENTS.md`
+
+`AGENTS.md` is the canonical, tool-agnostic agent guide (`CLAUDE.md` is a thin `@AGENTS.md` import). When editing it, follow AGENTS.md best practices: keep it lean (≤~150 lines), use progressive disclosure (link to `skills/_meta/`, `README.md`, etc. instead of inlining), pair every "don't" with a "do", and never include secrets.
+
+- Official spec: <https://agents.md>
+- Empirical patterns: <https://www.augmentcode.com/blog/how-to-write-good-agents-dot-md-files>
+- General guide: <https://gist.github.com/0xfauzi/7c8f65572930a21efa62623557d83f6e>
+
 ## Commit Messages (Required)
 
 We enforce **Conventional Commits** through **`@verndale/ai-commit`** (commitlint preset). Types: `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`, `style`, `test`.
