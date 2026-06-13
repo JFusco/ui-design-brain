@@ -22,6 +22,8 @@ skills/ui-design-brain/
 └── patterns/                 # 65 per-pattern guidance files (accordion.md … visually-hidden.md)
 ```
 
+Pattern-authoring templates live alongside the skill in `skills/_meta/` (`_pattern-template.md` + `_sections.md`) — authoring-only, never loaded at runtime or vendored.
+
 This layout (`skills/<name>/SKILL.md`) is what the [`skills` CLI](https://github.com/vercel-labs/skills) discovers. The `SKILL.md` description is shared by every consumer, so it is written to read well for both spec/acceptance-criteria authoring and interface-code generation.
 
 The catalog is not published to npm. `package.json` is `"private": true` and exists only to drive the Husky/commitlint tooling — distribution is via the `skills` CLI, described below.
@@ -73,7 +75,7 @@ The resulting `patterns/` diff in each consumer is the human-reviewable record o
 
 ## Updating the catalog
 
-1. Edit files under `skills/ui-design-brain/` (add a pattern, update the manifest, refine guidance).
+1. Edit files under `skills/ui-design-brain/` (add a pattern, update the manifest, refine guidance). To add a pattern, copy `skills/_meta/_pattern-template.md` → `patterns/<slug>.md` and follow `skills/_meta/_sections.md`.
 2. Commit with a Conventional Commit (`pnpm commit`) and merge to `main`.
 3. In each consumer, run `pnpm uidb:sync` from the repo root (wraps the vendor script) and commit the diff. In ba-cockpit, also rebuild the `.plugin` bundle so the refreshed catalog ships.
 

@@ -20,6 +20,8 @@ A single agent skill, under `skills/ui-design-brain/`:
 - `skills/ui-design-brain/patterns-manifest.json` — canonical names, aliases, alias-resolution rules
 - `skills/ui-design-brain/patterns/*.md` — one guidance file per pattern
 
+**Authoring a pattern:** copy `skills/_meta/_pattern-template.md` to `skills/ui-design-brain/patterns/<slug>.md` and follow `skills/_meta/_sections.md` (the canonical pattern structure). `skills/_meta/` is authoring-only — it has no `SKILL.md`, so it is never loaded at runtime and never vendored to consumers. Then complete the catalog-integrity sync (manifest + `index.md` + README count).
+
 The `SKILL.md` `description` is shared by every consumer, so keep it neutral enough to read well for both spec/acceptance-criteria authoring and interface-code generation.
 
 ## Commit Messages (Required)
