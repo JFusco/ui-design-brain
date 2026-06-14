@@ -22,7 +22,7 @@ Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. There is **no build step, 
 ## Editing this skill
 
 **Whenever you edit, add, or change anything under `skills/ui-design-brain/`, follow Anthropic's agent-skill best practices and run its checklist before considering the change done:**
-https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices
+<https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices>
 
 The practices that bite for this markdown-only catalog skill:
 
