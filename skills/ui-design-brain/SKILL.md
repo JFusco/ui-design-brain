@@ -34,7 +34,7 @@ The canonical catalog of UI component patterns shared across Verndale AI tooling
 
 ## Guardrails
 
-- Preserve an existing repo design system when one is stronger.
-- Inspect the repo's token surface before introducing styling decisions.
-- Avoid generic defaults — especially tokenless arbitrary values and interchangeable SaaS layouts.
-- Resolve every design label through the manifest before treating it as novel.
+- MUST preserve an existing repo design system when one is stronger.
+- MUST inspect the repo's token surface before introducing styling decisions.
+- MUST NOT use generic defaults — especially tokenless arbitrary values and interchangeable SaaS layouts.
+- MUST resolve every design label through the manifest before treating it as novel.
