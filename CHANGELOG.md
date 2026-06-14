@@ -1,3 +1,43 @@
+# v1.3.1 — 2026-06-14
+
+## Summary (AI, bounded)
+- Fixed documentation to clarify design system guardrails (0bdd273)
+- Updated agent guidance and contributing documentation (e15cdd5)
+- Changed link format in AGENTS.md file (1cf116d)
+- Merged pull requests #5 and #6 related to template features (0e493eb, 9a7f1d5)
+- No breaking changes introduced in this release
+
+## Highlights
+- fix(ui-design-brain): Clarify design system guardrails in documentation (0bdd273)
+- commit: Merge pull request #6 from verndale/feat/templates (9a7f1d5)
+- chore(ui-design-brain): Update link format in AGENTS.md (1cf116d)
+- commit: Merge pull request #5 from verndale/feat/templates (0e493eb)
+- docs(ui-design-brain): Update agent guidance and contributing (e15cdd5)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Fixes
+- fix(ui-design-brain): Clarify design system guardrails in documentation (0bdd273)
+
+### Docs
+- docs(ui-design-brain): Update agent guidance and contributing (e15cdd5)
+
+### Chore
+- chore(ui-design-brain): Update link format in AGENTS.md (1cf116d)
+
+### Other (unknown)
+- commit: Merge pull request #5 from verndale/feat/templates (0e493eb)
+- commit: Merge pull request #6 from verndale/feat/templates (9a7f1d5)
+
+## Full commit list
+- 0bdd273 fix(ui-design-brain): Clarify design system guardrails in documentation
+- 9a7f1d5 commit: Merge pull request #6 from verndale/feat/templates
+- 1cf116d chore(ui-design-brain): Update link format in AGENTS.md
+- 0e493eb commit: Merge pull request #5 from verndale/feat/templates
+- e15cdd5 docs(ui-design-brain): Update agent guidance and contributing
+
 # v1.3.0 — 2026-06-13
 
 ## Summary (AI, bounded)
