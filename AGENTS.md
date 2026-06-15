@@ -42,6 +42,7 @@ The practices that bite for this markdown-only catalog skill:
 2. `index.md` canonical-component list
 3. `patterns/<slug>.md` — create it from `skills/_meta/_pattern-template.md`; its `**Also known as:**` line must match the manifest entry's aliases, in manifest order
 4. the pattern count in `README.md`
+5. if the alias is **context-scoped** (an object-form `{ name, context }` entry), mirror it into `index.md`'s **Context-scoped aliases** table
 
 Integrity is maintained **by hand on purpose** — there is intentionally no automated validator (no `check-catalog.mjs`, no pre-commit check). Don't add one unless the maintainer asks.
 

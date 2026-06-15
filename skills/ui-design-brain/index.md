@@ -91,7 +91,22 @@ Each entry in `aliases` is **either**:
 - a **plain string** (the common case) — that alias maps unambiguously to this canonical, or
 - an **object** `{ "name": "...", "context": "..." }` — used when the same alias label can map to different canonicals depending on usage context. The `context` field is human-readable disambiguation.
 
-For example, `Banner` appears under both **Alert** (`context: "page-level message/notification"`) and **Hero** (`context: "top-of-page hero/promotional area"`). Resolvers must pick the canonical whose `context` matches the Build Pack's usage; if the context is unclear, treat the name as **novel** rather than guessing.
+Resolvers must pick the canonical whose `context` matches the Build Pack's usage; if the context is unclear, treat the name as **novel** rather than guessing.
+
+### Context-scoped aliases
+
+These labels resolve to a different canonical depending on usage context. The alias rows are derived from the object-form `aliases` in `patterns-manifest.json` (the authoritative source); rows ending *(the canonical)* are the same-named canonical the label also denotes. Keep the alias rows in sync with the manifest.
+
+| Label | Resolves to | When (context) |
+| --- | --- | --- |
+| Banner | **Alert** | page-level message / notification |
+| Banner | **Hero** | top-of-page hero / promotional area |
+| CTA | **Button** | triggers an in-page action (submit, open a dialog, toggle) — does not navigate |
+| CTA | **Link** | navigates to a URL or page (a call-to-action styled as a button) |
+| Label | **Badge** | tag / chip context |
+| Label | **Label** | form-field label (the canonical) |
+| Stepper | **Progress indicator** | progress context |
+| Stepper | **Stepper** | multi-step form / wizard control (the canonical) |
 
 ## Loading guidance
 - Start from the canonical list above to scope which patterns are likely relevant.
