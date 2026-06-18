@@ -1,3 +1,28 @@
+# v1.4.0 — 2026-06-18
+
+## Summary (AI, bounded)
+- Enhanced card and link accessibility guidelines in the UI Design Brain module (commit 84a5d7d)
+- Updated documentation for context-scoped aliases in the UI Design Brain module (commit 3c2d9ba)
+- No breaking changes introduced in this release
+
+## Highlights
+- feat(ui-design-brain): Enhance card and link accessibility guidelines (84a5d7d)
+- docs(ui-design-brain): Update context-scoped aliases documentation (3c2d9ba)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Enhance card and link accessibility guidelines (84a5d7d)
+
+### Docs
+- docs(ui-design-brain): Update context-scoped aliases documentation (3c2d9ba)
+
+## Full commit list
+- 84a5d7d feat(ui-design-brain): Enhance card and link accessibility guidelines
+- 3c2d9ba docs(ui-design-brain): Update context-scoped aliases documentation
+
 # v1.3.1 — 2026-06-14
 
 ## Summary (AI, bounded)
