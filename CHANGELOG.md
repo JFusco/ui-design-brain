@@ -1,3 +1,29 @@
+# v1.4.1 — 2026-07-01
+
+## Summary (AI, bounded)
+- Merged pull request #7 addressing tabs fixes (commit 50f5bc3)
+- Updated tabs documentation to include visual variants for better UI clarity (commit 778c8f4)
+- No breaking changes introduced in this release
+- Focused mainly on documentation improvements and minor fixes related to tab components
+
+## Highlights
+- commit: Merge pull request #7 from verndale/fix/tabs (50f5bc3)
+- fix(ui-design-brain): Update tabs documentation with visual variants (778c8f4)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Fixes
+- fix(ui-design-brain): Update tabs documentation with visual variants (778c8f4)
+
+### Other (unknown)
+- commit: Merge pull request #7 from verndale/fix/tabs (50f5bc3)
+
+## Full commit list
+- 50f5bc3 commit: Merge pull request #7 from verndale/fix/tabs
+- 778c8f4 fix(ui-design-brain): Update tabs documentation with visual variants
+
 # v1.4.0 — 2026-06-18
 
 ## Summary (AI, bounded)
