@@ -1,3 +1,27 @@
+# v1.5.0 — 2026-07-23
+
+## Summary (AI, bounded)
+- Introduced new CI workflows to automate synchronization for knowledge graph and wiki (82ab1ed)
+- Merged feature branch for knowledge graph wiki integration into mainline (90ae2ab)
+
+## Highlights
+- commit: Merge pull request #9 from verndale/feat/knowledge-graph-wiki (90ae2ab)
+- feat(ci): Add workflows for knowledge graph and wiki sync (82ab1ed)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ci): Add workflows for knowledge graph and wiki sync (82ab1ed)
+
+### Other (unknown)
+- commit: Merge pull request #9 from verndale/feat/knowledge-graph-wiki (90ae2ab)
+
+## Full commit list
+- 90ae2ab commit: Merge pull request #9 from verndale/feat/knowledge-graph-wiki
+- 82ab1ed feat(ci): Add workflows for knowledge graph and wiki sync
+
 # v1.4.1 — 2026-07-01
 
 ## Summary (AI, bounded)
