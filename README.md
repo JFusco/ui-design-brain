@@ -90,8 +90,11 @@ CI enforces commit hygiene, automates semantic releases, and dogfoods Verndale's
 | [`commitlint.yml`](.github/workflows/commitlint.yml) | PRs to `main`, pushes to non-`main` | Commitlint on the PR title + commit range via the `@verndale/ai-commit` preset. |
 | [`pr.yml`](.github/workflows/pr.yml) | Pushes to non-`main`, `workflow_dispatch` | Creates/updates a draft PR for the branch by running `pnpm run pr:create` (`@verndale/ai-pr`). |
 | [`release.yml`](.github/workflows/release.yml) | Pushes to `main` | Runs `semantic-release` to version, tag, write `CHANGELOG.md`, and cut a GitHub Release. |
+| [`graph.yml`](.github/workflows/graph.yml) | PRs to `main`, `workflow_dispatch` | Knowledge-graph freshness gate (`pnpm evals:graph`) — fails if the committed graph is stale. |
+| [`wiki-sync.yml`](.github/workflows/wiki-sync.yml) | PR merge | Reconciles the context wiki (journal/topics/plans), rebuilds the graph, and opens a `bot/wiki-sync/<pr>` PR. |
+| [`wiki-issue-sync.yml`](.github/workflows/wiki-issue-sync.yml) | Nightly cron, `workflow_dispatch` | Marks closed GitHub issues cited in wiki topic pages; opens a bot PR. |
 
-Locally, the same commit standard is enforced by Husky hooks (`commit-msg`, `prepare-commit-msg`) installed via the `prepare` script. Add repository secret `PR_BOT_TOKEN` (classic PAT with `repo`) if the default `GITHUB_TOKEN` is not enough for `pr.yml`.
+Locally, the same commit standard is enforced by Husky hooks (`commit-msg`, `prepare-commit-msg`) installed via the `prepare` script. A `pre-commit` hook rebuilds and stages the knowledge graph (non-blocking). Add repository secret `PR_BOT_TOKEN` (classic PAT with `repo`) if the default `GITHUB_TOKEN` is not enough for `pr.yml`.
 
 ### Release Automation
 
@@ -115,9 +118,25 @@ Install with `pnpm install`.
 
 ---
 
+## Knowledge graph & wiki
+
+The repo carries a deterministic **knowledge graph** over the catalog + root docs + wiki, rendered in an interactive **Sigma.js** viewer, plus a **context wiki** (`wiki/` — journal, topics, plans) that records why the repo is the way it is (executed plans, decisions, PR/issue history). Both are ported from `@verndale/ai-orchestration`; Slack ingestion is excluded.
+
+```bash
+pnpm graph:build   # rebuild scripts/graph/data/graph.json (+ generated wiki/connections* pages)
+pnpm graph:view    # serve the interactive viewer at http://localhost:4173
+pnpm evals:graph   # freshness + integrity gate (also runs in CI + pre-commit)
+```
+
+The `catalogs` edge (manifest → each pattern) doubles as the catalog integrity check: a manifest entry pointing at a missing pattern file fails the build. See [`scripts/graph/README.md`](scripts/graph/README.md) for the node/edge model and [`wiki/MECHANICS.md`](wiki/MECHANICS.md) for the capture protocol.
+
+---
+
 ## Where to find things
 
 - **Catalog content:** edit under [`skills/ui-design-brain/`](skills/ui-design-brain/) only — `SKILL.md`, `index.md`, `patterns-manifest.json`, `patterns/*.md`.
+- **Knowledge graph & viewer:** [`scripts/graph/`](scripts/graph/) — `pnpm graph:build` / `pnpm graph:view`; node/edge model in [`scripts/graph/README.md`](scripts/graph/README.md).
+- **Context wiki:** [`wiki/`](wiki/) — start at [`wiki/INDEX.md`](wiki/INDEX.md); capture protocol in [`wiki/MECHANICS.md`](wiki/MECHANICS.md).
 - **Contribution rules & commit standards:** [CONTRIBUTING.md](CONTRIBUTING.md)
 - **CI workflows:** [`.github/workflows/`](.github/workflows/)
 - **Release config:** [`.releaserc.cjs`](.releaserc.cjs) + the notes plugin in [`scripts/commit-pr/`](scripts/commit-pr/)

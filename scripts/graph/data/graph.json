@@ -1,0 +1,2220 @@
+{
+  "counts": {
+    "nodes": 84,
+    "edges": 171,
+    "byType": {
+      "root-doc": 4,
+      "skill-index": 1,
+      "manifest": 1,
+      "ui-pattern": 65,
+      "skill": 1,
+      "wiki-index": 3,
+      "wiki-journal": 1,
+      "wiki-plan": 5,
+      "wiki-topic": 3
+    },
+    "byEdgeType": {
+      "catalogs": 65,
+      "covers": 3,
+      "links-to": 27,
+      "plan": 1,
+      "references": 4,
+      "see-also": 65,
+      "topic": 6
+    }
+  },
+  "nodes": [
+    {
+      "id": "AGENTS.md",
+      "label": "UI Design Brain — agent guide",
+      "type": "root-doc",
+      "dir": ".",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 6313,
+      "degree": 4
+    },
+    {
+      "id": "CLAUDE.md",
+      "label": "CLAUDE.md",
+      "type": "root-doc",
+      "dir": ".",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 310,
+      "degree": 0
+    },
+    {
+      "id": "CONTRIBUTING.md",
+      "label": "Contributing",
+      "type": "root-doc",
+      "dir": ".",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 5175,
+      "degree": 3
+    },
+    {
+      "id": "README.md",
+      "label": "UI Design Brain",
+      "type": "root-doc",
+      "dir": ".",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 9880,
+      "degree": 7
+    },
+    {
+      "id": "skills/ui-design-brain/index.md",
+      "label": "UI Design Brain Index",
+      "type": "skill-index",
+      "dir": "skills/ui-design-brain",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 3402,
+      "degree": 4
+    },
+    {
+      "id": "skills/ui-design-brain/patterns-manifest.json",
+      "label": "Patterns manifest",
+      "type": "manifest",
+      "dir": "skills/ui-design-brain",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 10302,
+      "degree": 68
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/accordion.md",
+      "label": "Accordion",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Arrow toggle",
+        "Collapse",
+        "Collapsible",
+        "Collapsible sections",
+        "Details",
+        "Disclosure",
+        "Expandable",
+        "Expander"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1016,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/alert.md",
+      "label": "Alert",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Banner",
+        "Callout",
+        "Feedback",
+        "Inline notification",
+        "Message",
+        "Notification"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1108,
+      "degree": 6
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/avatar.md",
+      "label": "Avatar",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Portrait",
+        "Profile image",
+        "Profile photo",
+        "User avatar",
+        "User image"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 939,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/badge.md",
+      "label": "Badge",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Chip",
+        "Label",
+        "Status badge",
+        "Status chip",
+        "Status pill",
+        "Tag",
+        "Tag pill"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 963,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/breadcrumbs.md",
+      "label": "Breadcrumbs",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Breadcrumb trail"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 725,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/button-group.md",
+      "label": "Button group",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Toolbar"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 917,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/button.md",
+      "label": "Button",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "CTA"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1335,
+      "degree": 5
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/card.md",
+      "label": "Card",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Content tile",
+        "Tile"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1338,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/carousel.md",
+      "label": "Carousel",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Content slider"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 784,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/checkbox.md",
+      "label": "Checkbox",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 712,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/color-picker.md",
+      "label": "Color picker",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 783,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/combobox.md",
+      "label": "Combobox",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Autocomplete",
+        "Autosuggest"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 948,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/context-menu.md",
+      "label": "Context menu",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Contextual menu",
+        "Long-press menu",
+        "Right-click menu"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1325,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/date-input.md",
+      "label": "Date input",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 750,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/datepicker.md",
+      "label": "Datepicker",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Calendar",
+        "Datetime picker"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 979,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/drawer.md",
+      "label": "Drawer",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Flyout",
+        "Sheet",
+        "Tray"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 911,
+      "degree": 4
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/dropdown-menu.md",
+      "label": "Dropdown menu",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Kebab menu",
+        "Overflow menu",
+        "Select menu"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1183,
+      "degree": 5
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/empty-state.md",
+      "label": "Empty state",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 846,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/error-message.md",
+      "label": "Error message",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Field error",
+        "Inline error",
+        "Validation message"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1281,
+      "degree": 7
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/fieldset.md",
+      "label": "Fieldset",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 573,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/file-upload.md",
+      "label": "File upload",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Dropzone",
+        "File input",
+        "File uploader"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 980,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/file.md",
+      "label": "File",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Attachment",
+        "Download"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 658,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/footer.md",
+      "label": "Footer",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 822,
+      "degree": 2
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/form.md",
+      "label": "Form",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Form panel"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 924,
+      "degree": 4
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/header.md",
+      "label": "Header",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 947,
+      "degree": 5
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/heading.md",
+      "label": "Heading",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 714,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/helper-text.md",
+      "label": "Helper text",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Field hint",
+        "Hint text",
+        "Supporting text"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1215,
+      "degree": 7
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/hero.md",
+      "label": "Hero",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Banner",
+        "Jumbotron",
+        "Promo banner"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 974,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/icon.md",
+      "label": "Icon",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 799,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/image.md",
+      "label": "Image",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Picture"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 786,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/label.md",
+      "label": "Label",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Form label"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 804,
+      "degree": 9
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/link.md",
+      "label": "Link",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Anchor",
+        "Hyperlink",
+        "Text link",
+        "CTA"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1311,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/list.md",
+      "label": "List",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "List view"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1067,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/modal.md",
+      "label": "Modal",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Dialog",
+        "Modal window",
+        "Popup"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 980,
+      "degree": 4
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/navigation.md",
+      "label": "Navigation",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Hamburger menu",
+        "Menu",
+        "Nav",
+        "Top nav"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1017,
+      "degree": 6
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/number-input.md",
+      "label": "Number input",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Number field",
+        "Numeric input",
+        "Spinbutton"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1332,
+      "degree": 4
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/pagination.md",
+      "label": "Pagination",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Page controls",
+        "Page nav",
+        "Pager"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 750,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/popover.md",
+      "label": "Popover",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 814,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/progress-bar.md",
+      "label": "Progress bar",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Progress"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 747,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/progress-indicator.md",
+      "label": "Progress indicator",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Meter",
+        "Progress tracker",
+        "Stepper",
+        "Steps",
+        "Timeline"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 881,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/quote.md",
+      "label": "Quote",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Block quote",
+        "Pull quote"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 571,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/radio-button.md",
+      "label": "Radio button",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Radio",
+        "Radio group"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 750,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/rating.md",
+      "label": "Rating",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 720,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/rich-text-editor.md",
+      "label": "Rich text editor",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "RTE",
+        "WYSIWYG editor"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 627,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/search-input.md",
+      "label": "Search input",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Search"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 866,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/segmented-control.md",
+      "label": "Segmented control",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Toggle button group"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1004,
+      "degree": 5
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/select.md",
+      "label": "Select",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Dropdown",
+        "Select input"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1143,
+      "degree": 5
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/separator.md",
+      "label": "Separator",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Divider",
+        "Horizontal rule",
+        "Vertical rule"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 629,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/sidebar.md",
+      "label": "Sidebar",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Collapsible sidebar",
+        "Side navigation",
+        "Sidebar navigation"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1336,
+      "degree": 4
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/skeleton.md",
+      "label": "Skeleton",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Skeleton loader"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1096,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/skip-link.md",
+      "label": "Skip link",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 560,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/slider.md",
+      "label": "Slider",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Range input"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 805,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/spinner.md",
+      "label": "Spinner",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Loader",
+        "Loading"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 825,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/stack.md",
+      "label": "Stack",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 524,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/stepper.md",
+      "label": "Stepper",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Counter",
+        "Nudger",
+        "Quantity"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 911,
+      "degree": 5
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/table.md",
+      "label": "Table",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1091,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/tabs.md",
+      "label": "Tabs",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Content tabs",
+        "Section tabs",
+        "Tabbed interface",
+        "Tabset"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 2228,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/text-input.md",
+      "label": "Text input",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Text box",
+        "Text field",
+        "Textbox"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 935,
+      "degree": 5
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/textarea.md",
+      "label": "Textarea",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 710,
+      "degree": 4
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/toast.md",
+      "label": "Toast",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Snackbar"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1007,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/toggle.md",
+      "label": "Toggle",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Lightswitch",
+        "Switch",
+        "Toggle button"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1071,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/tooltip.md",
+      "label": "Tooltip",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Toggletip"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1137,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/tree-view.md",
+      "label": "Tree view",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 799,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/video.md",
+      "label": "Video",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Video player"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 616,
+      "degree": 1
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/visually-hidden.md",
+      "label": "Visually hidden",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Screenreader only"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 619,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/SKILL.md",
+      "label": "ui-design-brain",
+      "type": "skill",
+      "dir": "skills/ui-design-brain",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 2748,
+      "degree": 4
+    },
+    {
+      "id": "wiki/INDEX.md",
+      "label": "Context Wiki",
+      "type": "wiki-index",
+      "dir": "wiki",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 2918,
+      "degree": 7
+    },
+    {
+      "id": "wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md",
+      "label": "Knowledge graph + context wiki subsystem",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "graph-wiki-subsystem"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "8"
+      ],
+      "bytes": 1774,
+      "degree": 4
+    },
+    {
+      "id": "wiki/MECHANICS.md",
+      "label": "Wiki Mechanics",
+      "type": "wiki-index",
+      "dir": "wiki",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 7581,
+      "degree": 4
+    },
+    {
+      "id": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
+      "label": "Plan: Extract @verndale/ui-design-brain into its own published repo",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 12448,
+      "degree": 3
+    },
+    {
+      "id": "wiki/plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md",
+      "label": "Plan: Finalize ui-design-brain extraction (vendor-only, npm + sync)",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 4432,
+      "degree": 3
+    },
+    {
+      "id": "wiki/plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md",
+      "label": "Plan: De-duplicate ui-design-brain via the skills CLI (vercel-labs/skills)",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 22533,
+      "degree": 3
+    },
+    {
+      "id": "wiki/plans/2026-06-13-align-agents-md-with-agents-md-best-practices.md",
+      "label": "Plan: Align AGENTS.md with AGENTS.md best practices (+ record the references in CONTRIBUTING)",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "agents-guidance"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 3815,
+      "degree": 3
+    },
+    {
+      "id": "wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md",
+      "label": "Port the knowledge-graph + wiki subsystem into ui-design-brain",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "graph-wiki-subsystem"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "8"
+      ],
+      "bytes": 8193,
+      "degree": 4
+    },
+    {
+      "id": "wiki/plans/INDEX.md",
+      "label": "Plan Audit",
+      "type": "wiki-index",
+      "dir": "wiki/plans",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1843,
+      "degree": 7
+    },
+    {
+      "id": "wiki/topics/agents-guidance.md",
+      "label": "Agent guidance — Design History",
+      "type": "wiki-topic",
+      "dir": "wiki/topics",
+      "topics": [],
+      "aliases": [
+        "AGENTS.md",
+        "agent guide",
+        "contributing",
+        "agent-facing docs"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 647,
+      "degree": 5
+    },
+    {
+      "id": "wiki/topics/graph-wiki-subsystem.md",
+      "label": "Knowledge graph & context wiki — Design History",
+      "type": "wiki-topic",
+      "dir": "wiki/topics",
+      "topics": [],
+      "aliases": [
+        "knowledge graph",
+        "context wiki",
+        "pattern graph",
+        "sigma.js viewer",
+        "plan capture"
+      ],
+      "prs": [],
+      "issues": [
+        "8"
+      ],
+      "bytes": 1340,
+      "degree": 5
+    },
+    {
+      "id": "wiki/topics/packaging-and-distribution.md",
+      "label": "Packaging & distribution — Design History",
+      "type": "wiki-topic",
+      "dir": "wiki/topics",
+      "topics": [],
+      "aliases": [
+        "npm package",
+        "vendoring",
+        "skills CLI",
+        "distribution",
+        "consumer sync",
+        "extraction"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1254,
+      "degree": 8
+    }
+  ],
+  "edges": [
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/accordion.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/alert.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/avatar.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/badge.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/breadcrumbs.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/button-group.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/button.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/card.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/carousel.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/checkbox.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/color-picker.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/combobox.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/context-menu.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/date-input.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/datepicker.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/drawer.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/dropdown-menu.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/empty-state.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/error-message.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/fieldset.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/file-upload.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/file.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/footer.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/form.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/header.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/heading.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/helper-text.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/hero.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/icon.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/image.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/label.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/link.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/list.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/modal.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/navigation.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/number-input.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/pagination.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/popover.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/progress-bar.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/progress-indicator.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/quote.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/radio-button.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/rating.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/rich-text-editor.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/search-input.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/segmented-control.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/select.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/separator.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/sidebar.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/skeleton.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/skip-link.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/slider.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/spinner.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/stack.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/stepper.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/table.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/tabs.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/text-input.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/textarea.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/toast.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/toggle.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/tooltip.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/tree-view.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/video.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/visually-hidden.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "wiki/topics/agents-guidance.md",
+      "target": "AGENTS.md",
+      "type": "covers"
+    },
+    {
+      "source": "wiki/topics/agents-guidance.md",
+      "target": "CONTRIBUTING.md",
+      "type": "covers"
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "skills/ui-design-brain/SKILL.md",
+      "type": "covers"
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "CONTRIBUTING.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "README.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "AGENTS.md",
+      "target": "wiki/MECHANICS.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "README.md",
+      "target": "CONTRIBUTING.md",
+      "type": "links-to",
+      "count": 2,
+      "anchors": []
+    },
+    {
+      "source": "README.md",
+      "target": "skills/ui-design-brain/index.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "README.md",
+      "target": "skills/ui-design-brain/patterns-manifest.json",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "README.md",
+      "target": "skills/ui-design-brain/SKILL.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "README.md",
+      "target": "wiki/INDEX.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "README.md",
+      "target": "wiki/MECHANICS.md",
+      "type": "links-to",
+      "count": 2,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/plans/INDEX.md",
+      "type": "links-to",
+      "count": 2,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/topics/agents-guidance.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/MECHANICS.md",
+      "target": "wiki/INDEX.md",
+      "type": "links-to",
+      "count": 2,
+      "anchors": []
+    },
+    {
+      "source": "wiki/MECHANICS.md",
+      "target": "wiki/plans/INDEX.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-06-13-align-agents-md-with-agents-md-best-practices.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/agents-guidance.md",
+      "target": "wiki/plans/2026-06-13-align-agents-md-with-agents-md-best-practices.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/graph-wiki-subsystem.md",
+      "target": "wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/graph-wiki-subsystem.md",
+      "target": "wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md",
+      "target": "wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md",
+      "type": "plan"
+    },
+    {
+      "source": "skills/ui-design-brain/index.md",
+      "target": "skills/ui-design-brain/patterns-manifest.json",
+      "type": "references"
+    },
+    {
+      "source": "skills/ui-design-brain/index.md",
+      "target": "skills/ui-design-brain/patterns/modal.md",
+      "type": "references"
+    },
+    {
+      "source": "skills/ui-design-brain/SKILL.md",
+      "target": "skills/ui-design-brain/index.md",
+      "type": "references"
+    },
+    {
+      "source": "skills/ui-design-brain/SKILL.md",
+      "target": "skills/ui-design-brain/patterns-manifest.json",
+      "type": "references"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/alert.md",
+      "target": "skills/ui-design-brain/patterns/hero.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/alert.md",
+      "target": "skills/ui-design-brain/patterns/toast.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/avatar.md",
+      "target": "skills/ui-design-brain/patterns/image.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/badge.md",
+      "target": "skills/ui-design-brain/patterns/label.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/button-group.md",
+      "target": "skills/ui-design-brain/patterns/segmented-control.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/button.md",
+      "target": "skills/ui-design-brain/patterns/link.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/button.md",
+      "target": "skills/ui-design-brain/patterns/toggle.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/combobox.md",
+      "target": "skills/ui-design-brain/patterns/select.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/context-menu.md",
+      "target": "skills/ui-design-brain/patterns/dropdown-menu.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/date-input.md",
+      "target": "skills/ui-design-brain/patterns/datepicker.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/datepicker.md",
+      "target": "skills/ui-design-brain/patterns/date-input.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/drawer.md",
+      "target": "skills/ui-design-brain/patterns/modal.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/dropdown-menu.md",
+      "target": "skills/ui-design-brain/patterns/context-menu.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/dropdown-menu.md",
+      "target": "skills/ui-design-brain/patterns/select.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/empty-state.md",
+      "target": "skills/ui-design-brain/patterns/skeleton.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/error-message.md",
+      "target": "skills/ui-design-brain/patterns/alert.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/error-message.md",
+      "target": "skills/ui-design-brain/patterns/helper-text.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/fieldset.md",
+      "target": "skills/ui-design-brain/patterns/form.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/file-upload.md",
+      "target": "skills/ui-design-brain/patterns/file.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/file.md",
+      "target": "skills/ui-design-brain/patterns/file-upload.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/footer.md",
+      "target": "skills/ui-design-brain/patterns/navigation.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/form.md",
+      "target": "skills/ui-design-brain/patterns/fieldset.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/form.md",
+      "target": "skills/ui-design-brain/patterns/label.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/header.md",
+      "target": "skills/ui-design-brain/patterns/heading.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/header.md",
+      "target": "skills/ui-design-brain/patterns/navigation.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/heading.md",
+      "target": "skills/ui-design-brain/patterns/header.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/helper-text.md",
+      "target": "skills/ui-design-brain/patterns/error-message.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/helper-text.md",
+      "target": "skills/ui-design-brain/patterns/label.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/hero.md",
+      "target": "skills/ui-design-brain/patterns/alert.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/icon.md",
+      "target": "skills/ui-design-brain/patterns/visually-hidden.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/image.md",
+      "target": "skills/ui-design-brain/patterns/avatar.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/label.md",
+      "target": "skills/ui-design-brain/patterns/badge.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/label.md",
+      "target": "skills/ui-design-brain/patterns/error-message.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/label.md",
+      "target": "skills/ui-design-brain/patterns/helper-text.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/link.md",
+      "target": "skills/ui-design-brain/patterns/button.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/list.md",
+      "target": "skills/ui-design-brain/patterns/table.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/modal.md",
+      "target": "skills/ui-design-brain/patterns/drawer.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/navigation.md",
+      "target": "skills/ui-design-brain/patterns/sidebar.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/number-input.md",
+      "target": "skills/ui-design-brain/patterns/stepper.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/number-input.md",
+      "target": "skills/ui-design-brain/patterns/text-input.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/popover.md",
+      "target": "skills/ui-design-brain/patterns/tooltip.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/progress-indicator.md",
+      "target": "skills/ui-design-brain/patterns/stepper.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/segmented-control.md",
+      "target": "skills/ui-design-brain/patterns/button-group.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/segmented-control.md",
+      "target": "skills/ui-design-brain/patterns/tabs.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/select.md",
+      "target": "skills/ui-design-brain/patterns/combobox.md",
+      "type": "see-also",
+      "count": 2
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/select.md",
+      "target": "skills/ui-design-brain/patterns/dropdown-menu.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/sidebar.md",
+      "target": "skills/ui-design-brain/patterns/drawer.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/sidebar.md",
+      "target": "skills/ui-design-brain/patterns/navigation.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/skeleton.md",
+      "target": "skills/ui-design-brain/patterns/empty-state.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/skip-link.md",
+      "target": "skills/ui-design-brain/patterns/header.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/skip-link.md",
+      "target": "skills/ui-design-brain/patterns/navigation.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/stepper.md",
+      "target": "skills/ui-design-brain/patterns/number-input.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/stepper.md",
+      "target": "skills/ui-design-brain/patterns/progress-indicator.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/table.md",
+      "target": "skills/ui-design-brain/patterns/list.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/tabs.md",
+      "target": "skills/ui-design-brain/patterns/segmented-control.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/text-input.md",
+      "target": "skills/ui-design-brain/patterns/error-message.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/text-input.md",
+      "target": "skills/ui-design-brain/patterns/helper-text.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/text-input.md",
+      "target": "skills/ui-design-brain/patterns/label.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/textarea.md",
+      "target": "skills/ui-design-brain/patterns/error-message.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/textarea.md",
+      "target": "skills/ui-design-brain/patterns/helper-text.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/textarea.md",
+      "target": "skills/ui-design-brain/patterns/label.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/toast.md",
+      "target": "skills/ui-design-brain/patterns/alert.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/toggle.md",
+      "target": "skills/ui-design-brain/patterns/button.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/tooltip.md",
+      "target": "skills/ui-design-brain/patterns/popover.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/visually-hidden.md",
+      "target": "skills/ui-design-brain/patterns/icon.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-06-13-align-agents-md-with-agents-md-best-practices.md",
+      "target": "wiki/topics/agents-guidance.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    }
+  ]
+}

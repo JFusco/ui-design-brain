@@ -27,7 +27,14 @@
     "commit": "ai-commit run",
     "pr:create": "ai-pr",
     "lint:commits:last": "commitlint --config node_modules/@verndale/ai-commit/lib/commitlint-preset.cjs --from=HEAD~1 --to=HEAD",
-    "release:dry": "semantic-release --dry-run"
+    "release:dry": "semantic-release --dry-run",
+    "graph:build": "node scripts/graph/build-graph.cjs",
+    "graph:view": "node scripts/graph/serve.cjs",
+    "graph:navigate": "node scripts/wiki/navigate.cjs",
+    "evals:graph": "node scripts/evals/graph-check.cjs",
+    "wiki:archive-plan": "node scripts/wiki/archive-plan.cjs",
+    "wiki:find-plans": "node scripts/wiki/find-unarchived-plans.cjs",
+    "wiki:issue-sync": "node scripts/wiki/refresh-issue-state.cjs"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.2",
