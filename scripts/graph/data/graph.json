@@ -1174,11 +1174,13 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "15"
+      ],
       "issues": [
         "14"
       ],
-      "bytes": 1191,
+      "bytes": 1235,
       "degree": 4
     },
     {
@@ -1276,9 +1278,11 @@
       "dir": "wiki/plans",
       "topics": [],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "15"
+      ],
       "issues": [],
-      "bytes": 8304,
+      "bytes": 8386,
       "degree": 2
     },
     {
@@ -1326,10 +1330,11 @@
       "aliases": [],
       "prs": [
         "9",
-        "12"
+        "12",
+        "15"
       ],
       "issues": [],
-      "bytes": 2405,
+      "bytes": 2463,
       "degree": 9
     },
     {
@@ -1385,13 +1390,14 @@
         "plan capture"
       ],
       "prs": [
+        "15",
         "12",
         "9"
       ],
       "issues": [
         "8"
       ],
-      "bytes": 1626,
+      "bytes": 1778,
       "degree": 5
     },
     {
