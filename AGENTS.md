@@ -17,7 +17,7 @@ Everything outside `skills/` is repo tooling (commits, release, CI). See [README
 
 ## Environment
 
-Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. There is **no build step, no test suite, and no catalog validator** — by design (integrity is maintained by hand; see Catalog integrity). Editing catalog files needs no local setup; the commit/release tooling is the maintainer's job (see below).
+Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. Editing the catalog needs **no build step and no local setup** — it is markdown + JSON, authored by hand. The repo does carry one subsystem of tooling: the knowledge graph + context wiki (see [Knowledge graph & wiki](#knowledge-graph--wiki)), whose only quality gate is `pnpm evals:graph`. There is no test suite for the catalog content itself. The commit/release tooling is the maintainer's job (see below).
 
 ## Editing this skill
 
@@ -44,11 +44,22 @@ The practices that bite for this markdown-only catalog skill:
 4. the pattern count in `README.md`
 5. if the alias is **context-scoped** (an object-form `{ name, context }` entry), mirror it into `index.md`'s **Context-scoped aliases** table
 
-Integrity is maintained **by hand on purpose** — there is intentionally no automated validator (no `check-catalog.mjs`, no pre-commit check). Don't add one unless the maintainer asks.
+The alias/name/count fields (steps 1–5) are maintained **by hand**, but the manifest↔file mapping is now checked: `pnpm graph:build` emits a `catalogs` edge from the manifest to each `patterns/<slug>.md`, and the build **fails on a dangling edge** — a manifest entry whose `file` points at a missing or renamed pattern. `pnpm evals:graph` (CI + the pre-commit hook) enforces it. That is the sanctioned catalog validator; don't add a *second* bespoke validator unless the maintainer asks.
 
 ## Authoring a pattern file (`patterns/<slug>.md`)
 
 `skills/_meta/` is authoritative for pattern structure. When creating or editing a pattern, **copy `skills/_meta/_pattern-template.md` to `skills/ui-design-brain/patterns/<slug>.md`** and follow `skills/_meta/_sections.md`, then complete the Catalog-integrity steps above. (`skills/_meta/` is authoring-only — never loaded at runtime, never vendored.)
+
+## Knowledge graph & wiki
+
+The repo carries a deterministic **knowledge graph** — over the manifest, patterns, root docs, and the wiki — rendered in a vendored Sigma.js viewer, plus a **context wiki** (`wiki/` — journal, topics, plans) recording *why the repo is the way it is*. Both are ported from `@verndale/ai-orchestration`. Details: [`scripts/graph/README.md`](scripts/graph/README.md) and [`wiki/MECHANICS.md`](wiki/MECHANICS.md).
+
+- `pnpm graph:build` — rebuild `scripts/graph/data/graph.json` + the generated `wiki/connections*` pages (both committed; the pre-commit hook rebuilds and stages them).
+- `pnpm graph:view` — serve the interactive viewer at `http://localhost:4173`.
+- `pnpm graph:navigate --intent why|wiring|impact --query <term>` — a deterministic reading itinerary over the graph; agents use it before broad cross-system reads.
+- `pnpm evals:graph` — freshness + integrity gate (CI backstop for the pre-commit rebuild).
+
+Capturing history is part of a substantive change: follow `wiki/MECHANICS.md` (journal entry + archived plan + topic Decisions). Executed plans are archived with `pnpm wiki:archive-plan`; the collectors also ingest GitHub PRs and issues on merge/nightly. Slack ingestion is intentionally **not** part of this subsystem.
 
 ## Commits & release — the maintainer's job, not the agent's
 

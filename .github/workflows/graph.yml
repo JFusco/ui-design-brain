@@ -1,0 +1,61 @@
+name: Knowledge graph
+
+# Freshness backstop for the committed knowledge graph. The pre-commit hook rebuilds
+# and stages scripts/graph/data/graph.json + wiki/connections* on every local commit;
+# this gate catches commits made with --no-verify or edits that landed out of band by
+# byte-comparing a fresh rebuild against what's committed (see scripts/evals/graph-check.cjs).
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  graph:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Org policy: only GitHub + org-owned actions — Corepack + actions/cache (no pnpm/action-setup).
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24.14.0"
+
+      - name: Enable pnpm via Corepack
+        run: corepack enable && corepack prepare pnpm@10.33.0 --activate
+
+      - name: Get pnpm store path
+        id: pnpm-cache
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check knowledge graph freshness
+        run: pnpm run evals:graph
+
+      - name: Warn on missing wiki journal entry
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Advisory only — a fetch/permission hiccup must never fail the graph gate.
+          gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
+            --paginate --jq '.[].filename' > changed.txt || true
+          node scripts/wiki/ci-journal-warn.cjs --files changed.txt || true
