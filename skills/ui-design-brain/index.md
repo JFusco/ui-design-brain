@@ -111,7 +111,7 @@ These labels resolve to a different canonical depending on usage context. The al
 | Label | **Badge** | tag / chip context |
 | Label | **Label** | form-field label (the canonical) |
 | Stepper | **Progress indicator** | progress context |
-| Stepper | **Stepper** | multi-step form / wizard control (the canonical) |
+| Stepper | **Stepper** | numeric +/- quantity control (the canonical) |
 
 ## Loading guidance
 - Start from the canonical list above to scope which patterns are likely relevant.

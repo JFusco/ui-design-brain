@@ -33,6 +33,7 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
+- 2026-07-23 — [Fix stale Stepper canonical row in the context-scoped aliases table](journal/2026-07-23-fix-stale-stepper-canonical-row.md) — reworded index.md's Stepper (the canonical) context from "multi-step form / wizard control" to the numeric +/- quantity control.
 - 2026-07-23 — [Close consumer catalog gaps: eyebrow, filter, marquee, masthead, wizard](journal/2026-07-23-close-consumer-catalog-gaps.md) — added five patterns (65 → 70) plus cross-refs so the highest-frequency BA labels stop falling through to "novel".
 - 2026-07-23 — [Knowledge graph + context wiki subsystem](journal/2026-07-23-knowledge-graph-wiki-subsystem.md) — ported the deterministic graph + Sigma.js viewer and the context wiki (executed plans / PRs / issues; no Slack) from ai-orchestration.
 

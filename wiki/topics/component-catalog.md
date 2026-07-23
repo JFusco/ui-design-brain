@@ -18,8 +18,5 @@ The canonical UI-pattern catalog: how a design label resolves to one component w
 
 ## Decisions
 
+- 2026-07-23 — Reworded the `index.md` context-scoped "Stepper (the canonical)" row from "multi-step form / wizard control" to "numeric +/- quantity control", resolving the stale mapping the Wizard addition left behind (the Stepper canonical is the numeric control; "Multi-step form" now resolves to Wizard) ([issue #14](https://github.com/verndale/ui-design-brain/issues/14), [journal](../journal/2026-07-23-fix-stale-stepper-canonical-row.md)).
 - 2026-07-23 — Added five consumer-driven patterns (Eyebrow, Filter, Marquee, Masthead, Wizard; 65 to 70) so the highest-frequency BA labels stop resolving to novel. Kept aliases exact-string and consumer-evidenced (dropped the speculative "Interior hero" Masthead alias), named child parts in prose without aliasing them, and codified the child-part and Visual-variants conventions in the authoring docs ([plan](../plans/2026-07-23-ui-design-brain-close-catalog-gaps-observed-in-consuming-rep.md), [journal](../journal/2026-07-23-close-consumer-catalog-gaps.md), [issue #11](https://github.com/verndale/ui-design-brain/issues/11)).
-
-## Open threads
-
-- The `index.md` context-scoped aliases table still maps the "Stepper" label's canonical sense to "multi-step form / wizard control". The new Wizard pattern owns the alias "Multi-step form" and the Stepper canonical is the numeric +/- control, so that row is now stale and needs rewording or removal.

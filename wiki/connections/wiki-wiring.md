@@ -12,6 +12,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 ## Page → topic
 
 - [Close consumer catalog gaps: eyebrow, filter, marquee, masthead, wizard](../../wiki/journal/2026-07-23-close-consumer-catalog-gaps.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
+- [Fix stale Stepper canonical row in the context-scoped aliases table](../../wiki/journal/2026-07-23-fix-stale-stepper-canonical-row.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Knowledge graph + context wiki subsystem](../../wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
 - [Plan: Extract @verndale/ui-design-brain into its own published repo](../../wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Finalize ui-design-brain extraction (vendor-only, npm + sync)](../../wiki/plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
