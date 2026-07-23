@@ -1,3 +1,40 @@
+# v1.6.1 — 2026-07-23
+
+## Summary (AI, bounded)
+- Fixed the Stepper canonical description in the UI design brain documentation (04fa22e).
+- Updated stale Stepper canonical row in context-scoped UI design brain docs (69e751d).
+- Synced journal, topics, and plans in the wiki documentation (438e7fa).
+- Merged pull requests improving Stepper-related fixes and wiki synchronization (2353613, cd20817).
+
+## Highlights
+- commit: Merge pull request #15 from verndale/fix/stepper-stale-canonical-row (2353613)
+- docs(ui-design-brain): Fix stale Stepper canonical row in context-scoped (69e751d)
+- fix(ui-design-brain): Update Stepper canonical description in index.md (04fa22e)
+- commit: Merge pull request #13 from verndale/bot/wiki-sync/12 (cd20817)
+- docs(wiki): sync journal, topics, and plans for #12 (438e7fa)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Fixes
+- fix(ui-design-brain): Update Stepper canonical description in index.md (04fa22e)
+
+### Docs
+- docs(ui-design-brain): Fix stale Stepper canonical row in context-scoped (69e751d)
+- docs(wiki): sync journal, topics, and plans for #12 (438e7fa)
+
+### Other (unknown)
+- commit: Merge pull request #13 from verndale/bot/wiki-sync/12 (cd20817)
+- commit: Merge pull request #15 from verndale/fix/stepper-stale-canonical-row (2353613)
+
+## Full commit list
+- 2353613 commit: Merge pull request #15 from verndale/fix/stepper-stale-canonical-row
+- 69e751d docs(ui-design-brain): Fix stale Stepper canonical row in context-scoped
+- 04fa22e fix(ui-design-brain): Update Stepper canonical description in index.md
+- cd20817 commit: Merge pull request #13 from verndale/bot/wiki-sync/12
+- 438e7fa docs(wiki): sync journal, topics, and plans for #12
+
 # v1.6.0 — 2026-07-23
 
 ## Summary (AI, bounded)
