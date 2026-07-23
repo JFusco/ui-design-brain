@@ -1,3 +1,37 @@
+# v1.6.0 — 2026-07-23
+
+## Summary (AI, bounded)
+- Added new UI patterns and updated related documentation (commit 25cda89).
+- Synced wiki content including journal, topics, and plans (commit ba1db18).
+- Integrated changes via merge commits to support catalog gap patterns and wiki synchronization (commits 3f13619, 92bd828).
+- No breaking changes introduced in this release.
+
+## Highlights
+- commit: Merge pull request #12 from verndale/feat/catalog-gap-patterns (3f13619)
+- feat(ui-design-brain): Add new UI patterns and update documentation (25cda89)
+- commit: Merge pull request #10 from verndale/bot/wiki-sync/9 (92bd828)
+- docs(wiki): sync journal, topics, and plans for #9 (ba1db18)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Add new UI patterns and update documentation (25cda89)
+
+### Docs
+- docs(wiki): sync journal, topics, and plans for #9 (ba1db18)
+
+### Other (unknown)
+- commit: Merge pull request #10 from verndale/bot/wiki-sync/9 (92bd828)
+- commit: Merge pull request #12 from verndale/feat/catalog-gap-patterns (3f13619)
+
+## Full commit list
+- 3f13619 commit: Merge pull request #12 from verndale/feat/catalog-gap-patterns
+- 25cda89 feat(ui-design-brain): Add new UI patterns and update documentation
+- 92bd828 commit: Merge pull request #10 from verndale/bot/wiki-sync/9
+- ba1db18 docs(wiki): sync journal, topics, and plans for #9
+
 # v1.5.0 — 2026-07-23
 
 ## Summary (AI, bounded)
