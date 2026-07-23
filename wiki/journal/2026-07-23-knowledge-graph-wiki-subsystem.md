@@ -2,7 +2,7 @@
 date: 2026-07-23
 topics: [graph-wiki-subsystem]
 plan: plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/9
 issue: https://github.com/verndale/ui-design-brain/issues/8
 ---
 # Knowledge graph + context wiki subsystem

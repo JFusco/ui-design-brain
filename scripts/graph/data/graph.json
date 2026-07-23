@@ -1081,11 +1081,13 @@
         "graph-wiki-subsystem"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "9"
+      ],
       "issues": [
         "8"
       ],
-      "bytes": 1774,
+      "bytes": 1817,
       "degree": 4
     },
     {
@@ -1109,9 +1111,11 @@
         "packaging-and-distribution"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "9"
+      ],
       "issues": [],
-      "bytes": 12448,
+      "bytes": 12528,
       "degree": 3
     },
     {
@@ -1165,11 +1169,13 @@
         "graph-wiki-subsystem"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "9"
+      ],
       "issues": [
         "8"
       ],
-      "bytes": 8193,
+      "bytes": 8273,
       "degree": 4
     },
     {
@@ -1179,9 +1185,11 @@
       "dir": "wiki/plans",
       "topics": [],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "9"
+      ],
       "issues": [],
-      "bytes": 1843,
+      "bytes": 1955,
       "degree": 7
     },
     {
@@ -1214,11 +1222,13 @@
         "sigma.js viewer",
         "plan capture"
       ],
-      "prs": [],
+      "prs": [
+        "9"
+      ],
       "issues": [
         "8"
       ],
-      "bytes": 1340,
+      "bytes": 1477,
       "degree": 5
     },
     {
