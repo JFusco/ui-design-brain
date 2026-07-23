@@ -1156,11 +1156,13 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "12"
+      ],
       "issues": [
         "11"
       ],
-      "bytes": 3479,
+      "bytes": 3523,
       "degree": 4
     },
     {
@@ -1278,11 +1280,13 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "12"
+      ],
       "issues": [
         "11"
       ],
-      "bytes": 17659,
+      "bytes": 17741,
       "degree": 4
     },
     {
@@ -1293,10 +1297,11 @@
       "topics": [],
       "aliases": [],
       "prs": [
-        "9"
+        "9",
+        "12"
       ],
       "issues": [],
-      "bytes": 2154,
+      "bytes": 2212,
       "degree": 8
     },
     {
@@ -1351,12 +1356,13 @@
         "plan capture"
       ],
       "prs": [
+        "12",
         "9"
       ],
       "issues": [
         "8"
       ],
-      "bytes": 1477,
+      "bytes": 1626,
       "degree": 5
     },
     {
