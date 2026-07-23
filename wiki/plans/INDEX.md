@@ -15,7 +15,7 @@ Every agent plan executed for this repo, gathered from Claude plan stores and Co
 - **not-implemented** — nothing shipped; may still be actionable.
 - **out-of-scope** — targets another repo/product.
 
-Totals: 6 implemented (6 plans).
+Totals: 7 implemented (7 plans).
 
 ## Plans
 
@@ -27,3 +27,4 @@ Totals: 6 implemented (6 plans).
 | 2026-06-11 | [Plan: Finalize ui-design-brain extraction (vendor-only, npm + sync)](2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md) | implemented | — | packaging-and-distribution |
 | 2026-06-11 | [Plan: Extract `@verndale/ui-design-brain` into its own published repo](2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) | implemented | [PR #9](https://github.com/verndale/ui-design-brain/pull/9) | packaging-and-distribution |
 | 2026-07-23 | [ui-design-brain: close catalog gaps observed in consuming repos](2026-07-23-ui-design-brain-close-catalog-gaps-observed-in-consuming-rep.md) | implemented | [PR #12](https://github.com/verndale/ui-design-brain/pull/12) | component-catalog |
+| 2026-07-23 | [Fix the stale Stepper canonical row in the context-scoped aliases table](2026-07-23-fix-the-stale-stepper-canonical-row-in-the-context-scoped-al.md) | implemented | — | — |
