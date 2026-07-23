@@ -2,7 +2,7 @@
 
 The persistent top-of-page region containing the site brand, primary navigation, and key actions.
 
-Primary navigation inside a header is the **Navigation** pattern (see `navigation.md`); for a content title (h1–h6) see **Heading** (`heading.md`), not Header.
+Primary navigation inside a header is the **Navigation** pattern (see `navigation.md`); for a content title (h1–h6) see **Heading** (`heading.md`), not Header. The page-top title band on an interior page — sometimes called a masthead — is the **Masthead** pattern (see `masthead.md`).
 
 **Best practices:**
 - Keep the header height compact (56–72 px) to preserve content space

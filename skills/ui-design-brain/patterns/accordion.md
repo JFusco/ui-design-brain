@@ -4,6 +4,8 @@
 
 A vertically stacked set of collapsible sections — each heading toggles between showing a short label and revealing the full content beneath it.
 
+Each heading and its collapsible region form an **Accordion item** — a child of this pattern, not a separate catalog entry.
+
 **Best practices:**
 - Use for long-form content that benefits from progressive disclosure
 - Keep headings concise and scannable — they are the primary navigation

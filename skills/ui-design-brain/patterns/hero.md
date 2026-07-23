@@ -4,7 +4,7 @@
 
 A prominent banner near the top of a page, typically featuring a full-width image or illustration with a headline.
 
-Here **Banner** means the promotional hero area; a page-level message banner is an **Alert** (see `alert.md`).
+Here **Banner** means the promotional hero area; a page-level message banner is an **Alert** (see `alert.md`). The interior-page title band that identifies the page rather than promoting is a **Masthead** (see `masthead.md`).
 
 **Best practices:**
 - Lead with a compelling headline — clarity over cleverness

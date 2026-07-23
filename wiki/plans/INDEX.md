@@ -15,7 +15,7 @@ Every agent plan executed for this repo, gathered from Claude plan stores and Co
 - **not-implemented** — nothing shipped; may still be actionable.
 - **out-of-scope** — targets another repo/product.
 
-Totals: 5 implemented (5 plans).
+Totals: 6 implemented (6 plans).
 
 ## Plans
 
@@ -26,3 +26,4 @@ Totals: 5 implemented (5 plans).
 | 2026-06-12 | [Plan: De-duplicate `ui-design-brain` via the `skills` CLI (vercel-labs/skills)](2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md) | implemented | — | packaging-and-distribution |
 | 2026-06-11 | [Plan: Finalize ui-design-brain extraction (vendor-only, npm + sync)](2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md) | implemented | — | packaging-and-distribution |
 | 2026-06-11 | [Plan: Extract `@verndale/ui-design-brain` into its own published repo](2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) | implemented | [PR #9](https://github.com/verndale/ui-design-brain/pull/9) | packaging-and-distribution |
+| 2026-07-23 | [ui-design-brain: close catalog gaps observed in consuming repos](2026-07-23-ui-design-brain-close-catalog-gaps-observed-in-consuming-rep.md) | implemented | — | component-catalog |

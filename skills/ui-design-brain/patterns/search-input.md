@@ -4,6 +4,8 @@
 
 A text field designed for entering search queries to find content.
 
+Refining an already-returned result set — by attribute values, with counts — is the **Filter** pattern (see `filter.md`); a Search input enters the query, a Filter narrows the results.
+
 **Best practices:**
 - Place a magnifying glass icon inside the field to signal purpose
 - Support Cmd/Ctrl+K as a global shortcut to focus the search

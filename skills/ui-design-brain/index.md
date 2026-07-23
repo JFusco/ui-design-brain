@@ -22,9 +22,11 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Dropdown menu
 - Empty state
 - Error message
+- Eyebrow
 - Fieldset
 - File
 - File upload
+- Filter
 - Footer
 - Form
 - Header
@@ -36,6 +38,8 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Label
 - Link
 - List
+- Marquee
+- Masthead
 - Modal
 - Navigation
 - Number input
@@ -68,6 +72,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Tree view
 - Video
 - Visually hidden
+- Wizard
 
 ## Authoritative source
 

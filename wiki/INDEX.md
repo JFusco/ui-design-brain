@@ -25,6 +25,7 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 <!-- One line per topic page: [Title](topics/<slug>.md) — hook. Keep alphabetical by slug. -->
 
 - [Agent guidance](topics/agents-guidance.md) — how the repo's `AGENTS.md` and `CONTRIBUTING.md` are organized.
+- [Component catalog](topics/component-catalog.md) — the canonical UI-pattern catalog: manifest, aliases, cross-references, and the exact-string resolution consumers depend on.
 - [Knowledge graph & context wiki](topics/graph-wiki-subsystem.md) — the deterministic graph + Sigma.js viewer and the context wiki, ported from ai-orchestration.
 - [Packaging & distribution](topics/packaging-and-distribution.md) — how the catalog became a standalone published package that consumers vendor.
 
@@ -32,6 +33,7 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
+- 2026-07-23 — [Close consumer catalog gaps: eyebrow, filter, marquee, masthead, wizard](journal/2026-07-23-close-consumer-catalog-gaps.md) — added five patterns (65 → 70) plus cross-refs so the highest-frequency BA labels stop falling through to "novel".
 - 2026-07-23 — [Knowledge graph + context wiki subsystem](journal/2026-07-23-knowledge-graph-wiki-subsystem.md) — ported the deterministic graph + Sigma.js viewer and the context wiki (executed plans / PRs / issues; no Slack) from ai-orchestration.
 
 ## Plans

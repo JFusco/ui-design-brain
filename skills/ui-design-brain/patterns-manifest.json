@@ -177,6 +177,15 @@
     "file": "patterns/error-message.md"
   },
   {
+    "name": "Eyebrow",
+    "slug": "eyebrow",
+    "aliases": [
+      "Kicker",
+      "Overline"
+    ],
+    "file": "patterns/eyebrow.md"
+  },
+  {
     "name": "Fieldset",
     "slug": "fieldset",
     "aliases": [],
@@ -200,6 +209,19 @@
       "File uploader"
     ],
     "file": "patterns/file-upload.md"
+  },
+  {
+    "name": "Filter",
+    "slug": "filter",
+    "aliases": [
+      "Facet",
+      "Faceted navigation",
+      "Facets",
+      "Filter panel",
+      "Filters",
+      "Refinements"
+    ],
+    "file": "patterns/filter.md"
   },
   {
     "name": "Footer",
@@ -287,6 +309,21 @@
       "List view"
     ],
     "file": "patterns/list.md"
+  },
+  {
+    "name": "Marquee",
+    "slug": "marquee",
+    "aliases": [
+      "News ticker",
+      "Ticker"
+    ],
+    "file": "patterns/marquee.md"
+  },
+  {
+    "name": "Masthead",
+    "slug": "masthead",
+    "aliases": [],
+    "file": "patterns/masthead.md"
   },
   {
     "name": "Modal",
@@ -560,5 +597,13 @@
       "Screenreader only"
     ],
     "file": "patterns/visually-hidden.md"
+  },
+  {
+    "name": "Wizard",
+    "slug": "wizard",
+    "aliases": [
+      "Multi-step form"
+    ],
+    "file": "patterns/wizard.md"
   }
 ]
