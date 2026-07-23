@@ -13,6 +13,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-07-23 — fix(ui-design-brain): Update Stepper canonical description in index.md ([PR #15](https://github.com/verndale/ui-design-brain/pull/15))
 - 2026-07-23 — feat(ui-design-brain): Add new UI patterns and update documentation ([PR #12](https://github.com/verndale/ui-design-brain/pull/12))
 - 2026-07-23 — feat(ci): Add workflows for knowledge graph and wiki sync ([PR #9](https://github.com/verndale/ui-design-brain/pull/9))
 - 2026-07-23 — Ported the knowledge-graph + wiki subsystem from ai-orchestration — full faithful port (routing + auto-generated connections in, pre-commit rebuild, dormant opt-in AI); Slack excluded ([plan](../plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md), [journal](../journal/2026-07-23-knowledge-graph-wiki-subsystem.md), [issue #8](https://github.com/verndale/ui-design-brain/issues/8)).

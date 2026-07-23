@@ -2,7 +2,7 @@
 date: 2026-07-23
 topics: [component-catalog]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/15
 ---
 # Fix stale Stepper canonical row in the context-scoped aliases table
 
