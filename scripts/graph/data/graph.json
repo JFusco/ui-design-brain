@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 92,
-    "edges": 204,
+    "nodes": 93,
+    "edges": 207,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 70,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 2,
+      "wiki-journal": 3,
       "wiki-plan": 6,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 70,
       "covers": 5,
-      "links-to": 32,
+      "links-to": 34,
       "plan": 2,
       "references": 4,
       "see-also": 83,
-      "topic": 8
+      "topic": 9
     }
   },
   "nodes": [
@@ -81,7 +81,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3451,
+      "bytes": 3447,
       "degree": 5
     },
     {
@@ -1144,8 +1144,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3359,
-      "degree": 9
+      "bytes": 3634,
+      "degree": 10
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1164,6 +1164,22 @@
       ],
       "bytes": 3523,
       "degree": 4
+    },
+    {
+      "id": "wiki/journal/2026-07-23-fix-stale-stepper-canonical-row.md",
+      "label": "Fix stale Stepper canonical row in the context-scoped aliases table",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "14"
+      ],
+      "bytes": 1191,
+      "degree": 3
     },
     {
       "id": "wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md",
@@ -1337,10 +1353,11 @@
       ],
       "prs": [],
       "issues": [
+        "14",
         "11"
       ],
-      "bytes": 3181,
-      "degree": 7
+      "bytes": 3311,
+      "degree": 9
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -1833,6 +1850,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-23-fix-stale-stepper-canonical-row.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md",
       "type": "links-to",
       "count": 1,
@@ -1939,6 +1963,13 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-23-fix-stale-stepper-canonical-row.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2515,6 +2546,11 @@
     },
     {
       "source": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-23-fix-stale-stepper-canonical-row.md",
       "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },
