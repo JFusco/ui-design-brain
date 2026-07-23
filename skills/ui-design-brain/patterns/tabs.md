@@ -6,6 +6,8 @@ A set of selectable labels that switch between content panels, keeping the layou
 
 For a compact 2–5 option switch styled as one control, use a **Segmented control** (see `segmented-control.md`).
 
+Each selectable label is a **Tab** and its content region a **Tab panel** — children of this pattern, not separate catalog entries.
+
 **Visual variants (orthogonal to ARIA):**
 
 The tabs ARIA pattern (`role="tablist"`/`role="tab"`, `aria-selected`, roving-tabindex) is the same regardless of how the tab strip looks. The visual style is a separate axis:

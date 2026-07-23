@@ -4,6 +4,8 @@
 
 A component that cycles through multiple content slides, navigable via swipe, scroll, or button controls.
 
+A strip that scrolls continuously and loops on its own is a **Marquee** (see `marquee.md`) — a Carousel steps through discrete slides, a Marquee moves continuously. Each repeating module inside a Carousel is a **Slide** — a child of this pattern, not a separate catalog entry.
+
 **Best practices:**
 - Provide visible navigation arrows and pagination dots
 - Support swipe gestures on touch devices

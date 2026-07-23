@@ -4,7 +4,7 @@
 
 A numeric input with increment and decrement buttons for adjusting a value.
 
-This Stepper is the numeric +/- input control. For a multi-step progress tracker (also called a stepper), see **Progress indicator** (`progress-indicator.md`); for a numeric text field with min/max/step, see **Number input** (`number-input.md`).
+This Stepper is the numeric +/- input control. For a multi-step progress tracker (also called a stepper), see **Progress indicator** (`progress-indicator.md`); for a numeric text field with min/max/step, see **Number input** (`number-input.md`); a multi-step form flow is a **Wizard** (see `wizard.md`), not a Stepper.
 
 **Best practices:**
 - Use clear +/- buttons with adequate touch targets

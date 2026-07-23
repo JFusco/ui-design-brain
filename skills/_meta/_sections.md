@@ -13,15 +13,17 @@
 
 ## Canonical structure
 
-A pattern file is short (~20–30 lines; none needs a table of contents) and uses these parts in order:
+A pattern file is short (~20–35 lines; none needs a table of contents) and uses these parts in order:
 
 1. `## <Canonical name>` — H2 title (not `#`), matching the manifest `name` exactly.
 2. `**Also known as:** …` — alias line *(omit entirely when the pattern has no aliases, e.g. `table.md`)*.
 3. One-sentence definition.
 4. Cross-reference line(s) *(optional — only for confusable patterns)*.
-5. `**Best practices:**` — ~6 bullets.
-6. `**Common layouts:**` — ~4 bullets.
-7. `---` — closing horizontal rule.
+5. Child-part line *(optional — names this pattern's child modules in prose; see below)*.
+6. `**Visual variants (orthogonal to ARIA):**` block *(optional; see below)*.
+7. `**Best practices:**` — ~6 bullets.
+8. `**Common layouts:**` — ~4 bullets.
+9. `---` — closing horizontal rule.
 
 ## Sections
 
@@ -48,6 +50,23 @@ One crisp sentence (em-dash elaboration common). Assume the reader knows general
 Confusable patterns point at each other with a bold component name + a "see `other.md`" pointer.
 Keep the pointer **bidirectional** (add the reverse in the other file).
 
+### Child parts (optional)
+A one-sentence prose line naming this pattern's constituent child modules — e.g. a Carousel's
+**Slide**, a Tabs' **Tab** / **Tab panel**, an Accordion's **Accordion item** — stating plainly that
+the child is *a child of this pattern, not a separate catalog entry*.
+
+**Hard rule:** child-part names must **never** be promoted to a manifest alias or the "Also known
+as" line. Consumers deliberately leave child modules unresolved (they resolve to "novel") so a child
+spec can smart-link to them; aliasing a child part would break that.
+
+### Visual variants (optional)
+A `**Visual variants (orthogonal to ARIA):**` block — verbatim heading — used when one pattern has
+several visual styles that share the same ARIA/semantics. A visual variant **never changes the
+resolved canonical**: consumers express it as `Name (variant: pill)`, not as a different component.
+Add this block only when a real restyle or misresolution incident justifies it (current sole
+example: `tabs.md`, from the documented pill-tabs failure). Do not add speculative variant blocks
+(for instance, there is deliberately no Button-variants block).
+
 ### Best practices
 ~6 bullets: when to use, key design/behaviour choices, state/interaction, and **at least one
 accessibility/keyboard** bullet.
@@ -59,6 +78,8 @@ accessibility/keyboard** bullet.
 - Title is `##`; the file ends with a `---` rule.
 - Aliases in manifest order; omit the line when none.
 - Cross-references are bidirectional.
+- Child-part names are prose only, never aliases.
+- Visual variants never change canonical resolution.
 - Always include ≥1 accessibility/keyboard bullet in **Best practices**.
 - Consistent terminology; forward slashes; no time-sensitive phrasing.
 - After creating the file, complete the catalog-integrity sync (manifest + `index.md` + README
