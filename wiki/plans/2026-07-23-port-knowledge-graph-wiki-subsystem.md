@@ -2,7 +2,8 @@
 status: implemented
 executed: 2026-07-23
 date: 2026-07-23
-evidence: []
+evidence:
+  - "PR #9 https://github.com/verndale/ui-design-brain/pull/9 (merged 2026-07-23)"
 source_tool: claude
 source: "/Users/joe.fusco/.claude/plans/i-want-to-copy-hidden-stroustrup.md"
 topics: [graph-wiki-subsystem]

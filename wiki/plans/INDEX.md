@@ -21,8 +21,8 @@ Totals: 5 implemented (5 plans).
 
 | Date | Plan | Status | Evidence | Topics |
 | --- | --- | --- | --- | --- |
-| 2026-07-23 | [Port the knowledge-graph + wiki subsystem into ui-design-brain](2026-07-23-port-knowledge-graph-wiki-subsystem.md) | implemented | — | graph-wiki-subsystem |
+| 2026-07-23 | [Port the knowledge-graph + wiki subsystem into ui-design-brain](2026-07-23-port-knowledge-graph-wiki-subsystem.md) | implemented | [PR #9](https://github.com/verndale/ui-design-brain/pull/9) | graph-wiki-subsystem |
 | 2026-06-13 | [Plan: Align `AGENTS.md` with AGENTS.md best practices (+ record the references in CONTRIBUTING)](2026-06-13-align-agents-md-with-agents-md-best-practices.md) | implemented | — | agents-guidance |
 | 2026-06-12 | [Plan: De-duplicate `ui-design-brain` via the `skills` CLI (vercel-labs/skills)](2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md) | implemented | — | packaging-and-distribution |
 | 2026-06-11 | [Plan: Finalize ui-design-brain extraction (vendor-only, npm + sync)](2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md) | implemented | — | packaging-and-distribution |
-| 2026-06-11 | [Plan: Extract `@verndale/ui-design-brain` into its own published repo](2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) | implemented | — | packaging-and-distribution |
+| 2026-06-11 | [Plan: Extract `@verndale/ui-design-brain` into its own published repo](2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) | implemented | [PR #9](https://github.com/verndale/ui-design-brain/pull/9) | packaging-and-distribution |
