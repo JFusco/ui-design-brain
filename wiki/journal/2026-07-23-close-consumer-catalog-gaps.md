@@ -2,7 +2,7 @@
 date: 2026-07-23
 topics: [component-catalog]
 plan: plans/2026-07-23-ui-design-brain-close-catalog-gaps-observed-in-consuming-rep.md
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/12
 ---
 # Close consumer catalog gaps: eyebrow, filter, marquee, masthead, wizard
 
