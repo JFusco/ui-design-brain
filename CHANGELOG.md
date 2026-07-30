@@ -1,3 +1,33 @@
+# v1.7.0 — 2026-07-30
+
+## Summary (AI, bounded)
+- Added a new Stat pattern to the UI design brain (09e9641)
+- Synchronized wiki content including journal, topics, and plans (0ebc244)
+- Merged pull request for wiki synchronization improvements (a4349f3)
+
+## Highlights
+- feat(ui-design-brain): Add Stat pattern to UI design brain (09e9641)
+- commit: Merge pull request #16 from verndale/bot/wiki-sync/15 (a4349f3)
+- docs(wiki): sync journal, topics, and plans for #15 (0ebc244)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Add Stat pattern to UI design brain (09e9641)
+
+### Docs
+- docs(wiki): sync journal, topics, and plans for #15 (0ebc244)
+
+### Other (unknown)
+- commit: Merge pull request #16 from verndale/bot/wiki-sync/15 (a4349f3)
+
+## Full commit list
+- 09e9641 feat(ui-design-brain): Add Stat pattern to UI design brain
+- a4349f3 commit: Merge pull request #16 from verndale/bot/wiki-sync/15
+- 0ebc244 docs(wiki): sync journal, topics, and plans for #15
+
 # v1.6.1 — 2026-07-23
 
 ## Summary (AI, bounded)
