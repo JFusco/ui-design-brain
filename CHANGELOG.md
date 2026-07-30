@@ -1,3 +1,23 @@
+# v1.7.1 — 2026-07-30
+
+## Summary (AI, bounded)
+- Fixed issues in ui-design-brain by updating aliases and byte sizes in JSON files.
+- The fix corresponds to commit 742bb82.
+- No breaking changes introduced in this release.
+
+## Highlights
+- fix(ui-design-brain): Update aliases and byte sizes in JSON files (742bb82)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Fixes
+- fix(ui-design-brain): Update aliases and byte sizes in JSON files (742bb82)
+
+## Full commit list
+- 742bb82 fix(ui-design-brain): Update aliases and byte sizes in JSON files
+
 # v1.7.0 — 2026-07-30
 
 ## Summary (AI, bounded)
