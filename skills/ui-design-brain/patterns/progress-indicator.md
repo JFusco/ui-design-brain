@@ -4,7 +4,7 @@
 
 A visual display of how far a user has advanced through a multi-step process.
 
-Here **Stepper** means a multi-step progress tracker; the numeric +/- input control is the **Stepper** pattern (see `stepper.md`). The multi-step flow that hosts this step display is a **Wizard** (see `wizard.md`).
+Here **Stepper** means a multi-step progress tracker; the numeric +/- input control is the **Stepper** pattern (see `stepper.md`). The multi-step flow that hosts this step display is a **Wizard** (see `wizard.md`). A standalone figure with a describing label — not progress through a sequence — is a **Stat** (see `stat.md`).
 
 **Best practices:**
 - Clearly distinguish completed, current, and upcoming steps

@@ -61,6 +61,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Slider
 - Spinner
 - Stack
+- Stat
 - Stepper
 - Table
 - Tabs

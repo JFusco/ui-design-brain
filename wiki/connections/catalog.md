@@ -4,7 +4,7 @@ Every pattern the manifest catalogs, with its alias and cross-reference counts.
 
 Part of the [connections map](../connections.md), generated from the knowledge graph — **do not edit by hand**. Rebuilt on every `pnpm graph:build` and verified fresh by `pnpm evals:graph`.
 
-The manifest catalogs 70 patterns:
+The manifest catalogs 71 patterns:
 
 - [Accordion](../../skills/ui-design-brain/patterns/accordion.md) — 8 aliases, 0 see-also links
 - [Alert](../../skills/ui-design-brain/patterns/alert.md) — 6 aliases, 7 see-also links
@@ -13,7 +13,7 @@ The manifest catalogs 70 patterns:
 - [Breadcrumbs](../../skills/ui-design-brain/patterns/breadcrumbs.md) — 1 alias, 0 see-also links
 - [Button group](../../skills/ui-design-brain/patterns/button-group.md) — 1 alias, 2 see-also links
 - [Button](../../skills/ui-design-brain/patterns/button.md) — 1 alias, 4 see-also links
-- [Card](../../skills/ui-design-brain/patterns/card.md) — 2 aliases, 0 see-also links
+- [Card](../../skills/ui-design-brain/patterns/card.md) — 2 aliases, 1 see-also link
 - [Carousel](../../skills/ui-design-brain/patterns/carousel.md) — 1 alias, 2 see-also links
 - [Checkbox](../../skills/ui-design-brain/patterns/checkbox.md) — 0 aliases, 0 see-also links
 - [Color picker](../../skills/ui-design-brain/patterns/color-picker.md) — 0 aliases, 0 see-also links
@@ -49,7 +49,7 @@ The manifest catalogs 70 patterns:
 - [Pagination](../../skills/ui-design-brain/patterns/pagination.md) — 3 aliases, 0 see-also links
 - [Popover](../../skills/ui-design-brain/patterns/popover.md) — 0 aliases, 2 see-also links
 - [Progress bar](../../skills/ui-design-brain/patterns/progress-bar.md) — 1 alias, 0 see-also links
-- [Progress indicator](../../skills/ui-design-brain/patterns/progress-indicator.md) — 5 aliases, 4 see-also links
+- [Progress indicator](../../skills/ui-design-brain/patterns/progress-indicator.md) — 5 aliases, 6 see-also links
 - [Quote](../../skills/ui-design-brain/patterns/quote.md) — 2 aliases, 0 see-also links
 - [Radio button](../../skills/ui-design-brain/patterns/radio-button.md) — 2 aliases, 0 see-also links
 - [Rating](../../skills/ui-design-brain/patterns/rating.md) — 0 aliases, 0 see-also links
@@ -64,6 +64,7 @@ The manifest catalogs 70 patterns:
 - [Slider](../../skills/ui-design-brain/patterns/slider.md) — 1 alias, 0 see-also links
 - [Spinner](../../skills/ui-design-brain/patterns/spinner.md) — 2 aliases, 0 see-also links
 - [Stack](../../skills/ui-design-brain/patterns/stack.md) — 0 aliases, 0 see-also links
+- [Stat](../../skills/ui-design-brain/patterns/stat.md) — 0 aliases, 3 see-also links
 - [Stepper](../../skills/ui-design-brain/patterns/stepper.md) — 3 aliases, 6 see-also links
 - [Table](../../skills/ui-design-brain/patterns/table.md) — 0 aliases, 2 see-also links
 - [Tabs](../../skills/ui-design-brain/patterns/tabs.md) — 4 aliases, 2 see-also links

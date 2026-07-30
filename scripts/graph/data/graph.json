@@ -1,26 +1,26 @@
 {
   "counts": {
-    "nodes": 94,
-    "edges": 209,
+    "nodes": 96,
+    "edges": 216,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
       "manifest": 1,
-      "ui-pattern": 70,
+      "ui-pattern": 71,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 3,
+      "wiki-journal": 4,
       "wiki-plan": 7,
       "wiki-topic": 4
     },
     "byEdgeType": {
-      "catalogs": 70,
+      "catalogs": 71,
       "covers": 5,
-      "links-to": 36,
+      "links-to": 38,
       "plan": 2,
       "references": 4,
-      "see-also": 83,
-      "topic": 9
+      "see-also": 86,
+      "topic": 10
     }
   },
   "nodes": [
@@ -81,7 +81,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3447,
+      "bytes": 3454,
       "degree": 5
     },
     {
@@ -93,8 +93,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 11070,
-      "degree": 74
+      "bytes": 11169,
+      "degree": 75
     },
     {
       "id": "skills/ui-design-brain/patterns/accordion.md",
@@ -229,7 +229,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1338,
-      "degree": 1
+      "degree": 2
     },
     {
       "id": "skills/ui-design-brain/patterns/carousel.md",
@@ -750,8 +750,8 @@
       ],
       "prs": [],
       "issues": [],
-      "bytes": 965,
-      "degree": 5
+      "bytes": 1080,
+      "degree": 7
     },
     {
       "id": "skills/ui-design-brain/patterns/quote.md",
@@ -953,6 +953,18 @@
       "degree": 1
     },
     {
+      "id": "skills/ui-design-brain/patterns/stat.md",
+      "label": "Stat",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1753,
+      "degree": 4
+    },
+    {
       "id": "skills/ui-design-brain/patterns/stepper.md",
       "label": "Stepper",
       "type": "ui-pattern",
@@ -1144,8 +1156,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3634,
-      "degree": 10
+      "bytes": 3826,
+      "degree": 11
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1200,6 +1212,20 @@
       ],
       "bytes": 1817,
       "degree": 4
+    },
+    {
+      "id": "wiki/journal/2026-07-30-add-stat-pattern.md",
+      "label": "Add the Stat pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1592,
+      "degree": 3
     },
     {
       "id": "wiki/MECHANICS.md",
@@ -1373,8 +1399,8 @@
         "14",
         "11"
       ],
-      "bytes": 3311,
-      "degree": 9
+      "bytes": 3673,
+      "degree": 11
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -1713,6 +1739,11 @@
     },
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/stat.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/stepper.md",
       "type": "catalogs"
     },
@@ -1882,6 +1913,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-30-add-stat-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -2002,6 +2040,13 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-07-23-fix-stale-stepper-canonical-row.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-30-add-stat-pattern.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2404,6 +2449,12 @@
     },
     {
       "source": "skills/ui-design-brain/patterns/progress-indicator.md",
+      "target": "skills/ui-design-brain/patterns/stat.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/progress-indicator.md",
       "target": "skills/ui-design-brain/patterns/stepper.md",
       "type": "see-also",
       "count": 1
@@ -2471,6 +2522,18 @@
     {
       "source": "skills/ui-design-brain/patterns/skip-link.md",
       "target": "skills/ui-design-brain/patterns/navigation.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/stat.md",
+      "target": "skills/ui-design-brain/patterns/card.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/stat.md",
+      "target": "skills/ui-design-brain/patterns/progress-indicator.md",
       "type": "see-also",
       "count": 1
     },
@@ -2589,6 +2652,11 @@
     {
       "source": "wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md",
       "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-30-add-stat-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },
     {
