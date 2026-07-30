@@ -1,6 +1,6 @@
 ## Search input
 
-**Also known as:** Search
+**Also known as:** Search  ·  Search field
 
 A text field designed for entering search queries to find content.
 

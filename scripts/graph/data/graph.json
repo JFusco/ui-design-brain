@@ -93,7 +93,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 11169,
+      "bytes": 11208,
       "degree": 75
     },
     {
@@ -670,11 +670,12 @@
         "Hamburger menu",
         "Menu",
         "Nav",
+        "Nav bar",
         "Top nav"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1017,
+      "bytes": 1030,
       "degree": 6
     },
     {
@@ -817,11 +818,12 @@
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
       "aliases": [
-        "Search"
+        "Search",
+        "Search field"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1056,
+      "bytes": 1074,
       "degree": 3
     },
     {

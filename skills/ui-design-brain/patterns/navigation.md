@@ -1,6 +1,6 @@
 ## Navigation
 
-**Also known as:** Hamburger menu  ·  Menu  ·  Nav  ·  Top nav
+**Also known as:** Hamburger menu  ·  Menu  ·  Nav  ·  Nav bar  ·  Top nav
 
 A region containing links for moving between pages or jumping to sections within the current page.
 

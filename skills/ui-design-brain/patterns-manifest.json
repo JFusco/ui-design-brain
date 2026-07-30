@@ -342,6 +342,7 @@
       "Hamburger menu",
       "Menu",
       "Nav",
+      "Nav bar",
       "Top nav"
     ],
     "file": "patterns/navigation.md"
@@ -429,7 +430,8 @@
     "name": "Search input",
     "slug": "search-input",
     "aliases": [
-      "Search"
+      "Search",
+      "Search field"
     ],
     "file": "patterns/search-input.md"
   },

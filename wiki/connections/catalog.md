@@ -44,7 +44,7 @@ The manifest catalogs 71 patterns:
 - [Marquee](../../skills/ui-design-brain/patterns/marquee.md) — 2 aliases, 4 see-also links
 - [Masthead](../../skills/ui-design-brain/patterns/masthead.md) — 0 aliases, 4 see-also links
 - [Modal](../../skills/ui-design-brain/patterns/modal.md) — 3 aliases, 2 see-also links
-- [Navigation](../../skills/ui-design-brain/patterns/navigation.md) — 4 aliases, 5 see-also links
+- [Navigation](../../skills/ui-design-brain/patterns/navigation.md) — 5 aliases, 5 see-also links
 - [Number input](../../skills/ui-design-brain/patterns/number-input.md) — 3 aliases, 3 see-also links
 - [Pagination](../../skills/ui-design-brain/patterns/pagination.md) — 3 aliases, 0 see-also links
 - [Popover](../../skills/ui-design-brain/patterns/popover.md) — 0 aliases, 2 see-also links
@@ -54,7 +54,7 @@ The manifest catalogs 71 patterns:
 - [Radio button](../../skills/ui-design-brain/patterns/radio-button.md) — 2 aliases, 0 see-also links
 - [Rating](../../skills/ui-design-brain/patterns/rating.md) — 0 aliases, 0 see-also links
 - [Rich text editor](../../skills/ui-design-brain/patterns/rich-text-editor.md) — 2 aliases, 0 see-also links
-- [Search input](../../skills/ui-design-brain/patterns/search-input.md) — 1 alias, 2 see-also links
+- [Search input](../../skills/ui-design-brain/patterns/search-input.md) — 2 aliases, 2 see-also links
 - [Segmented control](../../skills/ui-design-brain/patterns/segmented-control.md) — 1 alias, 4 see-also links
 - [Select](../../skills/ui-design-brain/patterns/select.md) — 2 aliases, 4 see-also links
 - [Separator](../../skills/ui-design-brain/patterns/separator.md) — 3 aliases, 0 see-also links
