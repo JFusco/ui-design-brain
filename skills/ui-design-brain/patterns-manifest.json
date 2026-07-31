@@ -418,6 +418,15 @@
     "file": "patterns/rating.md"
   },
   {
+    "name": "Rich text",
+    "slug": "rich-text",
+    "aliases": [
+      "Rich text block",
+      "Rich text field"
+    ],
+    "file": "patterns/rich-text.md"
+  },
+  {
     "name": "Rich text editor",
     "slug": "rich-text-editor",
     "aliases": [
@@ -434,6 +443,14 @@
       "Search field"
     ],
     "file": "patterns/search-input.md"
+  },
+  {
+    "name": "Section header",
+    "slug": "section-header",
+    "aliases": [
+      "Heading with description"
+    ],
+    "file": "patterns/section-header.md"
   },
   {
     "name": "Segmented control",
