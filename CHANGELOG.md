@@ -1,3 +1,31 @@
+# v1.8.0 — 2026-07-31
+
+## Summary (AI, bounded)
+- Updated UI design patterns with new aliases for improved consistency (commit 537ae92)
+- Added new UI patterns specifically for rich text and sections (commit 5f6663e)
+- Enhanced overall UI design with additional updates to design brain components (commit a48d475)
+
+## Highlights
+- commit: Merge pull request #18 from verndale/feat/bentley-catalog-aliases (537ae92)
+- feat(ui-design-brain): Update UI design patterns with new aliases (a48d475)
+- feat(ui-design-brain): Add new UI patterns for rich text and section (5f6663e)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Add new UI patterns for rich text and section (5f6663e)
+- feat(ui-design-brain): Update UI design patterns with new aliases (a48d475)
+
+### Other (unknown)
+- commit: Merge pull request #18 from verndale/feat/bentley-catalog-aliases (537ae92)
+
+## Full commit list
+- 537ae92 commit: Merge pull request #18 from verndale/feat/bentley-catalog-aliases
+- a48d475 feat(ui-design-brain): Update UI design patterns with new aliases
+- 5f6663e feat(ui-design-brain): Add new UI patterns for rich text and section
+
 # v1.7.1 — 2026-07-30
 
 ## Summary (AI, bounded)
