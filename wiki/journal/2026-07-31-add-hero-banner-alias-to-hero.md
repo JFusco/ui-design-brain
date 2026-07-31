@@ -2,7 +2,7 @@
 date: 2026-07-31
 topics: [component-catalog]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/18
 ---
 # Add Hero banner alias to Hero
 
