@@ -1,6 +1,6 @@
 ## Section header
 
-**Also known as:** Heading with description
+**Also known as:** Heading with description  ·  Section intro
 
 An intro block that opens a page section — an optional eyebrow above a heading, with a supporting description and optional actions — grouped and aligned as one unit.
 

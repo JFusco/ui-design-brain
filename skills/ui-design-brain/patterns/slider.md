@@ -1,6 +1,6 @@
 ## Slider
 
-**Also known as:** Range input
+**Also known as:** Range field  ·  Range input
 
 A draggable control for selecting a value from within a defined range.
 

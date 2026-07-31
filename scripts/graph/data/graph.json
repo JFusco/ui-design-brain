@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 100,
-    "edges": 233,
+    "nodes": 105,
+    "edges": 248,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 73,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 6,
+      "wiki-journal": 11,
       "wiki-plan": 7,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 73,
       "covers": 5,
-      "links-to": 42,
+      "links-to": 52,
       "plan": 2,
       "references": 4,
       "see-also": 95,
-      "topic": 12
+      "topic": 17
     }
   },
   "nodes": [
@@ -93,7 +93,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 11543,
+      "bytes": 11649,
       "degree": 77
     },
     {
@@ -110,11 +110,12 @@
         "Details",
         "Disclosure",
         "Expandable",
-        "Expander"
+        "Expander",
+        "FAQ block"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1143,
+      "bytes": 1158,
       "degree": 1
     },
     {
@@ -224,11 +225,12 @@
       "topics": [],
       "aliases": [
         "Content tile",
+        "Generic card",
         "Tile"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1338,
+      "bytes": 1356,
       "degree": 2
     },
     {
@@ -538,12 +540,13 @@
       "topics": [],
       "aliases": [
         "Banner",
+        "Hero banner",
         "Jumbotron",
         "Promo banner"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1198,
+      "bytes": 1215,
       "degree": 7
     },
     {
@@ -848,11 +851,12 @@
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
       "aliases": [
-        "Heading with description"
+        "Heading with description",
+        "Section intro"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1984,
+      "bytes": 2003,
       "degree": 7
     },
     {
@@ -949,11 +953,12 @@
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
       "aliases": [
+        "Range field",
         "Range input"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 805,
+      "bytes": 822,
       "degree": 1
     },
     {
@@ -1187,8 +1192,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 4317,
-      "degree": 13
+      "bytes": 5368,
+      "degree": 18
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1284,6 +1289,76 @@
       "prs": [],
       "issues": [],
       "bytes": 1592,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-31-add-faq-block-alias-to-accordion.md",
+      "label": "Add FAQ block alias to Accordion",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1310,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-31-add-generic-card-alias-to-card.md",
+      "label": "Add Generic card alias to Card",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1415,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-31-add-hero-banner-alias-to-hero.md",
+      "label": "Add Hero banner alias to Hero",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1402,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-31-add-range-field-alias-to-slider.md",
+      "label": "Add Range field alias to Slider",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1255,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-31-add-section-intro-alias-to-section-header.md",
+      "label": "Add Section intro alias to Section header",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1379,
       "degree": 3
     },
     {
@@ -1458,8 +1533,8 @@
         "14",
         "11"
       ],
-      "bytes": 4655,
-      "degree": 15
+      "bytes": 6237,
+      "degree": 25
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -2003,6 +2078,41 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-31-add-faq-block-alias-to-accordion.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-31-add-generic-card-alias-to-card.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-31-add-hero-banner-alias-to-hero.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-31-add-range-field-alias-to-slider.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-31-add-section-intro-alias-to-section-header.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -2144,6 +2254,41 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-07-30-add-stat-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-31-add-faq-block-alias-to-accordion.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-31-add-generic-card-alias-to-card.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-31-add-hero-banner-alias-to-hero.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-31-add-range-field-alias-to-slider.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-31-add-section-intro-alias-to-section-header.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2817,6 +2962,31 @@
     },
     {
       "source": "wiki/journal/2026-07-30-add-stat-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-31-add-faq-block-alias-to-accordion.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-31-add-generic-card-alias-to-card.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-31-add-hero-banner-alias-to-hero.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-31-add-range-field-alias-to-slider.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-31-add-section-intro-alias-to-section-header.md",
       "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },

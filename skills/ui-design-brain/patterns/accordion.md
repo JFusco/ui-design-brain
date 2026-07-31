@@ -1,6 +1,6 @@
 ## Accordion
 
-**Also known as:** Arrow toggle  ·  Collapse  ·  Collapsible  ·  Collapsible sections  ·  Details  ·  Disclosure  ·  Expandable  ·  Expander
+**Also known as:** Arrow toggle  ·  Collapse  ·  Collapsible  ·  Collapsible sections  ·  Details  ·  Disclosure  ·  Expandable  ·  Expander  ·  FAQ block
 
 A vertically stacked set of collapsible sections — each heading toggles between showing a short label and revealing the full content beneath it.
 

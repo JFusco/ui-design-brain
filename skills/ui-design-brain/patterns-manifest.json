@@ -10,7 +10,8 @@
       "Details",
       "Disclosure",
       "Expandable",
-      "Expander"
+      "Expander",
+      "FAQ block"
     ],
     "file": "patterns/accordion.md"
   },
@@ -82,6 +83,7 @@
     "slug": "card",
     "aliases": [
       "Content tile",
+      "Generic card",
       "Tile"
     ],
     "file": "patterns/card.md"
@@ -264,6 +266,7 @@
     "slug": "hero",
     "aliases": [
       { "name": "Banner", "context": "top-of-page hero/promotional area" },
+      "Hero banner",
       "Jumbotron",
       "Promo banner"
     ],
@@ -448,7 +451,8 @@
     "name": "Section header",
     "slug": "section-header",
     "aliases": [
-      "Heading with description"
+      "Heading with description",
+      "Section intro"
     ],
     "file": "patterns/section-header.md"
   },
@@ -507,6 +511,7 @@
     "name": "Slider",
     "slug": "slider",
     "aliases": [
+      "Range field",
       "Range input"
     ],
     "file": "patterns/slider.md"
