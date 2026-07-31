@@ -1258,9 +1258,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "18"
+      ],
       "issues": [],
-      "bytes": 1919,
+      "bytes": 1963,
       "degree": 3
     },
     {
@@ -1272,9 +1274,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "18"
+      ],
       "issues": [],
-      "bytes": 2018,
+      "bytes": 2062,
       "degree": 3
     },
     {
@@ -1300,9 +1304,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "18"
+      ],
       "issues": [],
-      "bytes": 1310,
+      "bytes": 1354,
       "degree": 3
     },
     {
@@ -1314,9 +1320,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "18"
+      ],
       "issues": [],
-      "bytes": 1415,
+      "bytes": 1459,
       "degree": 3
     },
     {
@@ -1328,9 +1336,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "18"
+      ],
       "issues": [],
-      "bytes": 1402,
+      "bytes": 1446,
       "degree": 3
     },
     {
@@ -1342,9 +1352,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "18"
+      ],
       "issues": [],
-      "bytes": 1255,
+      "bytes": 1299,
       "degree": 3
     },
     {
@@ -1356,9 +1368,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "18"
+      ],
       "issues": [],
-      "bytes": 1379,
+      "bytes": 1423,
       "degree": 3
     },
     {
@@ -1550,6 +1564,7 @@
         "plan capture"
       ],
       "prs": [
+        "18",
         "15",
         "12",
         "9"
@@ -1557,7 +1572,7 @@
       "issues": [
         "8"
       ],
-      "bytes": 1778,
+      "bytes": 1925,
       "degree": 5
     },
     {

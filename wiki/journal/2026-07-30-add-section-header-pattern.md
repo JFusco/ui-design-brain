@@ -2,7 +2,7 @@
 date: 2026-07-30
 topics: [component-catalog]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/18
 ---
 # Add the Section header pattern
 
