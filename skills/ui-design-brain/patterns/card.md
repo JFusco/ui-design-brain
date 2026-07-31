@@ -1,6 +1,6 @@
 ## Card
 
-**Also known as:** Content tile  ·  Tile
+**Also known as:** Content tile  ·  Generic card  ·  Tile
 
 A self-contained content block representing a single entity such as a contact, article, or task.
 

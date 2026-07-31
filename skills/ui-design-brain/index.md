@@ -50,8 +50,10 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Quote
 - Radio button
 - Rating
+- Rich text
 - Rich text editor
 - Search input
+- Section header
 - Segmented control
 - Select
 - Separator

@@ -2,7 +2,7 @@
 
 The page-top identity band on interior pages — the page title, often with breadcrumbs and intro text, over an optional background image.
 
-A promotional, CTA-led band that sells is a **Hero** (see `hero.md`) — a Masthead identifies the page, a Hero sells. The persistent site chrome (brand, nav, actions) is the **Header** (see `header.md`), even where publishing vocabulary calls that a masthead.
+A promotional, CTA-led band that sells is a **Hero** (see `hero.md`) — a Masthead identifies the page, a Hero sells. The persistent site chrome (brand, nav, actions) is the **Header** (see `header.md`), even where publishing vocabulary calls that a masthead. An intro block that opens a section within the page — not the page-top identity band — is a **Section header** (see `section-header.md`).
 
 **Best practices:**
 - Contain the page's single h1 here — the masthead carries the page's primary title

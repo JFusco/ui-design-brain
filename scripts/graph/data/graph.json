@@ -1,26 +1,26 @@
 {
   "counts": {
-    "nodes": 96,
-    "edges": 216,
+    "nodes": 105,
+    "edges": 248,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
       "manifest": 1,
-      "ui-pattern": 71,
+      "ui-pattern": 73,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 4,
+      "wiki-journal": 11,
       "wiki-plan": 7,
       "wiki-topic": 4
     },
     "byEdgeType": {
-      "catalogs": 71,
+      "catalogs": 73,
       "covers": 5,
-      "links-to": 38,
+      "links-to": 52,
       "plan": 2,
       "references": 4,
-      "see-also": 86,
-      "topic": 10
+      "see-also": 95,
+      "topic": 17
     }
   },
   "nodes": [
@@ -81,7 +81,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3454,
+      "bytes": 3483,
       "degree": 5
     },
     {
@@ -93,8 +93,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 11208,
-      "degree": 75
+      "bytes": 11649,
+      "degree": 77
     },
     {
       "id": "skills/ui-design-brain/patterns/accordion.md",
@@ -110,11 +110,12 @@
         "Details",
         "Disclosure",
         "Expandable",
-        "Expander"
+        "Expander",
+        "FAQ block"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1143,
+      "bytes": 1158,
       "degree": 1
     },
     {
@@ -224,11 +225,12 @@
       "topics": [],
       "aliases": [
         "Content tile",
+        "Generic card",
         "Tile"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1338,
+      "bytes": 1356,
       "degree": 2
     },
     {
@@ -400,7 +402,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1300,
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "skills/ui-design-brain/patterns/fieldset.md",
@@ -512,7 +514,7 @@
       "prs": [],
       "issues": [],
       "bytes": 796,
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "skills/ui-design-brain/patterns/helper-text.md",
@@ -538,13 +540,14 @@
       "topics": [],
       "aliases": [
         "Banner",
+        "Hero banner",
         "Jumbotron",
         "Promo banner"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1089,
-      "degree": 5
+      "bytes": 1215,
+      "degree": 7
     },
     {
       "id": "skills/ui-design-brain/patterns/icon.md",
@@ -641,8 +644,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 1250,
-      "degree": 5
+      "bytes": 1392,
+      "degree": 7
     },
     {
       "id": "skills/ui-design-brain/patterns/modal.md",
@@ -767,7 +770,7 @@
       "prs": [],
       "issues": [],
       "bytes": 571,
-      "degree": 1
+      "degree": 2
     },
     {
       "id": "skills/ui-design-brain/patterns/radio-button.md",
@@ -808,8 +811,23 @@
       ],
       "prs": [],
       "issues": [],
-      "bytes": 627,
-      "degree": 1
+      "bytes": 783,
+      "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/rich-text.md",
+      "label": "Rich text",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Rich text block",
+        "Rich text field"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 2024,
+      "degree": 4
     },
     {
       "id": "skills/ui-design-brain/patterns/search-input.md",
@@ -825,6 +843,21 @@
       "issues": [],
       "bytes": 1074,
       "degree": 3
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/section-header.md",
+      "label": "Section header",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Heading with description",
+        "Section intro"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 2003,
+      "degree": 7
     },
     {
       "id": "skills/ui-design-brain/patterns/segmented-control.md",
@@ -920,11 +953,12 @@
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
       "aliases": [
+        "Range field",
         "Range input"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 805,
+      "bytes": 822,
       "degree": 1
     },
     {
@@ -1158,8 +1192,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3826,
-      "degree": 11
+      "bytes": 5368,
+      "degree": 18
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1216,6 +1250,34 @@
       "degree": 4
     },
     {
+      "id": "wiki/journal/2026-07-30-add-rich-text-pattern.md",
+      "label": "Add the Rich text pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1919,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-30-add-section-header-pattern.md",
+      "label": "Add the Section header pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 2018,
+      "degree": 3
+    },
+    {
       "id": "wiki/journal/2026-07-30-add-stat-pattern.md",
       "label": "Add the Stat pattern",
       "type": "wiki-journal",
@@ -1227,6 +1289,76 @@
       "prs": [],
       "issues": [],
       "bytes": 1592,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-31-add-faq-block-alias-to-accordion.md",
+      "label": "Add FAQ block alias to Accordion",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1310,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-31-add-generic-card-alias-to-card.md",
+      "label": "Add Generic card alias to Card",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1415,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-31-add-hero-banner-alias-to-hero.md",
+      "label": "Add Hero banner alias to Hero",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1402,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-31-add-range-field-alias-to-slider.md",
+      "label": "Add Range field alias to Slider",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1255,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-07-31-add-section-intro-alias-to-section-header.md",
+      "label": "Add Section intro alias to Section header",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1379,
       "degree": 3
     },
     {
@@ -1401,8 +1533,8 @@
         "14",
         "11"
       ],
-      "bytes": 3673,
-      "degree": 11
+      "bytes": 6237,
+      "degree": 25
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -1691,7 +1823,17 @@
     },
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/rich-text.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/search-input.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/section-header.md",
       "type": "catalogs"
     },
     {
@@ -1915,7 +2057,56 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-30-add-rich-text-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-30-add-section-header-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/journal/2026-07-30-add-stat-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-31-add-faq-block-alias-to-accordion.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-31-add-generic-card-alias-to-card.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-31-add-hero-banner-alias-to-hero.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-31-add-range-field-alias-to-slider.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-07-31-add-section-intro-alias-to-section-header.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2048,7 +2239,56 @@
     },
     {
       "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-30-add-rich-text-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-30-add-section-header-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-07-30-add-stat-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-31-add-faq-block-alias-to-accordion.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-31-add-generic-card-alias-to-card.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-31-add-hero-banner-alias-to-hero.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-31-add-range-field-alias-to-slider.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-07-31-add-section-intro-alias-to-section-header.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2354,6 +2594,12 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/hero.md",
+      "target": "skills/ui-design-brain/patterns/section-header.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/icon.md",
       "target": "skills/ui-design-brain/patterns/visually-hidden.md",
       "type": "see-also",
@@ -2420,6 +2666,12 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/masthead.md",
+      "target": "skills/ui-design-brain/patterns/section-header.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/modal.md",
       "target": "skills/ui-design-brain/patterns/drawer.md",
       "type": "see-also",
@@ -2468,8 +2720,50 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/rich-text-editor.md",
+      "target": "skills/ui-design-brain/patterns/rich-text.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/rich-text.md",
+      "target": "skills/ui-design-brain/patterns/quote.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/rich-text.md",
+      "target": "skills/ui-design-brain/patterns/rich-text-editor.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/search-input.md",
       "target": "skills/ui-design-brain/patterns/filter.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/section-header.md",
+      "target": "skills/ui-design-brain/patterns/eyebrow.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/section-header.md",
+      "target": "skills/ui-design-brain/patterns/heading.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/section-header.md",
+      "target": "skills/ui-design-brain/patterns/hero.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/section-header.md",
+      "target": "skills/ui-design-brain/patterns/masthead.md",
       "type": "see-also",
       "count": 1
     },
@@ -2657,7 +2951,42 @@
       "type": "topic"
     },
     {
+      "source": "wiki/journal/2026-07-30-add-rich-text-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-30-add-section-header-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
       "source": "wiki/journal/2026-07-30-add-stat-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-31-add-faq-block-alias-to-accordion.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-31-add-generic-card-alias-to-card.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-31-add-hero-banner-alias-to-hero.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-31-add-range-field-alias-to-slider.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-07-31-add-section-intro-alias-to-section-header.md",
       "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },

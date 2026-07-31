@@ -33,6 +33,13 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
+- 2026-07-31 — [Add FAQ block alias to Accordion](journal/2026-07-31-add-faq-block-alias-to-accordion.md) — a project's FAQ module (faq-block), resolved to Accordion via a consumer-evidenced alias (73 → 73).
+- 2026-07-31 — [Add Hero banner alias to Hero](journal/2026-07-31-add-hero-banner-alias-to-hero.md) — a project's top-of-page slide hero, resolved to Hero via a plain alias (73 → 73).
+- 2026-07-31 — [Add Section intro alias to Section header](journal/2026-07-31-add-section-intro-alias-to-section-header.md) — a project's most-composed section-intro primitive, resolved to Section header (73 → 73).
+- 2026-07-31 — [Add Range field alias to Slider](journal/2026-07-31-add-range-field-alias-to-slider.md) — a project's labelled range control, resolved to Slider via a consumer-evidenced alias (73 → 73).
+- 2026-07-31 — [Add Generic card alias to Card](journal/2026-07-31-add-generic-card-alias-to-card.md) — a project's base content card ("generic card"), resolved to Card via a consumer-evidenced alias (73 → 73).
+- 2026-07-30 — [Add the Section header pattern](journal/2026-07-30-add-section-header-pattern.md) — an interior-page section intro (eyebrow + heading + description), promoted on recurrence across two project retrospectives (72 → 73).
+- 2026-07-30 — [Add the Rich text pattern](journal/2026-07-30-add-rich-text-pattern.md) — a read-only renderer of already-authored content (distinct from the Rich text editor), promoted on recurrence across two project retrospectives (71 → 72).
 - 2026-07-30 — [Add the Stat pattern](journal/2026-07-30-add-stat-pattern.md) — a standalone value-plus-label figure, promoted on recurrence across two project retrospectives (70 → 71).
 - 2026-07-23 — [Fix stale Stepper canonical row in the context-scoped aliases table](journal/2026-07-23-fix-stale-stepper-canonical-row.md) — reworded index.md's Stepper (the canonical) context from "multi-step form / wizard control" to the numeric +/- quantity control.
 - 2026-07-23 — [Close consumer catalog gaps: eyebrow, filter, marquee, masthead, wizard](journal/2026-07-23-close-consumer-catalog-gaps.md) — added five patterns (65 → 70) plus cross-refs so the highest-frequency BA labels stop falling through to "novel".

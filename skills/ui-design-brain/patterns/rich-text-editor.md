@@ -4,6 +4,8 @@
 
 A WYSIWYG editing surface for creating and formatting rich text content.
 
+For a read-only render of already-authored content, use a **Rich text** (see `rich-text.md`) — this is the editing surface; that is its rendered output.
+
 **Best practices:**
 - Provide a minimal default toolbar — reveal advanced formatting on demand
 - Support keyboard shortcuts for common formatting (Cmd+B, Cmd+I)
