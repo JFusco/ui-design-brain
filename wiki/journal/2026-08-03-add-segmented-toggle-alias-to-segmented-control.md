@@ -2,7 +2,7 @@
 date: 2026-08-03
 topics: [component-catalog]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/21
 ---
 # Add Segmented toggle alias to Segmented control
 
