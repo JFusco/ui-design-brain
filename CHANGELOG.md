@@ -1,3 +1,37 @@
+# v1.9.0 — 2026-08-03
+
+## Summary (AI, bounded)
+- Added an in-page navigation pattern and updated the catalog in the UI design brain (commit 5b67e62)
+- Synced wiki journal, topics, and plans as part of documentation updates (commit 9418947)
+- Merged pull requests for Bentley catalog aliases and wiki synchronization (commits d1ef421 and 41208bd)
+- No breaking changes introduced in this release
+
+## Highlights
+- commit: Merge pull request #21 from verndale/feat/bentley-catalog-aliases (d1ef421)
+- feat(ui-design-brain): Add in-page navigation pattern and update catalog (5b67e62)
+- commit: Merge pull request #19 from verndale/bot/wiki-sync/18 (41208bd)
+- docs(wiki): sync journal, topics, and plans for #18 (9418947)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Add in-page navigation pattern and update catalog (5b67e62)
+
+### Docs
+- docs(wiki): sync journal, topics, and plans for #18 (9418947)
+
+### Other (unknown)
+- commit: Merge pull request #19 from verndale/bot/wiki-sync/18 (41208bd)
+- commit: Merge pull request #21 from verndale/feat/bentley-catalog-aliases (d1ef421)
+
+## Full commit list
+- d1ef421 commit: Merge pull request #21 from verndale/feat/bentley-catalog-aliases
+- 5b67e62 feat(ui-design-brain): Add in-page navigation pattern and update catalog
+- 41208bd commit: Merge pull request #19 from verndale/bot/wiki-sync/18
+- 9418947 docs(wiki): sync journal, topics, and plans for #18
+
 # v1.8.0 — 2026-07-31
 
 ## Summary (AI, bounded)
