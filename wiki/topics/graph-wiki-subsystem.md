@@ -13,6 +13,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-08-03 — feat(ui-design-brain): Add in-page navigation pattern and update catalog ([PR #21](https://github.com/verndale/ui-design-brain/pull/21))
 - 2026-07-31 — feat(ui-design-brain): Update UI design patterns with new aliases ([PR #18](https://github.com/verndale/ui-design-brain/pull/18))
 - 2026-07-23 — fix(ui-design-brain): Update Stepper canonical description in index.md ([PR #15](https://github.com/verndale/ui-design-brain/pull/15))
 - 2026-07-23 — feat(ui-design-brain): Add new UI patterns and update documentation ([PR #12](https://github.com/verndale/ui-design-brain/pull/12))

@@ -1400,9 +1400,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "21"
+      ],
       "issues": [],
-      "bytes": 2200,
+      "bytes": 2244,
       "degree": 3
     },
     {
@@ -1414,9 +1416,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "21"
+      ],
       "issues": [],
-      "bytes": 1263,
+      "bytes": 1307,
       "degree": 3
     },
     {
@@ -1608,6 +1612,7 @@
         "plan capture"
       ],
       "prs": [
+        "21",
         "18",
         "15",
         "12",
@@ -1616,7 +1621,7 @@
       "issues": [
         "8"
       ],
-      "bytes": 1925,
+      "bytes": 2079,
       "degree": 5
     },
     {
