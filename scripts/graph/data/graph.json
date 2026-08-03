@@ -1,26 +1,26 @@
 {
   "counts": {
-    "nodes": 105,
-    "edges": 248,
+    "nodes": 108,
+    "edges": 259,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
       "manifest": 1,
-      "ui-pattern": 73,
+      "ui-pattern": 74,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 11,
+      "wiki-journal": 13,
       "wiki-plan": 7,
       "wiki-topic": 4
     },
     "byEdgeType": {
-      "catalogs": 73,
+      "catalogs": 74,
       "covers": 5,
-      "links-to": 52,
+      "links-to": 56,
       "plan": 2,
       "references": 4,
-      "see-also": 95,
-      "topic": 17
+      "see-also": 99,
+      "topic": 19
     }
   },
   "nodes": [
@@ -81,7 +81,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3483,
+      "bytes": 3504,
       "degree": 5
     },
     {
@@ -93,8 +93,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 11649,
-      "degree": 77
+      "bytes": 11861,
+      "degree": 78
     },
     {
       "id": "skills/ui-design-brain/patterns/accordion.md",
@@ -576,6 +576,21 @@
       "degree": 3
     },
     {
+      "id": "skills/ui-design-brain/patterns/in-page-navigation.md",
+      "label": "In-page navigation",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Jumplinks",
+        "On this page"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1980,
+      "degree": 5
+    },
+    {
       "id": "skills/ui-design-brain/patterns/label.md",
       "label": "Label",
       "type": "ui-pattern",
@@ -604,7 +619,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1311,
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "skills/ui-design-brain/patterns/list.md",
@@ -678,8 +693,8 @@
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1030,
-      "degree": 6
+      "bytes": 1180,
+      "degree": 8
     },
     {
       "id": "skills/ui-design-brain/patterns/number-input.md",
@@ -866,11 +881,12 @@
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
       "aliases": [
+        "Segmented toggle",
         "Toggle button group"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1004,
+      "bytes": 1026,
       "degree": 5
     },
     {
@@ -944,7 +960,7 @@
       "prs": [],
       "issues": [],
       "bytes": 560,
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "skills/ui-design-brain/patterns/slider.md",
@@ -1192,8 +1208,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 5368,
-      "degree": 18
+      "bytes": 5900,
+      "degree": 20
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1359,6 +1375,34 @@
       "prs": [],
       "issues": [],
       "bytes": 1379,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-08-03-add-in-page-navigation-pattern.md",
+      "label": "Add the In-page navigation pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 2200,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-08-03-add-segmented-toggle-alias-to-segmented-control.md",
+      "label": "Add Segmented toggle alias to Segmented control",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1263,
       "degree": 3
     },
     {
@@ -1533,8 +1577,8 @@
         "14",
         "11"
       ],
-      "bytes": 6237,
-      "degree": 25
+      "bytes": 7194,
+      "degree": 29
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -1739,6 +1783,11 @@
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/image.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/in-page-navigation.md",
       "type": "catalogs"
     },
     {
@@ -2113,6 +2162,20 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-03-add-in-page-navigation-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-03-add-segmented-toggle-alias-to-segmented-control.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -2289,6 +2352,20 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-07-31-add-section-intro-alias-to-section-header.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-03-add-in-page-navigation-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-03-add-segmented-toggle-alias-to-segmented-control.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2612,6 +2689,24 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/in-page-navigation.md",
+      "target": "skills/ui-design-brain/patterns/link.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/in-page-navigation.md",
+      "target": "skills/ui-design-brain/patterns/navigation.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/in-page-navigation.md",
+      "target": "skills/ui-design-brain/patterns/skip-link.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/label.md",
       "target": "skills/ui-design-brain/patterns/badge.md",
       "type": "see-also",
@@ -2674,6 +2769,12 @@
     {
       "source": "skills/ui-design-brain/patterns/modal.md",
       "target": "skills/ui-design-brain/patterns/drawer.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/navigation.md",
+      "target": "skills/ui-design-brain/patterns/in-page-navigation.md",
       "type": "see-also",
       "count": 1
     },
@@ -2987,6 +3088,16 @@
     },
     {
       "source": "wiki/journal/2026-07-31-add-section-intro-alias-to-section-header.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-03-add-in-page-navigation-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-03-add-segmented-toggle-alias-to-segmented-control.md",
       "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },

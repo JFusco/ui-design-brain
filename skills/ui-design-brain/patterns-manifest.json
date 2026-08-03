@@ -287,6 +287,15 @@
     "file": "patterns/image.md"
   },
   {
+    "name": "In-page navigation",
+    "slug": "in-page-navigation",
+    "aliases": [
+      "Jumplinks",
+      "On this page"
+    ],
+    "file": "patterns/in-page-navigation.md"
+  },
+  {
     "name": "Label",
     "slug": "label",
     "aliases": [
@@ -460,6 +469,7 @@
     "name": "Segmented control",
     "slug": "segmented-control",
     "aliases": [
+      "Segmented toggle",
       "Toggle button group"
     ],
     "file": "patterns/segmented-control.md"

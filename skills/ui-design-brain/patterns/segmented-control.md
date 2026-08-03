@@ -1,6 +1,6 @@
 ## Segmented control
 
-**Also known as:** Toggle button group
+**Also known as:** Segmented toggle  ·  Toggle button group
 
 A compact row of mutually exclusive options — a hybrid of button groups, radio buttons, and tabs for switching views.
 

@@ -35,6 +35,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Hero
 - Icon
 - Image
+- In-page navigation
 - Label
 - Link
 - List

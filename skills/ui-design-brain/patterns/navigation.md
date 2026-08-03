@@ -4,7 +4,7 @@
 
 A region containing links for moving between pages or jumping to sections within the current page.
 
-When navigation lives in a persistent side panel, that panel is a **Sidebar** (see `sidebar.md`). Use a `<nav>` landmark with an `aria-label` and mark the active item with `aria-current="page"`.
+When navigation lives in a persistent side panel, that panel is a **Sidebar** (see `sidebar.md`); for a bar of links that jump to sections within the current page and track the one in view, use **In-page navigation** (see `in-page-navigation.md`). Use a `<nav>` landmark with an `aria-label` and mark the active item with `aria-current="page"`.
 
 **Best practices:**
 - Limit primary navigation to 5–7 items; group the rest under 'More' or sub-menus
