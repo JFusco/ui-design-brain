@@ -33,6 +33,8 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
+- 2026-08-03 — [Add the In-page navigation pattern](journal/2026-08-03-add-in-page-navigation-pattern.md) — a sticky "on this page" section-nav bar with scroll-spy, promoted on two independent sources (build pack + approved spec) within one retrospective (73 → 74).
+- 2026-08-03 — [Add Segmented toggle alias to Segmented control](journal/2026-08-03-add-segmented-toggle-alias-to-segmented-control.md) — a project's "segmented toggle" label, resolved to Segmented control via a consumer-evidenced plain alias (74 → 74).
 - 2026-07-31 — [Add FAQ block alias to Accordion](journal/2026-07-31-add-faq-block-alias-to-accordion.md) — a project's FAQ module (faq-block), resolved to Accordion via a consumer-evidenced alias (73 → 73).
 - 2026-07-31 — [Add Hero banner alias to Hero](journal/2026-07-31-add-hero-banner-alias-to-hero.md) — a project's top-of-page slide hero, resolved to Hero via a plain alias (73 → 73).
 - 2026-07-31 — [Add Section intro alias to Section header](journal/2026-07-31-add-section-intro-alias-to-section-header.md) — a project's most-composed section-intro primitive, resolved to Section header (73 → 73).
