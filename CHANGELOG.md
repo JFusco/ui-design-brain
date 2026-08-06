@@ -1,3 +1,37 @@
+# v1.10.0 — 2026-08-06
+
+## Summary (AI, bounded)
+- Added search overlay comparison table patterns (commit 6645919).
+- Updated documentation and CI workflow configurations (commit 3675a86).
+- Synced journal, topics, and plans in the wiki documentation (commit 35f65ff).
+- Merged bot-driven wiki synchronization updates (commit c35ffef).
+
+## Highlights
+- commit: Merge pull request #24 from verndale/feat/add-search-overlay-comparison-table-patterns (6645919)
+- feat(ci): Update documentation and workflow configurations (3675a86)
+- commit: Merge pull request #22 from verndale/bot/wiki-sync/21 (c35ffef)
+- docs(wiki): sync journal, topics, and plans for #21 (35f65ff)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ci): Update documentation and workflow configurations (3675a86)
+
+### Docs
+- docs(wiki): sync journal, topics, and plans for #21 (35f65ff)
+
+### Other (unknown)
+- commit: Merge pull request #22 from verndale/bot/wiki-sync/21 (c35ffef)
+- commit: Merge pull request #24 from verndale/feat/add-search-overlay-comparison-table-patterns (6645919)
+
+## Full commit list
+- 6645919 commit: Merge pull request #24 from verndale/feat/add-search-overlay-comparison-table-patterns
+- 3675a86 feat(ci): Update documentation and workflow configurations
+- c35ffef commit: Merge pull request #22 from verndale/bot/wiki-sync/21
+- 35f65ff docs(wiki): sync journal, topics, and plans for #21
+
 # v1.9.0 — 2026-08-03
 
 ## Summary (AI, bounded)
