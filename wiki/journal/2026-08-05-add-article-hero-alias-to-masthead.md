@@ -2,7 +2,7 @@
 date: 2026-08-05
 topics: [component-catalog]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/24
 ---
 # Add Article hero alias to Masthead
 
