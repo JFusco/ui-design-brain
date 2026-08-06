@@ -420,7 +420,8 @@
     "slug": "quote",
     "aliases": [
       "Block quote",
-      "Pull quote"
+      "Pull quote",
+      "Testimonial"
     ],
     "file": "patterns/quote.md"
   },

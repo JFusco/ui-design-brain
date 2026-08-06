@@ -52,7 +52,7 @@ The manifest catalogs 77 patterns:
 - [Popover](../../skills/ui-design-brain/patterns/popover.md) — 0 aliases, 2 see-also links
 - [Progress bar](../../skills/ui-design-brain/patterns/progress-bar.md) — 1 alias, 0 see-also links
 - [Progress indicator](../../skills/ui-design-brain/patterns/progress-indicator.md) — 5 aliases, 6 see-also links
-- [Quote](../../skills/ui-design-brain/patterns/quote.md) — 2 aliases, 1 see-also link
+- [Quote](../../skills/ui-design-brain/patterns/quote.md) — 3 aliases, 1 see-also link
 - [Radio button](../../skills/ui-design-brain/patterns/radio-button.md) — 2 aliases, 0 see-also links
 - [Rating](../../skills/ui-design-brain/patterns/rating.md) — 0 aliases, 0 see-also links
 - [Rich text editor](../../skills/ui-design-brain/patterns/rich-text-editor.md) — 2 aliases, 2 see-also links

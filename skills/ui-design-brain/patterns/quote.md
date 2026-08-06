@@ -1,6 +1,6 @@
 ## Quote
 
-**Also known as:** Block quote  ·  Pull quote
+**Also known as:** Block quote  ·  Pull quote  ·  Testimonial
 
 A styled block for displaying quotations — from a person, an external source, or a highlighted passage.
 
