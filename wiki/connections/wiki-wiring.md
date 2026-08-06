@@ -28,6 +28,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Add the Comparison table pattern](../../wiki/journal/2026-08-05-add-comparison-table-pattern.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Add the Search overlay pattern](../../wiki/journal/2026-08-05-add-search-overlay-pattern.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Add the Utility bar pattern](../../wiki/journal/2026-08-05-add-utility-bar-pattern.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
+- [Add the Logo bar pattern](../../wiki/journal/2026-08-06-add-logo-bar-pattern.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Plan: Extract @verndale/ui-design-brain into its own published repo](../../wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Finalize ui-design-brain extraction (vendor-only, npm + sync)](../../wiki/plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: De-duplicate ui-design-brain via the skills CLI (vercel-labs/skills)](../../wiki/plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
