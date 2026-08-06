@@ -1477,9 +1477,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "24"
+      ],
       "issues": [],
-      "bytes": 1457,
+      "bytes": 1501,
       "degree": 3
     },
     {
@@ -1491,9 +1493,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "24"
+      ],
       "issues": [],
-      "bytes": 1947,
+      "bytes": 1991,
       "degree": 3
     },
     {
@@ -1505,9 +1509,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "24"
+      ],
       "issues": [],
-      "bytes": 2188,
+      "bytes": 2232,
       "degree": 3
     },
     {
@@ -1519,9 +1525,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "24"
+      ],
       "issues": [],
-      "bytes": 2001,
+      "bytes": 2045,
       "degree": 3
     },
     {
@@ -1713,6 +1721,7 @@
         "plan capture"
       ],
       "prs": [
+        "24",
         "21",
         "18",
         "15",
@@ -1722,7 +1731,7 @@
       "issues": [
         "8"
       ],
-      "bytes": 2079,
+      "bytes": 2219,
       "degree": 5
     },
     {
