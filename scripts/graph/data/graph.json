@@ -1,26 +1,26 @@
 {
   "counts": {
-    "nodes": 108,
-    "edges": 259,
+    "nodes": 115,
+    "edges": 282,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
       "manifest": 1,
-      "ui-pattern": 74,
+      "ui-pattern": 77,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 13,
+      "wiki-journal": 17,
       "wiki-plan": 7,
       "wiki-topic": 4
     },
     "byEdgeType": {
-      "catalogs": 74,
+      "catalogs": 77,
       "covers": 5,
-      "links-to": 56,
+      "links-to": 64,
       "plan": 2,
       "references": 4,
-      "see-also": 99,
-      "topic": 19
+      "see-also": 107,
+      "topic": 23
     }
   },
   "nodes": [
@@ -81,7 +81,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3504,
+      "bytes": 3554,
       "degree": 5
     },
     {
@@ -93,8 +93,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 11861,
-      "degree": 78
+      "bytes": 12395,
+      "degree": 81
     },
     {
       "id": "skills/ui-design-brain/patterns/accordion.md",
@@ -200,8 +200,8 @@
       ],
       "prs": [],
       "issues": [],
-      "bytes": 917,
-      "degree": 3
+      "bytes": 1104,
+      "degree": 5
     },
     {
       "id": "skills/ui-design-brain/patterns/button.md",
@@ -215,7 +215,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1335,
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "skills/ui-design-brain/patterns/card.md",
@@ -231,7 +231,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1356,
-      "degree": 2
+      "degree": 3
     },
     {
       "id": "skills/ui-design-brain/patterns/carousel.md",
@@ -284,6 +284,20 @@
       "prs": [],
       "issues": [],
       "bytes": 948,
+      "degree": 4
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/comparison-table.md",
+      "label": "Comparison table",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Features comparison table"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1625,
       "degree": 3
     },
     {
@@ -656,10 +670,12 @@
       "type": "ui-pattern",
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
-      "aliases": [],
+      "aliases": [
+        "Article hero"
+      ],
       "prs": [],
       "issues": [],
-      "bytes": 1392,
+      "bytes": 1425,
       "degree": 7
     },
     {
@@ -676,7 +692,7 @@
       "prs": [],
       "issues": [],
       "bytes": 980,
-      "degree": 4
+      "degree": 5
     },
     {
       "id": "skills/ui-design-brain/patterns/navigation.md",
@@ -857,7 +873,22 @@
       "prs": [],
       "issues": [],
       "bytes": 1074,
-      "degree": 3
+      "degree": 4
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/search-overlay.md",
+      "label": "Search overlay",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Command palette",
+        "Search modal"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1920,
+      "degree": 4
     },
     {
       "id": "skills/ui-design-brain/patterns/section-header.md",
@@ -1042,7 +1073,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1091,
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "skills/ui-design-brain/patterns/tabs.md",
@@ -1146,6 +1177,20 @@
       "degree": 1
     },
     {
+      "id": "skills/ui-design-brain/patterns/utility-bar.md",
+      "label": "Utility bar",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Floating utility bar"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1742,
+      "degree": 4
+    },
+    {
       "id": "skills/ui-design-brain/patterns/video.md",
       "label": "Video",
       "type": "ui-pattern",
@@ -1208,8 +1253,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 5900,
-      "degree": 20
+      "bytes": 7367,
+      "degree": 24
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1424,6 +1469,62 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-08-05-add-article-hero-alias-to-masthead.md",
+      "label": "Add Article hero alias to Masthead",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1457,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-08-05-add-comparison-table-pattern.md",
+      "label": "Add the Comparison table pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1947,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-08-05-add-search-overlay-pattern.md",
+      "label": "Add the Search overlay pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 2188,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-08-05-add-utility-bar-pattern.md",
+      "label": "Add the Utility bar pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 2001,
+      "degree": 3
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -1595,8 +1696,8 @@
         "14",
         "11"
       ],
-      "bytes": 7194,
-      "degree": 29
+      "bytes": 9371,
+      "degree": 37
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -1703,6 +1804,11 @@
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/combobox.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/comparison-table.md",
       "type": "catalogs"
     },
     {
@@ -1902,6 +2008,11 @@
     },
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/search-overlay.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/section-header.md",
       "type": "catalogs"
     },
@@ -1998,6 +2109,11 @@
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/tree-view.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/utility-bar.md",
       "type": "catalogs"
     },
     {
@@ -2190,6 +2306,34 @@
     {
       "source": "wiki/INDEX.md",
       "target": "wiki/journal/2026-08-03-add-segmented-toggle-alias-to-segmented-control.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-05-add-article-hero-alias-to-masthead.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-05-add-comparison-table-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-05-add-search-overlay-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-05-add-utility-bar-pattern.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2392,6 +2536,34 @@
     },
     {
       "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-05-add-article-hero-alias-to-masthead.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-05-add-comparison-table-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-05-add-search-overlay-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-05-add-utility-bar-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
       "target": "wiki/plans/2026-07-23-ui-design-brain-close-catalog-gaps-observed-in-consuming-rep.md",
       "type": "links-to",
       "count": 1,
@@ -2505,6 +2677,12 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/button-group.md",
+      "target": "skills/ui-design-brain/patterns/utility-bar.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/button.md",
       "target": "skills/ui-design-brain/patterns/link.md",
       "type": "see-also",
@@ -2525,6 +2703,18 @@
     {
       "source": "skills/ui-design-brain/patterns/combobox.md",
       "target": "skills/ui-design-brain/patterns/select.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/comparison-table.md",
+      "target": "skills/ui-design-brain/patterns/card.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/comparison-table.md",
+      "target": "skills/ui-design-brain/patterns/table.md",
       "type": "see-also",
       "count": 1
     },
@@ -2865,6 +3055,24 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/search-overlay.md",
+      "target": "skills/ui-design-brain/patterns/combobox.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/search-overlay.md",
+      "target": "skills/ui-design-brain/patterns/modal.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/search-overlay.md",
+      "target": "skills/ui-design-brain/patterns/search-input.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/section-header.md",
       "target": "skills/ui-design-brain/patterns/eyebrow.md",
       "type": "see-also",
@@ -3039,6 +3247,18 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/utility-bar.md",
+      "target": "skills/ui-design-brain/patterns/button-group.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/utility-bar.md",
+      "target": "skills/ui-design-brain/patterns/button.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/visually-hidden.md",
       "target": "skills/ui-design-brain/patterns/icon.md",
       "type": "see-also",
@@ -3118,6 +3338,26 @@
     },
     {
       "source": "wiki/journal/2026-08-03-add-segmented-toggle-alias-to-segmented-control.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-05-add-article-hero-alias-to-masthead.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-05-add-comparison-table-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-05-add-search-overlay-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-05-add-utility-bar-pattern.md",
       "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },

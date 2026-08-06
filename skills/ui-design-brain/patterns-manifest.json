@@ -118,6 +118,14 @@
     "file": "patterns/combobox.md"
   },
   {
+    "name": "Comparison table",
+    "slug": "comparison-table",
+    "aliases": [
+      "Features comparison table"
+    ],
+    "file": "patterns/comparison-table.md"
+  },
+  {
     "name": "Context menu",
     "slug": "context-menu",
     "aliases": [
@@ -334,7 +342,9 @@
   {
     "name": "Masthead",
     "slug": "masthead",
-    "aliases": [],
+    "aliases": [
+      "Article hero"
+    ],
     "file": "patterns/masthead.md"
   },
   {
@@ -455,6 +465,15 @@
       "Search field"
     ],
     "file": "patterns/search-input.md"
+  },
+  {
+    "name": "Search overlay",
+    "slug": "search-overlay",
+    "aliases": [
+      "Command palette",
+      "Search modal"
+    ],
+    "file": "patterns/search-overlay.md"
   },
   {
     "name": "Section header",
@@ -621,6 +640,14 @@
     "slug": "tree-view",
     "aliases": [],
     "file": "patterns/tree-view.md"
+  },
+  {
+    "name": "Utility bar",
+    "slug": "utility-bar",
+    "aliases": [
+      "Floating utility bar"
+    ],
+    "file": "patterns/utility-bar.md"
   },
   {
     "name": "Video",

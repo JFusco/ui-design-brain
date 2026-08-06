@@ -4,20 +4,21 @@ Every pattern the manifest catalogs, with its alias and cross-reference counts.
 
 Part of the [connections map](../connections.md), generated from the knowledge graph — **do not edit by hand**. Rebuilt on every `pnpm graph:build` and verified fresh by `pnpm evals:graph`.
 
-The manifest catalogs 74 patterns:
+The manifest catalogs 77 patterns:
 
 - [Accordion](../../skills/ui-design-brain/patterns/accordion.md) — 9 aliases, 0 see-also links
 - [Alert](../../skills/ui-design-brain/patterns/alert.md) — 6 aliases, 7 see-also links
 - [Avatar](../../skills/ui-design-brain/patterns/avatar.md) — 5 aliases, 2 see-also links
 - [Badge](../../skills/ui-design-brain/patterns/badge.md) — 7 aliases, 4 see-also links
 - [Breadcrumbs](../../skills/ui-design-brain/patterns/breadcrumbs.md) — 1 alias, 0 see-also links
-- [Button group](../../skills/ui-design-brain/patterns/button-group.md) — 1 alias, 2 see-also links
-- [Button](../../skills/ui-design-brain/patterns/button.md) — 1 alias, 4 see-also links
-- [Card](../../skills/ui-design-brain/patterns/card.md) — 3 aliases, 1 see-also link
+- [Button group](../../skills/ui-design-brain/patterns/button-group.md) — 1 alias, 4 see-also links
+- [Button](../../skills/ui-design-brain/patterns/button.md) — 1 alias, 5 see-also links
+- [Card](../../skills/ui-design-brain/patterns/card.md) — 3 aliases, 2 see-also links
 - [Carousel](../../skills/ui-design-brain/patterns/carousel.md) — 1 alias, 2 see-also links
 - [Checkbox](../../skills/ui-design-brain/patterns/checkbox.md) — 0 aliases, 0 see-also links
 - [Color picker](../../skills/ui-design-brain/patterns/color-picker.md) — 0 aliases, 0 see-also links
-- [Combobox](../../skills/ui-design-brain/patterns/combobox.md) — 2 aliases, 2 see-also links
+- [Combobox](../../skills/ui-design-brain/patterns/combobox.md) — 2 aliases, 3 see-also links
+- [Comparison table](../../skills/ui-design-brain/patterns/comparison-table.md) — 1 alias, 2 see-also links
 - [Context menu](../../skills/ui-design-brain/patterns/context-menu.md) — 3 aliases, 2 see-also links
 - [Date input](../../skills/ui-design-brain/patterns/date-input.md) — 0 aliases, 2 see-also links
 - [Datepicker](../../skills/ui-design-brain/patterns/datepicker.md) — 2 aliases, 2 see-also links
@@ -43,8 +44,8 @@ The manifest catalogs 74 patterns:
 - [Link](../../skills/ui-design-brain/patterns/link.md) — 4 aliases, 3 see-also links
 - [List](../../skills/ui-design-brain/patterns/list.md) — 1 alias, 2 see-also links
 - [Marquee](../../skills/ui-design-brain/patterns/marquee.md) — 2 aliases, 4 see-also links
-- [Masthead](../../skills/ui-design-brain/patterns/masthead.md) — 0 aliases, 6 see-also links
-- [Modal](../../skills/ui-design-brain/patterns/modal.md) — 3 aliases, 2 see-also links
+- [Masthead](../../skills/ui-design-brain/patterns/masthead.md) — 1 alias, 6 see-also links
+- [Modal](../../skills/ui-design-brain/patterns/modal.md) — 3 aliases, 3 see-also links
 - [Navigation](../../skills/ui-design-brain/patterns/navigation.md) — 5 aliases, 7 see-also links
 - [Number input](../../skills/ui-design-brain/patterns/number-input.md) — 3 aliases, 3 see-also links
 - [Pagination](../../skills/ui-design-brain/patterns/pagination.md) — 3 aliases, 0 see-also links
@@ -56,7 +57,8 @@ The manifest catalogs 74 patterns:
 - [Rating](../../skills/ui-design-brain/patterns/rating.md) — 0 aliases, 0 see-also links
 - [Rich text editor](../../skills/ui-design-brain/patterns/rich-text-editor.md) — 2 aliases, 2 see-also links
 - [Rich text](../../skills/ui-design-brain/patterns/rich-text.md) — 2 aliases, 3 see-also links
-- [Search input](../../skills/ui-design-brain/patterns/search-input.md) — 2 aliases, 2 see-also links
+- [Search input](../../skills/ui-design-brain/patterns/search-input.md) — 2 aliases, 3 see-also links
+- [Search overlay](../../skills/ui-design-brain/patterns/search-overlay.md) — 2 aliases, 3 see-also links
 - [Section header](../../skills/ui-design-brain/patterns/section-header.md) — 2 aliases, 6 see-also links
 - [Segmented control](../../skills/ui-design-brain/patterns/segmented-control.md) — 2 aliases, 4 see-also links
 - [Select](../../skills/ui-design-brain/patterns/select.md) — 2 aliases, 4 see-also links
@@ -69,7 +71,7 @@ The manifest catalogs 74 patterns:
 - [Stack](../../skills/ui-design-brain/patterns/stack.md) — 0 aliases, 0 see-also links
 - [Stat](../../skills/ui-design-brain/patterns/stat.md) — 0 aliases, 3 see-also links
 - [Stepper](../../skills/ui-design-brain/patterns/stepper.md) — 3 aliases, 6 see-also links
-- [Table](../../skills/ui-design-brain/patterns/table.md) — 0 aliases, 2 see-also links
+- [Table](../../skills/ui-design-brain/patterns/table.md) — 0 aliases, 3 see-also links
 - [Tabs](../../skills/ui-design-brain/patterns/tabs.md) — 4 aliases, 2 see-also links
 - [Text input](../../skills/ui-design-brain/patterns/text-input.md) — 3 aliases, 4 see-also links
 - [Textarea](../../skills/ui-design-brain/patterns/textarea.md) — 0 aliases, 3 see-also links
@@ -77,6 +79,7 @@ The manifest catalogs 74 patterns:
 - [Toggle](../../skills/ui-design-brain/patterns/toggle.md) — 3 aliases, 2 see-also links
 - [Tooltip](../../skills/ui-design-brain/patterns/tooltip.md) — 1 alias, 2 see-also links
 - [Tree view](../../skills/ui-design-brain/patterns/tree-view.md) — 0 aliases, 0 see-also links
+- [Utility bar](../../skills/ui-design-brain/patterns/utility-bar.md) — 1 alias, 3 see-also links
 - [Video](../../skills/ui-design-brain/patterns/video.md) — 1 alias, 0 see-also links
 - [Visually hidden](../../skills/ui-design-brain/patterns/visually-hidden.md) — 1 alias, 2 see-also links
 - [Wizard](../../skills/ui-design-brain/patterns/wizard.md) — 1 alias, 4 see-also links

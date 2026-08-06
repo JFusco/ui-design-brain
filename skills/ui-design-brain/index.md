@@ -15,6 +15,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Checkbox
 - Color picker
 - Combobox
+- Comparison table
 - Context menu
 - Date input
 - Datepicker
@@ -54,6 +55,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Rich text
 - Rich text editor
 - Search input
+- Search overlay
 - Section header
 - Segmented control
 - Select
@@ -74,6 +76,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Toggle
 - Tooltip
 - Tree view
+- Utility bar
 - Video
 - Visually hidden
 - Wizard

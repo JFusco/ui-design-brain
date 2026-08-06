@@ -4,7 +4,7 @@
 
 A container that groups related buttons together as a single visual unit.
 
-For a set of mutually exclusive options where only one is selected, use a **Segmented control** (see `segmented-control.md`).
+For a set of mutually exclusive options where only one is selected, use a **Segmented control** (see `segmented-control.md`). A persistent, fixed-position cluster of global page utilities that stays put across scroll — not an in-flow grouping of related buttons — is a **Utility bar** (see `utility-bar.md`).
 
 **Best practices:**
 - Group only related actions — unrelated buttons should be separated
