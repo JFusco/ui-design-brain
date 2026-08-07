@@ -2,7 +2,7 @@
 date: 2026-08-06
 topics: [component-catalog]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/28
 ---
 # Add the Logo bar pattern
 

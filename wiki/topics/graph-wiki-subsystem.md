@@ -13,6 +13,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-08-07 — feat(ui-design-brain): Add Logo bar pattern ([PR #28](https://github.com/verndale/ui-design-brain/pull/28))
 - 2026-08-07 — feat(ui-design-brain): Add Testimonial alias to Quote ([PR #27](https://github.com/verndale/ui-design-brain/pull/27))
 - 2026-08-06 — feat(ci): Update documentation and workflow configurations ([PR #24](https://github.com/verndale/ui-design-brain/pull/24))
 - 2026-08-03 — feat(ui-design-brain): Add in-page navigation pattern and update catalog ([PR #21](https://github.com/verndale/ui-design-brain/pull/21))
