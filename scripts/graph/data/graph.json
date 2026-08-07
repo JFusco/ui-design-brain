@@ -1559,9 +1559,11 @@
         "component-catalog"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "28"
+      ],
       "issues": [],
-      "bytes": 1734,
+      "bytes": 1778,
       "degree": 3
     },
     {
@@ -1769,6 +1771,7 @@
         "plan capture"
       ],
       "prs": [
+        "28",
         "27",
         "24",
         "21",
@@ -1780,7 +1783,7 @@
       "issues": [
         "8"
       ],
-      "bytes": 2354,
+      "bytes": 2479,
       "degree": 5
     },
     {
