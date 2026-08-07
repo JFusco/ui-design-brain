@@ -1,3 +1,38 @@
+# v1.11.0 — 2026-08-07
+
+## Summary (AI, bounded)
+- Added a new feature to include a Testimonial alias for Quote (commit b66b773).
+- Synchronized journal, topics, and plans documentation in the wiki (commit ba2a7bb).
+- Merged pull request #27 related to the testimonial alias feature (commit 6c016e4).
+- Merged pull request #25 for wiki synchronization updates (commit f64a6f1).
+- No breaking changes introduced in this release.
+
+## Highlights
+- commit: Merge pull request #27 from verndale/feat/add-testimonial-alias (6c016e4)
+- feat(ui-design-brain): Add Testimonial alias to Quote (b66b773)
+- commit: Merge pull request #25 from verndale/bot/wiki-sync/24 (f64a6f1)
+- docs(wiki): sync journal, topics, and plans for #24 (ba2a7bb)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Add Testimonial alias to Quote (b66b773)
+
+### Docs
+- docs(wiki): sync journal, topics, and plans for #24 (ba2a7bb)
+
+### Other (unknown)
+- commit: Merge pull request #25 from verndale/bot/wiki-sync/24 (f64a6f1)
+- commit: Merge pull request #27 from verndale/feat/add-testimonial-alias (6c016e4)
+
+## Full commit list
+- 6c016e4 commit: Merge pull request #27 from verndale/feat/add-testimonial-alias
+- b66b773 feat(ui-design-brain): Add Testimonial alias to Quote
+- f64a6f1 commit: Merge pull request #25 from verndale/bot/wiki-sync/24
+- ba2a7bb docs(wiki): sync journal, topics, and plans for #24
+
 # v1.10.0 — 2026-08-06
 
 ## Summary (AI, bounded)

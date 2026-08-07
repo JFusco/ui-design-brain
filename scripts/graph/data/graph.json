@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 117,
-    "edges": 289,
+    "nodes": 118,
+    "edges": 292,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 78,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 18,
+      "wiki-journal": 19,
       "wiki-plan": 7,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 78,
       "covers": 5,
-      "links-to": 66,
+      "links-to": 68,
       "plan": 2,
       "references": 4,
       "see-also": 110,
-      "topic": 24
+      "topic": 25
     }
   },
   "nodes": [
@@ -93,7 +93,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 12591,
+      "bytes": 12612,
       "degree": 82
     },
     {
@@ -813,11 +813,12 @@
       "topics": [],
       "aliases": [
         "Block quote",
-        "Pull quote"
+        "Pull quote",
+        "Testimonial"
       ],
       "prs": [],
       "issues": [],
-      "bytes": 571,
+      "bytes": 588,
       "degree": 2
     },
     {
@@ -1270,8 +1271,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 7757,
-      "degree": 25
+      "bytes": 8101,
+      "degree": 26
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1564,6 +1565,20 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-08-06-add-testimonial-alias-to-quote.md",
+      "label": "Add Testimonial alias to Quote",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1391,
+      "degree": 3
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -1735,8 +1750,8 @@
         "14",
         "11"
       ],
-      "bytes": 9993,
-      "degree": 39
+      "bytes": 10476,
+      "degree": 41
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -2392,6 +2407,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-06-add-testimonial-alias-to-quote.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -2617,6 +2639,13 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-08-06-add-logo-bar-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-06-add-testimonial-alias-to-quote.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -3440,6 +3469,11 @@
     },
     {
       "source": "wiki/journal/2026-08-06-add-logo-bar-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-06-add-testimonial-alias-to-quote.md",
       "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },
