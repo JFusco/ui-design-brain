@@ -2,7 +2,7 @@
 date: 2026-08-06
 topics: [component-catalog]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/27
 ---
 # Add Testimonial alias to Quote
 
