@@ -1,3 +1,36 @@
+# v1.14.0 — 2026-08-08
+
+## Summary (AI, bounded)
+- Added a new Mega menu pattern along with updated documentation (ae82c29)
+- Synchronized wiki content including journal entries, topics, and plans (#33) (c62df22)
+- Merged pull requests related to Mega menu feature and wiki synchronization (b414e45, 068cfd0)
+
+## Highlights
+- commit: Merge pull request #36 from verndale/feat/add-mega-menu-pattern (b414e45)
+- feat(ui-design-brain): Add Mega menu pattern and update documentation (ae82c29)
+- commit: Merge pull request #34 from verndale/bot/wiki-sync/33 (068cfd0)
+- docs(wiki): sync journal, topics, and plans for #33 (c62df22)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Add Mega menu pattern and update documentation (ae82c29)
+
+### Docs
+- docs(wiki): sync journal, topics, and plans for #33 (c62df22)
+
+### Other (unknown)
+- commit: Merge pull request #34 from verndale/bot/wiki-sync/33 (068cfd0)
+- commit: Merge pull request #36 from verndale/feat/add-mega-menu-pattern (b414e45)
+
+## Full commit list
+- b414e45 commit: Merge pull request #36 from verndale/feat/add-mega-menu-pattern
+- ae82c29 feat(ui-design-brain): Add Mega menu pattern and update documentation
+- 068cfd0 commit: Merge pull request #34 from verndale/bot/wiki-sync/33
+- c62df22 docs(wiki): sync journal, topics, and plans for #33
+
 # v1.13.0 — 2026-08-08
 
 ## Summary (AI, bounded)
