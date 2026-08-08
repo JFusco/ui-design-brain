@@ -1,3 +1,37 @@
+# v1.15.0 — 2026-08-08
+
+## Summary (AI, bounded)
+- Clarified the boundaries between Hero and Alert messages in the UI design brain (cc67798).
+- Synced journal, topics, and plans documentation for issue #36 (e22d775).
+- Merged pull request for updating Hero and Alert banner documentation (a3e1d05).
+- Included merged changes for bot wiki synchronization (207f90e).
+
+## Highlights
+- commit: Merge pull request #38 from verndale/docs/hero-alert-banner-boundary (a3e1d05)
+- feat(ui-design-brain): Clarify Hero and Alert message boundaries (cc67798)
+- commit: Merge pull request #37 from verndale/bot/wiki-sync/36 (207f90e)
+- docs(wiki): sync journal, topics, and plans for #36 (e22d775)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Clarify Hero and Alert message boundaries (cc67798)
+
+### Docs
+- docs(wiki): sync journal, topics, and plans for #36 (e22d775)
+
+### Other (unknown)
+- commit: Merge pull request #37 from verndale/bot/wiki-sync/36 (207f90e)
+- commit: Merge pull request #38 from verndale/docs/hero-alert-banner-boundary (a3e1d05)
+
+## Full commit list
+- a3e1d05 commit: Merge pull request #38 from verndale/docs/hero-alert-banner-boundary
+- cc67798 feat(ui-design-brain): Clarify Hero and Alert message boundaries
+- 207f90e commit: Merge pull request #37 from verndale/bot/wiki-sync/36
+- e22d775 docs(wiki): sync journal, topics, and plans for #36
+
 # v1.14.0 — 2026-08-08
 
 ## Summary (AI, bounded)
