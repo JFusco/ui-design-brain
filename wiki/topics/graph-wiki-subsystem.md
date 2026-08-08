@@ -13,6 +13,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-08-08 — feat(ui-design-brain): Clarify Hero and Alert message boundaries ([PR #38](https://github.com/verndale/ui-design-brain/pull/38))
 - 2026-08-08 — feat(ui-design-brain): Add Mega menu pattern and update documentation ([PR #36](https://github.com/verndale/ui-design-brain/pull/36))
 - 2026-08-08 — feat(ui-design-brain): Add Media object pattern ([PR #33](https://github.com/verndale/ui-design-brain/pull/33))
 - 2026-08-07 — feat(ui-design-brain): Add Logo bar pattern ([PR #28](https://github.com/verndale/ui-design-brain/pull/28))
