@@ -39,6 +39,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Logo bar](../../skills/ui-design-brain/patterns/logo-bar.md) → [Hero](../../skills/ui-design-brain/patterns/hero.md), [Marquee](../../skills/ui-design-brain/patterns/marquee.md)
 - [Marquee](../../skills/ui-design-brain/patterns/marquee.md) → [Alert](../../skills/ui-design-brain/patterns/alert.md), [Carousel](../../skills/ui-design-brain/patterns/carousel.md), [Logo bar](../../skills/ui-design-brain/patterns/logo-bar.md)
 - [Masthead](../../skills/ui-design-brain/patterns/masthead.md) → [Header](../../skills/ui-design-brain/patterns/header.md), [Hero](../../skills/ui-design-brain/patterns/hero.md), [Section header](../../skills/ui-design-brain/patterns/section-header.md)
+- [Media object](../../skills/ui-design-brain/patterns/media-object.md) → [Card](../../skills/ui-design-brain/patterns/card.md), [Hero](../../skills/ui-design-brain/patterns/hero.md), [Section header](../../skills/ui-design-brain/patterns/section-header.md)
 - [Modal](../../skills/ui-design-brain/patterns/modal.md) → [Drawer](../../skills/ui-design-brain/patterns/drawer.md)
 - [Navigation](../../skills/ui-design-brain/patterns/navigation.md) → [In-page navigation](../../skills/ui-design-brain/patterns/in-page-navigation.md), [Sidebar](../../skills/ui-design-brain/patterns/sidebar.md)
 - [Number input](../../skills/ui-design-brain/patterns/number-input.md) → [Stepper](../../skills/ui-design-brain/patterns/stepper.md), [Text input](../../skills/ui-design-brain/patterns/text-input.md)

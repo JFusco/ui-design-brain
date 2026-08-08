@@ -43,6 +43,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Logo bar
 - Marquee
 - Masthead
+- Media object
 - Modal
 - Navigation
 - Number input
