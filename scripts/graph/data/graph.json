@@ -1,26 +1,26 @@
 {
   "counts": {
-    "nodes": 120,
-    "edges": 299,
+    "nodes": 122,
+    "edges": 306,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
       "manifest": 1,
-      "ui-pattern": 79,
+      "ui-pattern": 80,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 20,
+      "wiki-journal": 21,
       "wiki-plan": 7,
       "wiki-topic": 4
     },
     "byEdgeType": {
-      "catalogs": 79,
+      "catalogs": 80,
       "covers": 5,
-      "links-to": 70,
+      "links-to": 72,
       "plan": 2,
       "references": 4,
-      "see-also": 113,
-      "topic": 26
+      "see-also": 116,
+      "topic": 27
     }
   },
   "nodes": [
@@ -81,7 +81,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3580,
+      "bytes": 3592,
       "degree": 5
     },
     {
@@ -93,8 +93,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 12760,
-      "degree": 83
+      "bytes": 12929,
+      "degree": 84
     },
     {
       "id": "skills/ui-design-brain/patterns/accordion.md",
@@ -357,7 +357,7 @@
       "prs": [],
       "issues": [],
       "bytes": 911,
-      "degree": 4
+      "degree": 5
     },
     {
       "id": "skills/ui-design-brain/patterns/dropdown-menu.md",
@@ -373,7 +373,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1183,
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "skills/ui-design-brain/patterns/empty-state.md",
@@ -710,6 +710,21 @@
       "degree": 4
     },
     {
+      "id": "skills/ui-design-brain/patterns/mega-menu.md",
+      "label": "Mega menu",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Header mega menu",
+        "Mega menu panel"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 2113,
+      "degree": 4
+    },
+    {
       "id": "skills/ui-design-brain/patterns/modal.md",
       "label": "Modal",
       "type": "ui-pattern",
@@ -741,7 +756,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1180,
-      "degree": 8
+      "degree": 9
     },
     {
       "id": "skills/ui-design-brain/patterns/number-input.md",
@@ -1285,8 +1300,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 8486,
-      "degree": 27
+      "bytes": 8861,
+      "degree": 28
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1613,6 +1628,20 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-08-08-add-mega-menu-pattern.md",
+      "label": "Add the Mega menu pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1975,
+      "degree": 3
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -1784,8 +1813,8 @@
         "14",
         "11"
       ],
-      "bytes": 11041,
-      "degree": 43
+      "bytes": 11655,
+      "degree": 45
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -2041,6 +2070,11 @@
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/media-object.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/mega-menu.md",
       "type": "catalogs"
     },
     {
@@ -2463,6 +2497,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-08-add-mega-menu-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -2702,6 +2743,13 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-08-08-add-media-object-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-08-add-mega-menu-pattern.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -3157,6 +3205,24 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/mega-menu.md",
+      "target": "skills/ui-design-brain/patterns/drawer.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/mega-menu.md",
+      "target": "skills/ui-design-brain/patterns/dropdown-menu.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/mega-menu.md",
+      "target": "skills/ui-design-brain/patterns/navigation.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/modal.md",
       "target": "skills/ui-design-brain/patterns/drawer.md",
       "type": "see-also",
@@ -3553,6 +3619,11 @@
     },
     {
       "source": "wiki/journal/2026-08-08-add-media-object-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-08-add-mega-menu-pattern.md",
       "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },

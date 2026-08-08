@@ -19,7 +19,7 @@ skills/ui-design-brain/
 ├── SKILL.md                  # skill entry point (frontmatter + workflow)
 ├── index.md                  # narrow down likely components
 ├── patterns-manifest.json    # canonical names, aliases, alias-resolution rules
-└── patterns/                 # 79 per-pattern guidance files (accordion.md … wizard.md)
+└── patterns/                 # 80 per-pattern guidance files (accordion.md … wizard.md)
 ```
 
 Pattern-authoring templates live alongside the skill in `skills/_meta/` (`_pattern-template.md` + `_sections.md`) — authoring-only, never loaded at runtime or vendored.
@@ -36,8 +36,8 @@ The catalog is not published to npm. `package.json` is `"private": true` and exi
 |------|---------------|
 | [`SKILL.md`](skills/ui-design-brain/SKILL.md) | Skill entry point — frontmatter description plus the resolve-and-load workflow an agent follows. |
 | [`index.md`](skills/ui-design-brain/index.md) | First hop for narrowing a design label down to likely component families. |
-| [`patterns-manifest.json`](skills/ui-design-brain/patterns-manifest.json) | The 79 canonical entries — each with its `name`, `slug`, `aliases` (plain or context-scoped), and `file`. This is what turns an alias like "Banner" into the right canonical component. |
-| [`patterns/*.md`](skills/ui-design-brain/patterns/) | One guidance file per canonical pattern (79 total), from `accordion.md` to `wizard.md`. |
+| [`patterns-manifest.json`](skills/ui-design-brain/patterns-manifest.json) | The 80 canonical entries — each with its `name`, `slug`, `aliases` (plain or context-scoped), and `file`. This is what turns an alias like "Banner" into the right canonical component. |
+| [`patterns/*.md`](skills/ui-design-brain/patterns/) | One guidance file per canonical pattern (80 total), from `accordion.md` to `wizard.md`. |
 
 Resolution flow an agent follows: read `index.md` to narrow the family → resolve the label through `patterns-manifest.json` → load the matching `patterns/<slug>.md` for guidance.
 

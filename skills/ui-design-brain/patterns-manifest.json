@@ -367,6 +367,15 @@
     "file": "patterns/media-object.md"
   },
   {
+    "name": "Mega menu",
+    "slug": "mega-menu",
+    "aliases": [
+      "Header mega menu",
+      "Mega menu panel"
+    ],
+    "file": "patterns/mega-menu.md"
+  },
+  {
     "name": "Modal",
     "slug": "modal",
     "aliases": [
