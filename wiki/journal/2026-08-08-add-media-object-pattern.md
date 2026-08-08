@@ -2,7 +2,7 @@
 date: 2026-08-08
 topics: [component-catalog]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/33
 ---
 # Add the Media object pattern
 
