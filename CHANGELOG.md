@@ -1,3 +1,40 @@
+# v1.13.0 — 2026-08-08
+
+## Summary (AI, bounded)
+- Added a new Media object pattern to the UI design brain (commit e134275)
+- Synced the wiki journal, topics, and plans to keep documentation up to date (commit a490709)
+- Integrated changes from the main branch into the new media object feature branch (commit 817c2b0)
+- Completed pull request merges for media object pattern and wiki synchronization (commits eb03464, 6d11a38)
+
+## Highlights
+- commit: Merge pull request #33 from verndale/feat/add-media-object-pattern (eb03464)
+- commit: Merge branch 'main' into feat/add-media-object-pattern (817c2b0)
+- feat(ui-design-brain): Add Media object pattern (e134275)
+- commit: Merge pull request #31 from verndale/bot/wiki-sync/28 (6d11a38)
+- docs(wiki): sync journal, topics, and plans for #28 (a490709)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Add Media object pattern (e134275)
+
+### Docs
+- docs(wiki): sync journal, topics, and plans for #28 (a490709)
+
+### Other (unknown)
+- commit: Merge branch 'main' into feat/add-media-object-pattern (817c2b0)
+- commit: Merge pull request #31 from verndale/bot/wiki-sync/28 (6d11a38)
+- commit: Merge pull request #33 from verndale/feat/add-media-object-pattern (eb03464)
+
+## Full commit list
+- eb03464 commit: Merge pull request #33 from verndale/feat/add-media-object-pattern
+- 817c2b0 commit: Merge branch 'main' into feat/add-media-object-pattern
+- e134275 feat(ui-design-brain): Add Media object pattern
+- 6d11a38 commit: Merge pull request #31 from verndale/bot/wiki-sync/28
+- a490709 docs(wiki): sync journal, topics, and plans for #28
+
 # v1.12.0 — 2026-08-07
 
 ## Summary (AI, bounded)
