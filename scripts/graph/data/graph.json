@@ -1,26 +1,26 @@
 {
   "counts": {
-    "nodes": 116,
-    "edges": 285,
+    "nodes": 118,
+    "edges": 292,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
       "manifest": 1,
-      "ui-pattern": 77,
+      "ui-pattern": 78,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 18,
+      "wiki-journal": 19,
       "wiki-plan": 7,
       "wiki-topic": 4
     },
     "byEdgeType": {
-      "catalogs": 77,
+      "catalogs": 78,
       "covers": 5,
-      "links-to": 66,
+      "links-to": 68,
       "plan": 2,
       "references": 4,
-      "see-also": 107,
-      "topic": 24
+      "see-also": 110,
+      "topic": 25
     }
   },
   "nodes": [
@@ -81,7 +81,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3554,
+      "bytes": 3569,
       "degree": 5
     },
     {
@@ -93,8 +93,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 12416,
-      "degree": 81
+      "bytes": 12564,
+      "degree": 82
     },
     {
       "id": "skills/ui-design-brain/patterns/accordion.md",
@@ -231,7 +231,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1356,
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "skills/ui-design-brain/patterns/carousel.md",
@@ -561,7 +561,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1215,
-      "degree": 7
+      "degree": 8
     },
     {
       "id": "skills/ui-design-brain/patterns/icon.md",
@@ -677,6 +677,20 @@
       "issues": [],
       "bytes": 1425,
       "degree": 7
+    },
+    {
+      "id": "skills/ui-design-brain/patterns/media-object.md",
+      "label": "Media object",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Media block"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1959,
+      "degree": 4
     },
     {
       "id": "skills/ui-design-brain/patterns/modal.md",
@@ -904,7 +918,7 @@
       "prs": [],
       "issues": [],
       "bytes": 2003,
-      "degree": 7
+      "degree": 8
     },
     {
       "id": "skills/ui-design-brain/patterns/segmented-control.md",
@@ -1254,8 +1268,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 7711,
-      "degree": 25
+      "bytes": 8096,
+      "degree": 26
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1550,6 +1564,20 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-08-08-add-media-object-pattern.md",
+      "label": "Add the Media object pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 2085,
+      "degree": 3
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -1721,8 +1749,8 @@
         "14",
         "11"
       ],
-      "bytes": 9854,
-      "degree": 39
+      "bytes": 10419,
+      "degree": 41
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -1966,6 +1994,11 @@
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/masthead.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/media-object.md",
       "type": "catalogs"
     },
     {
@@ -2374,6 +2407,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-08-add-media-object-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -2599,6 +2639,13 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-08-06-add-testimonial-alias-to-quote.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-08-add-media-object-pattern.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -3018,6 +3065,24 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/media-object.md",
+      "target": "skills/ui-design-brain/patterns/card.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/media-object.md",
+      "target": "skills/ui-design-brain/patterns/hero.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/media-object.md",
+      "target": "skills/ui-design-brain/patterns/section-header.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/modal.md",
       "target": "skills/ui-design-brain/patterns/drawer.md",
       "type": "see-also",
@@ -3404,6 +3469,11 @@
     },
     {
       "source": "wiki/journal/2026-08-06-add-testimonial-alias-to-quote.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-08-add-media-object-pattern.md",
       "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },

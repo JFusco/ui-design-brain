@@ -348,6 +348,14 @@
     "file": "patterns/masthead.md"
   },
   {
+    "name": "Media object",
+    "slug": "media-object",
+    "aliases": [
+      "Media block"
+    ],
+    "file": "patterns/media-object.md"
+  },
+  {
     "name": "Modal",
     "slug": "modal",
     "aliases": [
