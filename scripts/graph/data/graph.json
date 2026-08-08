@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 122,
-    "edges": 306,
+    "nodes": 123,
+    "edges": 309,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 80,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 21,
+      "wiki-journal": 22,
       "wiki-plan": 7,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 80,
       "covers": 5,
-      "links-to": 72,
+      "links-to": 74,
       "plan": 2,
       "references": 4,
       "see-also": 116,
-      "topic": 27
+      "topic": 28
     }
   },
   "nodes": [
@@ -134,7 +134,7 @@
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1189,
+      "bytes": 1419,
       "degree": 8
     },
     {
@@ -560,7 +560,7 @@
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1215,
+      "bytes": 1475,
       "degree": 9
     },
     {
@@ -1300,8 +1300,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 8861,
-      "degree": 28
+      "bytes": 9235,
+      "degree": 29
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1644,6 +1644,20 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-08-08-hero-promo-banner-vs-alert.md",
+      "label": "Hero: promotional banner vs Alert message boundary",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 1563,
+      "degree": 3
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -1815,8 +1829,8 @@
         "14",
         "11"
       ],
-      "bytes": 11655,
-      "degree": 45
+      "bytes": 12149,
+      "degree": 47
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -2507,6 +2521,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-08-hero-promo-banner-vs-alert.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -2753,6 +2774,13 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-08-08-add-mega-menu-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-08-hero-promo-banner-vs-alert.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -3627,6 +3655,11 @@
     },
     {
       "source": "wiki/journal/2026-08-08-add-mega-menu-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-08-hero-promo-banner-vs-alert.md",
       "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },

@@ -4,7 +4,7 @@
 
 A prominent message used to communicate important information or status changes to the user.
 
-For a brief, auto-dismissing, non-blocking message, use a **Toast** (see `toast.md`). Here **Banner** means a page-level message; a top-of-page promotional banner is a **Hero** (see `hero.md`). A continuously scrolling announcement strip is a **Marquee** (see `marquee.md`).
+For a brief, auto-dismissing, non-blocking message, use a **Toast** (see `toast.md`). Here **Banner** means a page-level message; a top-of-page promotional banner is a **Hero** (see `hero.md`) — and a band named "message banner" or "CTA banner" that carries an image, a headline, and one or two CTAs is that promotional Hero, not an Alert, however the label reads. Alert is the dismissible notification or status message. A continuously scrolling announcement strip is a **Marquee** (see `marquee.md`).
 
 **Best practices:**
 - Use semantic color coding: red for errors, amber for warnings, green for success, blue for info
