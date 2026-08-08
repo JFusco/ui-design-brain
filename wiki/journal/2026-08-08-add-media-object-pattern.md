@@ -13,7 +13,7 @@ pr: pending
 
 ## What changed
 
-- Added the **Media object** canonical (77 → 78): new `patterns/media-object.md`, a manifest entry between `Masthead` and `Modal`, an `index.md` list row, and the README count bumped in its three places.
+- Added the **Media object** canonical (78 → 79): new `patterns/media-object.md`, a manifest entry between `Masthead` and `Modal`, an `index.md` list row, and the README count bumped in its three places.
 - Alias: **Media block** — the consumer-evidenced label a project used for the band. A media *tile* resolves to **Card** and a carousel of such tiles to **Carousel**; a decorative "S-curve" diagonal is a client visual variant folded into the pattern, not a name of its own.
 - Cross-references to `card.md`, `hero.md`, and `section-header.md` are disambiguation ("use this other component when…"), left one-way — no reciprocal edits in those files.
 

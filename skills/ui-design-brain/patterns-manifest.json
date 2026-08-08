@@ -331,6 +331,17 @@
     "file": "patterns/list.md"
   },
   {
+    "name": "Logo bar",
+    "slug": "logo-bar",
+    "aliases": [
+      "Logo cloud",
+      "Logo wall",
+      "Logos bar",
+      "Partner logos"
+    ],
+    "file": "patterns/logo-bar.md"
+  },
+  {
     "name": "Marquee",
     "slug": "marquee",
     "aliases": [

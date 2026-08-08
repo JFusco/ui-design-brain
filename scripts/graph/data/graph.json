@@ -1,26 +1,26 @@
 {
   "counts": {
-    "nodes": 118,
-    "edges": 292,
+    "nodes": 120,
+    "edges": 299,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
       "manifest": 1,
-      "ui-pattern": 78,
+      "ui-pattern": 79,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 19,
+      "wiki-journal": 20,
       "wiki-plan": 7,
       "wiki-topic": 4
     },
     "byEdgeType": {
-      "catalogs": 78,
+      "catalogs": 79,
       "covers": 5,
-      "links-to": 68,
+      "links-to": 70,
       "plan": 2,
       "references": 4,
-      "see-also": 110,
-      "topic": 25
+      "see-also": 113,
+      "topic": 26
     }
   },
   "nodes": [
@@ -81,7 +81,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 3569,
+      "bytes": 3580,
       "degree": 5
     },
     {
@@ -93,8 +93,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 12564,
-      "degree": 82
+      "bytes": 12760,
+      "degree": 83
     },
     {
       "id": "skills/ui-design-brain/patterns/accordion.md",
@@ -561,7 +561,7 @@
       "prs": [],
       "issues": [],
       "bytes": 1215,
-      "degree": 8
+      "degree": 9
     },
     {
       "id": "skills/ui-design-brain/patterns/icon.md",
@@ -650,6 +650,23 @@
       "degree": 3
     },
     {
+      "id": "skills/ui-design-brain/patterns/logo-bar.md",
+      "label": "Logo bar",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [
+        "Logo cloud",
+        "Logo wall",
+        "Logos bar",
+        "Partner logos"
+      ],
+      "prs": [],
+      "issues": [],
+      "bytes": 1459,
+      "degree": 4
+    },
+    {
       "id": "skills/ui-design-brain/patterns/marquee.md",
       "label": "Marquee",
       "type": "ui-pattern",
@@ -661,8 +678,8 @@
       ],
       "prs": [],
       "issues": [],
-      "bytes": 1334,
-      "degree": 5
+      "bytes": 1460,
+      "degree": 7
     },
     {
       "id": "skills/ui-design-brain/patterns/masthead.md",
@@ -1268,8 +1285,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 8096,
-      "degree": 26
+      "bytes": 8486,
+      "degree": 27
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1548,6 +1565,22 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-08-06-add-logo-bar-pattern.md",
+      "label": "Add the Logo bar pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [
+        "28"
+      ],
+      "issues": [],
+      "bytes": 1778,
+      "degree": 3
+    },
+    {
       "id": "wiki/journal/2026-08-06-add-testimonial-alias-to-quote.md",
       "label": "Add Testimonial alias to Quote",
       "type": "wiki-journal",
@@ -1749,8 +1782,8 @@
         "14",
         "11"
       ],
-      "bytes": 10419,
-      "degree": 41
+      "bytes": 11041,
+      "degree": 43
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -1766,6 +1799,7 @@
         "plan capture"
       ],
       "prs": [
+        "28",
         "27",
         "24",
         "21",
@@ -1777,7 +1811,7 @@
       "issues": [
         "8"
       ],
-      "bytes": 2354,
+      "bytes": 2479,
       "degree": 5
     },
     {
@@ -1984,6 +2018,11 @@
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/list.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/logo-bar.md",
       "type": "catalogs"
     },
     {
@@ -2400,6 +2439,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-06-add-logo-bar-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/journal/2026-08-06-add-testimonial-alias-to-quote.md",
       "type": "links-to",
       "count": 1,
@@ -2632,6 +2678,13 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-08-05-add-utility-bar-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-06-add-logo-bar-pattern.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -3035,6 +3088,18 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/logo-bar.md",
+      "target": "skills/ui-design-brain/patterns/hero.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/logo-bar.md",
+      "target": "skills/ui-design-brain/patterns/marquee.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/marquee.md",
       "target": "skills/ui-design-brain/patterns/alert.md",
       "type": "see-also",
@@ -3043,6 +3108,12 @@
     {
       "source": "skills/ui-design-brain/patterns/marquee.md",
       "target": "skills/ui-design-brain/patterns/carousel.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/marquee.md",
+      "target": "skills/ui-design-brain/patterns/logo-bar.md",
       "type": "see-also",
       "count": 1
     },
@@ -3464,6 +3535,11 @@
     },
     {
       "source": "wiki/journal/2026-08-05-add-utility-bar-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-06-add-logo-bar-pattern.md",
       "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },

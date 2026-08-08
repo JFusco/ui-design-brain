@@ -4,7 +4,7 @@
 
 A strip of content that scrolls continuously and loops automatically — logos, headlines, or announcements moving without user paging.
 
-For discrete slides the user advances one at a time, use a **Carousel** (see `carousel.md`) — a Marquee moves continuously, a Carousel steps. A static, non-moving page-level announcement is an **Alert** (see `alert.md`).
+For discrete slides the user advances one at a time, use a **Carousel** (see `carousel.md`) — a Marquee moves continuously, a Carousel steps. A static, non-moving page-level announcement is an **Alert** (see `alert.md`). A band of brand or partner logos presented as social proof — scrolling or static — is a **Logo bar** (see `logo-bar.md`).
 
 **Best practices:**
 - Use only for ambient, supplementary content — never as the sole access path to essential information

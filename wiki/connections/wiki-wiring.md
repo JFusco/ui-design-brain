@@ -28,6 +28,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Add the Comparison table pattern](../../wiki/journal/2026-08-05-add-comparison-table-pattern.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Add the Search overlay pattern](../../wiki/journal/2026-08-05-add-search-overlay-pattern.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Add the Utility bar pattern](../../wiki/journal/2026-08-05-add-utility-bar-pattern.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
+- [Add the Logo bar pattern](../../wiki/journal/2026-08-06-add-logo-bar-pattern.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Add Testimonial alias to Quote](../../wiki/journal/2026-08-06-add-testimonial-alias-to-quote.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Add the Media object pattern](../../wiki/journal/2026-08-08-add-media-object-pattern.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Plan: Extract @verndale/ui-design-brain into its own published repo](../../wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)

@@ -1,3 +1,43 @@
+# v1.12.0 — 2026-08-07
+
+## Summary (AI, bounded)
+- Added a new Logo bar pattern feature in the UI design brain module (commit 1664e92).
+- Synced the journal, topics, and plans documentation in the wiki (commit 78e2298).
+- Merged main branch and resolved conflicts in wiki files (commit a78fa97).
+- Integrated changes from pull request #28 to add the Logo bar pattern (commit 95f5cdc).
+- Merged pull request #29 for bot wiki synchronization (commit 63cf648).
+
+## Highlights
+- commit: Merge pull request #28 from verndale/feat/add-logo-bar-pattern (95f5cdc)
+- commit: Merge pull request #29 from verndale/bot/wiki-sync/27 (63cf648)
+- chore(ui-design-brain): merge main and resolve wiki conflicts (a78fa97)
+- docs(wiki): sync journal, topics, and plans for #27 (78e2298)
+- feat(ui-design-brain): Add Logo bar pattern (1664e92)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(ui-design-brain): Add Logo bar pattern (1664e92)
+
+### Docs
+- docs(wiki): sync journal, topics, and plans for #27 (78e2298)
+
+### Chore
+- chore(ui-design-brain): merge main and resolve wiki conflicts (a78fa97)
+
+### Other (unknown)
+- commit: Merge pull request #28 from verndale/feat/add-logo-bar-pattern (95f5cdc)
+- commit: Merge pull request #29 from verndale/bot/wiki-sync/27 (63cf648)
+
+## Full commit list
+- 95f5cdc commit: Merge pull request #28 from verndale/feat/add-logo-bar-pattern
+- 63cf648 commit: Merge pull request #29 from verndale/bot/wiki-sync/27
+- a78fa97 chore(ui-design-brain): merge main and resolve wiki conflicts
+- 78e2298 docs(wiki): sync journal, topics, and plans for #27
+- 1664e92 feat(ui-design-brain): Add Logo bar pattern
+
 # v1.11.0 — 2026-08-07
 
 ## Summary (AI, bounded)
