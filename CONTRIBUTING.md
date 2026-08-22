@@ -7,6 +7,7 @@ This repository is the single source of truth for the `ui-design-brain` catalog,
     pnpm install
     git checkout -b feat/my-pattern-change
     # edit files under skills/ui-design-brain/
+    pnpm verify:ci
     git add -A
     pnpm commit
     git push
@@ -46,7 +47,16 @@ Examples:
     fix(manifest): Correct banner alias resolution
     docs(readme): Clarify consumer sync flow
 
-The first line is validated by **commitlint** via the `commit-msg` hook and in CI. Use `pnpm commit` (runs `ai-commit run`) for an AI-assisted, pre-validated message; `OPENAI_API_KEY` in `.env` enables AI generation and is optional (safe fallback otherwise). See `.env-example`.
+The first line is validated by **commitlint** via the `commit-msg` hook and in CI. Scope is required and lowercase; the subject is required, cannot end in a period, and is limited to 50 characters. The full header is limited to 120 characters and body/footer lines to 72. Subject casing is intentionally unrestricted. Conventional breaking-change/revert parsing and Commitlint's upstream default ignores are preserved; there is no repository-specific scope allowlist or ignore callback.
+
+The root [`commitlint.config.cjs`](commitlint.config.cjs) consumes the public `@verndale/ai-commit` export. The blocking local hook, the squash-merge PR title, and every commit in the immutable PR base/head range all use that same config. `pnpm lint:commits:last` is only a local one-commit convenience; CI always checks the full PR range. With the pinned pnpm 10, pass flags directly (`pnpm run lint:commit --edit …`): inserting a standalone `--` forwards it to Commitlint and causes following flags to be treated as positional input. Use `pnpm commit` (runs `ai-commit run`) for AI-assisted authoring; `OPENAI_API_KEY` in `.env` is optional. The direct `commitlint` hook remains authoritative.
+
+## Quality gates
+
+- `pnpm lint` checks all first-party `.js`, `.cjs`, and `.mjs` files without modifying them; generated graph data and vendored viewer libraries are explicit exclusions.
+- `pnpm lint:fix` is the opt-in whole-repository fixer. The pre-commit hook fixes only staged JavaScript through lint-staged and blocks if errors remain.
+- `pnpm test:fast` and `pnpm verify:push` run the existing 17-case graph contract suite.
+- `pnpm test` adds graph lifecycle regression tests, and `pnpm verify:ci` runs full lint plus both layers. There is no typecheck command because this repository has no first-party TypeScript implementation. Broader source unit coverage is a future concern, not a synthetic/no-op gate.
 
 ## How changes reach consumers
 
@@ -59,7 +69,8 @@ Each consumer commits a real copy, so the vendored content travels with that rep
 
 | Workflow | Trigger | Purpose |
 | --- | --- | --- |
-| [`.github/workflows/commitlint.yml`](.github/workflows/commitlint.yml) | PRs to `main`, pushes to non-`main` | Commitlint on PR title + commit range |
+| [`.github/workflows/commitlint.yml`](.github/workflows/commitlint.yml) | PRs to `main`, including title edits | `Commit message lint / commitlint`: same-config checks for PR title + immutable base/head range |
+| [`.github/workflows/quality.yml`](.github/workflows/quality.yml) | PRs to `main`, `workflow_dispatch` | `Quality / quality`: lint + lifecycle self-tests + the check-only graph contract |
 | [`.github/workflows/pr.yml`](.github/workflows/pr.yml) | Pushes to non-`main`, `workflow_dispatch` | Dogfood: install deps, run **`pnpm run pr:create`** |
 | [`.github/workflows/release.yml`](.github/workflows/release.yml) | Pushes to `main` | `semantic-release`: version bump, `CHANGELOG.md`, Git tag + GitHub Release |
 

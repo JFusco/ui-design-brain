@@ -18,8 +18,9 @@ const SUBSTANTIVE_RE = [
 ];
 
 // wiki/ edits are never substantive — this is what stops a wiki-sync bot PR from
-// triggering another round of capture.
-const NEVER_RE = [/^wiki\//];
+// triggering another round of capture. Generated graph data is also excluded: every
+// lifecycle rebuild stages it, so counting it would make every PR appear substantive.
+const NEVER_RE = [/^wiki\//, /^scripts\/graph\/data\//];
 
 // Ordered path → topic-slug guesses. First match wins per path; a path may be
 // substantive without matching any topic (topics is best-effort). Catalog-content
@@ -28,7 +29,7 @@ const NEVER_RE = [/^wiki\//];
 // seed topic that documents it.
 const TOPIC_RE = [
   [/^scripts\/(?:graph|wiki|evals)\//, "graph-wiki-subsystem"],
-  [/^\.github\/workflows\/(?:wiki|graph)/, "graph-wiki-subsystem"],
+  [/^\.github\/workflows\/(?:wiki|graph|quality)/, "graph-wiki-subsystem"],
   [/^\.husky\//, "graph-wiki-subsystem"],
 ];
 
@@ -48,4 +49,4 @@ function classify(paths) {
   return { substantive: substantivePaths.length > 0, substantivePaths, topics };
 }
 
-module.exports = { classify, SUBSTANTIVE_RE, TOPIC_RE };
+module.exports = { classify, SUBSTANTIVE_RE, NEVER_RE, TOPIC_RE };

@@ -26,7 +26,7 @@ Pattern-authoring templates live alongside the skill in `skills/_meta/` (`_patte
 
 This layout (`skills/<name>/SKILL.md`) is what the [`skills` CLI](https://github.com/vercel-labs/skills) discovers. The `SKILL.md` description is shared by every consumer, so it is written to read well for both spec/acceptance-criteria authoring and interface-code generation.
 
-The catalog is not published to npm. `package.json` is `"private": true` and exists only to drive the Husky/commitlint tooling — distribution is via the `skills` CLI, described below.
+The catalog is not published to npm. `package.json` is `"private": true` and drives repository linting, hooks, validation, and release automation — distribution is via the `skills` CLI, described below.
 
 ---
 
@@ -87,14 +87,14 @@ CI enforces commit hygiene, automates semantic releases, and dogfoods Verndale's
 
 | Workflow | Trigger | Purpose |
 |----------|---------|---------|
-| [`commitlint.yml`](.github/workflows/commitlint.yml) | PRs to `main`, pushes to non-`main` | Commitlint on the PR title + commit range via the `@verndale/ai-commit` preset. |
+| [`commitlint.yml`](.github/workflows/commitlint.yml) | PRs to `main` (including title edits) | Blocking Commitlint check on the immutable PR title + base/head commit range via the public `@verndale/ai-commit` preset. |
 | [`pr.yml`](.github/workflows/pr.yml) | Pushes to non-`main`, `workflow_dispatch` | Creates/updates a draft PR for the branch by running `pnpm run pr:create` (`@verndale/ai-pr`). |
 | [`release.yml`](.github/workflows/release.yml) | Pushes to `main` | Runs `semantic-release` to version, tag, write `CHANGELOG.md`, and cut a GitHub Release. |
-| [`graph.yml`](.github/workflows/graph.yml) | PRs to `main`, `workflow_dispatch` | Knowledge-graph freshness gate (`pnpm evals:graph`) — fails if the committed graph is stale. |
+| [`quality.yml`](.github/workflows/quality.yml) | PRs to `main`, `workflow_dispatch` | Required `Quality / quality` check: full-repository ESLint, lifecycle self-tests, and the 17-case check-only graph contract. |
 | [`wiki-sync.yml`](.github/workflows/wiki-sync.yml) | PR merge | Reconciles the context wiki (journal/topics/plans), rebuilds the graph, and opens a `bot/wiki-sync/<pr>` PR. |
 | [`wiki-issue-sync.yml`](.github/workflows/wiki-issue-sync.yml) | Nightly cron, `workflow_dispatch` | Marks closed GitHub issues cited in wiki topic pages; opens a bot PR. |
 
-Locally, the same commit standard is enforced by Husky hooks (`commit-msg`, `prepare-commit-msg`) installed via the `prepare` script. A `pre-commit` hook rebuilds and stages the knowledge graph (non-blocking). Add repository secret `PR_BOT_TOKEN` (classic PAT with `repo`) if the default `GITHUB_TOKEN` is not enough for `pr.yml`.
+Locally, the same commit standard is enforced by Husky hooks (`commit-msg`, `prepare-commit-msg`) installed via the `prepare` script. `pre-commit` first auto-fixes staged JavaScript with lint-staged and blocks on remaining errors, then emits the advisory journal reminder, and finally rebuilds + stages the knowledge graph only when no graph input has unstaged changes; graph build/write failures remain advisory because CI validates check-only. `pre-push` blocks on the existing graph contract suite. Add repository secret `PR_BOT_TOKEN` (classic PAT with `repo`) if the default `GITHUB_TOKEN` is not enough for `pr.yml`.
 
 ### Release Automation
 
@@ -114,7 +114,7 @@ Preview locally with `pnpm release:dry` (stops at the GitHub-auth step — a tok
 - **Node 24+** — pinned in `.nvmrc` (`24.14.0`) and `package.json` engines, enforced by `engine-strict=true` in `.npmrc`.
 - **pnpm 10+** — pinned via `packageManager` (`10.33.0`), enabled through Corepack.
 
-Install with `pnpm install`.
+Install with `pnpm install`. Use `pnpm lint` for full first-party JavaScript linting, `pnpm verify:push` for the local push gate, and `pnpm verify:ci` for the complete non-mutating quality gate. No typecheck command is present because the repository has no first-party TypeScript implementation.
 
 ---
 
@@ -124,8 +124,8 @@ The repo carries a deterministic **knowledge graph** over the catalog + root doc
 
 ```bash
 pnpm graph:build   # rebuild scripts/graph/data/graph.json (+ generated wiki/connections* pages)
-pnpm graph:view    # serve the interactive viewer at http://localhost:4173
-pnpm evals:graph   # freshness + integrity gate (also runs in CI + pre-commit)
+pnpm graph:view    # serve the interactive viewer at http://127.0.0.1:4173
+pnpm graph:check   # 17-case, check-only freshness + integrity contract
 ```
 
 The `catalogs` edge (manifest → each pattern) doubles as the catalog integrity check: a manifest entry pointing at a missing pattern file fails the build. See [`scripts/graph/README.md`](scripts/graph/README.md) for the node/edge model and [`wiki/MECHANICS.md`](wiki/MECHANICS.md) for the capture protocol.

@@ -35,7 +35,7 @@ PR number and commit sha are usually unknown at delivery time (the maintainer co
 Capture is backed by automation under `scripts/wiki/` — a safety net, not a replacement for authoring. When an agent does the work it still writes the entry directly (richer than any stub). The automation catches what a manual or out-of-session commit misses:
 
 - **Merge sync** (`.github/workflows/wiki-sync.yml`): on PR merge, fills `pr: pending` or `follow_up_pr: pending` → the PR URL and derives `issue:` from `Closes #N`. For a substantive PR with no such entry, it writes a deterministic stub marked `draft: ai` (with `WIKI_AI=true`, its Why/What are AI-drafted and discarded unless grounded in the real diff); appends a topic Decisions bullet; and — when the PR body or a filled journal entry's `plan:` field names an archived plan — completes its `plans/INDEX.md` row and back-fills the plan file's own `evidence:` frontmatter with the PR. It lands as a one-click `bot/wiki-sync/<pr>` PR — never a direct push to main.
-- **Pre-commit warn** (`.husky/pre-commit`): reminds when a substantive commit stages no journal entry, and when a local plan looks executed but unarchived. Also rebuilds and stages the knowledge graph. Never blocks.
+- **Pre-commit lifecycle** (`.husky/pre-commit`): staged JavaScript linting blocks first; the wiki reminder is advisory; the graph rebuild/staging step runs only when graph inputs have no unstaged changes and fails open. `pnpm graph:check` is the blocking, check-only CI backstop.
 - **Nightly issue sync** (`.github/workflows/wiki-issue-sync.yml`): marks issues cited under a topic's Open threads with ` — closed` once they close.
 
 `draft: ai` on an entry means it was auto-drafted and needs a human pass — replace the `TODO: why` line with the real reasoning and drop the marker.
@@ -46,14 +46,14 @@ Capture is backed by automation under `scripts/wiki/` — a safety net, not a re
 
 The knowledge graph renders a set of machine-generated connection pages — the exception to the closed set of authored page types:
 
-- [connections.md](connections.md) — a small index that routes to per-section files under `wiki/connections/`: [catalog membership](connections/catalog.md), [pattern cross-references](connections/see-also.md), [skill references](connections/references.md), [wiki wiring](connections/wiki-wiring.md) — all rendered from the knowledge graph by [`scripts/graph/build-graph.cjs`](../scripts/graph/build-graph.cjs). **Do not hand-edit them.** They are rebuilt + staged by `.husky/pre-commit`, staged by the wiki bots, and verified byte-fresh by `pnpm evals:graph`; an edit that isn't a rebuild fails CI. To change them, change the catalog or wiki and run `pnpm graph:build`.
+- [connections.md](connections.md) — a small index that routes to per-section files under `wiki/connections/`: [catalog membership](connections/catalog.md), [pattern cross-references](connections/see-also.md), [skill references](connections/references.md), [wiki wiring](connections/wiki-wiring.md) — all rendered from the knowledge graph by [`scripts/graph/build-graph.cjs`](../scripts/graph/build-graph.cjs). **Do not hand-edit them.** They are rebuilt + staged by `.husky/pre-commit`, staged by the wiki bots, and verified byte-fresh by `pnpm graph:check`; an edit that isn't a rebuild fails CI. To change them, change the catalog or wiki and run `pnpm graph:build`.
 
 The pages are deliberately excluded from the graph's own nodes so they never become self-referential mega-nodes.
 
 ## Content rules
 
 - Record the why and what was ruled out — the parts `git log` and CHANGELOG.md cannot tell you. Link to commits/PRs instead of duplicating them.
-- Topic frontmatter is part of navigation: `aliases` lists grounded natural-language lookup terms, and `covers` lists exact repo-relative surfaces the topic explains (pattern, skill, or doc files). Covered paths must resolve to a graph node — a stale path fails `pnpm evals:graph` as a dangling edge.
+- Topic frontmatter is part of navigation: `aliases` lists grounded natural-language lookup terms, and `covers` lists exact repo-relative surfaces the topic explains (pattern, skill, or doc files). Covered paths must resolve to a graph node — a stale path fails `pnpm graph:check` as a dangling edge.
 - Plain statements, no emphasis language. H2/H3 headers only.
 
 ## Size and pruning
@@ -74,6 +74,7 @@ topics: [<topic-slug>]              # topic slugs touched, or []
 plan: plans/YYYY-MM-DD-<slug>.md    # or none
 pr: https://github.com/verndale/ui-design-brain/pull/NNN   # or pending
 follow_up_pr: https://github.com/verndale/ui-design-brain/pull/NNN   # optional; or pending
+issue: https://github.com/verndale/ui-design-brain/issues/NNN   # optional; filled by merge sync from "Closes #N"
 ---
 # <Title>
 
@@ -119,14 +120,18 @@ Prepended to the verbatim plan text (written by `pnpm wiki:archive-plan`):
 
 ```markdown
 ---
-status: implemented | partial | not-implemented | superseded | out-of-scope
+status: implemented | partial | not-implemented | superseded | out-of-scope | not-verified
 executed: YYYY-MM-DD            # or n/a
+date: YYYY-MM-DD                # archive date
 evidence: ["PR #N", "commit <sha>", ...]
 source_tool: claude | codex | file
 source: <original path on disk or codex-session:<session>#<line>:<block>:<plan>:<digest>>
 topics: [<topic-slug>]
+audit_note: <where the plan and reality diverged>   # optional
 ---
 ```
+
+`not-verified` is what `pnpm wiki:find-plans --archive` assigns to a recovered candidate until its delivery evidence is audited. Archived plans copy their plan body verbatim and are exempt from the `## Contents` rule.
 
 ### plans/INDEX.md row
 

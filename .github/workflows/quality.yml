@@ -1,21 +1,17 @@
-name: Knowledge graph
-
-# Freshness backstop for the committed knowledge graph. The pre-commit hook rebuilds
-# and stages scripts/graph/data/graph.json + wiki/connections* on every local commit;
-# this gate catches commits made with --no-verify or edits that landed out of band by
-# byte-comparing a fresh rebuild against what's committed (see scripts/evals/graph-check.cjs).
+name: Quality
 
 on:
   pull_request:
     branches: [main]
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 permissions:
   contents: read
   pull-requests: read
 
 jobs:
-  graph:
+  quality:
+    name: quality
     runs-on: ubuntu-latest
 
     steps:
@@ -46,8 +42,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Check knowledge graph freshness
-        run: pnpm run evals:graph
+      - name: Verify repository
+        run: pnpm run verify:ci
 
       - name: Warn on missing wiki journal entry
         if: github.event_name == 'pull_request'
@@ -55,7 +51,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # Advisory only — a fetch/permission hiccup must never fail the graph gate.
           gh api "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/files" \
             --paginate --jq '.[].filename' > changed.txt || true
           node scripts/wiki/ci-journal-warn.cjs --files changed.txt || true
