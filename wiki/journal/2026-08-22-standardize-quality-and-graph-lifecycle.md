@@ -2,7 +2,7 @@
 date: 2026-08-22
 topics: [graph-wiki-subsystem]
 plan: plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/41
 issue: https://github.com/verndale/ui-design-brain/issues/40
 ---
 # Standardize quality and graph lifecycle

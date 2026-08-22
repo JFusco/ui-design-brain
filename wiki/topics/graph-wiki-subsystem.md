@@ -15,6 +15,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-08-22 — chore(tooling): standardize quality gates ([PR #41](https://github.com/verndale/ui-design-brain/pull/41))
 - 2026-08-22 — Standardized blocking lint/push/PR gates while keeping curated graph writes lifecycle-only and advisory; ported required-input, unresolved-edge, root-relative, discovery, server, and viewer safeguards without changing the Brain graph schema, palette, or port ([issue #40](https://github.com/verndale/ui-design-brain/issues/40), [plan](../plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md), [journal](../journal/2026-08-22-standardize-quality-and-graph-lifecycle.md)).
 - 2026-08-08 — feat(ui-design-brain): Clarify Hero and Alert message boundaries ([PR #38](https://github.com/verndale/ui-design-brain/pull/38))
 - 2026-08-08 — feat(ui-design-brain): Add Mega menu pattern and update documentation ([PR #36](https://github.com/verndale/ui-design-brain/pull/36))
