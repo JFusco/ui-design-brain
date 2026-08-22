@@ -24,11 +24,7 @@ function parseArgs(argv) {
   }
   const suppliedMarkdownDirs = args.dirs.length > 0;
   if (!suppliedMarkdownDirs) {
-    args.dirs = [
-      path.join(os.homedir(), ".claude", "plans"),
-      path.join(os.homedir(), "Desktop", "claude-plans-organized", "ui-design-brain", "executed"),
-      path.join(os.homedir(), "Desktop", "claude-plans-organized", "ui-design-brain", "open-plans"),
-    ];
+    args.dirs = [path.join(os.homedir(), ".claude", "plans")];
   }
   // Supplying only --plans-dir preserves the existing test/operator behavior;
   // normal recovery includes live Codex sessions unless a directory is supplied.

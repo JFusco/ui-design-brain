@@ -20,7 +20,7 @@ function warningForPaths(paths) {
   if (substantive && !hasJournal) {
     const shown = substantivePaths.slice(0, 6).join(", ");
     return (
-      `::warning::This PR changes pipeline source (${shown}) with no wiki/journal entry. ` +
+      `::warning::This PR changes catalog source (${shown}) with no wiki/journal entry. ` +
       `Add one per wiki/MECHANICS.md, or the merge sync will draft a stub for you to revise.`
     );
   }
@@ -30,7 +30,7 @@ function warningForPaths(paths) {
 function main() {
   const idx = process.argv.indexOf("--files");
   if (idx === -1) return 0;
-  let paths = [];
+  let paths;
   try {
     paths = fs.readFileSync(process.argv[idx + 1], "utf8").split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
   } catch {

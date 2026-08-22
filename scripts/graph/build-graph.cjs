@@ -38,6 +38,7 @@ const PATTERNS_PREFIX = `${SKILL_ROOT}/patterns/`;
 // become links-to edges, making them mega-nodes and coupling the graph to its own view.
 const CONNECTIONS_INDEX_ID = "wiki/connections.md";
 const CONNECTIONS_DIR_ID = "wiki/connections";
+const INVALID_PLAN_PREFIX = "wiki/plans/.invalid/";
 const isConnectionsView = (id) => id === CONNECTIONS_INDEX_ID || id.startsWith(`${CONNECTIONS_DIR_ID}/`);
 
 // Root docs promoted to their own node type. CHANGELOG.md is intentionally excluded —
@@ -58,7 +59,10 @@ const ISSUE_RE = /github\.com\/[^/]+\/[^/]+\/issues\/(\d+)/g;
 const EDGE_KEY_SEP = String.fromCharCode(0);
 
 const toPosix = (p) => p.split(path.sep).join("/");
-const rel = (abs) => toPosix(path.relative(REPO_ROOT, abs));
+// build() accepts a root override for check-only fixtures and callers. Helpers must use
+// that root too; closing over REPO_ROOT produces host-relative ids for an alternate tree.
+const relTo = (repoRoot, abs) => toPosix(path.relative(repoRoot, abs));
+const rel = (abs) => relTo(REPO_ROOT, abs);
 
 // Same skip rules as link resolution: external, anchors, template vars, placeholders.
 function isSkippable(target) {
@@ -120,14 +124,21 @@ function typeOf(r) {
 // Canonical pattern name + aliases come from the manifest, not the file: pattern files
 // use H2 headings and carry no frontmatter, so aliases and the display label would
 // otherwise be lost. Flattens object-form aliases ({ name, context }) to their name.
-function loadManifest(abs) {
+function loadManifest(abs, repoRoot = REPO_ROOT) {
   const bySlug = new Map();
+  let raw;
+  try {
+    raw = fs.readFileSync(abs, "utf8");
+  } catch {
+    throw new Error(`required catalog manifest is missing: ${relTo(repoRoot, abs)}`);
+  }
   let entries;
   try {
-    entries = JSON.parse(fs.readFileSync(abs, "utf8"));
-  } catch {
-    return bySlug;
+    entries = JSON.parse(raw);
+  } catch (error) {
+    throw new Error(`required catalog manifest is malformed: ${relTo(repoRoot, abs)} (${error.message})`, { cause: error });
   }
+  if (!Array.isArray(entries)) throw new Error(`required catalog manifest must be an array: ${relTo(repoRoot, abs)}`);
   for (const e of entries) {
     if (!e || !e.slug) continue;
     const aliases = (e.aliases || []).map((a) => (typeof a === "string" ? a : a && a.name)).filter(Boolean);
@@ -152,7 +163,7 @@ function extractLabel(id, type, text, patternName) {
 
 // Extract resolvable relative markdown-link targets (repo-relative posix), skipping
 // fenced code blocks and non-local targets.
-function extractLinks(absFile, text) {
+function extractLinks(absFile, text, repoRoot = REPO_ROOT) {
   const targets = [];
   const lines = text.split(/\r?\n/);
   let fenced = false;
@@ -169,7 +180,7 @@ function extractLinks(absFile, text) {
       const raw = full.split("#")[0].split(" ")[0];
       if (isSkippable(raw)) continue;
       const resolvedAbs = path.resolve(path.dirname(absFile), raw);
-      targets.push({ target: rel(resolvedAbs), anchor: full.includes("#") ? full.split("#")[1] : null });
+      targets.push({ target: relTo(repoRoot, resolvedAbs), anchor: full.includes("#") ? full.split("#")[1] : null });
     }
   }
   return targets;
@@ -204,7 +215,7 @@ function uniqueMatches(text, re) {
 
 function build({ repoRoot = REPO_ROOT } = {}) {
   const manifestAbs = path.join(repoRoot, MANIFEST_ID);
-  const bySlug = loadManifest(manifestAbs);
+  const bySlug = loadManifest(manifestAbs, repoRoot);
 
   const roots = [
     path.join(repoRoot, "skills"),
@@ -218,7 +229,7 @@ function build({ repoRoot = REPO_ROOT } = {}) {
   const fileText = new Map(); // id -> raw text
 
   for (const abs of absFiles) {
-    const id = rel(abs);
+    const id = relTo(repoRoot, abs);
     if (isConnectionsView(id)) continue; // the generated view is never a node in the graph
     const type = typeOf(id);
     if (!type) continue;
@@ -295,7 +306,7 @@ function build({ repoRoot = REPO_ROOT } = {}) {
   const linkCounts = new Map(); // `${src} ${tgt}` -> {count, anchors:Set}
   for (const [id, text] of fileText) {
     if (!id.endsWith(".md")) continue;
-    for (const { target, anchor } of extractLinks(path.join(repoRoot, id), text)) {
+    for (const { target, anchor } of extractLinks(path.join(repoRoot, id), text, repoRoot)) {
       if (target === id || !nodes.has(target)) continue;
       const key = `${id}${EDGE_KEY_SEP}${target}`;
       let entry = linkCounts.get(key);
@@ -325,13 +336,29 @@ function build({ repoRoot = REPO_ROOT } = {}) {
     if (!id.startsWith("wiki/")) continue;
     for (const slug of frontmatter.readList(text, "topics")) {
       const target = `wiki/topics/${slug}.md`;
-      if (nodes.has(target) && target !== id) pushWiki(id, target, "topic");
+      if (target !== id) pushWiki(id, target, "topic");
     }
     const planField = frontmatter.readField(text, "plan");
-    if (planField && planField !== "none") {
-      // Journal `plan:` is repo-root-relative (e.g. plans/... or wiki/plans/...).
-      const candidate = planField.startsWith("wiki/") ? planField : `wiki/${planField.replace(/^\.?\//, "")}`;
-      if (nodes.has(candidate)) pushWiki(id, candidate, "plan");
+    // `none` and `pending` are the documented sentinels — `pending` is what the merge
+    // automation fills in, and treating either as a path would dangle the build forever.
+    if (planField && planField !== "none" && planField !== "pending") {
+      // Journal `plan:` is written wiki-relative (plans/...) or repo-relative (wiki/plans/...).
+      const raw = planField.startsWith("wiki/") ? planField : `wiki/${planField.replace(/^\.?\//, "")}`;
+      const candidate = path.posix.normalize(raw);
+      const validPlanPath =
+        !path.posix.isAbsolute(planField) &&
+        !planField.split("/").includes("..") &&
+        candidate !== id &&
+        candidate.startsWith("wiki/plans/") &&
+        candidate !== "wiki/plans/";
+      if (validPlanPath) {
+        pushWiki(id, candidate, "plan");
+      } else {
+        // Invalid declarations must reach the same dangling-edge gate as missing plans.
+        // The reserved hidden namespace is never indexed, and encoding the raw value
+        // prevents traversal or absolute input from escaping it in the graph itself.
+        pushWiki(id, `${INVALID_PLAN_PREFIX}${encodeURIComponent(planField)}`, "plan");
+      }
     }
     if (nodes.get(id)?.type === "wiki-topic") {
       for (const target of frontmatter.readList(text, "covers")) {
@@ -363,6 +390,13 @@ function build({ repoRoot = REPO_ROOT } = {}) {
     nodes: nodeList,
     edges: edgeList,
   };
+}
+
+// Shared integrity predicate. The builder and the check-only evaluator must assert the
+// same rule instead of maintaining subtly different endpoint filters.
+function danglingEdges(graph) {
+  const ids = new Set(graph.nodes.map((n) => n.id));
+  return graph.edges.filter((e) => !ids.has(e.source) || !ids.has(e.target));
 }
 
 // Canonical serialization — the exact bytes graph:build writes. Shared with the
@@ -399,7 +433,7 @@ function renderConnections(graph) {
     "",
     desc,
     "",
-    "Part of the [connections map](../connections.md), generated from the knowledge graph — **do not edit by hand**. Rebuilt on every `pnpm graph:build` and verified fresh by `pnpm evals:graph`.",
+    "Part of the [connections map](../connections.md), generated from the knowledge graph — **do not edit by hand**. Rebuilt on every `pnpm graph:build` and verified fresh by `pnpm graph:check`.",
     "",
   ];
 
@@ -469,7 +503,7 @@ function renderConnections(graph) {
       "# Connections — catalog + wiki wiring",
       "",
       "Generated from the knowledge graph ([`scripts/graph/build-graph.cjs`](../scripts/graph/build-graph.cjs)) — **do not edit by hand**.",
-      "Rebuilt on every `pnpm graph:build` and verified fresh by `pnpm evals:graph`. It maps how the catalog and the",
+      "Rebuilt on every `pnpm graph:build` and verified fresh by `pnpm graph:check`. It maps how the catalog and the",
       "context wiki wire together (open the graph viewer with `pnpm graph:view` for the full, interactive picture).",
       "",
       "This is a small index — open the section your question needs:",
@@ -494,8 +528,7 @@ function run() {
 
   // Integrity gate: every edge endpoint must resolve to a node. Check before writing so
   // a broken graph never overwrites the committed artifacts.
-  const ids = new Set(graph.nodes.map((n) => n.id));
-  const dangling = graph.edges.filter((e) => !ids.has(e.source) || !ids.has(e.target));
+  const dangling = danglingEdges(graph);
   if (dangling.length) {
     console.error(`FAIL: ${dangling.length} edge(s) with unresolved endpoints.`);
     for (const d of dangling.slice(0, 10)) console.error(`  ${d.type} ${d.source} -> ${d.target}`);
@@ -530,6 +563,7 @@ module.exports = {
   build,
   render,
   renderConnections,
+  danglingEdges,
   typeOf,
   extractLinks,
   extractBacktickFiles,

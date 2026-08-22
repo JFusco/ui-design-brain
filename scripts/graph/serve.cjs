@@ -28,6 +28,9 @@ function resolveSafe(urlPath) {
   } catch {
     return null; // malformed percent-encoding → treat as a bad request
   }
+  // fs.readFile rejects null bytes synchronously, outside its callback. Reject here so a
+  // request for /%00 cannot escape the handler and terminate the viewer process.
+  if (clean.includes("\0")) return null;
   const relPath = clean === "/" ? "viewer/index.html" : clean.replace(/^\/+/, "");
   const abs = path.join(ROOT, relPath);
   // Reject anything that escapes ROOT.
@@ -51,10 +54,11 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
+// The viewer serves repository files and should never be reachable off-machine.
+server.listen(PORT, "127.0.0.1", () => {
   if (!fs.existsSync(path.join(ROOT, "data", "graph.json"))) {
     console.log("Note: data/graph.json not found — run `pnpm graph:build` first.\n");
   }
-  console.log(`Knowledge graph viewer → http://localhost:${PORT}`);
+  console.log(`Knowledge graph viewer → http://127.0.0.1:${PORT}`);
   console.log("Press Ctrl+C to stop.");
 });

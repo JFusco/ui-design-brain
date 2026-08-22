@@ -2,7 +2,7 @@
 
 Patterns that point at one another through inline-code `see-also` references.
 
-Part of the [connections map](../connections.md), generated from the knowledge graph — **do not edit by hand**. Rebuilt on every `pnpm graph:build` and verified fresh by `pnpm evals:graph`.
+Part of the [connections map](../connections.md), generated from the knowledge graph — **do not edit by hand**. Rebuilt on every `pnpm graph:build` and verified fresh by `pnpm graph:check`.
 
 - [Alert](../../skills/ui-design-brain/patterns/alert.md) → [Hero](../../skills/ui-design-brain/patterns/hero.md), [Marquee](../../skills/ui-design-brain/patterns/marquee.md), [Toast](../../skills/ui-design-brain/patterns/toast.md)
 - [Avatar](../../skills/ui-design-brain/patterns/avatar.md) → [Image](../../skills/ui-design-brain/patterns/image.md)

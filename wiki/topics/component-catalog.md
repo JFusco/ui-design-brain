@@ -14,7 +14,7 @@ The canonical UI-pattern catalog: how a design label resolves to one component w
 - `index.md` is the first-hop narrowing list; each pattern file holds the guidance — a one-line definition, bidirectional cross-references, roughly six best practices with at least one measurable accessibility bullet, and about four layouts. Downstream pipelines lift the accessibility bullets into acceptance criteria, so those bullets stay concrete (a specific WCAG SC, ARIA attribute, or technique).
 - Cross-references between confusable patterns are bidirectional prose pointers. Child modules (a Carousel's Slide, a Tabs' Tab / Tab panel, an Accordion's Accordion item) are named in prose but never aliased, so ba-cockpit child-spec smart-linking keeps treating them as novel.
 - Visual variants (for example the tabs pill / underline / segmented styles) are an axis orthogonal to ARIA and never change the resolved canonical.
-- Authoring structure and conventions live in `skills/_meta/` (authoring-only, never vendored). Catalog integrity — manifest to index to pattern files to the README count — is gated by the `catalogs` edge in `pnpm evals:graph`.
+- Authoring structure and conventions live in `skills/_meta/` (authoring-only, never vendored). Catalog integrity — manifest to index to pattern files to the README count — is gated by the `catalogs` edge in `pnpm graph:check`.
 
 ## Decisions
 

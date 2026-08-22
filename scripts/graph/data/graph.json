@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 123,
-    "edges": 309,
+    "nodes": 125,
+    "edges": 316,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 80,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 22,
-      "wiki-plan": 7,
+      "wiki-journal": 23,
+      "wiki-plan": 8,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 80,
       "covers": 5,
-      "links-to": 74,
-      "plan": 2,
+      "links-to": 78,
+      "plan": 3,
       "references": 4,
       "see-also": 116,
-      "topic": 28
+      "topic": 30
     }
   },
   "nodes": [
@@ -33,7 +33,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 6313,
+      "bytes": 6519,
       "degree": 4
     },
     {
@@ -57,7 +57,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 5175,
+      "bytes": 7065,
       "degree": 3
     },
     {
@@ -69,7 +69,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 9862,
+      "bytes": 10511,
       "degree": 7
     },
     {
@@ -1300,8 +1300,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 9235,
-      "degree": 29
+      "bytes": 9472,
+      "degree": 30
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1660,6 +1660,22 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-08-22-standardize-quality-and-graph-lifecycle.md",
+      "label": "Standardize quality and graph lifecycle",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "graph-wiki-subsystem"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "40"
+      ],
+      "bytes": 2072,
+      "degree": 4
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -1668,7 +1684,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 7581,
+      "bytes": 8103,
       "degree": 4
     },
     {
@@ -1780,6 +1796,20 @@
       "degree": 4
     },
     {
+      "id": "wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md",
+      "label": "Standardize Brain quality and graph lifecycle",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "graph-wiki-subsystem"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "bytes": 2244,
+      "degree": 4
+    },
+    {
       "id": "wiki/plans/INDEX.md",
       "label": "Plan Audit",
       "type": "wiki-index",
@@ -1792,8 +1822,8 @@
         "15"
       ],
       "issues": [],
-      "bytes": 2463,
-      "degree": 9
+      "bytes": 2783,
+      "degree": 10
     },
     {
       "id": "wiki/topics/agents-guidance.md",
@@ -1861,10 +1891,11 @@
         "9"
       ],
       "issues": [
+        "40",
         "8"
       ],
-      "bytes": 2905,
-      "degree": 5
+      "bytes": 3919,
+      "degree": 9
     },
     {
       "id": "wiki/topics/packaging-and-distribution.md",
@@ -2531,6 +2562,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-22-standardize-quality-and-graph-lifecycle.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -2630,6 +2668,13 @@
     {
       "source": "wiki/plans/INDEX.md",
       "target": "wiki/plans/2026-07-23-ui-design-brain-close-catalog-gaps-observed-in-consuming-rep.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2804,7 +2849,21 @@
     },
     {
       "source": "wiki/topics/graph-wiki-subsystem.md",
+      "target": "wiki/journal/2026-08-22-standardize-quality-and-graph-lifecycle.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/graph-wiki-subsystem.md",
       "target": "wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/graph-wiki-subsystem.md",
+      "target": "wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2838,6 +2897,11 @@
     {
       "source": "wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md",
       "target": "wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md",
+      "type": "plan"
+    },
+    {
+      "source": "wiki/journal/2026-08-22-standardize-quality-and-graph-lifecycle.md",
+      "target": "wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md",
       "type": "plan"
     },
     {
@@ -3667,6 +3731,11 @@
       "type": "topic"
     },
     {
+      "source": "wiki/journal/2026-08-22-standardize-quality-and-graph-lifecycle.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    },
+    {
       "source": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
@@ -3694,6 +3763,11 @@
     {
       "source": "wiki/plans/2026-07-23-ui-design-brain-close-catalog-gaps-observed-in-consuming-rep.md",
       "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
       "type": "topic"
     }
   ]

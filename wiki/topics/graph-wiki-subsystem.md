@@ -7,12 +7,15 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Current state
 
-- `pnpm graph:build` derives `scripts/graph/data/graph.json` from the catalog + root docs + wiki; `pnpm graph:view` renders it with a vendored Sigma.js stack; `pnpm evals:graph` byte-compares a fresh rebuild and gates freshness.
+- `pnpm graph:build` derives `scripts/graph/data/graph.json` from the catalog + root docs + wiki; `pnpm graph:view` renders it on loopback with a vendored Sigma.js stack; `pnpm graph:check` byte-compares a fresh rebuild and gates freshness without writes.
 - Node types: `root-doc`, `skill`, `skill-index`, `manifest`, `ui-pattern`, `wiki-*`. Edges: `catalogs`, `see-also`, `references`, `links-to`, `topic`, `plan`, `covers`. The `catalogs` edge (manifest → each pattern) doubles as the catalog integrity gate.
+- The manifest is required and validated before generated writes. Topic, plan, and `covers` declarations remain in the graph when unresolved so one shared dangling-edge predicate fails loudly. Malformed plan paths also dangle instead of being discarded; `none`/`pending` sentinels and normalized `plans/`/`wiki/plans/` paths remain valid.
+- Pre-commit lifecycle writes skip unstaged graph input and fail open. Pre-push and CI use check-only contracts; wiki bots reuse the same builder.
 - The context wiki captures executed plans (Codex + Claude), GitHub PRs, and GitHub issues. Slack ingestion is deliberately excluded.
 
 ## Decisions
 
+- 2026-08-22 — Standardized blocking lint/push/PR gates while keeping curated graph writes lifecycle-only and advisory; ported required-input, unresolved-edge, root-relative, discovery, server, and viewer safeguards without changing the Brain graph schema, palette, or port ([issue #40](https://github.com/verndale/ui-design-brain/issues/40), [plan](../plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md), [journal](../journal/2026-08-22-standardize-quality-and-graph-lifecycle.md)).
 - 2026-08-08 — feat(ui-design-brain): Clarify Hero and Alert message boundaries ([PR #38](https://github.com/verndale/ui-design-brain/pull/38))
 - 2026-08-08 — feat(ui-design-brain): Add Mega menu pattern and update documentation ([PR #36](https://github.com/verndale/ui-design-brain/pull/36))
 - 2026-08-08 — feat(ui-design-brain): Add Media object pattern ([PR #33](https://github.com/verndale/ui-design-brain/pull/33))

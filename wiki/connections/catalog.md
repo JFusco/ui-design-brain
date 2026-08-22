@@ -2,7 +2,7 @@
 
 Every pattern the manifest catalogs, with its alias and cross-reference counts.
 
-Part of the [connections map](../connections.md), generated from the knowledge graph — **do not edit by hand**. Rebuilt on every `pnpm graph:build` and verified fresh by `pnpm evals:graph`.
+Part of the [connections map](../connections.md), generated from the knowledge graph — **do not edit by hand**. Rebuilt on every `pnpm graph:build` and verified fresh by `pnpm graph:check`.
 
 The manifest catalogs 80 patterns:
 

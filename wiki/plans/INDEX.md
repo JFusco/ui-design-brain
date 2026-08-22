@@ -14,8 +14,9 @@ Every agent plan executed for this repo, gathered from Claude plan stores and Co
 - **superseded** — replaced by a later plan before shipping as written.
 - **not-implemented** — nothing shipped; may still be actionable.
 - **out-of-scope** — targets another repo/product.
+- **not-verified** — recovered by `pnpm wiki:find-plans --archive`; nobody has checked yet whether it shipped.
 
-Totals: 7 implemented (7 plans).
+Totals: 8 implemented (8 plans).
 
 ## Plans
 
@@ -28,3 +29,4 @@ Totals: 7 implemented (7 plans).
 | 2026-06-11 | [Plan: Extract `@verndale/ui-design-brain` into its own published repo](2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) | implemented | [PR #9](https://github.com/verndale/ui-design-brain/pull/9) | packaging-and-distribution |
 | 2026-07-23 | [ui-design-brain: close catalog gaps observed in consuming repos](2026-07-23-ui-design-brain-close-catalog-gaps-observed-in-consuming-rep.md) | implemented | [PR #12](https://github.com/verndale/ui-design-brain/pull/12) | component-catalog |
 | 2026-07-23 | [Fix the stale Stepper canonical row in the context-scoped aliases table](2026-07-23-fix-the-stale-stepper-canonical-row-in-the-context-scoped-al.md) | implemented | [PR #15](https://github.com/verndale/ui-design-brain/pull/15) | — |
+| 2026-08-22 | [Standardize Brain quality and graph lifecycle](2026-08-22-standardize-brain-quality-and-graph-lifecycle.md) | implemented | working tree implementation for issue #40 | graph-wiki-subsystem |

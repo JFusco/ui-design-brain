@@ -4,4 +4,4 @@ If this PR merges with **squash and merge**, the **PR title** becomes the single
 
 `feat(scope): Short imperative subject`
 
-Use a **scope** and a valid type (`feat`, `fix`, `docs`, `chore`, etc.). Commit hygiene is enforced by commitlint; this repo is distributed as an agent skill via the `skills` CLI and is **not** published to npm, so commit type does not trigger any release.
+Use a **lowercase scope** and a valid type (`feat`, `fix`, `docs`, `chore`, etc.). Commit hygiene is enforced by commitlint. The repo is not published to npm, but commit type still drives semantic versioning, tags, the changelog, and GitHub release artifacts.

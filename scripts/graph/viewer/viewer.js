@@ -75,7 +75,7 @@ async function init() {
   state.policy = await policyRes.json();
   buildIndexes();
   buildModel();
-  buildRenderer();
+  buildRenderer(await waitForContainer($("#graph")));
   buildLegend();
   populateRouteSelects();
   wireControls();
@@ -131,8 +131,24 @@ function buildModel() {
   state.model = graph;
 }
 
-function buildRenderer() {
+// Sigma reads its container size at construction. A background tab can initially have
+// no width, so wait briefly and then let Sigma initialize in deferred-size mode.
+function waitForContainer(el, timeoutMs = 2000) {
+  if (el.getBoundingClientRect().width > 0) return Promise.resolve(true);
+  return new Promise((resolve) => {
+    const started = Date.now();
+    const tick = () => {
+      if (el.getBoundingClientRect().width > 0) resolve(true);
+      else if (Date.now() - started > timeoutMs) resolve(false);
+      else requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  });
+}
+
+function buildRenderer(sized = true) {
   state.renderer = new Sigma(state.model, $("#graph"), {
+    allowInvalidContainer: !sized,
     labelColor: { color: "#c9cede" },
     labelSize: 12,
     labelWeight: "500",
@@ -384,4 +400,8 @@ function renderPanel(id) {
 // Console handle for scripted exploration: KG.select('<node id>'), KG.reset().
 window.KG = { select: (id) => selectNode(id), reset: () => clearFocus() };
 
-init();
+init().catch((error) => {
+  const stats = $("#stats");
+  if (stats) stats.textContent = `Viewer failed: ${error && error.message}`;
+  console.error("Knowledge graph viewer failed to initialize:", error);
+});

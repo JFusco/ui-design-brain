@@ -17,7 +17,8 @@ in the content as edges. Built deterministically from the files (no LLM), render
 
 ```bash
 pnpm graph:build   # parse the repo → scripts/graph/data/graph.json
-pnpm graph:view    # serve the viewer at http://localhost:4173
+pnpm graph:view    # serve the viewer at http://127.0.0.1:4173
+pnpm graph:check   # check-only freshness, determinism, and integrity contract
 ```
 
 Open the printed URL. In the viewer: scroll to zoom, drag to pan, **search** by name, path, or
@@ -26,7 +27,7 @@ node** to focus its neighborhood and open a metadata panel (path, connection cou
 cited PRs/issues, and clickable neighbors). Choose a source and target under **Shortest path** to
 inspect the same weighted, hub-avoiding route used by internal agent navigation.
 
-`graph:view` serves only `scripts/graph/` over localhost — nothing is deployed. Set `GRAPH_PORT`
+`graph:view` serves only `scripts/graph/` on the `127.0.0.1` loopback interface — nothing is deployed. Set `GRAPH_PORT`
 to change the port. A local server is required because browsers block `fetch()` of the JSON over
 `file://`.
 
@@ -62,7 +63,7 @@ rebuild only changes `graph.json` when the underlying content graph changes. The
 edge endpoint doesn't resolve to a node. Alongside `graph.json`, the build regenerates the
 human-readable connections pages ([`../../wiki/connections.md`](../../wiki/connections.md) + sections
 under `wiki/connections/`) — a markdown view of the same graph; do not edit those by hand.
-[`../evals/graph-check.cjs`](../evals/graph-check.cjs) (`pnpm evals:graph`) byte-compares a fresh
+[`../evals/graph-check.cjs`](../evals/graph-check.cjs) (`pnpm graph:check`) byte-compares a fresh
 rebuild against the committed artifacts so nothing drifts.
 
 The viewer ([`viewer/`](viewer/)) is a static page that renders `graph.json` with a **vendored**
@@ -87,4 +88,4 @@ The node typing lives in `typeOf()` in [`build-graph.cjs`](build-graph.cjs); new
 new branches there plus, if needed, a new edge pass. Add the matching color/label to `TYPE_COLORS` /
 `TYPE_LABELS` (and any new edge hue to `EDGE_COLORS`) in [`viewer/viewer.js`](viewer/viewer.js) so the
 legend and rendering pick it up, and add an edge cost + intent coverage to
-[`routing-policy.json`](routing-policy.json) so `pnpm evals:graph` stays green.
+[`routing-policy.json`](routing-policy.json) so `pnpm graph:check` stays green.
