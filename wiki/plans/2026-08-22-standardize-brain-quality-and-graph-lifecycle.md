@@ -4,6 +4,7 @@ executed: 2026-08-22
 date: 2026-08-22
 evidence:
   - "working tree implementation for issue #40"
+  - "PR #41 https://github.com/verndale/ui-design-brain/pull/41 (merged 2026-08-22)"
 source_tool: file
 source: "/private/tmp/brain-issue-40-quality-graph-plan.md"
 topics: [graph-wiki-subsystem]
