@@ -1,3 +1,57 @@
+# v1.15.1 — 2026-08-24
+
+## Summary (AI, bounded)
+- Fixed CI to fetch full history for verification (commit b47c5b9)
+- Hardened post-rollout graph contracts in the wiki (commit d2b5282)
+- Standardized automation and evidence routing in the wiki (commit 1dc21b4)
+- Synchronized wiki documentation for journals, topics, and plans (commits a2caa8d, 22a97b6)
+- Standardized quality gates tooling (commit 7b7baac)
+- Merged pull requests improving wiki parity and synchronization (commit 0c8b309)
+
+## Highlights
+- commit: Merge pull request #44 from verndale/codex/43-wiki-parity (0c8b309)
+- fix(wiki): harden post-rollout graph contracts (d2b5282)
+- fix(ci): fetch full history for verification (b47c5b9)
+- fix(wiki): standardize automation and evidence routing (1dc21b4)
+- commit: Merge pull request #42 from verndale/bot/wiki-sync/41 (7982c1d)
+- docs(wiki): sync journal, topics, and plans for #41 (a2caa8d)
+- commit: Merge pull request #41 from verndale/codex/40-standardize-quality-and-graph-workflows (de11c51)
+- chore(tooling): standardize quality gates (7b7baac)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Fixes
+- fix(ci): fetch full history for verification (b47c5b9)
+- fix(wiki): harden post-rollout graph contracts (d2b5282)
+- fix(wiki): standardize automation and evidence routing (1dc21b4)
+
+### Docs
+- docs(wiki): sync journal, topics, and plans for #38 (22a97b6)
+- docs(wiki): sync journal, topics, and plans for #41 (a2caa8d)
+
+### Chore
+- chore(tooling): standardize quality gates (7b7baac)
+
+### Other (unknown)
+- commit: Merge pull request #39 from verndale/bot/wiki-sync/38 (69f2d0c)
+- commit: Merge pull request #41 from verndale/codex/40-standardize-quality-and-graph-workflows (de11c51)
+- commit: Merge pull request #42 from verndale/bot/wiki-sync/41 (7982c1d)
+- commit: Merge pull request #44 from verndale/codex/43-wiki-parity (0c8b309)
+
+## Full commit list
+- 0c8b309 commit: Merge pull request #44 from verndale/codex/43-wiki-parity
+- d2b5282 fix(wiki): harden post-rollout graph contracts
+- b47c5b9 fix(ci): fetch full history for verification
+- 1dc21b4 fix(wiki): standardize automation and evidence routing
+- 7982c1d commit: Merge pull request #42 from verndale/bot/wiki-sync/41
+- a2caa8d docs(wiki): sync journal, topics, and plans for #41
+- de11c51 commit: Merge pull request #41 from verndale/codex/40-standardize-quality-and-graph-workflows
+- 7b7baac chore(tooling): standardize quality gates
+- 69f2d0c commit: Merge pull request #39 from verndale/bot/wiki-sync/38
+- 22a97b6 docs(wiki): sync journal, topics, and plans for #38
+
 # v1.15.0 — 2026-08-08
 
 ## Summary (AI, bounded)
