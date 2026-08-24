@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 125,
-    "edges": 316,
+    "nodes": 127,
+    "edges": 324,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 80,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 23,
-      "wiki-plan": 8,
+      "wiki-journal": 24,
+      "wiki-plan": 9,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 80,
       "covers": 5,
-      "links-to": 78,
-      "plan": 3,
+      "links-to": 83,
+      "plan": 4,
       "references": 4,
       "see-also": 116,
-      "topic": 30
+      "topic": 32
     }
   },
   "nodes": [
@@ -33,8 +33,9 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 6519,
-      "degree": 4
+      "githubRefs": [],
+      "bytes": 7942,
+      "degree": 5
     },
     {
       "id": "CLAUDE.md",
@@ -45,6 +46,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 310,
       "degree": 0
     },
@@ -57,6 +59,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 7065,
       "degree": 3
     },
@@ -69,6 +72,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 10511,
       "degree": 7
     },
@@ -81,6 +85,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 3592,
       "degree": 5
     },
@@ -93,6 +98,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 12929,
       "degree": 84
     },
@@ -115,6 +121,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1158,
       "degree": 1
     },
@@ -134,6 +141,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1419,
       "degree": 8
     },
@@ -152,6 +160,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 939,
       "degree": 3
     },
@@ -172,6 +181,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1057,
       "degree": 5
     },
@@ -186,6 +196,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 725,
       "degree": 1
     },
@@ -200,6 +211,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1104,
       "degree": 5
     },
@@ -214,6 +226,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1335,
       "degree": 6
     },
@@ -230,6 +243,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1356,
       "degree": 4
     },
@@ -244,6 +258,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1066,
       "degree": 3
     },
@@ -256,6 +271,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 712,
       "degree": 1
     },
@@ -268,6 +284,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 783,
       "degree": 1
     },
@@ -283,6 +300,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 948,
       "degree": 4
     },
@@ -297,6 +315,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1625,
       "degree": 3
     },
@@ -313,6 +332,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1325,
       "degree": 3
     },
@@ -325,6 +345,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 750,
       "degree": 3
     },
@@ -340,6 +361,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 979,
       "degree": 3
     },
@@ -356,6 +378,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 911,
       "degree": 5
     },
@@ -372,6 +395,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1183,
       "degree": 6
     },
@@ -384,6 +408,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 846,
       "degree": 3
     },
@@ -400,6 +425,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1281,
       "degree": 7
     },
@@ -415,6 +441,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1300,
       "degree": 6
     },
@@ -427,6 +454,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 573,
       "degree": 3
     },
@@ -443,6 +471,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 980,
       "degree": 3
     },
@@ -458,6 +487,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 658,
       "degree": 3
     },
@@ -477,6 +507,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1589,
       "degree": 3
     },
@@ -489,6 +520,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 822,
       "degree": 2
     },
@@ -503,6 +535,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 924,
       "degree": 4
     },
@@ -515,6 +548,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1076,
       "degree": 7
     },
@@ -527,6 +561,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 796,
       "degree": 6
     },
@@ -543,6 +578,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1215,
       "degree": 7
     },
@@ -560,6 +596,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1475,
       "degree": 9
     },
@@ -572,6 +609,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 799,
       "degree": 3
     },
@@ -586,6 +624,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 786,
       "degree": 3
     },
@@ -601,6 +640,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1980,
       "degree": 5
     },
@@ -615,6 +655,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 804,
       "degree": 9
     },
@@ -632,6 +673,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1311,
       "degree": 4
     },
@@ -646,6 +688,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1067,
       "degree": 3
     },
@@ -663,6 +706,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1459,
       "degree": 4
     },
@@ -678,6 +722,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1460,
       "degree": 7
     },
@@ -692,6 +737,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1425,
       "degree": 7
     },
@@ -706,6 +752,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1959,
       "degree": 4
     },
@@ -721,6 +768,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 2113,
       "degree": 4
     },
@@ -737,6 +785,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 980,
       "degree": 5
     },
@@ -755,6 +804,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1180,
       "degree": 9
     },
@@ -771,6 +821,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1332,
       "degree": 4
     },
@@ -787,6 +838,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 750,
       "degree": 1
     },
@@ -799,6 +851,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 814,
       "degree": 3
     },
@@ -813,6 +866,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 747,
       "degree": 1
     },
@@ -831,6 +885,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1080,
       "degree": 7
     },
@@ -847,6 +902,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 588,
       "degree": 2
     },
@@ -862,6 +918,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 750,
       "degree": 1
     },
@@ -874,6 +931,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 720,
       "degree": 1
     },
@@ -889,6 +947,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 783,
       "degree": 3
     },
@@ -904,6 +963,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 2024,
       "degree": 4
     },
@@ -919,6 +979,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1074,
       "degree": 4
     },
@@ -934,6 +995,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1920,
       "degree": 4
     },
@@ -949,6 +1011,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 2003,
       "degree": 8
     },
@@ -964,6 +1027,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1026,
       "degree": 5
     },
@@ -979,6 +1043,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1143,
       "degree": 5
     },
@@ -995,6 +1060,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 629,
       "degree": 1
     },
@@ -1011,6 +1077,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1336,
       "degree": 4
     },
@@ -1025,6 +1092,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1096,
       "degree": 3
     },
@@ -1037,6 +1105,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 560,
       "degree": 4
     },
@@ -1052,6 +1121,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 822,
       "degree": 1
     },
@@ -1067,6 +1137,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 825,
       "degree": 1
     },
@@ -1079,6 +1150,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 524,
       "degree": 1
     },
@@ -1091,6 +1163,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1753,
       "degree": 4
     },
@@ -1107,6 +1180,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 984,
       "degree": 7
     },
@@ -1119,6 +1193,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1091,
       "degree": 4
     },
@@ -1136,6 +1211,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 2363,
       "degree": 3
     },
@@ -1152,6 +1228,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 935,
       "degree": 5
     },
@@ -1164,6 +1241,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 710,
       "degree": 4
     },
@@ -1178,6 +1256,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1007,
       "degree": 3
     },
@@ -1194,6 +1273,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1071,
       "degree": 3
     },
@@ -1208,6 +1288,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1137,
       "degree": 3
     },
@@ -1220,6 +1301,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 799,
       "degree": 1
     },
@@ -1234,6 +1316,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1742,
       "degree": 4
     },
@@ -1248,6 +1331,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 616,
       "degree": 1
     },
@@ -1262,6 +1346,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 619,
       "degree": 3
     },
@@ -1276,6 +1361,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1096,
       "degree": 5
     },
@@ -1288,6 +1374,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 2748,
       "degree": 4
     },
@@ -1300,8 +1387,9 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 9472,
-      "degree": 30
+      "githubRefs": [],
+      "bytes": 9922,
+      "degree": 32
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1317,6 +1405,20 @@
       ],
       "issues": [
         "11"
+      ],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 12,
+          "url": "https://github.com/verndale/ui-design-brain/pull/12"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 11,
+          "url": "https://github.com/verndale/ui-design-brain/issues/11"
+        }
       ],
       "bytes": 3523,
       "degree": 4
@@ -1336,6 +1438,20 @@
       "issues": [
         "14"
       ],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 15,
+          "url": "https://github.com/verndale/ui-design-brain/pull/15"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 14,
+          "url": "https://github.com/verndale/ui-design-brain/issues/14"
+        }
+      ],
       "bytes": 1235,
       "degree": 4
     },
@@ -1354,6 +1470,20 @@
       "issues": [
         "8"
       ],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 9,
+          "url": "https://github.com/verndale/ui-design-brain/pull/9"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 8,
+          "url": "https://github.com/verndale/ui-design-brain/issues/8"
+        }
+      ],
       "bytes": 1817,
       "degree": 4
     },
@@ -1370,6 +1500,14 @@
         "18"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 18,
+          "url": "https://github.com/verndale/ui-design-brain/pull/18"
+        }
+      ],
       "bytes": 1963,
       "degree": 3
     },
@@ -1386,6 +1524,14 @@
         "18"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 18,
+          "url": "https://github.com/verndale/ui-design-brain/pull/18"
+        }
+      ],
       "bytes": 2062,
       "degree": 3
     },
@@ -1400,6 +1546,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1592,
       "degree": 3
     },
@@ -1416,6 +1563,14 @@
         "18"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 18,
+          "url": "https://github.com/verndale/ui-design-brain/pull/18"
+        }
+      ],
       "bytes": 1354,
       "degree": 3
     },
@@ -1432,6 +1587,14 @@
         "18"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 18,
+          "url": "https://github.com/verndale/ui-design-brain/pull/18"
+        }
+      ],
       "bytes": 1459,
       "degree": 3
     },
@@ -1448,6 +1611,14 @@
         "18"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 18,
+          "url": "https://github.com/verndale/ui-design-brain/pull/18"
+        }
+      ],
       "bytes": 1446,
       "degree": 3
     },
@@ -1464,6 +1635,14 @@
         "18"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 18,
+          "url": "https://github.com/verndale/ui-design-brain/pull/18"
+        }
+      ],
       "bytes": 1299,
       "degree": 3
     },
@@ -1480,6 +1659,14 @@
         "18"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 18,
+          "url": "https://github.com/verndale/ui-design-brain/pull/18"
+        }
+      ],
       "bytes": 1423,
       "degree": 3
     },
@@ -1496,6 +1683,14 @@
         "21"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 21,
+          "url": "https://github.com/verndale/ui-design-brain/pull/21"
+        }
+      ],
       "bytes": 2244,
       "degree": 3
     },
@@ -1512,6 +1707,14 @@
         "21"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 21,
+          "url": "https://github.com/verndale/ui-design-brain/pull/21"
+        }
+      ],
       "bytes": 1307,
       "degree": 3
     },
@@ -1528,6 +1731,14 @@
         "24"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 24,
+          "url": "https://github.com/verndale/ui-design-brain/pull/24"
+        }
+      ],
       "bytes": 1501,
       "degree": 3
     },
@@ -1544,6 +1755,14 @@
         "24"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 24,
+          "url": "https://github.com/verndale/ui-design-brain/pull/24"
+        }
+      ],
       "bytes": 1991,
       "degree": 3
     },
@@ -1560,6 +1779,14 @@
         "24"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 24,
+          "url": "https://github.com/verndale/ui-design-brain/pull/24"
+        }
+      ],
       "bytes": 2232,
       "degree": 3
     },
@@ -1576,6 +1803,14 @@
         "24"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 24,
+          "url": "https://github.com/verndale/ui-design-brain/pull/24"
+        }
+      ],
       "bytes": 2045,
       "degree": 3
     },
@@ -1592,6 +1827,14 @@
         "28"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 28,
+          "url": "https://github.com/verndale/ui-design-brain/pull/28"
+        }
+      ],
       "bytes": 1778,
       "degree": 3
     },
@@ -1608,6 +1851,14 @@
         "27"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 27,
+          "url": "https://github.com/verndale/ui-design-brain/pull/27"
+        }
+      ],
       "bytes": 1435,
       "degree": 3
     },
@@ -1624,6 +1875,14 @@
         "33"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 33,
+          "url": "https://github.com/verndale/ui-design-brain/pull/33"
+        }
+      ],
       "bytes": 2129,
       "degree": 3
     },
@@ -1640,6 +1899,14 @@
         "36"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 36,
+          "url": "https://github.com/verndale/ui-design-brain/pull/36"
+        }
+      ],
       "bytes": 2019,
       "degree": 3
     },
@@ -1656,6 +1923,14 @@
         "38"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 38,
+          "url": "https://github.com/verndale/ui-design-brain/pull/38"
+        }
+      ],
       "bytes": 1607,
       "degree": 3
     },
@@ -1674,7 +1949,45 @@
       "issues": [
         "40"
       ],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 41,
+          "url": "https://github.com/verndale/ui-design-brain/pull/41"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 40,
+          "url": "https://github.com/verndale/ui-design-brain/issues/40"
+        }
+      ],
       "bytes": 2116,
+      "degree": 4
+    },
+    {
+      "id": "wiki/journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
+      "label": "Standardize wiki actions and evidence routing",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "graph-wiki-subsystem"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "43"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 43,
+          "url": "https://github.com/verndale/ui-design-brain/issues/43"
+        }
+      ],
+      "bytes": 2001,
       "degree": 4
     },
     {
@@ -1686,7 +1999,8 @@
       "aliases": [],
       "prs": [],
       "issues": [],
-      "bytes": 8103,
+      "githubRefs": [],
+      "bytes": 8759,
       "degree": 4
     },
     {
@@ -1702,6 +2016,14 @@
         "9"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 9,
+          "url": "https://github.com/verndale/ui-design-brain/pull/9"
+        }
+      ],
       "bytes": 12528,
       "degree": 3
     },
@@ -1716,6 +2038,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 4432,
       "degree": 3
     },
@@ -1730,6 +2053,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 22533,
       "degree": 3
     },
@@ -1744,6 +2068,7 @@
       "aliases": [],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 3815,
       "degree": 3
     },
@@ -1758,6 +2083,14 @@
         "15"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 15,
+          "url": "https://github.com/verndale/ui-design-brain/pull/15"
+        }
+      ],
       "bytes": 8386,
       "degree": 2
     },
@@ -1775,6 +2108,20 @@
       ],
       "issues": [
         "8"
+      ],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 9,
+          "url": "https://github.com/verndale/ui-design-brain/pull/9"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 8,
+          "url": "https://github.com/verndale/ui-design-brain/issues/8"
+        }
       ],
       "bytes": 8273,
       "degree": 4
@@ -1794,6 +2141,20 @@
       "issues": [
         "11"
       ],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 12,
+          "url": "https://github.com/verndale/ui-design-brain/pull/12"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 11,
+          "url": "https://github.com/verndale/ui-design-brain/issues/11"
+        }
+      ],
       "bytes": 17741,
       "degree": 4
     },
@@ -1810,7 +2171,39 @@
         "41"
       ],
       "issues": [],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 41,
+          "url": "https://github.com/verndale/ui-design-brain/pull/41"
+        }
+      ],
       "bytes": 2329,
+      "degree": 4
+    },
+    {
+      "id": "wiki/plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
+      "label": "Standardize wiki actions and evidence routing",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "graph-wiki-subsystem"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "43"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 43,
+          "url": "https://github.com/verndale/ui-design-brain/issues/43"
+        }
+      ],
+      "bytes": 2308,
       "degree": 4
     },
     {
@@ -1826,9 +2219,43 @@
         "15",
         "41"
       ],
-      "issues": [],
-      "bytes": 2846,
-      "degree": 10
+      "issues": [
+        "43"
+      ],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 9,
+          "url": "https://github.com/verndale/ui-design-brain/pull/9"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 12,
+          "url": "https://github.com/verndale/ui-design-brain/pull/12"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 15,
+          "url": "https://github.com/verndale/ui-design-brain/pull/15"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 41,
+          "url": "https://github.com/verndale/ui-design-brain/pull/41"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 43,
+          "url": "https://github.com/verndale/ui-design-brain/issues/43"
+        }
+      ],
+      "bytes": 3090,
+      "degree": 11
     },
     {
       "id": "wiki/topics/agents-guidance.md",
@@ -1844,6 +2271,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 647,
       "degree": 5
     },
@@ -1865,6 +2293,20 @@
       "issues": [
         "14",
         "11"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 14,
+          "url": "https://github.com/verndale/ui-design-brain/issues/14"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 11,
+          "url": "https://github.com/verndale/ui-design-brain/issues/11"
+        }
       ],
       "bytes": 12149,
       "degree": 47
@@ -1897,11 +2339,104 @@
         "9"
       ],
       "issues": [
+        "43",
         "40",
         "8"
       ],
-      "bytes": 4042,
-      "degree": 9
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 43,
+          "url": "https://github.com/verndale/ui-design-brain/issues/43"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 41,
+          "url": "https://github.com/verndale/ui-design-brain/pull/41"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 40,
+          "url": "https://github.com/verndale/ui-design-brain/issues/40"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 38,
+          "url": "https://github.com/verndale/ui-design-brain/pull/38"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 36,
+          "url": "https://github.com/verndale/ui-design-brain/pull/36"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 33,
+          "url": "https://github.com/verndale/ui-design-brain/pull/33"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 28,
+          "url": "https://github.com/verndale/ui-design-brain/pull/28"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 27,
+          "url": "https://github.com/verndale/ui-design-brain/pull/27"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 24,
+          "url": "https://github.com/verndale/ui-design-brain/pull/24"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 21,
+          "url": "https://github.com/verndale/ui-design-brain/pull/21"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 18,
+          "url": "https://github.com/verndale/ui-design-brain/pull/18"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 15,
+          "url": "https://github.com/verndale/ui-design-brain/pull/15"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 12,
+          "url": "https://github.com/verndale/ui-design-brain/pull/12"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 9,
+          "url": "https://github.com/verndale/ui-design-brain/pull/9"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 8,
+          "url": "https://github.com/verndale/ui-design-brain/issues/8"
+        }
+      ],
+      "bytes": 5229,
+      "degree": 13
     },
     {
       "id": "wiki/topics/packaging-and-distribution.md",
@@ -1919,6 +2454,7 @@
       ],
       "prs": [],
       "issues": [],
+      "githubRefs": [],
       "bytes": 1254,
       "degree": 8
     }
@@ -2365,6 +2901,13 @@
     },
     {
       "source": "AGENTS.md",
+      "target": "wiki/INDEX.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "AGENTS.md",
       "target": "wiki/MECHANICS.md",
       "type": "links-to",
       "count": 1,
@@ -2575,6 +3118,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -2681,6 +3231,13 @@
     {
       "source": "wiki/plans/INDEX.md",
       "target": "wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2862,6 +3419,13 @@
     },
     {
       "source": "wiki/topics/graph-wiki-subsystem.md",
+      "target": "wiki/journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/graph-wiki-subsystem.md",
       "target": "wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md",
       "type": "links-to",
       "count": 1,
@@ -2870,6 +3434,13 @@
     {
       "source": "wiki/topics/graph-wiki-subsystem.md",
       "target": "wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/graph-wiki-subsystem.md",
+      "target": "wiki/plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -2908,6 +3479,11 @@
     {
       "source": "wiki/journal/2026-08-22-standardize-quality-and-graph-lifecycle.md",
       "target": "wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md",
+      "type": "plan"
+    },
+    {
+      "source": "wiki/journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
+      "target": "wiki/plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
       "type": "plan"
     },
     {
@@ -3742,6 +4318,11 @@
       "type": "topic"
     },
     {
+      "source": "wiki/journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    },
+    {
       "source": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
@@ -3773,6 +4354,11 @@
     },
     {
       "source": "wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
       "target": "wiki/topics/graph-wiki-subsystem.md",
       "type": "topic"
     }
