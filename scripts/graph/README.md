@@ -21,8 +21,8 @@ pnpm graph:view    # serve the viewer at http://127.0.0.1:4173
 pnpm graph:check   # check-only freshness, determinism, and integrity contract
 ```
 
-Open the printed URL. In the viewer: scroll to zoom, drag to pan, **search** by name, path, or
-alias (searching "disclosure" finds Accordion), toggle **node types** in the legend, and **click a
+Open the printed URL. In the viewer: scroll to zoom, drag to pan, **search** by name, path, alias,
+or repo-qualified GitHub citation (searching "disclosure" finds Accordion), toggle **node types** in the legend, and **click a
 node** to focus its neighborhood and open a metadata panel (path, connection count, aliases, topics,
 cited PRs/issues, and clickable neighbors). Choose a source and target under **Shortest path** to
 inspect the same weighted, hub-avoiding route used by internal agent navigation.
@@ -37,7 +37,10 @@ One node per file, typed by path: `root-doc`, `skill` (SKILL.md), `skill-index` 
 `manifest` (patterns-manifest.json), `ui-pattern` (one per `patterns/<slug>.md`), and the wiki pages
 `wiki-index`, `wiki-journal`, `wiki-topic`, `wiki-plan`. `_meta/` authoring templates and
 `CHANGELOG.md` are excluded. Pattern labels and aliases come from the manifest (pattern files carry
-no frontmatter). Node size scales with degree (connection count); color encodes type.
+no frontmatter). Markdown nodes retain legacy number-only `prs` / `issues` and add canonical offline
+`githubRefs` records (`kind`, lower-cased `repository`, `number`, canonical `url`). GitHub evidence
+remains metadata on its citing node; no PR/issue nodes or live API are part of the graph. Node size
+scales with degree (connection count); color encodes type.
 
 ## Edge types
 
@@ -81,6 +84,11 @@ node/edge reducers.
 or inferred edges. Each itinerary step states the traversed edge and the graph declaration that makes
 the next file authoritative. The graph freshness check rejects malformed policy schemas and unsafe
 numeric weights before either the Node or browser resolver can traverse them.
+
+Evidence queries accept full GitHub URLs, `owner/repo PR #N`, `owner/repo issue #N`, and
+`owner/repo#N`; bare numbers are rejected. Each itinerary reports file bytes and a total read budget
+so agents can stop as soon as the question is answered. The viewer uses the same evidence for search
+and safe clickable links.
 
 ## Adding a source
 

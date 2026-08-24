@@ -56,10 +56,18 @@ The repo carries a deterministic **knowledge graph** — over the manifest, patt
 
 - `pnpm graph:build` — rebuild `scripts/graph/data/graph.json` + the generated `wiki/connections*` pages (both committed; the pre-commit hook rebuilds and stages them).
 - `pnpm graph:view` — serve the interactive viewer on loopback at `http://127.0.0.1:4173`.
-- `pnpm graph:navigate --intent why|wiring|impact --query <term>` — a deterministic reading itinerary over the graph; agents use it before broad cross-system reads.
 - `pnpm graph:check` — 17-case freshness + integrity gate (check-only CI/pre-push backstop for the pre-commit rebuild).
 
-Capturing history is part of a substantive change: follow `wiki/MECHANICS.md` (journal entry + archived plan + topic Decisions). Executed plans are archived with `pnpm wiki:archive-plan`; the collectors also ingest GitHub PRs and issues on merge/nightly. Slack ingestion is intentionally **not** part of this subsystem.
+Never bulk-load `wiki/` or `scripts/graph/data/graph.json`.
+
+- **Choose the cheapest lookup first:** an exact file, pattern, symbol, command, or current-code question goes straight to that file or targeted `rg`; do not load history first.
+- **Single-topic rationale or history:** start at [`wiki/INDEX.md`](wiki/INDEX.md), follow its one matching topic or journal link, and stop when answered.
+- **Cross-page questions only:** when the question spans pages or asks cross-system why, dependency/ownership, wiring, or change impact, silently run `node scripts/wiki/navigate.cjs --intent <why|wiring|impact> --query "<specific term>"`. Read only the returned byte-costed itinerary, in order, and stop as soon as the question is answered; do not open adjacent pages "just in case."
+- **Query GitHub evidence unambiguously:** use a full URL, `owner/repo PR #123`, `owner/repo issue #123`, or `owner/repo#123`. Never query a bare `#123`; evidence resolves to the existing page that cites it, not a live GitHub node.
+- **Handle misses without widening context:** if the router returns candidates, choose only from them or ask one focused question. If it reports no route, use one targeted `rg` over `wiki/` and then the exact source path. Never guess a path.
+- **Generated wiring map:** [`wiki/connections.md`](wiki/connections.md) routes catalog membership, pattern references, skill references, and wiki relations. Open only the section named by the itinerary; `pnpm graph:build` rebuilds it and `pnpm run wiki:check` verifies it.
+
+Capturing history is part of a substantive change: follow `wiki/MECHANICS.md` (journal entry + archived plan + topic Decisions). Executed plans are archived with `pnpm wiki:archive-plan`; merge and issue workflows reconcile repo-qualified citations into Markdown and graph nodes derive offline `githubRefs` from them. Slack ingestion is intentionally **not** part of this subsystem.
 
 ## Commits & release — the maintainer's job, not the agent's
 

@@ -62,6 +62,22 @@ test("alternate repo roots produce normalized repo-relative ids", (t) => {
   assert.ok(graph.nodes.every((node) => !node.id.startsWith("../") && !path.isAbsolute(node.id)));
 });
 
+test("legacy evidence arrays and Markdown edges use canonical fence-safe extraction", (t) => {
+  const root = fixture(t);
+  fs.appendFileSync(path.join(root, "wiki/topics/demo.md"), [
+    "", "````md", "```js", "[phantom](../plans/known.md)",
+    "https://github.com/verndale/ui-design-brain/pull/999", "```",
+    "https://evil.example/https://github.com/verndale/ui-design-brain/issues/998", "````",
+    "https://github.com/verndale/ui-design-brain/issues/7", "",
+  ].join("\n"));
+  const graph = build({ repoRoot: root });
+  const node = graph.nodes.find((item) => item.id === "wiki/topics/demo.md");
+  assert.deepEqual(node.prs, []);
+  assert.deepEqual(node.issues, ["7"]);
+  assert.deepEqual(node.githubRefs.map((ref) => ref.number), [7]);
+  assert.equal(graph.edges.some((edge) => edge.source === node.id && edge.target === "wiki/plans/known.md" && edge.type === "links-to"), false);
+});
+
 for (const [label, replacement, message] of [
   ["missing", null, /required catalog manifest is missing/],
   ["malformed", "{ not json\n", /required catalog manifest is malformed/],

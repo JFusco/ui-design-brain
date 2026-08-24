@@ -17,8 +17,8 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 3. "Was plan X implemented / what plans exist" → [plans/INDEX.md](plans/INDEX.md) is the audit table; archived plan files sit next to it.
 4. Full plan detail behind a change → follow the plan link inside the journal entry or topic page.
 5. "How does X wire to the rest of the catalog/wiki" → [connections.md](connections.md), a small index over the generated map; open the section your question needs: [catalog membership](connections/catalog.md), [pattern cross-references](connections/see-also.md), [skill references](connections/references.md), [wiki wiring](connections/wiki-wiring.md).
-6. Cross-system "why", wiring, or impact question → agents silently use `pnpm graph:navigate` (`scripts/wiki/navigate.cjs`) before reading files; it returns a deterministic, minimal itinerary. Developers do not need to run or remember this utility.
-7. No index hit or no route → grep `wiki/` for the term; then fall back to `git log` / `gh`. Never load the whole wiki.
+6. Cross-page rationale, wiring, or impact → agents silently use `scripts/wiki/navigate.cjs` with the matching intent. Query GitHub evidence with a full URL or repo-qualified form (`owner/repo PR #N`, `owner/repo issue #N`, `owner/repo#N`), never a bare number. Read the byte-costed itinerary in order and stop when answered.
+7. Ambiguous route → use only the returned candidates or ask one focused question. No route → one targeted `rg` over `wiki/`, then the exact source path. Never load the whole wiki or raw graph JSON.
 
 ## Topics
 
@@ -33,6 +33,7 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
+- 2026-08-23 — [Standardize wiki actions and evidence routing](journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md) — repo-qualified offline PR/issue evidence, safe search/routing, canonical workflows, guarded replay, cached issue refresh, and token-efficient navigation.
 - 2026-08-22 — [Standardize quality and graph lifecycle](journal/2026-08-22-standardize-quality-and-graph-lifecycle.md) — staged linting, blocking push/PR gates, one public Commitlint config, and a fail-safe curated graph lifecycle.
 - 2026-08-08 — [Hero: promotional banner vs Alert message boundary](journal/2026-08-08-hero-promo-banner-vs-alert.md) — a promotional band with image + headline + CTAs is a Hero even when named "message banner"/"CTA banner"; the Alert case is the dismissible page notification. Bidirectional clarification, no alias (a plain alias would misresolve Alert-style banners).
 - 2026-08-08 — [Add the Mega menu pattern](journal/2026-08-08-add-mega-menu-pattern.md) — a full-width, multi-column navigation disclosure panel dropped from a top-level nav item, distinct from the Navigation bar, a Dropdown menu, and a Drawer; promoted on cross-client recurrence (two clients, fingerprint + spec). Aliases Header mega menu, Mega menu panel (79 → 80).
