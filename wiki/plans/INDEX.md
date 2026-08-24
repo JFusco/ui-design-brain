@@ -16,7 +16,7 @@ Every agent plan executed for this repo, gathered from Claude plan stores and Co
 - **out-of-scope** — targets another repo/product.
 - **not-verified** — recovered by `pnpm wiki:find-plans --archive`; nobody has checked yet whether it shipped.
 
-Totals: 9 implemented (9 plans).
+Totals: 10 implemented (10 plans).
 
 ## Plans
 
@@ -31,3 +31,4 @@ Totals: 9 implemented (9 plans).
 | 2026-07-23 | [Fix the stale Stepper canonical row in the context-scoped aliases table](2026-07-23-fix-the-stale-stepper-canonical-row-in-the-context-scoped-al.md) | implemented | [PR #15](https://github.com/verndale/ui-design-brain/pull/15) | — |
 | 2026-08-22 | [Standardize Brain quality and graph lifecycle](2026-08-22-standardize-brain-quality-and-graph-lifecycle.md) | implemented | working tree implementation for issue #40, [PR #41](https://github.com/verndale/ui-design-brain/pull/41) | graph-wiki-subsystem |
 | 2026-08-23 | [Standardize wiki actions and evidence routing](2026-08-23-standardize-wiki-actions-and-evidence-routing.md) | implemented | [issue #43](https://github.com/verndale/ui-design-brain/issues/43), PR pending | graph-wiki-subsystem |
+| 2026-08-24 | [Deterministic, Route-First Wiki Guidance and PR 127 Recovery](2026-08-24-deterministic-route-first-wiki-guidance-and-pr-127-recovery.md) | implemented | canonical headless AGENTS.md block installed with zero-drift dry run | graph-wiki-subsystem |
