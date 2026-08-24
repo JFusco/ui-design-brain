@@ -262,6 +262,10 @@ function populateRouteSelects() {
   }
 }
 
+function formatBytes(value) {
+  return value < 1024 ? `${value} B` : `${(value / 1024).toFixed(1)} KiB`;
+}
+
 function renderRoutePanel() {
   if (!state.route) return;
   $("#p-label").textContent = "Shortest route";
@@ -272,7 +276,10 @@ function renderRoutePanel() {
     const item = state.raw.get(id);
     const li = document.createElement("li");
     const relation = index === 0 ? "start" : `${state.route.steps[index - 1].direction === "forward" ? "→" : "←"} ${state.route.steps[index - 1].edge.type}`;
-    li.textContent = `${item.label} (${relation})`;
+    const authority = index === 0
+      ? "selected source"
+      : `${state.route.steps[index - 1].edge.source} declares ${state.route.steps[index - 1].edge.type}`;
+    li.textContent = `${item.label} (${relation}; authority: ${authority}; ${formatBytes(item.bytes || 0)})`;
     li.addEventListener("click", () => selectNode(id));
     list.appendChild(li);
   }
@@ -288,7 +295,7 @@ function showRoute() {
     status.textContent = "Choose a source and target.";
     return;
   }
-  if (!window.KGRouting.hasSafeNumericPolicy(state.policy)) {
+  if (!window.KGRouting.hasSafeNumericPolicy(state.policy, state.graph)) {
     status.textContent = "Routing policy is invalid; rebuild the graph policy before routing.";
     return;
   }
@@ -306,14 +313,14 @@ function showRoute() {
   state.routeNodes = new Set(route.nodes);
   state.routeEdges = new Set(route.steps.map((step) => window.KGRouting.edgeKey(step.edge)));
   state.focus = null;
-  status.textContent = `${route.nodes.length} nodes · cost ${route.cost}`;
+  status.textContent = `${route.nodes.length} nodes · cost ${route.cost} · ${formatBytes(route.totalBytes)}`;
   applyView();
   renderRoutePanel();
 }
 
 function wireControls() {
   $("#search").addEventListener("input", (e) => {
-    state.query = e.target.value.trim().toLowerCase();
+    state.query = window.KGRouting.normalizeEvidenceQuery(e.target.value);
     applyView();
   });
   $("#reset").addEventListener("click", () => {

@@ -23,7 +23,7 @@
 const fs = require("fs");
 const path = require("path");
 const frontmatter = require("../wiki/lib/frontmatter.cjs");
-const { extractGithubRefs } = require("../wiki/lib/github.cjs");
+const { extractGithubRefs, withoutFencedCode } = require("../wiki/lib/github.cjs");
 
 const REPO_ROOT = path.resolve(__dirname, "..", "..");
 const OUT_FILE = path.join(__dirname, "data", "graph.json");
@@ -47,14 +47,11 @@ const isConnectionsView = (id) => id === CONNECTIONS_INDEX_ID || id.startsWith(`
 const ROOT_DOCS = new Set(["AGENTS.md", "README.md", "CONTRIBUTING.md", "CLAUDE.md"]);
 
 const LINK_RE = /\[[^\]]*\]\(([^)]+)\)/g;
-const FENCE_RE = /^```/;
 const H1_RE = /^#\s+(.+?)\s*$/;
 // Inline-code file references — `drawer.md`, `index.md`, `patterns-manifest.json`,
 // `patterns/modal.md`. Excludes `<` / `>` so the template placeholder `patterns/<slug>.md`
 // never matches. This is how the pattern catalog cross-references itself (no markdown links).
 const BACKTICK_FILE_RE = /`([A-Za-z0-9._/-]+\.(?:md|json))`/g;
-const PR_RE = /github\.com\/[^/]+\/[^/]+\/pull\/(\d+)/g;
-const ISSUE_RE = /github\.com\/[^/]+\/[^/]+\/issues\/(\d+)/g;
 // NUL joins the (source, target) halves of an internal edge key so a node id that ever
 // contained a space could never mis-split it (matches routing.cjs's edgeKey separator).
 const EDGE_KEY_SEP = String.fromCharCode(0);
@@ -166,14 +163,7 @@ function extractLabel(id, type, text, patternName) {
 // fenced code blocks and non-local targets.
 function extractLinks(absFile, text, repoRoot = REPO_ROOT) {
   const targets = [];
-  const lines = text.split(/\r?\n/);
-  let fenced = false;
-  for (const line of lines) {
-    if (FENCE_RE.test(line)) {
-      fenced = !fenced;
-      continue;
-    }
-    if (fenced) continue;
+  for (const line of withoutFencedCode(text).split(/\r?\n/)) {
     LINK_RE.lastIndex = 0;
     let m;
     while ((m = LINK_RE.exec(line)) !== null) {
@@ -191,26 +181,11 @@ function extractLinks(absFile, text, repoRoot = REPO_ROOT) {
 // skipping fenced code blocks so example snippets don't create phantom edges.
 function extractBacktickFiles(text) {
   const out = [];
-  const lines = text.split(/\r?\n/);
-  let fenced = false;
-  for (const line of lines) {
-    if (FENCE_RE.test(line)) {
-      fenced = !fenced;
-      continue;
-    }
-    if (fenced) continue;
+  for (const line of withoutFencedCode(text).split(/\r?\n/)) {
     BACKTICK_FILE_RE.lastIndex = 0;
     let m;
     while ((m = BACKTICK_FILE_RE.exec(line)) !== null) out.push(m[1]);
   }
-  return out;
-}
-
-function uniqueMatches(text, re) {
-  const out = [];
-  let m;
-  re.lastIndex = 0;
-  while ((m = re.exec(text)) !== null) if (!out.includes(m[1])) out.push(m[1]);
   return out;
 }
 
@@ -244,6 +219,7 @@ function build({ repoRoot = REPO_ROOT } = {}) {
     const isMd = id.endsWith(".md");
     const slug = type === "ui-pattern" ? path.basename(id, ".md") : null;
     const entry = slug ? bySlug.get(slug) : null;
+    const githubRefs = isMd ? extractGithubRefs(text) : [];
     nodes.set(id, {
       id,
       label: extractLabel(id, type, text, entry?.name),
@@ -251,9 +227,9 @@ function build({ repoRoot = REPO_ROOT } = {}) {
       dir: toPosix(path.dirname(id)),
       topics: isMd ? frontmatter.readList(text, "topics") : [],
       aliases: type === "ui-pattern" ? entry?.aliases || [] : isMd ? frontmatter.readList(text, "aliases") : [],
-      prs: uniqueMatches(text, PR_RE),
-      issues: uniqueMatches(text, ISSUE_RE),
-      githubRefs: isMd ? extractGithubRefs(text) : [],
+      prs: githubRefs.filter((ref) => ref.kind === "pull-request").map((ref) => String(ref.number)),
+      issues: githubRefs.filter((ref) => ref.kind === "issue").map((ref) => String(ref.number)),
+      githubRefs,
       bytes: Buffer.byteLength(text, "utf8"),
       degree: 0,
     });

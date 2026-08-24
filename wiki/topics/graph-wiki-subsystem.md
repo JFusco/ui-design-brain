@@ -14,6 +14,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 - The context wiki captures executed plans (Codex + Claude), GitHub PRs, and GitHub issues. Canonical repo-qualified `githubRefs` stay on the Markdown nodes that cite them, so the offline viewer and navigator can search, open, and route evidence without GitHub nodes, PR snapshots, or a live API. Slack ingestion is deliberately excluded.
 - `Quality / quality`, `Commit message lint / commitlint`, `Wiki integrity / check`, `Sync context wiki / sync`, and `Sync wiki issue state / sync` are the canonical checks. Merge reconciliation is a guarded bot PR with manual replay; issue refresh caches repeated repository-and-number lookups and annotates a line only when every cited issue is confirmed closed.
 - Direct single-topic history starts at `wiki/INDEX.md`; the byte-costed navigator is reserved for cross-page why, wiring, and impact questions.
+- Fence-aware evidence and Markdown-link extraction track delimiter length, and issue refresh refuses symlinked pages or wiki roots. Reconciliation validates the PR URL, repository, number, paths, and commits before writes; writer branches are fetched for lease-safe updates and closed unmerged review PRs are reopened. CLI and browser routing share byte weighting, URL suffix normalization, explicit authority, and fail-closed policy checks.
 
 ## Decisions
 

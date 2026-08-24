@@ -1,7 +1,7 @@
 {
   "counts": {
     "nodes": 127,
-    "edges": 324,
+    "edges": 323,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -16,7 +16,7 @@
     "byEdgeType": {
       "catalogs": 80,
       "covers": 5,
-      "links-to": 83,
+      "links-to": 82,
       "plan": 4,
       "references": 4,
       "see-also": 116,
@@ -1453,7 +1453,7 @@
         }
       ],
       "bytes": 1235,
-      "degree": 4
+      "degree": 3
     },
     {
       "id": "wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md",
@@ -1987,7 +1987,7 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/43"
         }
       ],
-      "bytes": 2001,
+      "bytes": 2410,
       "degree": 4
     },
     {
@@ -2092,7 +2092,7 @@
         }
       ],
       "bytes": 8386,
-      "degree": 2
+      "degree": 1
     },
     {
       "id": "wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md",
@@ -2435,7 +2435,7 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/8"
         }
       ],
-      "bytes": 5229,
+      "bytes": 5672,
       "degree": 13
     },
     {
@@ -3168,13 +3168,6 @@
     {
       "source": "wiki/MECHANICS.md",
       "target": "wiki/plans/INDEX.md",
-      "type": "links-to",
-      "count": 1,
-      "anchors": []
-    },
-    {
-      "source": "wiki/plans/2026-07-23-fix-the-stale-stepper-canonical-row-in-the-context-scoped-al.md",
-      "target": "wiki/journal/2026-07-23-fix-stale-stepper-canonical-row.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
