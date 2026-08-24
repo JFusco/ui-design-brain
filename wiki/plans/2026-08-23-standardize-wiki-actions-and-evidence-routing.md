@@ -5,6 +5,7 @@ date: 2026-08-23
 evidence:
   - "issue #43 https://github.com/verndale/ui-design-brain/issues/43"
   - "working tree implementation; PR pending"
+  - "verndale/ui-design-brain PR #44 https://github.com/verndale/ui-design-brain/pull/44 (merged 2026-08-24)"
 source_tool: file
 source: "https://github.com/verndale/ui-design-brain/issues/43"
 topics: [graph-wiki-subsystem]
