@@ -2,7 +2,7 @@
 date: 2026-08-23
 topics: [graph-wiki-subsystem]
 plan: plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/44
 issue: https://github.com/verndale/ui-design-brain/issues/43
 issues: [https://github.com/verndale/ui-design-brain/issues/43]
 ---
