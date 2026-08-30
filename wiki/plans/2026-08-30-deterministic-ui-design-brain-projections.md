@@ -2,7 +2,10 @@
 status: partial
 executed: 2026-08-30
 date: 2026-08-30
-evidence: ["https://github.com/verndale/ui-design-brain/issues/47", "working-tree implementation and tests; PR pending"]
+evidence:
+  - "https://github.com/verndale/ui-design-brain/issues/47"
+  - "working-tree implementation and tests; PR pending"
+  - "verndale/ui-design-brain PR #49 https://github.com/verndale/ui-design-brain/pull/49 (merged 2026-08-30)"
 source_tool: codex
 source: user-approved Shared Accessibility Standards Delivery Plan extension
 topics: [component-catalog, packaging-and-distribution]
