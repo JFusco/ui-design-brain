@@ -11,13 +11,15 @@ Guidance for any AI coding agent (Claude Code, Codex, Cursor, Copilot, …) work
 - `patterns-manifest.json` — top-level JSON array of `{ name, slug, aliases, file }`; `slug == kebab(name) == filename`
 - `patterns/<slug>.md` — one guidance file per pattern
 
-Pattern-authoring templates live in `skills/_meta/` (sibling of the skill) — authoring-only: never loaded at runtime, never vendored.
+Pattern-authoring templates live in `skills/_meta/` (sibling of the skill) — authoring-only: never loaded at runtime or projected.
+
+This repository owns canonical names, slugs, aliases, contextual disambiguation, and bounded product guidance. It does not own accessibility semantics, applicability, evidence routes, or UI-pattern-to-accessibility-pattern mappings. Accessibility-adjacent prose remains informative and non-normative until consumer parity allows it to be removed; normative obligations come from `@verndale/accessibility-standards`.
 
 Everything outside `skills/` is repo tooling (commits, release, CI). See [README.md](README.md) ("Where to find things") and [CONTRIBUTING.md](CONTRIBUTING.md) for the long-form detail.
 
 ## Environment
 
-Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. Editing the catalog needs **no build step and no local setup** — it is markdown + JSON, authored by hand. Repository quality is `pnpm verify:ci`: ESLint plus the knowledge-graph/context-wiki contract (see [Knowledge graph & wiki](#knowledge-graph--wiki)). There is no source unit suite for catalog content itself. The commit/release tooling is the maintainer's job (see below).
+Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. Catalog content is markdown + JSON authored by hand. Run `pnpm catalog:build` after source changes so `catalog-manifest.json` carries fresh schema and digest provenance. Repository quality is `pnpm verify:ci`: ESLint, catalog/projection tests, the packed offline consumer fixture, and the knowledge-graph/context-wiki contract (see [Knowledge graph & wiki](#knowledge-graph--wiki)). The commit/release tooling is the maintainer's job (see below).
 
 ## Editing this skill
 
@@ -43,12 +45,14 @@ The practices that bite for this markdown-only catalog skill:
 3. `patterns/<slug>.md` — create it from `skills/_meta/_pattern-template.md`; its `**Also known as:**` line must match the manifest entry's aliases, in manifest order
 4. the pattern count in `README.md`
 5. if the alias is **context-scoped** (an object-form `{ name, context }` entry), mirror it into `index.md`'s **Context-scoped aliases** table
+6. when names, slugs, aliases, or manifest membership changed, advance `CATALOG_AUTHORITY_VERSION` and pin the builder-reported parsed-manifest digest together
+7. run `pnpm catalog:build` to refresh the generated source manifest
 
-The alias/name/count fields (steps 1–5) are maintained **by hand**, but the manifest↔file mapping is checked: `pnpm graph:build` emits a `catalogs` edge from the manifest to each `patterns/<slug>.md`, and the build **fails on a dangling edge** — a manifest entry whose `file` points at a missing or renamed pattern. `pnpm graph:check` enforces it in CI and pre-push; pre-commit rebuilds generated artifacts only when graph inputs have no unstaged changes. That is the sanctioned catalog validator; don't add a *second* bespoke validator unless the maintainer asks.
+The alias/name/count fields (steps 1–5) are maintained **by hand**. The catalog builder validates schema shape, stable IDs, exact manifest/file membership, and digest freshness. The graph build also emits a `catalogs` edge from the manifest to each `patterns/<slug>.md` and fails on dangling files. `pnpm catalog:check` and `pnpm graph:check` enforce both contracts in hooks and CI.
 
 ## Authoring a pattern file (`patterns/<slug>.md`)
 
-`skills/_meta/` is authoritative for pattern structure. When creating or editing a pattern, **copy `skills/_meta/_pattern-template.md` to `skills/ui-design-brain/patterns/<slug>.md`** and follow `skills/_meta/_sections.md`, then complete the Catalog-integrity steps above. (`skills/_meta/` is authoring-only — never loaded at runtime, never vendored.)
+`skills/_meta/` is authoritative for pattern structure. When creating or editing a pattern, **copy `skills/_meta/_pattern-template.md` to `skills/ui-design-brain/patterns/<slug>.md`** and follow `skills/_meta/_sections.md`, then complete the Catalog-integrity steps above. (`skills/_meta/` is authoring-only — never loaded at runtime or projected.)
 
 ## Knowledge graph & wiki
 
@@ -73,4 +77,4 @@ Capturing history is part of a substantive change: follow `wiki/MECHANICS.md` (j
 
 **Permission boundary:** edit files under `skills/ui-design-brain/` and `skills/_meta/` freely without asking — that's the autonomous zone. Everything in this section is the maintainer's.
 
-**Do not commit, push, merge, tag, release, or run the consumer sync.** Make the requested edits, then stop and hand back to the maintainer for review. The maintainer commits with `pnpm commit` (Conventional Commits, required scope) and pushes; `semantic-release` then runs on `main`. Never edit the vendored copies in consumer repos — change the catalog here and let the maintainer re-sync.
+**Do not commit, push, merge, tag, release, or run the consumer sync.** Make the requested edits, then stop and hand back to the maintainer for review. The maintainer commits with `pnpm commit` (Conventional Commits, required scope) and pushes; `semantic-release` then runs on `main`. Never edit generated consumer projections directly — change the catalog here, release an immutable package version, and let the consumer's pinned sync promote it.

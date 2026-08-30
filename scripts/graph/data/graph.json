@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 127,
-    "edges": 323,
+    "nodes": 129,
+    "edges": 334,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 80,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 24,
-      "wiki-plan": 9,
+      "wiki-journal": 25,
+      "wiki-plan": 10,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 80,
       "covers": 5,
-      "links-to": 82,
-      "plan": 4,
+      "links-to": 88,
+      "plan": 5,
       "references": 4,
       "see-also": 116,
-      "topic": 32
+      "topic": 36
     }
   },
   "nodes": [
@@ -34,7 +34,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 7942,
+      "bytes": 8519,
       "degree": 5
     },
     {
@@ -60,7 +60,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 7065,
+      "bytes": 7324,
       "degree": 3
     },
     {
@@ -73,7 +73,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 10511,
+      "bytes": 12307,
       "degree": 7
     },
     {
@@ -1388,8 +1388,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 9922,
-      "degree": 32
+      "bytes": 10215,
+      "degree": 33
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -1999,6 +1999,38 @@
       "degree": 4
     },
     {
+      "id": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "label": "Add deterministic UI Design Brain projections",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog",
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "47",
+        "609"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 47,
+          "url": "https://github.com/verndale/ui-design-brain/issues/47"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ai-orchestration",
+          "number": 609,
+          "url": "https://github.com/verndale/ai-orchestration/issues/609"
+        }
+      ],
+      "bytes": 3067,
+      "degree": 6
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -2223,6 +2255,38 @@
       "degree": 4
     },
     {
+      "id": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "label": "Deterministic UI Design Brain projections for COS and ai-orchestration",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "component-catalog",
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "47",
+        "609"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 47,
+          "url": "https://github.com/verndale/ui-design-brain/issues/47"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ai-orchestration",
+          "number": 609,
+          "url": "https://github.com/verndale/ai-orchestration/issues/609"
+        }
+      ],
+      "bytes": 8253,
+      "degree": 6
+    },
+    {
       "id": "wiki/plans/INDEX.md",
       "label": "Plan Audit",
       "type": "wiki-index",
@@ -2237,9 +2301,16 @@
         "44"
       ],
       "issues": [
+        "47",
         "43"
       ],
       "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 47,
+          "url": "https://github.com/verndale/ui-design-brain/issues/47"
+        },
         {
           "kind": "pull-request",
           "repository": "verndale/ui-design-brain",
@@ -2277,8 +2348,8 @@
           "url": "https://github.com/verndale/ui-design-brain/pull/44"
         }
       ],
-      "bytes": 3178,
-      "degree": 11
+      "bytes": 3540,
+      "degree": 12
     },
     {
       "id": "wiki/topics/agents-guidance.md",
@@ -2314,10 +2385,17 @@
       ],
       "prs": [],
       "issues": [
+        "47",
         "14",
         "11"
       ],
       "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 47,
+          "url": "https://github.com/verndale/ui-design-brain/issues/47"
+        },
         {
           "kind": "issue",
           "repository": "verndale/ui-design-brain",
@@ -2331,8 +2409,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/11"
         }
       ],
-      "bytes": 12149,
-      "degree": 47
+      "bytes": 13070,
+      "degree": 51
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -2480,13 +2558,25 @@
         "skills CLI",
         "distribution",
         "consumer sync",
-        "extraction"
+        "extraction",
+        "deterministic projection",
+        "offline sync",
+        "exact package pin"
       ],
       "prs": [],
-      "issues": [],
-      "githubRefs": [],
-      "bytes": 1254,
-      "degree": 8
+      "issues": [
+        "47"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 47,
+          "url": "https://github.com/verndale/ui-design-brain/issues/47"
+        }
+      ],
+      "bytes": 3117,
+      "degree": 12
     }
   ],
   "edges": [
@@ -3155,6 +3245,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -3261,6 +3358,13 @@
     {
       "source": "wiki/plans/INDEX.md",
       "target": "wiki/plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -3421,7 +3525,21 @@
     },
     {
       "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
       "target": "wiki/plans/2026-07-23-ui-design-brain-close-catalog-gaps-observed-in-consuming-rep.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -3470,6 +3588,13 @@
     },
     {
       "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
       "type": "links-to",
       "count": 1,
@@ -3485,6 +3610,13 @@
     {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -3507,6 +3639,11 @@
     {
       "source": "wiki/journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
       "target": "wiki/plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
+      "type": "plan"
+    },
+    {
+      "source": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "target": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
       "type": "plan"
     },
     {
@@ -4346,6 +4483,16 @@
       "type": "topic"
     },
     {
+      "source": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
       "source": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
@@ -4383,6 +4530,16 @@
     {
       "source": "wiki/plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md",
       "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     }
   ]

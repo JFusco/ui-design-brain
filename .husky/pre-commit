@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 pnpm run lint:staged || exit $?
+pnpm run catalog:check || exit $?
 node scripts/wiki/pre-commit-journal.cjs || echo "warning: wiki journal reminder failed; continuing" >&2
 node scripts/graph/pre-commit.cjs || echo "warning: knowledge graph lifecycle failed; continuing" >&2
