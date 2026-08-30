@@ -1,3 +1,42 @@
+# v1.16.0 — 2026-08-30
+
+## Summary (AI, bounded)
+- Added deterministic UI projections to the projector module (commit 1c33a83).
+- Resolved projector conflicts during merge to ensure stability (commit d72419f).
+- Updated documentation by reconciling merged pull request #46 (commit a7da08f).
+- Included merge commits from pull requests #48 and #49 to integrate recent changes (commits 89dcd41, 2208f4a).
+
+## Highlights
+- commit: Merge pull request #49 from verndale/codex/gh-47-deterministic-projections (2208f4a)
+- chore(merge): resolve projector conflicts (d72419f)
+- commit: Merge pull request #48 from verndale/bot/wiki-sync/46 (89dcd41)
+- feat(projector): add deterministic UI projections (1c33a83)
+- docs(wiki): reconcile merged PR #46 (a7da08f)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Features
+- feat(projector): add deterministic UI projections (1c33a83)
+
+### Docs
+- docs(wiki): reconcile merged PR #46 (a7da08f)
+
+### Chore
+- chore(merge): resolve projector conflicts (d72419f)
+
+### Other (unknown)
+- commit: Merge pull request #48 from verndale/bot/wiki-sync/46 (89dcd41)
+- commit: Merge pull request #49 from verndale/codex/gh-47-deterministic-projections (2208f4a)
+
+## Full commit list
+- 2208f4a commit: Merge pull request #49 from verndale/codex/gh-47-deterministic-projections
+- d72419f chore(merge): resolve projector conflicts
+- 89dcd41 commit: Merge pull request #48 from verndale/bot/wiki-sync/46
+- 1c33a83 feat(projector): add deterministic UI projections
+- a7da08f docs(wiki): reconcile merged PR #46
+
 # v1.15.2 — 2026-08-30
 
 ## Summary (AI, bounded)
