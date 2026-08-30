@@ -2032,12 +2032,20 @@
         "packaging-and-distribution"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "49"
+      ],
       "issues": [
         "47",
         "609"
       ],
       "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 49,
+          "url": "https://github.com/verndale/ui-design-brain/pull/49"
+        },
         {
           "kind": "issue",
           "repository": "verndale/ui-design-brain",
@@ -2051,7 +2059,7 @@
           "url": "https://github.com/verndale/ai-orchestration/issues/609"
         }
       ],
-      "bytes": 3067,
+      "bytes": 3111,
       "degree": 6
     },
     {
@@ -2312,7 +2320,9 @@
         "packaging-and-distribution"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "49"
+      ],
       "issues": [
         "47",
         "609"
@@ -2325,13 +2335,19 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         },
         {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 49,
+          "url": "https://github.com/verndale/ui-design-brain/pull/49"
+        },
+        {
           "kind": "issue",
           "repository": "verndale/ai-orchestration",
           "number": 609,
           "url": "https://github.com/verndale/ai-orchestration/issues/609"
         }
       ],
-      "bytes": 8253,
+      "bytes": 8368,
       "degree": 6
     },
     {
@@ -2342,6 +2358,7 @@
       "topics": [],
       "aliases": [],
       "prs": [
+        "49",
         "9",
         "12",
         "15",
@@ -2359,6 +2376,12 @@
           "repository": "verndale/ui-design-brain",
           "number": 47,
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 49,
+          "url": "https://github.com/verndale/ui-design-brain/pull/49"
         },
         {
           "kind": "pull-request",
@@ -2403,7 +2426,7 @@
           "url": "https://github.com/verndale/ui-design-brain/pull/46"
         }
       ],
-      "bytes": 3892,
+      "bytes": 3980,
       "degree": 13
     },
     {
@@ -2481,6 +2504,7 @@
         "plan capture"
       ],
       "prs": [
+        "49",
         "44",
         "41",
         "38",
@@ -2501,6 +2525,12 @@
         "8"
       ],
       "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 49,
+          "url": "https://github.com/verndale/ui-design-brain/pull/49"
+        },
         {
           "kind": "pull-request",
           "repository": "verndale/ui-design-brain",
@@ -2598,7 +2628,7 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/8"
         }
       ],
-      "bytes": 6195,
+      "bytes": 6351,
       "degree": 17
     },
     {
