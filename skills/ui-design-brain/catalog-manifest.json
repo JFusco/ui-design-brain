@@ -1,0 +1,359 @@
+{
+  "$schema": "https://raw.githubusercontent.com/verndale/ui-design-brain/v1.16.0/schemas/catalog-manifest.schema.json",
+  "authority": {
+    "accessibilityProse": "non-normative-pending-parity",
+    "excludes": [
+      "accessibility-semantics",
+      "accessibility-applicability",
+      "accessibility-evidence-routes",
+      "ui-pattern-to-accessibility-pattern-mappings"
+    ],
+    "owns": [
+      "canonical-names",
+      "slugs",
+      "aliases",
+      "contextual-disambiguation",
+      "bounded-product-guidance"
+    ]
+  },
+  "catalog": "ui-design-brain",
+  "catalogAuthorityVersion": "1.15.1",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "sha256:8f12f85764fefd63026a64f82adead49b1dcfabbc6e9f9acbebe6df0b23f2dfe"
+    },
+    {
+      "path": "index.md",
+      "sha256": "sha256:69c86d6312f6f09e1dac3ff9fd65156d8abdd79d7b032f3d111d8a176db9a23d"
+    },
+    {
+      "path": "patterns-manifest.json",
+      "sha256": "sha256:d8f0e70ecb675d1c67353218564ff535585aa8686c8f70becb79f486b3863fb4"
+    },
+    {
+      "path": "patterns/accordion.md",
+      "sha256": "sha256:301bef997d9874e3753da813d960956f91d0c27a3667adce7542d0c4b3bf1908"
+    },
+    {
+      "path": "patterns/alert.md",
+      "sha256": "sha256:5cab834beb0eda5bde06c770aff5cb75a775e473e8db038bed19143d155b5467"
+    },
+    {
+      "path": "patterns/avatar.md",
+      "sha256": "sha256:7933e928ecacbdd68f801dc3ccd3897751b72d98aa466824a27896e76ef11e4a"
+    },
+    {
+      "path": "patterns/badge.md",
+      "sha256": "sha256:c0dbcf9b9b6bec74fe49cf4036d0daa0f1ab0a84714a8abcefff86b8b699fb7f"
+    },
+    {
+      "path": "patterns/breadcrumbs.md",
+      "sha256": "sha256:734dd0ec78a3adbd3ec704018fdf8cbe9caadb41c7fb223a9c30378a57508ed0"
+    },
+    {
+      "path": "patterns/button-group.md",
+      "sha256": "sha256:b576c09acd64731105ab939c244f06a37cc4b476a269be690091bcd16aaf9b2d"
+    },
+    {
+      "path": "patterns/button.md",
+      "sha256": "sha256:8a4d4d2e30f474b9c315cd9a4261f424f3550ba1a6fd6319f1a6e7f7b5e9908e"
+    },
+    {
+      "path": "patterns/card.md",
+      "sha256": "sha256:44be43e2054d25a0b9fae1e5d4a1e2a073e2b016832ec45ad07619839823e94a"
+    },
+    {
+      "path": "patterns/carousel.md",
+      "sha256": "sha256:f976a98a57b34885a0c6daa0f0147e6ad952353fa29bc9b5e5b3bcca8e69cba4"
+    },
+    {
+      "path": "patterns/checkbox.md",
+      "sha256": "sha256:bbe943faee30d85d3a50b156ce91a519625d1d6e743793e0f08d016d405dabbf"
+    },
+    {
+      "path": "patterns/color-picker.md",
+      "sha256": "sha256:456dcf913d8687437145062aa91059c669bb2df97cff110e29aa645dba01eb64"
+    },
+    {
+      "path": "patterns/combobox.md",
+      "sha256": "sha256:6038ab07924b7ed662383dfc65cecf57f034a8057ca7b96540ed8dca1ad80a64"
+    },
+    {
+      "path": "patterns/comparison-table.md",
+      "sha256": "sha256:7564b8b639a4445c5e22f21f9db8d2aa16b6cb3049001f4c71e706f7db2f6d80"
+    },
+    {
+      "path": "patterns/context-menu.md",
+      "sha256": "sha256:8d87b0b282c7fd1a9a8792fe5681cf1bb69ca1affc22f67aabd1639c68afb695"
+    },
+    {
+      "path": "patterns/date-input.md",
+      "sha256": "sha256:828e5acc0792ac43e1aa310c1fbc14a7a8d626ec9e8022cbd73b84d2edbc37d0"
+    },
+    {
+      "path": "patterns/datepicker.md",
+      "sha256": "sha256:77f10dfcd8133c8d9953de3f6bd093e5b612bb654331213d800d9bfe73cb6a5f"
+    },
+    {
+      "path": "patterns/drawer.md",
+      "sha256": "sha256:be0832f2316cd8fce281427d02dae364ded72795368fbe1b8e5d2a5a3cd00875"
+    },
+    {
+      "path": "patterns/dropdown-menu.md",
+      "sha256": "sha256:3ce381c693617a78eeeb11565fe36c2166859927132ca9d4288063161c989547"
+    },
+    {
+      "path": "patterns/empty-state.md",
+      "sha256": "sha256:fcc6265d499ef56de83dde4fda150c4776af2e761d6b4b9b08ad2c18fe033894"
+    },
+    {
+      "path": "patterns/error-message.md",
+      "sha256": "sha256:accf61ca04f2621dab6566bfc234fad4b07effe5141433b2550a2c28fb2ac656"
+    },
+    {
+      "path": "patterns/eyebrow.md",
+      "sha256": "sha256:4c639994b1db054836f3ef9ddf7cd7ede7d5878c61c095fc01d0db751b63572d"
+    },
+    {
+      "path": "patterns/fieldset.md",
+      "sha256": "sha256:47dbf75b59fc24b29c05b6b715570d00061a4ca91da8bb51a28b553ab2ac1561"
+    },
+    {
+      "path": "patterns/file-upload.md",
+      "sha256": "sha256:f54e253c97a84e9bc8b0e4b54d13c136f36e86b80a0f903d7642f5f542af2fdc"
+    },
+    {
+      "path": "patterns/file.md",
+      "sha256": "sha256:d072865a26084e2a040d6d30c463d6dcad1ef7043389f9691e606bc47ec8ef55"
+    },
+    {
+      "path": "patterns/filter.md",
+      "sha256": "sha256:5db7e79b953a6f990a4827d7c6db9c62f4bfa3cda3b902f058fa0e093a4db410"
+    },
+    {
+      "path": "patterns/footer.md",
+      "sha256": "sha256:b250612d5fab54b099c2add0dc62890853fe5a88448e0543bcababa43f3cbbcd"
+    },
+    {
+      "path": "patterns/form.md",
+      "sha256": "sha256:543ccc234288a20c6f70cfa819b0ee0ba4e3e986f3a722c2a024f691cea62b56"
+    },
+    {
+      "path": "patterns/header.md",
+      "sha256": "sha256:57e7368642793075ab796827feca49e83a3ffa45b7654935bdec968388ab720a"
+    },
+    {
+      "path": "patterns/heading.md",
+      "sha256": "sha256:3fdac74d66e3f495a7dfa88a009ed2c04fe23a5668a0bd93612f2aa0b9173ca0"
+    },
+    {
+      "path": "patterns/helper-text.md",
+      "sha256": "sha256:9ba671e72bfcf971b02f17a6f8f8124cd894402d86cb1c7c7f36825948f06110"
+    },
+    {
+      "path": "patterns/hero.md",
+      "sha256": "sha256:8d2c57b3b06279e2546a7011efeaff13e38ec36c2056050329860c192db2b675"
+    },
+    {
+      "path": "patterns/icon.md",
+      "sha256": "sha256:208faa190ca93973a32349c5bd0efaf2594d368522572d4cb25b0e7166020a5e"
+    },
+    {
+      "path": "patterns/image.md",
+      "sha256": "sha256:aa0b25a65b313a2bf87b625ca14233a165bd1f1b245c713fdf3c445ec50b03f0"
+    },
+    {
+      "path": "patterns/in-page-navigation.md",
+      "sha256": "sha256:11639b5dca514707cefd8048f0922d3ba5f251224a3bbb59a4d2168a76db163c"
+    },
+    {
+      "path": "patterns/label.md",
+      "sha256": "sha256:eab967148883cd157ee47de245a6b5d9539d4fa94b179c8ae4e678436836f9dc"
+    },
+    {
+      "path": "patterns/link.md",
+      "sha256": "sha256:06021a7dd97b95cd9008b63e9fb21e37feafd3e286998a079b66a2c25e71d824"
+    },
+    {
+      "path": "patterns/list.md",
+      "sha256": "sha256:df01747d4057bfece3afe760a79e150ad2ace64ce3a2fad9324022087c3a93a9"
+    },
+    {
+      "path": "patterns/logo-bar.md",
+      "sha256": "sha256:dd680bc0f60df4a2c53014f0ffcace70a383d002ac9e858312a5a07aabf99c05"
+    },
+    {
+      "path": "patterns/marquee.md",
+      "sha256": "sha256:ed9ab4d6790dbc367f324e4ab11ea90b109cdf0b2b548f92b6491b5ae265ba0e"
+    },
+    {
+      "path": "patterns/masthead.md",
+      "sha256": "sha256:942ed0dc27f66602f830f9e11a9ceb5df4e2e73df8cca334c3e81642012dfd91"
+    },
+    {
+      "path": "patterns/media-object.md",
+      "sha256": "sha256:bd87aeae14375a3a6cceb14e87727b9bdf3c7b5202ae3a796970a001acbcd94c"
+    },
+    {
+      "path": "patterns/mega-menu.md",
+      "sha256": "sha256:7be0a7b3862962caa318ff2e3035a203c27e9954eca21007dd61034b7187020f"
+    },
+    {
+      "path": "patterns/modal.md",
+      "sha256": "sha256:1ba14d9b3fd2bc6318b0bd781718c5d425ab7fb5af9a6f07f1c3f99b72f0c015"
+    },
+    {
+      "path": "patterns/navigation.md",
+      "sha256": "sha256:f82565f54d7e1af5fbfd35d252f90f4033742d6bd1de09c574bcf5be7db84d14"
+    },
+    {
+      "path": "patterns/number-input.md",
+      "sha256": "sha256:b0321251076e40b0423f6ab4d690707d1b227f36bb937bc7647864b7c8a008f7"
+    },
+    {
+      "path": "patterns/pagination.md",
+      "sha256": "sha256:3a0cecfc62cd88ee6c82698ac94e451a6f27dedab9357c5df23dea4b403babec"
+    },
+    {
+      "path": "patterns/popover.md",
+      "sha256": "sha256:486a4b120656b0b06982c9d42dae3c32fd97cfd862b20b107bcf617d32386bce"
+    },
+    {
+      "path": "patterns/progress-bar.md",
+      "sha256": "sha256:a438dbfe37e63f4b98fc32378d9c7b07379f5a83b7320944cdb25bd92c52cda0"
+    },
+    {
+      "path": "patterns/progress-indicator.md",
+      "sha256": "sha256:fb7d4289f941a97f7ae5577edc530ad2d517a2534cab2c0a93b57639bd075ba5"
+    },
+    {
+      "path": "patterns/quote.md",
+      "sha256": "sha256:8ac194d8c103a929647690f196b826e9aef3c087636446985282ae2614dab313"
+    },
+    {
+      "path": "patterns/radio-button.md",
+      "sha256": "sha256:037b4ca8e5263d7847ad887dde927efb2196cb1df33182c615ba64df6b663e4a"
+    },
+    {
+      "path": "patterns/rating.md",
+      "sha256": "sha256:a12d5f36ee27fd45b586a8a4e2e2468aedb00b612a3a57dcf23aabc8f844472d"
+    },
+    {
+      "path": "patterns/rich-text-editor.md",
+      "sha256": "sha256:f4658f9285718233a4341c53663d0205e09c58509a590bbfa6c0dacf9450c045"
+    },
+    {
+      "path": "patterns/rich-text.md",
+      "sha256": "sha256:d42f467426c91ed80fdf8ba7f0b3732a688873331c02f9a7c6109d12d27efe4a"
+    },
+    {
+      "path": "patterns/search-input.md",
+      "sha256": "sha256:d8dd7f5b5e0a08c695faef553181a6c02dc7d92730fc261dd1f8eb52c5eab71d"
+    },
+    {
+      "path": "patterns/search-overlay.md",
+      "sha256": "sha256:38dc3e1e544b3f9c7554b6ea411794919977be4a4cdf4772373edfe08e3f7809"
+    },
+    {
+      "path": "patterns/section-header.md",
+      "sha256": "sha256:296d56134cf24966a0ed0fff47152cf608b9ef4b7cfe38cf0c1763576cff1757"
+    },
+    {
+      "path": "patterns/segmented-control.md",
+      "sha256": "sha256:bfe7126741679d0438a23dd919034ed116a044fe4f9efc3f7f909f5d491d205a"
+    },
+    {
+      "path": "patterns/select.md",
+      "sha256": "sha256:9b3eb977d1abb474f996a66c5f099bd155555f2c2f9db1605e24a84d5fd3224e"
+    },
+    {
+      "path": "patterns/separator.md",
+      "sha256": "sha256:af2f38a90a003f5091699caeba8bac435dc01a49ea619321cf33d4a921cc427f"
+    },
+    {
+      "path": "patterns/sidebar.md",
+      "sha256": "sha256:b57f9e47354db284c6fc1f4687baa9336d3ce8abe01d01d582555cf7d076c3cb"
+    },
+    {
+      "path": "patterns/skeleton.md",
+      "sha256": "sha256:c69f92d899b8ee08440fd8c907b19c3d6eb8065f9b7c8238aee254f1ba177cf5"
+    },
+    {
+      "path": "patterns/skip-link.md",
+      "sha256": "sha256:2ccc55e9ee53ac09a7cfba4ab59e6724e8e4d1edf5e4e0e10d3a4a87520615e7"
+    },
+    {
+      "path": "patterns/slider.md",
+      "sha256": "sha256:c0e0cd5a8884c1197f98ef9d12dcf8523ceade21caec3a96aeac2a7160c4ad29"
+    },
+    {
+      "path": "patterns/spinner.md",
+      "sha256": "sha256:43f4a2f6a078235b0fd30cc305c8988e3141402d010f966023b40bed6db0f79b"
+    },
+    {
+      "path": "patterns/stack.md",
+      "sha256": "sha256:c4e648f95735845011a670f38e72a73887f50e6ddddb059d0a36de7c52c9bdf2"
+    },
+    {
+      "path": "patterns/stat.md",
+      "sha256": "sha256:971b2698cd15eed296671c0c6d5721de58ed3527d402cd117d1f2f028e2cccf8"
+    },
+    {
+      "path": "patterns/stepper.md",
+      "sha256": "sha256:cb72bdad4f582ccb40e075bf7d9c70544d7b509372bc8ed6bdcaf07be14f05c8"
+    },
+    {
+      "path": "patterns/table.md",
+      "sha256": "sha256:ed5c05844e56e4dd085fcbcf4f5f6c246d304a9e6a724099e0f1bf58f304341a"
+    },
+    {
+      "path": "patterns/tabs.md",
+      "sha256": "sha256:05650f0cb2028563e21e4bc27d6985579b8dfb089555c1faa9f2d9b4717a128e"
+    },
+    {
+      "path": "patterns/text-input.md",
+      "sha256": "sha256:87d282517df6d917b9d543dcfd77deda3df8a47ef1127747c716009eedb76eee"
+    },
+    {
+      "path": "patterns/textarea.md",
+      "sha256": "sha256:7226f28c3272ef634bda3037f44de82ae9e6283655f8738a2d70a2ac20934a18"
+    },
+    {
+      "path": "patterns/toast.md",
+      "sha256": "sha256:f4f7f4d355e70ff2c811530864546df767bd3c351764550d77e259ddd5d4192e"
+    },
+    {
+      "path": "patterns/toggle.md",
+      "sha256": "sha256:4c8b08c50ca09cbbafd1aba90e2bdc4dc395b88a51e1b8eabf2f9b46af11d07d"
+    },
+    {
+      "path": "patterns/tooltip.md",
+      "sha256": "sha256:600c6a9c4ad52fe95f1ca2252b9fc923ce60b44621b125fd2b7855e776dba90a"
+    },
+    {
+      "path": "patterns/tree-view.md",
+      "sha256": "sha256:14d8d2e54858e6579b849dedf6fd701de0f8d64d12e92d1a0d2aba407338a7e0"
+    },
+    {
+      "path": "patterns/utility-bar.md",
+      "sha256": "sha256:52211bc1cf2506766274070d1a627ff6402173379608b1f210c057f4deeb1465"
+    },
+    {
+      "path": "patterns/video.md",
+      "sha256": "sha256:c7a019e4f62b7a24c6a84dd0a00141f64777cbae236e4609b39df9435d8a732a"
+    },
+    {
+      "path": "patterns/visually-hidden.md",
+      "sha256": "sha256:beca6c6290f1f08e43607100b62a7c2968e481e8cd2fc288e073e29f3c4ebac9"
+    },
+    {
+      "path": "patterns/wizard.md",
+      "sha256": "sha256:660bab9dfb9dd0bc559dfd88a6bea913b0def98300fa898155a0fdca687f50a1"
+    }
+  ],
+  "manifestDigest": "sha256:63a0bc8d9537d6d4c0aef8fd8a539bf4a9181a50d0761bd63eae6fe59b4eddc9",
+  "patternCount": 80,
+  "schemaVersion": 1,
+  "sourceDigest": "sha256:1eda596fe341786b5ada25742b6487bc06685fff17cbd582bc1b58302097e3ff"
+}

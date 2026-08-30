@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/verndale/ui-design-brain/v1.16.0/schemas/consumer-config.schema.json",
+  "title": "UI Design Brain consumer projection configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "packageName", "packageVersion", "catalogAuthorityVersion", "profile", "target"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "packageName": { "const": "@verndale/ui-design-brain" },
+    "packageVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$" },
+    "catalogAuthorityVersion": { "const": "1.15.1" },
+    "profile": { "const": "agent-skill" },
+    "target": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\)[^/]+(?:/[^/]+)*$"
+    }
+  }
+}

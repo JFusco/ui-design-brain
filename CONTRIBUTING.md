@@ -1,6 +1,6 @@
 # Contributing
 
-This repository is the single source of truth for the `ui-design-brain` catalog, distributed as an agent skill. It enforces strict commit standards so consuming repos can vendor identical content via the [`skills` CLI](https://github.com/vercel-labs/skills).
+This repository is the single source of truth for the `ui-design-brain` catalog, distributed as a private exact-version agent-skill projection. It enforces strict catalog, digest, and commit standards so consuming repositories receive identical generated content.
 
 ## Quick Start (TL;DR)
 
@@ -21,7 +21,7 @@ A single agent skill, under `skills/ui-design-brain/`:
 - `skills/ui-design-brain/patterns-manifest.json` — canonical names, aliases, alias-resolution rules
 - `skills/ui-design-brain/patterns/*.md` — one guidance file per pattern
 
-**Authoring a pattern:** copy `skills/_meta/_pattern-template.md` to `skills/ui-design-brain/patterns/<slug>.md` and follow `skills/_meta/_sections.md` (the canonical pattern structure). `skills/_meta/` is authoring-only — it has no `SKILL.md`, so it is never loaded at runtime and never vendored to consumers. Then complete the catalog-integrity sync (manifest + `index.md` + README count).
+**Authoring a pattern:** copy `skills/_meta/_pattern-template.md` to `skills/ui-design-brain/patterns/<slug>.md` and follow `skills/_meta/_sections.md` (the canonical pattern structure). `skills/_meta/` is authoring-only — it has no `SKILL.md`, so it is never loaded at runtime or projected to consumers. Then complete the catalog-integrity sync (manifest + `index.md` + README count) and run `pnpm catalog:build`.
 
 The `SKILL.md` `description` is shared by every consumer, so keep it neutral enough to read well for both spec/acceptance-criteria authoring and interface-code generation.
 
@@ -55,15 +55,16 @@ The root [`commitlint.config.cjs`](commitlint.config.cjs) consumes the public `@
 
 - `pnpm lint` checks all first-party `.js`, `.cjs`, and `.mjs` files without modifying them; generated graph data and vendored viewer libraries are explicit exclusions.
 - `pnpm lint:fix` is the opt-in whole-repository fixer. The pre-commit hook fixes only staged JavaScript through lint-staged and blocks if errors remain.
-- `pnpm test:fast` and `pnpm verify:push` run the existing 17-case graph contract suite.
-- `pnpm test` adds graph lifecycle regression tests, and `pnpm verify:ci` runs full lint plus both layers. There is no typecheck command because this repository has no first-party TypeScript implementation. Broader source unit coverage is a future concern, not a synthetic/no-op gate.
+- `pnpm test:fast` checks catalog digest freshness and the existing graph contract suite.
+- `pnpm test` adds graph lifecycle, projection, adoption, dirty-file refusal, and packed offline-consumer coverage. `pnpm verify:push` runs that full suite, and `pnpm verify:ci` adds full lint. There is no typecheck command because this repository has no first-party TypeScript implementation.
 
 ## How changes reach consumers
 
 1. Land your change here and merge to `main`.
-2. In each consumer (`ai-orchestration`, `ba-cockpit`), run `pnpm uidb:sync` from the repo root (wraps `scripts/sync-ui-design-brain.sh`, which vendors a fresh copy via the `skills` CLI) and commit. The `patterns/` diff there is the reviewable record of the change.
+2. Release an immutable private package or reviewed tarball and update each consumer's exact lockfile pin and `ui-design-brain.config.json` in one reviewable change.
+3. Run the installed package's `sync --if-needed` command and commit the marker-owned projection plus `projection-manifest.json`.
 
-Each consumer commits a real copy, so the vendored content travels with that repo's downstream distribution (git submodule / `.plugin` zip). Re-running the sync script is the only update step — there is no version pin or CI drift check.
+Consumer hooks invoke the already-installed exact package directly with Node. They never run `npx`, contact a registry, choose a newer version, or alter a lockfile. The one-time `sync --adopt` migration accepts only a byte-identical legacy catalog (with semantic-equivalent JSON formatting) before atomically adding ownership and provenance.
 
 ## Repository automation
 
@@ -78,7 +79,7 @@ Add repository secret **`PR_BOT_TOKEN`** (classic PAT with **`repo`**) if the de
 
 Releases are driven by [`semantic-release`](.releaserc.cjs) on every push to `main` — Conventional Commit types decide the bump (`feat` → minor, `fix` → patch, `BREAKING` → major). Release notes are deterministic and structured via the local plugin [`scripts/commit-pr/semantic-release-structured-notes.cjs`](scripts/commit-pr/semantic-release-structured-notes.cjs); an optional bounded AI summary runs only when `RELEASE_NOTES_AI=true` and an endpoint/model/API key are configured. Preview locally with `pnpm release:dry`.
 
-This repo is **not published to npm** — it is distributed as an agent skill via the `skills` CLI. `package.json` is `"private": true` and `npmPublish` is `false`, so `semantic-release` versions and tags the repo (and updates `CHANGELOG.md`) without ever publishing a package.
+This repo is **not published to npm yet**. `package.json` remains `"private": true` and `npmPublish` remains `false`, so `semantic-release` versions and tags the repo (and updates `CHANGELOG.md`) without publishing to the public registry. Exact Git/tag or reviewed tarball consumption is supported until a separate registry decision is approved.
 
 ## Installation
 
@@ -95,4 +96,4 @@ Install:
 
 - Do not commit secrets or `.env`
 - Do not bypass commitlint or disable hooks
-- Do not edit the vendored copies in consumer repos directly — change the catalog here and re-sync
+- Do not edit generated consumer projections directly — change the catalog here, release an exact version, and re-sync

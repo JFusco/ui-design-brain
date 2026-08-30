@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/verndale/ui-design-brain/v1.16.0/schemas/projection-manifest.schema.json",
+  "title": "UI Design Brain generated projection provenance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "generatedBy",
+    "packageVersion",
+    "catalogAuthorityVersion",
+    "profile",
+    "sourceDigest",
+    "manifestDigest",
+    "configDigest",
+    "outputDigest",
+    "authority",
+    "files"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "generatedBy": { "const": "@verndale/ui-design-brain" },
+    "packageVersion": { "type": "string", "minLength": 1 },
+    "catalogAuthorityVersion": { "const": "1.15.1" },
+    "profile": { "const": "agent-skill" },
+    "sourceDigest": { "$ref": "catalog-manifest.schema.json#/$defs/digest" },
+    "manifestDigest": { "$ref": "catalog-manifest.schema.json#/$defs/digest" },
+    "configDigest": { "$ref": "catalog-manifest.schema.json#/$defs/digest" },
+    "outputDigest": { "$ref": "catalog-manifest.schema.json#/$defs/digest" },
+    "authority": { "$ref": "catalog-manifest.schema.json#/$defs/authority" },
+    "files": {
+      "type": "array",
+      "minItems": 4,
+      "items": { "$ref": "catalog-manifest.schema.json#/$defs/file" }
+    }
+  }
+}

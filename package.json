@@ -1,6 +1,6 @@
 {
   "name": "@verndale/ui-design-brain",
-  "version": "1.15.2",
+  "version": "1.16.0-next.0",
   "private": true,
   "description": "Versioned catalog of production-grade UI component patterns (markdown + manifest) shared across Verndale AI tooling, distributed as an agent skill.",
   "license": "MIT",
@@ -9,6 +9,17 @@
     "type": "git",
     "url": "git+https://github.com/verndale/ui-design-brain.git"
   },
+  "bin": {
+    "ui-design-brain": "bin/ui-design-brain.mjs"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "schemas/",
+    "skills/ui-design-brain/",
+    "LICENSE",
+    "README.md"
+  ],
   "keywords": [
     "ui",
     "design-system",
@@ -24,6 +35,7 @@
   },
   "scripts": {
     "prepare": "husky",
+    "prepack": "pnpm run catalog:check",
     "commit": "ai-commit run",
     "pr:create": "ai-pr",
     "lint": "eslint . --max-warnings=0",
@@ -32,10 +44,12 @@
     "lint:commit": "commitlint --config commitlint.config.cjs",
     "lint:commits:last": "pnpm run lint:commit --last",
     "release:dry": "semantic-release --dry-run",
-    "test:fast": "pnpm run graph:check",
-    "test:lifecycle": "node --test \"scripts/tests/*.test.cjs\"",
+    "catalog:build": "node bin/ui-design-brain.mjs build",
+    "catalog:check": "node bin/ui-design-brain.mjs build --check",
+    "test:fast": "pnpm run catalog:check && pnpm run graph:check",
+    "test:lifecycle": "node --test scripts/tests/*.test.cjs scripts/tests/*.test.mjs",
     "test": "pnpm run test:fast && pnpm run test:lifecycle",
-    "verify:push": "pnpm run test:fast",
+    "verify:push": "pnpm run test",
     "verify:ci": "pnpm run lint && pnpm run test",
     "graph:build": "node scripts/graph/build-graph.cjs",
     "graph:view": "node scripts/graph/serve.cjs",

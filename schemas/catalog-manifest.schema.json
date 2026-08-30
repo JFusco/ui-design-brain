@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/verndale/ui-design-brain/v1.16.0/schemas/catalog-manifest.schema.json",
+  "title": "UI Design Brain catalog manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "catalog",
+    "catalogAuthorityVersion",
+    "patternCount",
+    "sourceDigest",
+    "manifestDigest",
+    "authority",
+    "files"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "catalog": { "const": "ui-design-brain" },
+    "catalogAuthorityVersion": { "const": "1.15.1" },
+    "patternCount": { "type": "integer", "minimum": 1 },
+    "sourceDigest": { "$ref": "#/$defs/digest" },
+    "manifestDigest": { "$ref": "#/$defs/digest" },
+    "authority": { "$ref": "#/$defs/authority" },
+    "files": {
+      "type": "array",
+      "minItems": 3,
+      "items": { "$ref": "#/$defs/file" }
+    }
+  },
+  "$defs": {
+    "digest": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/digest" }
+      }
+    },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["owns", "excludes", "accessibilityProse"],
+      "properties": {
+        "owns": {
+          "const": [
+            "canonical-names",
+            "slugs",
+            "aliases",
+            "contextual-disambiguation",
+            "bounded-product-guidance"
+          ]
+        },
+        "excludes": {
+          "const": [
+            "accessibility-semantics",
+            "accessibility-applicability",
+            "accessibility-evidence-routes",
+            "ui-pattern-to-accessibility-pattern-mappings"
+          ]
+        },
+        "accessibilityProse": { "const": "non-normative-pending-parity" }
+      }
+    }
+  }
+}
