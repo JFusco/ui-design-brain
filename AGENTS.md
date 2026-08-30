@@ -19,7 +19,7 @@ Everything outside `skills/` is repo tooling (commits, release, CI). See [README
 
 ## Environment
 
-Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. Catalog content is markdown + JSON authored by hand. Run `pnpm catalog:build` after source changes so `catalog-manifest.json` carries fresh schema and digest provenance. Repository quality is `pnpm verify:ci`: ESLint, catalog/projection tests, the packed offline consumer fixture, and the knowledge-graph/context-wiki contract (see [Knowledge graph & wiki](#knowledge-graph--wiki)). The commit/release tooling is the maintainer's job (see below).
+Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. Catalog content is markdown + JSON authored by hand. Run `pnpm catalog:build` after source changes so `catalog-manifest.json` carries fresh schema and digest provenance. Repository quality is `pnpm verify:ci`: ESLint, catalog/projection tests, the packed offline consumer fixture, and the knowledge-graph/context-wiki contract (see [Knowledge graph and repository wiki operations](#knowledge-graph-and-repository-wiki-operations)). The commit/release tooling is the maintainer's job (see below).
 
 ## Editing this skill
 
@@ -54,7 +54,7 @@ The alias/name/count fields (steps 1–5) are maintained **by hand**. The catalo
 
 `skills/_meta/` is authoritative for pattern structure. When creating or editing a pattern, **copy `skills/_meta/_pattern-template.md` to `skills/ui-design-brain/patterns/<slug>.md`** and follow `skills/_meta/_sections.md`, then complete the Catalog-integrity steps above. (`skills/_meta/` is authoring-only — never loaded at runtime or projected.)
 
-## Knowledge graph & wiki
+## Knowledge graph and repository wiki operations
 
 The repo carries a deterministic **knowledge graph** — over the manifest, patterns, root docs, and the wiki — rendered in a vendored Sigma.js viewer, plus a **context wiki** (`wiki/` — journal, topics, plans) recording *why the repo is the way it is*. Both are ported from `@verndale/ai-orchestration`. Details: [`scripts/graph/README.md`](scripts/graph/README.md) and [`wiki/MECHANICS.md`](wiki/MECHANICS.md).
 
@@ -62,13 +62,7 @@ The repo carries a deterministic **knowledge graph** — over the manifest, patt
 - `pnpm graph:view` — serve the interactive viewer on loopback at `http://127.0.0.1:4173`.
 - `pnpm graph:check` — 17-case freshness + integrity gate (check-only CI/pre-push backstop for the pre-commit rebuild).
 
-Never bulk-load `wiki/` or `scripts/graph/data/graph.json`.
-
-- **Choose the cheapest lookup first:** an exact file, pattern, symbol, command, or current-code question goes straight to that file or targeted `rg`; do not load history first.
-- **Single-topic rationale or history:** start at [`wiki/INDEX.md`](wiki/INDEX.md), follow its one matching topic or journal link, and stop when answered.
-- **Cross-page questions only:** when the question spans pages or asks cross-system why, dependency/ownership, wiring, or change impact, silently run `node scripts/wiki/navigate.cjs --intent <why|wiring|impact> --query "<specific term>"`. Read only the returned byte-costed itinerary, in order, and stop as soon as the question is answered; do not open adjacent pages "just in case."
 - **Query GitHub evidence unambiguously:** use a full URL, `owner/repo PR #123`, `owner/repo issue #123`, or `owner/repo#123`. Never query a bare `#123`; evidence resolves to the existing page that cites it, not a live GitHub node.
-- **Handle misses without widening context:** if the router returns candidates, choose only from them or ask one focused question. If it reports no route, use one targeted `rg` over `wiki/` and then the exact source path. Never guess a path.
 - **Generated wiring map:** [`wiki/connections.md`](wiki/connections.md) routes catalog membership, pattern references, skill references, and wiki relations. Open only the section named by the itinerary; `pnpm graph:build` rebuilds it and `pnpm run wiki:check` verifies it.
 
 Capturing history is part of a substantive change: follow `wiki/MECHANICS.md` (journal entry + archived plan + topic Decisions). Executed plans are archived with `pnpm wiki:archive-plan`; merge and issue workflows reconcile repo-qualified citations into Markdown and graph nodes derive offline `githubRefs` from them. Slack ingestion is intentionally **not** part of this subsystem.
@@ -78,3 +72,23 @@ Capturing history is part of a substantive change: follow `wiki/MECHANICS.md` (j
 **Permission boundary:** edit files under `skills/ui-design-brain/` and `skills/_meta/` freely without asking — that's the autonomous zone. Everything in this section is the maintainer's.
 
 **Do not commit, push, merge, tag, release, or run the consumer sync.** Make the requested edits, then stop and hand back to the maintainer for review. The maintainer commits with `pnpm commit` (Conventional Commits, required scope) and pushes; `semantic-release` then runs on `main`. Never edit generated consumer projections directly — change the catalog here, release an immutable package version, and let the consumer's pinned sync promote it.
+
+<!-- wiki-skill:start -->
+## Context wiki navigation
+
+Use `wiki/` as this repository's existing context source. Never bulk-load that directory.
+
+- For an exact current-code, file, symbol, or command question, inspect the named source or use targeted source `rg`; do not load history.
+- For a direct single-topic history or rationale question, start at `wiki/INDEX.md` when it exists and open only the page it routes to.
+- Only for a cross-page why, wiring, ownership, or impact question, run `node scripts/wiki/navigate.cjs --wiki-root "wiki" --intent why --query "<terms>"` before opening wiki pages. Use `wiring` for ownership/dependencies and `impact` for change scope.
+- Query with exact slugs, identifiers, symbols, or repository-qualified GitHub references. Never use a bare issue or PR number such as `#123`.
+- When both endpoints are known, use exact `--from` and `--to` node IDs.
+- Trust the router's deterministic weighted shortest route, which accounts for relationship cost, hubs, and page bytes. Open only its itinerary; never add candidates, neighbors, or adjacent pages.
+- Read itinerary pages sequentially, never speculatively in parallel, and stop as soon as the answer is grounded.
+- If resolution is ambiguous, rerun with one returned exact ID; never open every candidate.
+- Never use `grep`, `find`, or recursive `rg` as initial wiki discovery. After a router miss, run at most one root-scoped exact search: `rg -n --fixed-strings "<exact term>" wiki/`. If it fails, inspect one known source path or ask one focused question; never widen the search.
+- Never read generated graph JSON directly.
+- This installation owns navigation only. Preserve this repository's existing wiki authoring, validation, hooks, workflows, and generated-data conventions.
+
+This managed block is shared by Codex, Cursor, and Claude (via `@AGENTS.md` in `CLAUDE.md`).
+<!-- wiki-skill:end -->

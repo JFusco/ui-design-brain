@@ -18,6 +18,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-08-24 — Replaced generic hand-authored traversal prose with the canonical headless managed block while retaining the Brain catalog graph, evidence, authoring, and maintainer boundaries outside it ([plan](../plans/2026-08-24-deterministic-route-first-wiki-guidance-and-pr-127-recovery.md), [journal](../journal/2026-08-24-deterministic-agent-wiki-guidance.md)).
 - 2026-08-24 — fix(wiki): harden post-rollout graph contracts ([verndale/ui-design-brain PR #44](https://github.com/verndale/ui-design-brain/pull/44))
 - 2026-08-23 — Standardized offline repo-qualified GitHub evidence, byte-aware routing, safe viewer links, wiki hooks, and five workflow identities against ai-orchestration while retaining the Brain catalog graph model and viewer behavior ([issue #43](https://github.com/verndale/ui-design-brain/issues/43), [plan](../plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md), [journal](../journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md)).
 - 2026-08-22 — chore(tooling): standardize quality gates ([PR #41](https://github.com/verndale/ui-design-brain/pull/41))

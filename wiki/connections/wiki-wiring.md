@@ -10,6 +10,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Knowledge graph + context wiki subsystem](../../wiki/journal/2026-07-23-knowledge-graph-wiki-subsystem.md) → [Port the knowledge-graph + wiki subsystem into ui-design-brain](../../wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md)
 - [Standardize quality and graph lifecycle](../../wiki/journal/2026-08-22-standardize-quality-and-graph-lifecycle.md) → [Standardize Brain quality and graph lifecycle](../../wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md)
 - [Standardize wiki actions and evidence routing](../../wiki/journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md) → [Standardize wiki actions and evidence routing](../../wiki/plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md)
+- [Make agent wiki guidance deterministic](../../wiki/journal/2026-08-24-deterministic-agent-wiki-guidance.md) → [Deterministic, Route-First Wiki Guidance and PR 127 Recovery](../../wiki/plans/2026-08-24-deterministic-route-first-wiki-guidance-and-pr-127-recovery.md)
 - [Add deterministic UI Design Brain projections](../../wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md) → [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md)
 
 ## Page → topic
@@ -38,6 +39,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Hero: promotional banner vs Alert message boundary](../../wiki/journal/2026-08-08-hero-promo-banner-vs-alert.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Standardize quality and graph lifecycle](../../wiki/journal/2026-08-22-standardize-quality-and-graph-lifecycle.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
 - [Standardize wiki actions and evidence routing](../../wiki/journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
+- [Make agent wiki guidance deterministic](../../wiki/journal/2026-08-24-deterministic-agent-wiki-guidance.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
 - [Add deterministic UI Design Brain projections](../../wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Add deterministic UI Design Brain projections](../../wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Extract @verndale/ui-design-brain into its own published repo](../../wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
@@ -48,12 +50,12 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [ui-design-brain: close catalog gaps observed in consuming repos](../../wiki/plans/2026-07-23-ui-design-brain-close-catalog-gaps-observed-in-consuming-rep.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Standardize Brain quality and graph lifecycle](../../wiki/plans/2026-08-22-standardize-brain-quality-and-graph-lifecycle.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
 - [Standardize wiki actions and evidence routing](../../wiki/plans/2026-08-23-standardize-wiki-actions-and-evidence-routing.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
+- [Deterministic, Route-First Wiki Guidance and PR 127 Recovery](../../wiki/plans/2026-08-24-deterministic-route-first-wiki-guidance-and-pr-127-recovery.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
 - [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 
 ## Cross-area links (seams)
 
-- [UI Design Brain — agent guide](../../AGENTS.md) → [Context Wiki](../../wiki/INDEX.md)
 - [UI Design Brain — agent guide](../../AGENTS.md) → [Wiki Mechanics](../../wiki/MECHANICS.md)
 - [UI Design Brain](../../README.md) → [UI Design Brain Index](../../skills/ui-design-brain/index.md)
 - [UI Design Brain](../../README.md) → [Patterns manifest](../../skills/ui-design-brain/patterns-manifest.json)

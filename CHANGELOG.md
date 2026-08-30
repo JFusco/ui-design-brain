@@ -1,3 +1,46 @@
+# v1.15.2 — 2026-08-30
+
+## Summary (AI, bounded)
+- Updated the knowledge graph and wiki documentation to improve UI design brain (033007d).
+- Reconciled wiki documentation following merged pull request #44 (f162a09).
+- Regenerated graph artifacts and merged main branch into wiki (c194e88).
+- Retriggered pull request checks to ensure CI stability (78d0ef1).
+- Included merges of key pull requests to enhance wiki parity and bot wiki sync (50417c3, 8612822).
+
+## Highlights
+- commit: Merge pull request #46 from verndale/codex/43-wiki-parity (50417c3)
+- chore(ci): retrigger pull request checks (78d0ef1)
+- chore(wiki): merge main and regenerate graph artifacts (c194e88)
+- fix(ui-design-brain): Update knowledge graph and wiki documentation (033007d)
+- commit: Merge pull request #45 from verndale/bot/wiki-sync/44 (8612822)
+- docs(wiki): reconcile merged PR #44 (f162a09)
+
+## Breaking changes
+- None
+
+## Changes by type
+### Fixes
+- fix(ui-design-brain): Update knowledge graph and wiki documentation (033007d)
+
+### Docs
+- docs(wiki): reconcile merged PR #44 (f162a09)
+
+### Chore
+- chore(ci): retrigger pull request checks (78d0ef1)
+- chore(wiki): merge main and regenerate graph artifacts (c194e88)
+
+### Other (unknown)
+- commit: Merge pull request #45 from verndale/bot/wiki-sync/44 (8612822)
+- commit: Merge pull request #46 from verndale/codex/43-wiki-parity (50417c3)
+
+## Full commit list
+- 50417c3 commit: Merge pull request #46 from verndale/codex/43-wiki-parity
+- 78d0ef1 chore(ci): retrigger pull request checks
+- c194e88 chore(wiki): merge main and regenerate graph artifacts
+- 033007d fix(ui-design-brain): Update knowledge graph and wiki documentation
+- 8612822 commit: Merge pull request #45 from verndale/bot/wiki-sync/44
+- f162a09 docs(wiki): reconcile merged PR #44
+
 # v1.15.1 — 2026-08-24
 
 ## Summary (AI, bounded)
