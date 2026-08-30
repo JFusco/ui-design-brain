@@ -33,6 +33,7 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
+- 2026-08-24 — [Make agent wiki guidance deterministic](journal/2026-08-24-deterministic-agent-wiki-guidance.md) — installs the canonical headless route-first contract while preserving catalog-specific graph and authoring rules.
 - 2026-08-23 — [Standardize wiki actions and evidence routing](journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md) — repo-qualified offline PR/issue evidence, safe search/routing, canonical workflows, guarded replay, cached issue refresh, and token-efficient navigation.
 - 2026-08-22 — [Standardize quality and graph lifecycle](journal/2026-08-22-standardize-quality-and-graph-lifecycle.md) — staged linting, blocking push/PR gates, one public Commitlint config, and a fail-safe curated graph lifecycle.
 - 2026-08-08 — [Hero: promotional banner vs Alert message boundary](journal/2026-08-08-hero-promo-banner-vs-alert.md) — a promotional band with image + headline + CTAs is a Hero even when named "message banner"/"CTA banner"; the Alert case is the dismissible page notification. Bidirectional clarification, no alias (a plain alias would misresolve Alert-style banners).
