@@ -4,6 +4,7 @@ executed: 2026-08-24
 date: 2026-08-24
 evidence:
   - "canonical headless AGENTS.md block installed with zero-drift dry run"
+  - "verndale/ui-design-brain PR #46 https://github.com/verndale/ui-design-brain/pull/46 (merged 2026-08-30)"
 source_tool: file
 source: "user-approved cross-repository plan"
 topics: [graph-wiki-subsystem]

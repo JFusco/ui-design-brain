@@ -2007,10 +2007,19 @@
         "graph-wiki-subsystem"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "46"
+      ],
       "issues": [],
-      "githubRefs": [],
-      "bytes": 734,
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 46,
+          "url": "https://github.com/verndale/ui-design-brain/pull/46"
+        }
+      ],
+      "bytes": 778,
       "degree": 4
     },
     {
@@ -2246,10 +2255,19 @@
         "graph-wiki-subsystem"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "46"
+      ],
       "issues": [],
-      "githubRefs": [],
-      "bytes": 2625,
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 46,
+          "url": "https://github.com/verndale/ui-design-brain/pull/46"
+        }
+      ],
+      "bytes": 2735,
       "degree": 4
     },
     {
@@ -2264,7 +2282,8 @@
         "12",
         "15",
         "41",
-        "44"
+        "44",
+        "46"
       ],
       "issues": [
         "43"
@@ -2305,9 +2324,15 @@
           "repository": "verndale/ui-design-brain",
           "number": 44,
           "url": "https://github.com/verndale/ui-design-brain/pull/44"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 46,
+          "url": "https://github.com/verndale/ui-design-brain/pull/46"
         }
       ],
-      "bytes": 3443,
+      "bytes": 3531,
       "degree": 12
     },
     {
