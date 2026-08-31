@@ -1,3 +1,9 @@
+## [1.16.1](https://github.com/verndale/ui-design-brain/compare/v1.16.0...v1.16.1) (2026-08-31)
+
+### Bug Fixes
+
+* **release:** publish constrained public UI Design Brain package ([1318fed](https://github.com/verndale/ui-design-brain/commit/1318fede1c65bc3ee63669b3c9253f24f5b95d5b)), closes [#51](https://github.com/verndale/ui-design-brain/issues/51)
+
 # v1.16.0 — 2026-08-30
 
 ## Summary (AI, bounded)
