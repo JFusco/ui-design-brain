@@ -7,6 +7,7 @@ evidence:
   - "working-tree implementation and tests; PR pending"
   - "verndale/ui-design-brain PR #49 https://github.com/verndale/ui-design-brain/pull/49 (merged 2026-08-30)"
   - "verndale/ui-design-brain PR #52 https://github.com/verndale/ui-design-brain/pull/52 (merged 2026-08-31)"
+  - "verndale/ui-design-brain PR #54 https://github.com/verndale/ui-design-brain/pull/54 (merged 2026-08-31)"
 source_tool: codex
 source: user-approved Shared Accessibility Standards Delivery Plan extension
 topics: [component-catalog, packaging-and-distribution]
