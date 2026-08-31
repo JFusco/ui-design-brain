@@ -2071,12 +2071,20 @@
         "packaging-and-distribution"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "52"
+      ],
       "issues": [
         "51",
         "47"
       ],
       "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 52,
+          "url": "https://github.com/verndale/ui-design-brain/pull/52"
+        },
         {
           "kind": "issue",
           "repository": "verndale/ui-design-brain",
@@ -2090,7 +2098,7 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 2074,
+      "bytes": 2118,
       "degree": 3
     },
     {
@@ -2352,7 +2360,8 @@
       ],
       "aliases": [],
       "prs": [
-        "49"
+        "49",
+        "52"
       ],
       "issues": [
         "47",
@@ -2372,13 +2381,19 @@
           "url": "https://github.com/verndale/ui-design-brain/pull/49"
         },
         {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 52,
+          "url": "https://github.com/verndale/ui-design-brain/pull/52"
+        },
+        {
           "kind": "issue",
           "repository": "verndale/ai-orchestration",
           "number": 609,
           "url": "https://github.com/verndale/ai-orchestration/issues/609"
         }
       ],
-      "bytes": 9070,
+      "bytes": 9180,
       "degree": 7
     },
     {
@@ -2390,6 +2405,7 @@
       "aliases": [],
       "prs": [
         "49",
+        "52",
         "9",
         "12",
         "15",
@@ -2413,6 +2429,12 @@
           "repository": "verndale/ui-design-brain",
           "number": 49,
           "url": "https://github.com/verndale/ui-design-brain/pull/49"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "verndale/ui-design-brain",
+          "number": 52,
+          "url": "https://github.com/verndale/ui-design-brain/pull/52"
         },
         {
           "kind": "pull-request",
@@ -2457,7 +2479,7 @@
           "url": "https://github.com/verndale/ui-design-brain/pull/46"
         }
       ],
-      "bytes": 3980,
+      "bytes": 4068,
       "degree": 13
     },
     {
