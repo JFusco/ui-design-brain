@@ -33,6 +33,7 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
+- 2026-08-31 — [Prepare public npm-only distribution](journal/2026-08-31-public-npm-only-distribution.md) — private source repository, constrained audited tarball, public-safe README, and OIDC trusted publishing.
 - 2026-08-30 — [Add deterministic UI Design Brain projections](journal/2026-08-30-deterministic-ui-design-brain-projections.md) — exact private package pins, schema/digest provenance, marker-owned atomic sync, safe legacy adoption, no-network hooks, and a bounded accessibility authority.
 - 2026-08-24 — [Make agent wiki guidance deterministic](journal/2026-08-24-deterministic-agent-wiki-guidance.md) — installs the canonical headless route-first contract while preserving catalog-specific graph and authoring rules.
 - 2026-08-23 — [Standardize wiki actions and evidence routing](journal/2026-08-23-standardize-wiki-actions-and-evidence-routing.md) — repo-qualified offline PR/issue evidence, safe search/routing, canonical workflows, guarded replay, cached issue refresh, and token-efficient navigation.

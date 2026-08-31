@@ -7,7 +7,7 @@
  *   when RELEASE_NOTES_AI=true and endpoint/API key are set (opt-in).
  * - `fix` type maps to patch release
  * - Generates/updates CHANGELOG.md
- * - Writes version to package.json (without publishing to npm)
+ * - Writes version to package.json and publishes the constrained public package
  * - Creates Git tags + GitHub Releases
  */
 module.exports = {
@@ -35,7 +35,7 @@ module.exports = {
     [
       '@semantic-release/npm',
       {
-        npmPublish: false,
+        npmPublish: true,
       },
     ],
 
