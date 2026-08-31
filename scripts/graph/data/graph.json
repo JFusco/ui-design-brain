@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 132,
-    "edges": 337,
+    "nodes": 133,
+    "edges": 340,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 80,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 27,
+      "wiki-journal": 28,
       "wiki-plan": 11,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 80,
       "covers": 5,
-      "links-to": 86,
-      "plan": 7,
+      "links-to": 87,
+      "plan": 8,
       "references": 4,
       "see-also": 116,
-      "topic": 39
+      "topic": 40
     }
   },
   "nodes": [
@@ -60,7 +60,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 7324,
+      "bytes": 7455,
       "degree": 2
     },
     {
@@ -1388,8 +1388,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 10665,
-      "degree": 33
+      "bytes": 10881,
+      "degree": 34
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2098,7 +2098,31 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 2118,
+      "bytes": 2155,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-08-31-standardize-package-release.md",
+      "label": "Standardize package release workflow",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "51"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 51,
+          "url": "https://github.com/verndale/ui-design-brain/issues/51"
+        }
+      ],
+      "bytes": 1866,
       "degree": 3
     },
     {
@@ -2393,8 +2417,8 @@
           "url": "https://github.com/verndale/ai-orchestration/issues/609"
         }
       ],
-      "bytes": 9180,
-      "degree": 7
+      "bytes": 9841,
+      "degree": 8
     },
     {
       "id": "wiki/plans/INDEX.md",
@@ -2720,8 +2744,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 3871,
-      "degree": 13
+      "bytes": 4913,
+      "degree": 14
     }
   ],
   "edges": [
@@ -3362,6 +3386,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-08-31-standardize-package-release.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -3784,6 +3815,11 @@
     },
     {
       "source": "wiki/journal/2026-08-31-public-npm-only-distribution.md",
+      "target": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "type": "plan"
+    },
+    {
+      "source": "wiki/journal/2026-08-31-standardize-package-release.md",
       "target": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
       "type": "plan"
     },
@@ -4640,6 +4676,11 @@
     },
     {
       "source": "wiki/journal/2026-08-31-public-npm-only-distribution.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-08-31-standardize-package-release.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     },

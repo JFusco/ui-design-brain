@@ -8,8 +8,9 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
 
 ## Current state
 
-- The source repository remains private. `@verndale/ui-design-brain` is prepared
-  for public npm publication as a constrained tarball containing only the
+- The source repository remains private. `@verndale/ui-design-brain` is publicly
+  published at `1.16.1-bootstrap.0` under the non-default `bootstrap` tag as a
+  constrained tarball containing only the
   projector CLI, libraries, schemas, catalog skill, license, and public README.
 - `catalog-manifest.json` records schema version, the `1.15.1` canonical-vocabulary authority baseline, source and manifest digests, bounded authority, and every projected file digest.
 - The projector first becomes available in `1.16.0`; the implementation branch uses `1.16.0-next.0` so local artifacts are explicitly prerelease rather than falsely attributed to `v1.15.1`.
@@ -20,7 +21,14 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
 - The source pre-commit hook checks the generated catalog manifest and pre-push
   runs projection plus packed offline-consumer tests. Release automation uses
   GitHub Actions OIDC for npm trusted publishing; no long-lived publish token is
-  stored in the private repository or consumer CI.
+  stored in the private repository or consumer CI. npm trusts
+  `verndale/ui-design-brain` `release.yml` for `npm publish` only.
+- Release workflow parity follows `accessibility-standards`: full Git history,
+  Node `24.14.0`, Corepack `pnpm@11.1.1`, frozen install, release-commit
+  preflight, source verification, clean packed-consumer verification, npm
+  dry-run, then semantic-release. The npm provenance setting is explicitly
+  `false`: npm does not support automatic provenance for a public package
+  published from a private GitHub source repository.
 
 ## Decisions
 
@@ -32,6 +40,12 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
   `repository.url` to match the private GitHub source ([npm trusted publishing
   documentation](https://docs.npmjs.com/trusted-publishers/),
   [delivery issue #51](https://github.com/verndale/ui-design-brain/issues/51)).
+- 2026-08-31 — Standardized the release workflow and semantic-release policy
+  with `accessibility-standards`, including deterministic release notes and a
+  clean tarball consumer gate. Removed the optional AI release-notes path so
+  release output and publication behavior have one reviewable authority. The
+  private-source/public-package provenance restriction remains an explicit,
+  documented exception ([delivery issue #51](https://github.com/verndale/ui-design-brain/issues/51)).
 - 2026-08-30 — Replaced recurring raw-folder/Skills CLI synchronization with exact package pins and deterministic marker-owned projections because COS Functional Specs and ai-orchestration Build Packs must resolve the same canonical pattern IDs without cron timing or copy drift. Kept public registry publication out of scope, added a narrowly verified adoption path for existing copies, and kept accessibility mappings in `accessibility-standards` ([verndale/ui-design-brain issue #47](https://github.com/verndale/ui-design-brain/issues/47), [plan](../plans/2026-08-30-deterministic-ui-design-brain-projections.md), [journal](../journal/2026-08-30-deterministic-ui-design-brain-projections.md)).
 - 2026-06-12 — De-duplicated the vendored copy through the `skills` CLI (vercel-labs/skills) instead of a submodule ([plan](../plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md)).
 - 2026-06-11 — Finalized a vendor-only distribution: npm package plus a consumer sync path ([plan](../plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md)).

@@ -61,7 +61,7 @@ The root [`commitlint.config.cjs`](commitlint.config.cjs) consumes the public `@
 ## How changes reach consumers
 
 1. Land your change here and merge to `main`.
-2. Release an immutable private package or reviewed tarball and update each consumer's exact lockfile pin and `ui-design-brain.config.json` in one reviewable change.
+2. Release an immutable public npm package and update each consumer's exact lockfile pin and `ui-design-brain.config.json` in one reviewable change.
 3. Run the installed package's `sync --if-needed` command and commit the marker-owned projection plus `projection-manifest.json`.
 
 Consumer hooks invoke the already-installed exact package directly with Node. They never run `npx`, contact a registry, choose a newer version, or alter a lockfile. The one-time `sync --adopt` migration accepts only a byte-identical legacy catalog (with semantic-equivalent JSON formatting) before atomically adding ownership and provenance.
@@ -73,13 +73,13 @@ Consumer hooks invoke the already-installed exact package directly with Node. Th
 | [`.github/workflows/commitlint.yml`](.github/workflows/commitlint.yml) | PRs to `main`, including title edits | `Commit message lint / commitlint`: same-config checks for PR title + immutable base/head range |
 | [`.github/workflows/quality.yml`](.github/workflows/quality.yml) | PRs to `main`, `workflow_dispatch` | `Quality / quality`: lint + lifecycle self-tests + the check-only graph contract |
 | [`.github/workflows/pr.yml`](.github/workflows/pr.yml) | Pushes to non-`main`, `workflow_dispatch` | Dogfood: install deps, run **`pnpm run pr:create`** |
-| [`.github/workflows/release.yml`](.github/workflows/release.yml) | Pushes to `main` | `semantic-release`: version bump, `CHANGELOG.md`, Git tag + GitHub Release |
+| [`.github/workflows/release.yml`](.github/workflows/release.yml) | Pushes to `main` | verifies the source and clean tarball consumer, then `semantic-release`: public npm publication, version bump, `CHANGELOG.md`, Git tag + GitHub Release |
 
 Add repository secret **`PR_BOT_TOKEN`** (classic PAT with **`repo`**) if the default **`GITHUB_TOKEN`** is not enough for **`pr.yml`**.
 
-Releases are driven by [`semantic-release`](.releaserc.cjs) on every push to `main` — Conventional Commit types decide the bump (`feat` → minor, `fix` → patch, `BREAKING` → major). Release notes are deterministic and structured via the local plugin [`scripts/commit-pr/semantic-release-structured-notes.cjs`](scripts/commit-pr/semantic-release-structured-notes.cjs); an optional bounded AI summary runs only when `RELEASE_NOTES_AI=true` and an endpoint/model/API key are configured. Preview locally with `pnpm release:dry`.
+Releases are driven by [`semantic-release`](.releaserc.cjs) on every push to `main` — Conventional Commit types decide the bump (`feat` → minor; `build`, `chore`, `ci`, `docs`, `fix`, `perf`, `refactor`, `revert`, `style`, and `test` → patch; `!` → major). The release workflow rejects aggregated `BREAKING CHANGE` bodies, runs the same source and packed-consumer gates as Accessibility Standards, and publishes through npm trusted publishing with GitHub Actions OIDC. No npm token or AI release-notes service is used. Preview locally with `pnpm release:dry`.
 
-This repo is **not published to npm yet**. `package.json` remains `"private": true` and `npmPublish` remains `false`, so `semantic-release` versions and tags the repo (and updates `CHANGELOG.md`) without publishing to the public registry. Exact Git/tag or reviewed tarball consumption is supported until a separate registry decision is approved.
+The source repository remains private. The public package is limited to the audited npm allowlist in `package.json`; consumers install one exact registry version from their lockfile and never fetch or select versions in hooks. npm provenance remains disabled because npm does not support automatic provenance for a public package published from a private GitHub source repository.
 
 ## Installation
 

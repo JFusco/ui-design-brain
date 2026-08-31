@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 "use strict";
 
-// Optional AI drafting of a wiki journal entry's Why/What-changed, reusing the
-// grounded, fail-soft discipline of scripts/commit-pr/semantic-release-structured-notes.cjs:
-// gated + endpoint-driven, output is validated and DISCARDED unless it stays
-// grounded in the provided change context. Any failure returns null so the caller
-// falls back to the deterministic stub — the AI never fabricates the "why".
+// Optional AI drafting of a wiki journal entry's Why/What-changed. Output is
+// gated, endpoint-driven, validated, and discarded unless it remains grounded
+// in the provided change context. Any failure returns null so the caller falls
+// back to the deterministic stub — the AI never fabricates the "why".
 
 // Gate + config. Enabled by WIKI_AI=true; endpoint/model/key fall back to the
-// existing RELEASE_NOTES_AI_* so no new secret is required.
+// configured WIKI_AI_* variables, with legacy release-notes variables accepted
+// only as compatibility fallbacks so no new secret is required.
 function config(env) {
   const enabled = String(env.WIKI_AI || "").toLowerCase() === "true";
   const endpoint = env.WIKI_AI_ENDPOINT || env.RELEASE_NOTES_AI_ENDPOINT;

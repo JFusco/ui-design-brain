@@ -13,6 +13,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Make agent wiki guidance deterministic](../../wiki/journal/2026-08-24-deterministic-agent-wiki-guidance.md) → [Deterministic, Route-First Wiki Guidance and PR 127 Recovery](../../wiki/plans/2026-08-24-deterministic-route-first-wiki-guidance-and-pr-127-recovery.md)
 - [Add deterministic UI Design Brain projections](../../wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md) → [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md)
 - [Prepare public npm-only distribution](../../wiki/journal/2026-08-31-public-npm-only-distribution.md) → [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md)
+- [Standardize package release workflow](../../wiki/journal/2026-08-31-standardize-package-release.md) → [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md)
 
 ## Page → topic
 
@@ -44,6 +45,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Add deterministic UI Design Brain projections](../../wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Add deterministic UI Design Brain projections](../../wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Prepare public npm-only distribution](../../wiki/journal/2026-08-31-public-npm-only-distribution.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
+- [Standardize package release workflow](../../wiki/journal/2026-08-31-standardize-package-release.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Extract @verndale/ui-design-brain into its own published repo](../../wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Finalize ui-design-brain extraction (vendor-only, npm + sync)](../../wiki/plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: De-duplicate ui-design-brain via the skills CLI (vercel-labs/skills)](../../wiki/plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
