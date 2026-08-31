@@ -9,7 +9,7 @@ evidence:
 source_tool: codex
 source: user-approved Shared Accessibility Standards Delivery Plan extension
 topics: [component-catalog, packaging-and-distribution]
-audit_note: Repository projector implementation is complete in the working tree; stable 1.16.0 release and consumer pin upgrades remain pending.
+audit_note: Repository projector implementation is complete. A public-safe npm tarball and OIDC publishing workflow are prepared; the next stable release and consumer pin upgrades remain pending.
 ---
 # Deterministic UI Design Brain projections for COS and ai-orchestration
 
@@ -46,11 +46,20 @@ The accessibility repository owns those mappings and obligations. Existing acces
 
 ## Source and package contract
 
-- Preserve `package.json` as `private: true` and preserve `npmPublish: false` in semantic-release.
-- Use `1.16.0-next.0` as the explicit branch-local prerelease placeholder; the first stable projector release target is `1.16.0`.
+- Keep the GitHub source repository private while publishing only a constrained,
+  public npm package. `files` must allow only `bin/`, `lib/`, `schemas/`,
+  `skills/ui-design-brain/`, `LICENSE`, and a public-safe `README.md`.
+- Use npm trusted publishing from `.github/workflows/release.yml`, with
+  `id-token: write` and no long-lived npm publishing token. Before each release,
+  `pnpm pack --dry-run` must prove the tarball excludes `wiki/`, Git history,
+  workflow configuration, internal consumer topology, and secret names.
+- Publish the next patch release from the stable `1.16.0` projector baseline;
+  consumers adopt that exact npm version after registry availability is verified.
 - Preserve `1.15.1` separately as `catalogAuthorityVersion`, because that published tag is the unchanged canonical names/slugs/aliases baseline and does not contain the projector.
 - Generate `skills/ui-design-brain/catalog-manifest.json` with schema version, source and parsed-manifest digests, bounded authority, pattern count, and sorted per-file digests.
-- Ship the CLI, libraries, schemas, generated catalog manifest, and skill tree in a private packed artifact.
+- Ship the CLI, libraries, schemas, generated catalog manifest, and skill tree
+  in the constrained public npm artifact; keep all source-repository context
+  private.
 - Add no runtime dependency and perform no network operation.
 
 ## Consumer configuration
@@ -130,7 +139,9 @@ Cover:
 
 ## Rollout
 
-1. Merge and release UI Design Brain `1.16.0` without enabling public npm publication.
+1. Configure npm trusted publishing for the private `verndale/ui-design-brain`
+   repository and `release.yml`, then merge and release the audited next patch
+   version to public npm.
 2. Update ai-orchestration's exact package lock/config, adopt its current catalog once, add local hooks, and remove cron/raw-copy automation under [verndale/ai-orchestration issue #609](https://github.com/verndale/ai-orchestration/issues/609).
 3. Update COS's exact package lock/config, adopt Conductor's current catalog once, and preserve Conductor as runtime resolver under [Azure Boards Feature 17](https://dev.azure.com/verndale/V00066-Cumulative-OperatingSystem/_workitems/edit/17).
 4. Let the accessibility repository own and validate UI-slug-to-accessibility-pattern bindings; do not add them here.
@@ -143,4 +154,5 @@ Cover:
 - Active consumer artifacts retain their recorded package/catalog/source digests; upgrades never silently rewrite history.
 - Existing copied catalogs require explicit verified adoption, not deletion or blind overwrite.
 - A package upgrade may change guidance or vocabulary, so lockfile, config, generated diff, and downstream golden results remain one review unit.
-- Public registry publication is a separate decision and is not required for deterministic exact-artifact consumption.
+- Public npm distribution is intentionally limited to the audited package
+  allowlist. A source-repository visibility change is not part of this delivery.

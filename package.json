@@ -1,13 +1,16 @@
 {
   "name": "@verndale/ui-design-brain",
   "version": "1.16.0",
-  "private": true,
+  "private": false,
   "description": "Versioned catalog of production-grade UI component patterns (markdown + manifest) shared across Verndale AI tooling, distributed as an agent skill.",
   "license": "MIT",
   "author": "Verndale",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/verndale/ui-design-brain.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "bin": {
     "ui-design-brain": "bin/ui-design-brain.mjs"

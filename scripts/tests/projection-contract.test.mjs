@@ -78,7 +78,8 @@ test("all shipped JSON schemas are valid and the pre-projector package fails exp
   await writeFile(path.join(legacyRoot, "package.json"), `${JSON.stringify({
     name: "@verndale/ui-design-brain",
     version: "1.15.1",
-    private: true,
+    private: false,
+    publishConfig: { access: "public" },
   })}\n`);
   const consumer = await fixture(t, "legacy-projector/ui-design-brain");
   const config = JSON.parse(await readFile(consumer.configPath, "utf8"));
@@ -189,7 +190,7 @@ test("consumer config fails closed on package version or target traversal", asyn
   );
 });
 
-test("the private packed artifact can project in an offline consumer fixture", async (t) => {
+test("the constrained public packed artifact can project in an offline consumer fixture", async (t) => {
   const root = await mkdtemp(path.join(os.tmpdir(), "ui-design-brain-packed-"));
   t.after(async () => {
     const { rm } = await import("node:fs/promises");
@@ -229,6 +230,15 @@ test("the private packed artifact can project in an offline consumer fixture", a
   ]) {
     assert.match(listing.stdout, new RegExp(`^${expected.replaceAll(".", "\\.")}$`, "m"));
   }
+  for (const excluded of ["package/wiki/", "package/.github/", "package/.releaserc.cjs"]) {
+    assert.doesNotMatch(listing.stdout, new RegExp(`^${excluded.replaceAll(".", "\\.")}` , "m"));
+  }
+  const packagedContent = spawnSync("tar", ["-xOzf", tarball], { encoding: "utf8" });
+  assert.equal(packagedContent.status, 0, packagedContent.stderr);
+  assert.doesNotMatch(
+    packagedContent.stdout,
+    /verndale\/(?:ai-orchestration|COS-monorepo)|\bV00066\b|PR_BOT_TOKEN|RELEASE_NOTES_AI|@gmail\.com/i,
+  );
 
   await writeFile(path.join(consumer, "package.json"), `${JSON.stringify({
     name: "ui-design-brain-packed-consumer",
