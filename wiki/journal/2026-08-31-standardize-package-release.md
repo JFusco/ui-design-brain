@@ -2,7 +2,7 @@
 date: 2026-08-31
 topics: [packaging-and-distribution]
 plan: plans/2026-08-30-deterministic-ui-design-brain-projections.md
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/54
 issue: https://github.com/verndale/ui-design-brain/issues/51
 issues: [https://github.com/verndale/ui-design-brain/issues/51]
 ---
