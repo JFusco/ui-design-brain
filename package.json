@@ -10,7 +10,8 @@
     "url": "git+https://github.com/verndale/ui-design-brain.git"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": false
   },
   "bin": {
     "ui-design-brain": "bin/ui-design-brain.mjs"
@@ -32,7 +33,7 @@
     "accessibility",
     "agent-skill"
   ],
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@11.1.1",
   "engines": {
     "node": ">=24.14.0"
   },
@@ -47,11 +48,13 @@
     "lint:commit": "commitlint --config commitlint.config.cjs",
     "lint:commits:last": "pnpm run lint:commit --last",
     "release:dry": "semantic-release --dry-run",
+    "release:preflight": "node scripts/check-release-commit.cjs",
+    "release:preflight:selftest": "node scripts/check-release-commit.selftest.cjs",
     "catalog:build": "node bin/ui-design-brain.mjs build",
     "catalog:check": "node bin/ui-design-brain.mjs build --check",
     "test:fast": "pnpm run catalog:check && pnpm run graph:check",
     "test:lifecycle": "node --test scripts/tests/*.test.cjs scripts/tests/*.test.mjs",
-    "test": "pnpm run test:fast && pnpm run test:lifecycle",
+    "test": "pnpm run test:fast && pnpm run test:lifecycle && pnpm release:preflight:selftest",
     "verify:push": "pnpm run test",
     "verify:ci": "pnpm run lint && pnpm run test",
     "graph:build": "node scripts/graph/build-graph.cjs",

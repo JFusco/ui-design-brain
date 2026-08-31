@@ -40,7 +40,9 @@ issues: [https://github.com/verndale/ui-design-brain/issues/51]
 
 ## Follow-ups
 
-- Configure npm trusted publisher fields for `verndale/ui-design-brain` and
-  `release.yml`, with `npm publish` allowed, before merging the release change.
-- Publish the next patch release, verify its public tarball, then update COS and
-  ai-orchestration to the exact registry version in separate consumer changes.
+- The public `1.16.1-bootstrap.0` package was published under the non-default
+  `bootstrap` tag and npm now trusts `verndale/ui-design-brain` `release.yml`
+  for `npm publish`.
+- Publish the next stable release through OIDC, verify its public tarball, then
+  update COS and ai-orchestration to the exact registry version in separate
+  consumer changes.

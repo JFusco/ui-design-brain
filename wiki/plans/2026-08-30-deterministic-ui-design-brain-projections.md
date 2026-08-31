@@ -10,7 +10,7 @@ evidence:
 source_tool: codex
 source: user-approved Shared Accessibility Standards Delivery Plan extension
 topics: [component-catalog, packaging-and-distribution]
-audit_note: Repository projector implementation is complete. A public-safe npm tarball and OIDC publishing workflow are prepared; the next stable release and consumer pin upgrades remain pending.
+audit_note: Repository projector implementation is complete. The release workflow now matches accessibility-standards, except npm provenance is intentionally disabled because the source repository remains private. The public 1.16.1-bootstrap.0 package and release.yml trusted publisher are configured; stable release and consumer pin upgrades remain pending.
 ---
 # Deterministic UI Design Brain projections for COS and ai-orchestration
 
@@ -54,6 +54,13 @@ The accessibility repository owns those mappings and obligations. Existing acces
   `id-token: write` and no long-lived npm publishing token. Before each release,
   `pnpm pack --dry-run` must prove the tarball excludes `wiki/`, Git history,
   workflow configuration, internal consumer topology, and secret names.
+- Match the Accessibility Standards release gates: full history, Node `24.14.0`,
+  Corepack `pnpm@11.1.1`, frozen install, release-commit preflight, source and
+  projection verification, clean packed-consumer verification, and npm
+  dry-run before semantic-release. Use standard deterministic release notes;
+  do not retain an optional AI release-notes path. npm provenance is the
+  documented exception because npm cannot generate it for public packages from
+  private GitHub source repositories.
 - Publish the next patch release from the stable `1.16.0` projector baseline;
   consumers adopt that exact npm version after registry availability is verified.
 - Preserve `1.15.1` separately as `catalogAuthorityVersion`, because that published tag is the unchanged canonical names/slugs/aliases baseline and does not contain the projector.

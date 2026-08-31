@@ -2,10 +2,8 @@
  * semantic-release configuration
  *
  * - Version bumping driven by Conventional Commits
- * - Release notes: deterministic and structured via local plugin
- *   (scripts/commit-pr/semantic-release-structured-notes.cjs). Optional AI summary
- *   when RELEASE_NOTES_AI=true and endpoint/API key are set (opt-in).
- * - `fix` type maps to patch release
+ * - Matches the standard package release policy used by accessibility-standards.
+ * - Conventional changes other than `feat` are patches; `!` is major.
  * - Generates/updates CHANGELOG.md
  * - Writes version to package.json and publishes the constrained public package
  * - Creates Git tags + GitHub Releases
@@ -19,18 +17,15 @@ module.exports = {
       {
         preset: 'conventionalcommits',
         releaseRules: [
-          { type: 'feat', release: 'minor' },
-          { type: 'fix', release: 'patch' },
           { breaking: true, release: 'major' },
-          { revert: true, release: 'patch' },
+          { type: 'feat', release: 'minor' },
+          ...['build', 'chore', 'ci', 'docs', 'fix', 'perf', 'refactor', 'revert', 'style', 'test']
+            .map((type) => ({ type, release: 'patch' })),
         ],
-        parserOpts: {
-          noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING'],
-        },
       },
     ],
 
-    './scripts/commit-pr/semantic-release-structured-notes.cjs',
+    ['@semantic-release/release-notes-generator', { preset: 'conventionalcommits', presetConfig: {} }],
 
     [
       '@semantic-release/npm',
@@ -57,7 +52,9 @@ module.exports = {
     [
       '@semantic-release/github',
       {
-        // Uses the built-in GITHUB_TOKEN in Actions
+        successCommentCondition: false,
+        failCommentCondition: false,
+        releasedLabels: false,
       },
     ],
   ],
