@@ -2,7 +2,7 @@
 date: 2026-09-07
 topics: [component-catalog]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/58
 issue: https://github.com/verndale/ui-design-brain/issues/57
 issues: [https://github.com/verndale/ui-design-brain/issues/57]
 ---
