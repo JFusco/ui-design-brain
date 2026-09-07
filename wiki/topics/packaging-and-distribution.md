@@ -12,7 +12,7 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
   published at `1.16.1-bootstrap.0` under the non-default `bootstrap` tag as a
   constrained tarball containing only the
   projector CLI, libraries, schemas, catalog skill, license, and public README.
-- `catalog-manifest.json` records schema version, the `1.15.1` canonical-vocabulary authority baseline, source and manifest digests, bounded authority, and every projected file digest.
+- `catalog-manifest.json` records schema version, the `1.17.0` canonical-vocabulary authority baseline, source and manifest digests, bounded authority, and every projected file digest.
 - The projector first becomes available in `1.16.0`; the implementation branch uses `1.16.0-next.0` so local artifacts are explicitly prerelease rather than falsely attributed to `v1.15.1`.
 - Consumers pin one immutable package artifact and declare package version, catalog-authority version, profile, and target in `ui-design-brain.config.json`.
 - `sync --if-needed` writes only a marker-owned target, validates a complete temporary projection, and promotes it atomically. `check` is read-only. Both fail closed on version, digest, file-set, or local-edit drift.

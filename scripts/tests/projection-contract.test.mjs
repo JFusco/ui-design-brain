@@ -35,7 +35,7 @@ async function fixture(t, target = "generated/ui-design-brain") {
     schemaVersion: 1,
     packageName: "@verndale/ui-design-brain",
     packageVersion: metadata.version,
-    catalogAuthorityVersion: "1.15.1",
+    catalogAuthorityVersion: "1.17.0",
     profile: "agent-skill",
     target,
   }, null, 2)}\n`);
@@ -47,7 +47,7 @@ test("catalog manifest captures the complete bounded authority with stable diges
   const manifest = await createCatalogManifest(packageRoot);
   const catalog = await loadCatalog(packageRoot);
   assert.equal(manifest.schemaVersion, 1);
-  assert.equal(manifest.catalogAuthorityVersion, "1.15.1");
+  assert.equal(manifest.catalogAuthorityVersion, "1.17.0");
   assert.equal(manifest.patternCount, 80);
   assert.equal(manifest.sourceDigest, catalog.sourceDigest);
   assert.deepEqual(manifest.authority, AUTHORITY);
@@ -101,7 +101,7 @@ test("sync creates a marker-owned projection and --if-needed is a byte-stable no
   const marker = await readFile(path.join(targetPath, GENERATED_MARKER), "utf8");
   assert.equal(provenance.packageVersion, (await readPackage(packageRoot)).version);
   assert.notEqual(provenance.packageVersion, provenance.catalogAuthorityVersion);
-  assert.equal(provenance.catalogAuthorityVersion, "1.15.1");
+  assert.equal(provenance.catalogAuthorityVersion, "1.17.0");
   assert.equal(provenance.outputDigest, first.outputDigest);
   assert.match(marker, new RegExp(`outputDigest=${first.outputDigest.replace(":", "\\:")}`));
 
@@ -258,7 +258,7 @@ test("the constrained public packed artifact can project in an offline consumer 
     schemaVersion: 1,
     packageName: "@verndale/ui-design-brain",
     packageVersion: metadata.version,
-    catalogAuthorityVersion: "1.15.1",
+    catalogAuthorityVersion: "1.17.0",
     profile: "agent-skill",
     target: "generated/ui-design-brain",
   }, null, 2)}\n`);
