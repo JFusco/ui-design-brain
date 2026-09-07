@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 138,
-    "edges": 355,
+    "nodes": 139,
+    "edges": 357,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,14 +9,14 @@
       "ui-pattern": 80,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 33,
+      "wiki-journal": 34,
       "wiki-plan": 11,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 80,
       "covers": 5,
-      "links-to": 97,
+      "links-to": 99,
       "plan": 8,
       "references": 4,
       "see-also": 116,
@@ -1392,8 +1392,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 12024,
-      "degree": 39
+      "bytes": 12245,
+      "degree": 40
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2290,6 +2290,19 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-09-07-fix-release-push-hooks.md",
+      "label": "Fix release push hooks",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "githubRefs": [],
+      "bytes": 1283,
+      "degree": 2
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -2912,11 +2925,18 @@
       ],
       "prs": [],
       "issues": [
+        "62",
         "60",
         "51",
         "47"
       ],
       "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 62,
+          "url": "https://github.com/verndale/ui-design-brain/issues/62"
+        },
         {
           "kind": "issue",
           "repository": "verndale/ui-design-brain",
@@ -2936,8 +2956,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 5598,
-      "degree": 16
+      "bytes": 6379,
+      "degree": 17
     }
   ],
   "edges": [
@@ -3620,6 +3640,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-07-fix-release-push-hooks.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -4013,6 +4040,13 @@
     {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/journal/2026-09-07-fix-release-artifact-inspection.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-09-07-fix-release-push-hooks.md",
       "type": "links-to",
       "count": 1,
       "anchors": []

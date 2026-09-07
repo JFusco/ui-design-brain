@@ -29,12 +29,17 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
   registry-independent `npm pack --dry-run`, then semantic-release. The pack
   inspection deliberately does not use `npm publish --dry-run`: npm rejects an
   already-published `package.json` version before semantic-release calculates
-  the next release. The npm provenance setting is explicitly
+  the next release. The semantic-release process alone runs with `HUSKY=0`
+  after those gates pass, so its generated release commit and tag do not
+  recursively run contributor pre-push hooks against a transient bumped
+  package version. Package and catalog-authority provenance are independent
+  values and may legitimately match. The npm provenance setting is explicitly
   `false`: npm does not support automatic provenance for a public package
   published from a private GitHub source repository.
 
 ## Decisions
 
+- 2026-09-07 — Disabled Husky only for the already-gated semantic-release process and removed a projection-test assumption that package and catalog-authority versions must differ. The `1.17.0` release proved those values may legitimately match, and release-generated pushes must not recursively test a transient version-bumped worktree ([issue #62](https://github.com/verndale/ui-design-brain/issues/62), [journal](../journal/2026-09-07-fix-release-push-hooks.md)).
 - 2026-09-07 — Changed the pre-release artifact inspection from `npm publish --dry-run` to `npm pack --dry-run`. The former consults the registry and rejects the repository's last published version before semantic-release calculates the next one; the latter inspects the same package file set without creating that false gate ([issue #60](https://github.com/verndale/ui-design-brain/issues/60), [journal](../journal/2026-09-07-fix-release-artifact-inspection.md)).
 - 2026-08-31 — Keep the source repository private and distribute only the
   audited public npm tarball. This preserves a credential-free, exact-version

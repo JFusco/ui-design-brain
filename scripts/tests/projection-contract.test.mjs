@@ -100,7 +100,6 @@ test("sync creates a marker-owned projection and --if-needed is a byte-stable no
   const provenance = JSON.parse(await readFile(path.join(targetPath, PROJECTION_MANIFEST), "utf8"));
   const marker = await readFile(path.join(targetPath, GENERATED_MARKER), "utf8");
   assert.equal(provenance.packageVersion, (await readPackage(packageRoot)).version);
-  assert.notEqual(provenance.packageVersion, provenance.catalogAuthorityVersion);
   assert.equal(provenance.catalogAuthorityVersion, "1.17.0");
   assert.equal(provenance.outputDigest, first.outputDigest);
   assert.match(marker, new RegExp(`outputDigest=${first.outputDigest.replace(":", "\\:")}`));

@@ -33,6 +33,7 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
+- 2026-09-07 — [Fix release push hooks](journal/2026-09-07-fix-release-push-hooks.md) — keep semantic-release's generated commit/tag push from recursively running contributor hooks against a transient bumped version.
 - 2026-09-07 — [Fix release artifact inspection](journal/2026-09-07-fix-release-artifact-inspection.md) — inspect the tarball without asking npm whether the repository's last published version can be republished.
 - 2026-09-07 — [Add Date Picker alias to Datepicker](journal/2026-09-07-add-date-picker-alias-to-datepicker.md) — a complete calendar-based date control now resolves through a consumer-evidenced plain alias (80 → 80).
 - 2026-09-07 — [Add Input Field alias to Text input](journal/2026-09-07-add-input-field-alias-to-text-input.md) — a complete labelled single-line field now resolves through a consumer-evidenced plain alias (80 → 80).
