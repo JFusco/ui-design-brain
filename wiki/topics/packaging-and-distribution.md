@@ -25,13 +25,17 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
   `verndale/ui-design-brain` `release.yml` for `npm publish` only.
 - Release workflow parity follows `accessibility-standards`: full Git history,
   Node `24.14.0`, Corepack `pnpm@11.1.1`, frozen install, release-commit
-  preflight, source verification, clean packed-consumer verification, npm
-  dry-run, then semantic-release. The npm provenance setting is explicitly
+  preflight, source verification, clean packed-consumer verification, a
+  registry-independent `npm pack --dry-run`, then semantic-release. The pack
+  inspection deliberately does not use `npm publish --dry-run`: npm rejects an
+  already-published `package.json` version before semantic-release calculates
+  the next release. The npm provenance setting is explicitly
   `false`: npm does not support automatic provenance for a public package
   published from a private GitHub source repository.
 
 ## Decisions
 
+- 2026-09-07 — Changed the pre-release artifact inspection from `npm publish --dry-run` to `npm pack --dry-run`. The former consults the registry and rejects the repository's last published version before semantic-release calculates the next one; the latter inspects the same package file set without creating that false gate ([issue #60](https://github.com/verndale/ui-design-brain/issues/60), [journal](../journal/2026-09-07-fix-release-artifact-inspection.md)).
 - 2026-08-31 — Keep the source repository private and distribute only the
   audited public npm tarball. This preserves a credential-free, exact-version
   consumer install without publishing the wiki, Git history, operational

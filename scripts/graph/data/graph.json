@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 137,
-    "edges": 352,
+    "nodes": 138,
+    "edges": 355,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 80,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 32,
+      "wiki-journal": 33,
       "wiki-plan": 11,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 80,
       "covers": 5,
-      "links-to": 95,
+      "links-to": 97,
       "plan": 8,
       "references": 4,
       "see-also": 116,
-      "topic": 44
+      "topic": 45
     }
   },
   "nodes": [
@@ -1392,8 +1392,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 11807,
-      "degree": 38
+      "bytes": 12024,
+      "degree": 39
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2266,6 +2266,30 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-09-07-fix-release-artifact-inspection.md",
+      "label": "Fix release artifact inspection",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "60"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 60,
+          "url": "https://github.com/verndale/ui-design-brain/issues/60"
+        }
+      ],
+      "bytes": 1274,
+      "degree": 3
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -2888,10 +2912,17 @@
       ],
       "prs": [],
       "issues": [
+        "60",
         "51",
         "47"
       ],
       "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 60,
+          "url": "https://github.com/verndale/ui-design-brain/issues/60"
+        },
         {
           "kind": "issue",
           "repository": "verndale/ui-design-brain",
@@ -2905,8 +2936,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 4913,
-      "degree": 14
+      "bytes": 5598,
+      "degree": 16
     }
   ],
   "edges": [
@@ -3582,6 +3613,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-07-fix-release-artifact-inspection.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -3968,6 +4006,13 @@
     {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-09-07-fix-release-artifact-inspection.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -4919,6 +4964,11 @@
     {
       "source": "wiki/journal/2026-09-07-add-toggle-switch-alias-to-toggle.md",
       "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-07-fix-release-artifact-inspection.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     },
     {
