@@ -33,6 +33,10 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
+- 2026-09-07 — [Add Date Picker alias to Datepicker](journal/2026-09-07-add-date-picker-alias-to-datepicker.md) — a complete calendar-based date control now resolves through a consumer-evidenced plain alias (80 → 80).
+- 2026-09-07 — [Add Input Field alias to Text input](journal/2026-09-07-add-input-field-alias-to-text-input.md) — a complete labelled single-line field now resolves through a consumer-evidenced plain alias (80 → 80).
+- 2026-09-07 — [Add Segmented Radio Group alias to Segmented control](journal/2026-09-07-add-segmented-radio-group-alias-to-segmented-control.md) — a whole mutually exclusive segmented control now resolves through a consumer-evidenced plain alias (80 → 80).
+- 2026-09-07 — [Add Toggle Switch alias to Toggle](journal/2026-09-07-add-toggle-switch-alias-to-toggle.md) — a complete binary setting control now resolves through a consumer-evidenced plain alias (80 → 80).
 - 2026-08-31 — [Standardize package release workflow](journal/2026-08-31-standardize-package-release.md) — Accessibility Standards release gates, deterministic notes, and the private-source provenance exception.
 - 2026-08-31 — [Prepare public npm-only distribution](journal/2026-08-31-public-npm-only-distribution.md) — private source repository, constrained audited tarball, public-safe README, and OIDC trusted publishing.
 - 2026-08-30 — [Add deterministic UI Design Brain projections](journal/2026-08-30-deterministic-ui-design-brain-projections.md) — exact private package pins, schema/digest provenance, marker-owned atomic sync, safe legacy adoption, no-network hooks, and a bounded accessibility authority.

@@ -16,7 +16,7 @@ try {
     schemaVersion: 1,
     packageName: '@verndale/ui-design-brain',
     packageVersion: pkg.version,
-    catalogAuthorityVersion: '1.15.1',
+    catalogAuthorityVersion: '1.17.0',
     profile: 'agent-skill',
     target: 'generated/ui-design-brain',
   }, null, 2)}\n`);

@@ -17,7 +17,7 @@
     ]
   },
   "catalog": "ui-design-brain",
-  "catalogAuthorityVersion": "1.15.1",
+  "catalogAuthorityVersion": "1.17.0",
   "files": [
     {
       "path": "SKILL.md",
@@ -29,7 +29,7 @@
     },
     {
       "path": "patterns-manifest.json",
-      "sha256": "sha256:d8f0e70ecb675d1c67353218564ff535585aa8686c8f70becb79f486b3863fb4"
+      "sha256": "sha256:9175083e32b2df8708e7e38569bc0cd64ee5faf3269a322a3da4bb1bbe48230d"
     },
     {
       "path": "patterns/accordion.md",
@@ -93,7 +93,7 @@
     },
     {
       "path": "patterns/datepicker.md",
-      "sha256": "sha256:77f10dfcd8133c8d9953de3f6bd093e5b612bb654331213d800d9bfe73cb6a5f"
+      "sha256": "sha256:7ea34919e16fda0c634f30d63e98b67f0148b8d17fbc9bee2a9d3bebb7891b84"
     },
     {
       "path": "patterns/drawer.md",
@@ -261,7 +261,7 @@
     },
     {
       "path": "patterns/segmented-control.md",
-      "sha256": "sha256:bfe7126741679d0438a23dd919034ed116a044fe4f9efc3f7f909f5d491d205a"
+      "sha256": "sha256:dacd7fd3ddd26ffa25f37e6e28c4ed109e487f289d26a71f042f2ac53f82f459"
     },
     {
       "path": "patterns/select.md",
@@ -313,7 +313,7 @@
     },
     {
       "path": "patterns/text-input.md",
-      "sha256": "sha256:87d282517df6d917b9d543dcfd77deda3df8a47ef1127747c716009eedb76eee"
+      "sha256": "sha256:7f867af75973599cebbbc2684886a48331250bbdbde7e9530cb1967c8363cd1a"
     },
     {
       "path": "patterns/textarea.md",
@@ -325,7 +325,7 @@
     },
     {
       "path": "patterns/toggle.md",
-      "sha256": "sha256:4c8b08c50ca09cbbafd1aba90e2bdc4dc395b88a51e1b8eabf2f9b46af11d07d"
+      "sha256": "sha256:f3aee3b878c9993e32b44ae248b3c73d58f88ea2324b2630ff0d0cf33c171911"
     },
     {
       "path": "patterns/tooltip.md",
@@ -352,8 +352,8 @@
       "sha256": "sha256:660bab9dfb9dd0bc559dfd88a6bea913b0def98300fa898155a0fdca687f50a1"
     }
   ],
-  "manifestDigest": "sha256:63a0bc8d9537d6d4c0aef8fd8a539bf4a9181a50d0761bd63eae6fe59b4eddc9",
+  "manifestDigest": "sha256:d4b412615775cc1fc500c6dcfd3e36d51dc3be7ec6a741edfc7f0969fb7e4ded",
   "patternCount": 80,
   "schemaVersion": 1,
-  "sourceDigest": "sha256:1eda596fe341786b5ada25742b6487bc06685fff17cbd582bc1b58302097e3ff"
+  "sourceDigest": "sha256:425360edf7bbe381a6390d0a4e195e2ee81d8baab25488c1d293f29eeb776af2"
 }

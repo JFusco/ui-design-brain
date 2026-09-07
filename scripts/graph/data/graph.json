@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 133,
-    "edges": 340,
+    "nodes": 137,
+    "edges": 352,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 80,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 28,
+      "wiki-journal": 32,
       "wiki-plan": 11,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 80,
       "covers": 5,
-      "links-to": 87,
+      "links-to": 95,
       "plan": 8,
       "references": 4,
       "see-also": 116,
-      "topic": 40
+      "topic": 44
     }
   },
   "nodes": [
@@ -99,7 +99,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 12929,
+      "bytes": 13025,
       "degree": 83
     },
     {
@@ -357,12 +357,13 @@
       "topics": [],
       "aliases": [
         "Calendar",
+        "Date Picker",
         "Datetime picker"
       ],
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 979,
+      "bytes": 996,
       "degree": 3
     },
     {
@@ -1022,13 +1023,14 @@
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
       "aliases": [
+        "Segmented Radio Group",
         "Segmented toggle",
         "Toggle button group"
       ],
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 1026,
+      "bytes": 1053,
       "degree": 5
     },
     {
@@ -1222,6 +1224,7 @@
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
       "aliases": [
+        "Input Field",
         "Text box",
         "Text field",
         "Textbox"
@@ -1229,7 +1232,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 935,
+      "bytes": 952,
       "degree": 5
     },
     {
@@ -1269,12 +1272,13 @@
       "aliases": [
         "Lightswitch",
         "Switch",
-        "Toggle button"
+        "Toggle button",
+        "Toggle Switch"
       ],
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 1071,
+      "bytes": 1090,
       "degree": 3
     },
     {
@@ -1388,8 +1392,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 10881,
-      "degree": 34
+      "bytes": 11807,
+      "degree": 38
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2134,6 +2138,102 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-09-07-add-date-picker-alias-to-datepicker.md",
+      "label": "Add Date Picker alias to Datepicker",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "57"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 57,
+          "url": "https://github.com/verndale/ui-design-brain/issues/57"
+        }
+      ],
+      "bytes": 1115,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-07-add-input-field-alias-to-text-input.md",
+      "label": "Add Input Field alias to Text input",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "57"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 57,
+          "url": "https://github.com/verndale/ui-design-brain/issues/57"
+        }
+      ],
+      "bytes": 1081,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-07-add-segmented-radio-group-alias-to-segmented-control.md",
+      "label": "Add Segmented Radio Group alias to Segmented control",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "57"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 57,
+          "url": "https://github.com/verndale/ui-design-brain/issues/57"
+        }
+      ],
+      "bytes": 1119,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-07-add-toggle-switch-alias-to-toggle.md",
+      "label": "Add Toggle Switch alias to Toggle",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "57"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 57,
+          "url": "https://github.com/verndale/ui-design-brain/issues/57"
+        }
+      ],
+      "bytes": 1105,
+      "degree": 3
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -2586,8 +2686,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/11"
         }
       ],
-      "bytes": 13070,
-      "degree": 51
+      "bytes": 14238,
+      "degree": 59
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -3422,6 +3522,34 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-07-add-date-picker-alias-to-datepicker.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-07-add-input-field-alias-to-text-input.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-07-add-segmented-radio-group-alias-to-segmented-control.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-07-add-toggle-switch-alias-to-toggle.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -3703,6 +3831,34 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-07-add-date-picker-alias-to-datepicker.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-07-add-input-field-alias-to-text-input.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-07-add-segmented-radio-group-alias-to-segmented-control.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-07-add-toggle-switch-alias-to-toggle.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -4711,6 +4867,26 @@
     {
       "source": "wiki/journal/2026-08-31-standardize-package-release.md",
       "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-07-add-date-picker-alias-to-datepicker.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-07-add-input-field-alias-to-text-input.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-07-add-segmented-radio-group-alias-to-segmented-control.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-07-add-toggle-switch-alias-to-toggle.md",
+      "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },
     {

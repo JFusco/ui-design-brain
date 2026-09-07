@@ -1,6 +1,6 @@
 ## Text input
 
-**Also known as:** Text box  ·  Text field  ·  Textbox
+**Also known as:** Input Field  ·  Text box  ·  Text field  ·  Textbox
 
 A single-line form field for entering short text values.
 

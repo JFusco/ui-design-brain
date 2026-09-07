@@ -1,6 +1,6 @@
 ## Toggle
 
-**Also known as:** Lightswitch  ·  Switch  ·  Toggle button
+**Also known as:** Lightswitch  ·  Switch  ·  Toggle button  ·  Toggle Switch
 
 A binary switch control that toggles between two states — typically on and off.
 

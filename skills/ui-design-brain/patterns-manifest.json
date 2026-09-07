@@ -146,6 +146,7 @@
     "slug": "datepicker",
     "aliases": [
       "Calendar",
+      "Date Picker",
       "Datetime picker"
     ],
     "file": "patterns/datepicker.md"
@@ -517,6 +518,7 @@
     "name": "Segmented control",
     "slug": "segmented-control",
     "aliases": [
+      "Segmented Radio Group",
       "Segmented toggle",
       "Toggle button group"
     ],
@@ -626,6 +628,7 @@
     "name": "Text input",
     "slug": "text-input",
     "aliases": [
+      "Input Field",
       "Text box",
       "Text field",
       "Textbox"
@@ -652,7 +655,8 @@
     "aliases": [
       "Lightswitch",
       "Switch",
-      "Toggle button"
+      "Toggle button",
+      "Toggle Switch"
     ],
     "file": "patterns/toggle.md"
   },
