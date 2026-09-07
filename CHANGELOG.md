@@ -1,3 +1,14 @@
+## [1.17.0](https://github.com/verndale/ui-design-brain/compare/v1.16.1...v1.17.0) (2026-09-07)
+
+### Features
+
+* **ui-design-brain:** Add four catalog aliases ([5b62d68](https://github.com/verndale/ui-design-brain/commit/5b62d6856d740cb8c4cc5a7fcb88838bca12ec6a))
+
+### Bug Fixes
+
+* **release:** bypass hooks for release push ([bbbfdaa](https://github.com/verndale/ui-design-brain/commit/bbbfdaa827a52b553969440e3df46c10f77eddca))
+* **release:** inspect package without registry version check ([3b9507e](https://github.com/verndale/ui-design-brain/commit/3b9507e472baed1c0eb89cfcffe1e2b153cde3b2))
+
 ## [1.16.1](https://github.com/verndale/ui-design-brain/compare/v1.16.0...v1.16.1) (2026-08-31)
 
 ### Bug Fixes
