@@ -64,4 +64,5 @@ jobs:
       - name: Publish, tag, changelog, and GitHub release
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          HUSKY: 0
         run: pnpm exec semantic-release
