@@ -1,5 +1,7 @@
 ## Checkbox
 
+**Also known as:** CheckboxControl  ·  CheckboxField
+
 A selection control — use in groups for multi-select from a list, or standalone for a single on/off choice.
 
 **Best practices:**

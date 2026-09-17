@@ -1,5 +1,7 @@
 ## Textarea
 
+**Also known as:** TextAreaField
+
 A multi-line text field for longer content entry.
 
 Pair with a **Label** (`label.md`), **Helper text** (`helper-text.md`) for guidance such as character limits, and an **Error message** (`error-message.md`) for validation.

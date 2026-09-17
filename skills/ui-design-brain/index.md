@@ -30,6 +30,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Filter
 - Footer
 - Form
+- Gauge chart
 - Header
 - Heading
 - Helper text
@@ -49,6 +50,7 @@ Use this index to keep the full catalog out of the main prompt. Load exact patte
 - Navigation
 - Number input
 - Pagination
+- Pie chart
 - Popover
 - Progress bar
 - Progress indicator
@@ -114,6 +116,8 @@ These labels resolve to a different canonical depending on usage context. The al
 
 | Label | Resolves to | When (context) |
 | --- | --- | --- |
+| ActionButton | **Button** | triggers an in-page action and does not navigate |
+| ActionButton | **Link** | navigates when href or download is present |
 | Banner | **Alert** | page-level message / notification |
 | Banner | **Hero** | top-of-page hero / promotional area |
 | CTA | **Button** | triggers an in-page action (submit, open a dialog, toggle) — does not navigate |

@@ -1,6 +1,6 @@
 ## Button
 
-**Also known as:** CTA (in-page action)
+**Also known as:** ActionButton (in-page action)  ·  CTA (in-page action)
 
 An interactive control that triggers an action — submitting a form, opening a dialog, toggling visibility.
 

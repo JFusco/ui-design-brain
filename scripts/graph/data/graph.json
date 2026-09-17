@@ -1,26 +1,26 @@
 {
   "counts": {
-    "nodes": 139,
-    "edges": 357,
+    "nodes": 152,
+    "edges": 394,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
       "manifest": 1,
-      "ui-pattern": 80,
+      "ui-pattern": 82,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 34,
+      "wiki-journal": 45,
       "wiki-plan": 11,
       "wiki-topic": 4
     },
     "byEdgeType": {
-      "catalogs": 80,
+      "catalogs": 82,
       "covers": 5,
-      "links-to": 99,
+      "links-to": 121,
       "plan": 8,
       "references": 4,
-      "see-also": 116,
-      "topic": 45
+      "see-also": 118,
+      "topic": 56
     }
   },
   "nodes": [
@@ -86,7 +86,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 3592,
+      "bytes": 3772,
       "degree": 4
     },
     {
@@ -99,8 +99,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 13025,
-      "degree": 83
+      "bytes": 13638,
+      "degree": 85
     },
     {
       "id": "skills/ui-design-brain/patterns/accordion.md",
@@ -222,12 +222,13 @@
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
       "aliases": [
+        "ActionButton",
         "CTA"
       ],
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 1335,
+      "bytes": 1370,
       "degree": 6
     },
     {
@@ -268,11 +269,14 @@
       "type": "ui-pattern",
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
-      "aliases": [],
+      "aliases": [
+        "CheckboxControl",
+        "CheckboxField"
+      ],
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 712,
+      "bytes": 767,
       "degree": 1
     },
     {
@@ -358,12 +362,13 @@
       "aliases": [
         "Calendar",
         "Date Picker",
+        "DateRangePicker",
         "Datetime picker"
       ],
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 996,
+      "bytes": 1017,
       "degree": 3
     },
     {
@@ -541,6 +546,19 @@
       "degree": 4
     },
     {
+      "id": "skills/ui-design-brain/patterns/gauge-chart.md",
+      "label": "Gauge chart",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "githubRefs": [],
+      "bytes": 1101,
+      "degree": 3
+    },
+    {
       "id": "skills/ui-design-brain/patterns/header.md",
       "label": "Header",
       "type": "ui-pattern",
@@ -667,6 +685,7 @@
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
       "aliases": [
+        "ActionButton",
         "Anchor",
         "Hyperlink",
         "Text link",
@@ -675,7 +694,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 1311,
+      "bytes": 1341,
       "degree": 4
     },
     {
@@ -703,12 +722,13 @@
         "Logo cloud",
         "Logo wall",
         "Logos bar",
+        "LogosGrid",
         "Partner logos"
       ],
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 1459,
+      "bytes": 1474,
       "degree": 4
     },
     {
@@ -844,6 +864,19 @@
       "degree": 1
     },
     {
+      "id": "skills/ui-design-brain/patterns/pie-chart.md",
+      "label": "Pie chart",
+      "type": "ui-pattern",
+      "dir": "skills/ui-design-brain/patterns",
+      "topics": [],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "githubRefs": [],
+      "bytes": 1086,
+      "degree": 3
+    },
+    {
       "id": "skills/ui-design-brain/patterns/popover.md",
       "label": "Popover",
       "type": "ui-pattern",
@@ -915,12 +948,14 @@
       "topics": [],
       "aliases": [
         "Radio",
-        "Radio group"
+        "Radio group",
+        "RadioControl",
+        "RadioGroupField"
       ],
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 750,
+      "bytes": 789,
       "degree": 1
     },
     {
@@ -1041,12 +1076,13 @@
       "topics": [],
       "aliases": [
         "Dropdown",
-        "Select input"
+        "Select input",
+        "SelectField"
       ],
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 1143,
+      "bytes": 1160,
       "degree": 5
     },
     {
@@ -1241,11 +1277,13 @@
       "type": "ui-pattern",
       "dir": "skills/ui-design-brain/patterns",
       "topics": [],
-      "aliases": [],
+      "aliases": [
+        "TextAreaField"
+      ],
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 710,
+      "bytes": 744,
       "degree": 4
     },
     {
@@ -1392,8 +1430,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 12245,
-      "degree": 40
+      "bytes": 14341,
+      "degree": 51
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2303,6 +2341,270 @@
       "degree": 2
     },
     {
+      "id": "wiki/journal/2026-09-17-add-actionbutton-alias-to-button.md",
+      "label": "Add ActionButton alias to Button and Link",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 880,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-17-add-checkboxcontrol-alias-to-checkbox.md",
+      "label": "Add CheckboxControl alias to Checkbox",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 669,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-17-add-checkboxfield-alias-to-checkbox.md",
+      "label": "Add CheckboxField alias to Checkbox",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 656,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-17-add-daterangepicker-alias-to-datepicker.md",
+      "label": "Add DateRangePicker alias to Datepicker",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 729,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-17-add-gauge-chart-pattern.md",
+      "label": "Add the Gauge chart pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 895,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-17-add-logosgrid-alias-to-logo-bar.md",
+      "label": "Add LogosGrid alias to Logo bar",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 667,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-17-add-pie-chart-pattern.md",
+      "label": "Add the Pie chart pattern",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 893,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-17-add-radiocontrol-alias-to-radio-button.md",
+      "label": "Add RadioControl alias to Radio button",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 631,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-17-add-radiogroupfield-alias-to-radio-button.md",
+      "label": "Add RadioGroupField alias to Radio button",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 653,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-17-add-selectfield-alias-to-select.md",
+      "label": "Add SelectField alias to Select",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 629,
+      "degree": 3
+    },
+    {
+      "id": "wiki/journal/2026-09-17-add-textareafield-alias-to-textarea.md",
+      "label": "Add TextAreaField alias to Textarea",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "component-catalog"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "64"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 64,
+          "url": "https://github.com/verndale/ui-design-brain/issues/64"
+        }
+      ],
+      "bytes": 624,
+      "degree": 3
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -2755,8 +3057,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/11"
         }
       ],
-      "bytes": 14238,
-      "degree": 59
+      "bytes": 16458,
+      "degree": 81
     },
     {
       "id": "wiki/topics/graph-wiki-subsystem.md",
@@ -3098,6 +3400,11 @@
     },
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/gauge-chart.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/header.md",
       "type": "catalogs"
     },
@@ -3189,6 +3496,11 @@
     {
       "source": "skills/ui-design-brain/patterns-manifest.json",
       "target": "skills/ui-design-brain/patterns/pagination.md",
+      "type": "catalogs"
+    },
+    {
+      "source": "skills/ui-design-brain/patterns-manifest.json",
+      "target": "skills/ui-design-brain/patterns/pie-chart.md",
       "type": "catalogs"
     },
     {
@@ -3647,6 +3959,83 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-actionbutton-alias-to-button.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-checkboxcontrol-alias-to-checkbox.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-checkboxfield-alias-to-checkbox.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-daterangepicker-alias-to-datepicker.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-gauge-chart-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-logosgrid-alias-to-logo-bar.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-pie-chart-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-radiocontrol-alias-to-radio-button.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-radiogroupfield-alias-to-radio-button.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-selectfield-alias-to-select.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-17-add-textareafield-alias-to-textarea.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -3956,6 +4345,83 @@
     {
       "source": "wiki/topics/component-catalog.md",
       "target": "wiki/journal/2026-09-07-add-toggle-switch-alias-to-toggle.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-actionbutton-alias-to-button.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-checkboxcontrol-alias-to-checkbox.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-checkboxfield-alias-to-checkbox.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-daterangepicker-alias-to-datepicker.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-gauge-chart-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-logosgrid-alias-to-logo-bar.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-pie-chart-pattern.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-radiocontrol-alias-to-radio-button.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-radiogroupfield-alias-to-radio-button.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-selectfield-alias-to-select.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/component-catalog.md",
+      "target": "wiki/journal/2026-09-17-add-textareafield-alias-to-textarea.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -4332,6 +4798,12 @@
       "count": 1
     },
     {
+      "source": "skills/ui-design-brain/patterns/gauge-chart.md",
+      "target": "skills/ui-design-brain/patterns/pie-chart.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
       "source": "skills/ui-design-brain/patterns/header.md",
       "target": "skills/ui-design-brain/patterns/heading.md",
       "type": "see-also",
@@ -4562,6 +5034,12 @@
     {
       "source": "skills/ui-design-brain/patterns/number-input.md",
       "target": "skills/ui-design-brain/patterns/text-input.md",
+      "type": "see-also",
+      "count": 1
+    },
+    {
+      "source": "skills/ui-design-brain/patterns/pie-chart.md",
+      "target": "skills/ui-design-brain/patterns/gauge-chart.md",
       "type": "see-also",
       "count": 1
     },
@@ -5003,6 +5481,61 @@
     {
       "source": "wiki/journal/2026-09-07-fix-release-artifact-inspection.md",
       "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-actionbutton-alias-to-button.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-checkboxcontrol-alias-to-checkbox.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-checkboxfield-alias-to-checkbox.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-daterangepicker-alias-to-datepicker.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-gauge-chart-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-logosgrid-alias-to-logo-bar.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-pie-chart-pattern.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-radiocontrol-alias-to-radio-button.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-radiogroupfield-alias-to-radio-button.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-selectfield-alias-to-select.md",
+      "target": "wiki/topics/component-catalog.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-17-add-textareafield-alias-to-textarea.md",
+      "target": "wiki/topics/component-catalog.md",
       "type": "topic"
     },
     {

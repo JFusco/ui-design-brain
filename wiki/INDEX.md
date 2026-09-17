@@ -33,6 +33,17 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
+- 2026-09-17 — [Add ActionButton alias to Button and Link](journal/2026-09-17-add-actionbutton-alias-to-button.md) — context separates in-page actions from navigating controls without guessing (80 → 80).
+- 2026-09-17 — [Add CheckboxControl alias to Checkbox](journal/2026-09-17-add-checkboxcontrol-alias-to-checkbox.md) — a whole labelled checkbox control resolves to Checkbox (80 → 80).
+- 2026-09-17 — [Add CheckboxField alias to Checkbox](journal/2026-09-17-add-checkboxfield-alias-to-checkbox.md) — a form-integrated checkbox field resolves to Checkbox (80 → 80).
+- 2026-09-17 — [Add DateRangePicker alias to Datepicker](journal/2026-09-17-add-daterangepicker-alias-to-datepicker.md) — a complete range-selection control resolves to the established Datepicker canonical (80 → 80).
+- 2026-09-17 — [Add the Gauge chart pattern](journal/2026-09-17-add-gauge-chart-pattern.md) — a bounded semicircular quantitative visualization becomes canonical (80 → 81).
+- 2026-09-17 — [Add LogosGrid alias to Logo bar](journal/2026-09-17-add-logosgrid-alias-to-logo-bar.md) — a whole partner-logo collection resolves to the established Logo bar canonical (81 → 81).
+- 2026-09-17 — [Add the Pie chart pattern](journal/2026-09-17-add-pie-chart-pattern.md) — a labeled part-to-whole circular visualization becomes canonical (81 → 82).
+- 2026-09-17 — [Add RadioControl alias to Radio button](journal/2026-09-17-add-radiocontrol-alias-to-radio-button.md) — a complete radio control resolves to Radio button (82 → 82).
+- 2026-09-17 — [Add RadioGroupField alias to Radio button](journal/2026-09-17-add-radiogroupfield-alias-to-radio-button.md) — a mutually exclusive form field resolves to Radio button (82 → 82).
+- 2026-09-17 — [Add SelectField alias to Select](journal/2026-09-17-add-selectfield-alias-to-select.md) — a labelled selection field resolves to Select (82 → 82).
+- 2026-09-17 — [Add TextAreaField alias to Textarea](journal/2026-09-17-add-textareafield-alias-to-textarea.md) — a labelled multiline field resolves to Textarea (82 → 82).
 - 2026-09-07 — [Fix release push hooks](journal/2026-09-07-fix-release-push-hooks.md) — keep semantic-release's generated commit/tag push from recursively running contributor hooks against a transient bumped version.
 - 2026-09-07 — [Fix release artifact inspection](journal/2026-09-07-fix-release-artifact-inspection.md) — inspect the tarball without asking npm whether the repository's last published version can be republished.
 - 2026-09-07 — [Add Date Picker alias to Datepicker](journal/2026-09-07-add-date-picker-alias-to-datepicker.md) — a complete calendar-based date control now resolves through a consumer-evidenced plain alias (80 → 80).

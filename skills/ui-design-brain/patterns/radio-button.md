@@ -1,6 +1,6 @@
 ## Radio button
 
-**Also known as:** Radio  ·  Radio group
+**Also known as:** Radio  ·  Radio group  ·  RadioControl  ·  RadioGroupField
 
 A selection control where the user picks exactly one option from a predefined set.
 

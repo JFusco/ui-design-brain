@@ -1,6 +1,6 @@
 ## Datepicker
 
-**Also known as:** Calendar  ·  Date Picker  ·  Datetime picker
+**Also known as:** Calendar  ·  Date Picker  ·  DateRangePicker  ·  Datetime picker
 
 A calendar-based control for selecting dates visually.
 

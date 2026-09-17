@@ -8,9 +8,9 @@ The canonical UI-pattern catalog: how a design label resolves to one component w
 
 ## Current state
 
-- The catalog is a flat set of canonical patterns under `skills/ui-design-brain/patterns/`, one markdown file per pattern (currently 80).
+- The catalog is a flat set of canonical patterns under `skills/ui-design-brain/patterns/`, one markdown file per pattern (currently 82).
 - `patterns-manifest.json` is the single source of truth. Each entry carries `name`, `slug`, `aliases`, and `file`, with `slug == kebab(name) == filename`. Consumers resolve a design label to one canonical by exact string — `name`, then plain alias, then context alias — and treat an unresolved label as novel.
-- Most aliases are plain strings. A few are context-scoped `{ name, context }` objects (Banner, CTA, Label, Stepper) that resolve to different canonicals by context; `index.md` mirrors them in a Context-scoped aliases table.
+- Most aliases are plain strings. A few are context-scoped `{ name, context }` objects (ActionButton, Banner, CTA, Label, Stepper) that resolve to different canonicals by context; `index.md` mirrors them in a Context-scoped aliases table.
 - `index.md` is the first-hop narrowing list; each pattern file holds a one-line definition, bidirectional cross-references, bounded product guidance, and common layouts.
 - UI Design Brain owns canonical names, slugs, aliases, contextual disambiguation, and bounded product guidance. It does not own accessibility semantics, applicability, proof routes, or slug-to-accessibility mappings.
 - Existing accessibility-adjacent bullets remain informative and non-normative during parity migration. Downstream pipelines must obtain normative obligations and mappings from an exact `@verndale/accessibility-standards` contract rather than infer them from this prose.
@@ -20,6 +20,17 @@ The canonical UI-pattern catalog: how a design label resolves to one component w
 
 ## Decisions
 
+- 2026-09-17 — Added **ActionButton** as a context-scoped alias of **Button** for in-page actions and **Link** for navigation; ambiguous usage stays unresolved rather than guessed (80 → 80) ([journal](../journal/2026-09-17-add-actionbutton-alias-to-button.md)).
+- 2026-09-17 — Added **CheckboxControl** as a plain whole-component alias of **Checkbox** (80 → 80) ([journal](../journal/2026-09-17-add-checkboxcontrol-alias-to-checkbox.md)).
+- 2026-09-17 — Added **CheckboxField** as a plain whole-component alias of **Checkbox** (80 → 80) ([journal](../journal/2026-09-17-add-checkboxfield-alias-to-checkbox.md)).
+- 2026-09-17 — Added **DateRangePicker** as a plain whole-component alias of the established **Datepicker** canonical (80 → 80) ([journal](../journal/2026-09-17-add-daterangepicker-alias-to-datepicker.md)).
+- 2026-09-17 — Added the **Gauge chart** pattern for a current value against a bounded scale, distinct from part-to-whole Pie chart visualization (80 → 81) ([journal](../journal/2026-09-17-add-gauge-chart-pattern.md)).
+- 2026-09-17 — Added **LogosGrid** as a plain whole-component alias of the established **Logo bar** canonical (81 → 81) ([journal](../journal/2026-09-17-add-logosgrid-alias-to-logo-bar.md)).
+- 2026-09-17 — Added the **Pie chart** pattern for labeled proportional segments of one meaningful whole, distinct from bounded-scale Gauge chart visualization (81 → 82) ([journal](../journal/2026-09-17-add-pie-chart-pattern.md)).
+- 2026-09-17 — Added **RadioControl** as a plain whole-component alias of **Radio button** (82 → 82) ([journal](../journal/2026-09-17-add-radiocontrol-alias-to-radio-button.md)).
+- 2026-09-17 — Added **RadioGroupField** as a plain whole-component alias of **Radio button** (82 → 82) ([journal](../journal/2026-09-17-add-radiogroupfield-alias-to-radio-button.md)).
+- 2026-09-17 — Added **SelectField** as a plain whole-component alias of **Select** (82 → 82) ([journal](../journal/2026-09-17-add-selectfield-alias-to-select.md)).
+- 2026-09-17 — Added **TextAreaField** as a plain whole-component alias of **Textarea** (82 → 82) ([journal](../journal/2026-09-17-add-textareafield-alias-to-textarea.md)).
 - 2026-09-07 — Added the consumer-evidenced **Date Picker** alias to **Datepicker** (80 → 80): a project used the label for the complete calendar-based date control, so it stays a plain whole-component alias ([journal](../journal/2026-09-07-add-date-picker-alias-to-datepicker.md)).
 - 2026-09-07 — Added the consumer-evidenced **Input Field** alias to **Text input** (80 → 80): a project exposed the complete labelled single-line field under that name, so it stays a plain whole-component alias ([journal](../journal/2026-09-07-add-input-field-alias-to-text-input.md)).
 - 2026-09-07 — Added the consumer-evidenced **Segmented Radio Group** alias to **Segmented control** (80 → 80): a project exposed the entire mutually exclusive option group under that name, not an individual segment ([journal](../journal/2026-09-07-add-segmented-radio-group-alias-to-segmented-control.md)).

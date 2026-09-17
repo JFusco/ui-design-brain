@@ -10,7 +10,7 @@
     "schemaVersion": { "const": 1 },
     "packageName": { "const": "@verndale/ui-design-brain" },
     "packageVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$" },
-    "catalogAuthorityVersion": { "const": "1.17.0" },
+    "catalogAuthorityVersion": { "const": "1.18.0" },
     "profile": { "const": "agent-skill" },
     "target": {
       "type": "string",
