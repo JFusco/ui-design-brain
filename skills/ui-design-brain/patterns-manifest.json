@@ -66,6 +66,7 @@
     "name": "Button",
     "slug": "button",
     "aliases": [
+      { "name": "ActionButton", "context": "triggers an in-page action and does not navigate" },
       { "name": "CTA", "context": "triggers an in-page action — submit, open a dialog, toggle; does not navigate" }
     ],
     "file": "patterns/button.md"
@@ -99,7 +100,10 @@
   {
     "name": "Checkbox",
     "slug": "checkbox",
-    "aliases": [],
+    "aliases": [
+      "CheckboxControl",
+      "CheckboxField"
+    ],
     "file": "patterns/checkbox.md"
   },
   {
@@ -147,6 +151,7 @@
     "aliases": [
       "Calendar",
       "Date Picker",
+      "DateRangePicker",
       "Datetime picker"
     ],
     "file": "patterns/datepicker.md"
@@ -249,6 +254,12 @@
     "file": "patterns/form.md"
   },
   {
+    "name": "Gauge chart",
+    "slug": "gauge-chart",
+    "aliases": [],
+    "file": "patterns/gauge-chart.md"
+  },
+  {
     "name": "Header",
     "slug": "header",
     "aliases": [],
@@ -316,6 +327,7 @@
     "name": "Link",
     "slug": "link",
     "aliases": [
+      { "name": "ActionButton", "context": "navigates when href or download is present" },
       "Anchor",
       "Hyperlink",
       "Text link",
@@ -338,6 +350,7 @@
       "Logo cloud",
       "Logo wall",
       "Logos bar",
+      "LogosGrid",
       "Partner logos"
     ],
     "file": "patterns/logo-bar.md"
@@ -419,6 +432,12 @@
     "file": "patterns/pagination.md"
   },
   {
+    "name": "Pie chart",
+    "slug": "pie-chart",
+    "aliases": [],
+    "file": "patterns/pie-chart.md"
+  },
+  {
     "name": "Popover",
     "slug": "popover",
     "aliases": [],
@@ -459,7 +478,9 @@
     "slug": "radio-button",
     "aliases": [
       "Radio",
-      "Radio group"
+      "Radio group",
+      "RadioControl",
+      "RadioGroupField"
     ],
     "file": "patterns/radio-button.md"
   },
@@ -529,7 +550,8 @@
     "slug": "select",
     "aliases": [
       "Dropdown",
-      "Select input"
+      "Select input",
+      "SelectField"
     ],
     "file": "patterns/select.md"
   },
@@ -638,7 +660,9 @@
   {
     "name": "Textarea",
     "slug": "textarea",
-    "aliases": [],
+    "aliases": [
+      "TextAreaField"
+    ],
     "file": "patterns/textarea.md"
   },
   {

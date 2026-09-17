@@ -1,6 +1,6 @@
 ## Logo bar
 
-**Also known as:** Logo cloud  ·  Logo wall  ·  Logos bar  ·  Partner logos
+**Also known as:** Logo cloud  ·  Logo wall  ·  Logos bar  ·  LogosGrid  ·  Partner logos
 
 A full-width band that presents a row of partner, customer, or certification logos as social proof — often auto-scrolling — with the logos themselves non-interactive.
 

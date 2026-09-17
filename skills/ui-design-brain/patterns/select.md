@@ -1,6 +1,6 @@
 ## Select
 
-**Also known as:** Dropdown  ·  Select input
+**Also known as:** Dropdown  ·  Select input  ·  SelectField
 
 A form input that shows the current selection when collapsed and reveals a scrollable option list when expanded.
 

@@ -17,7 +17,7 @@
     ]
   },
   "catalog": "ui-design-brain",
-  "catalogAuthorityVersion": "1.17.0",
+  "catalogAuthorityVersion": "1.18.0",
   "files": [
     {
       "path": "SKILL.md",
@@ -25,11 +25,11 @@
     },
     {
       "path": "index.md",
-      "sha256": "sha256:69c86d6312f6f09e1dac3ff9fd65156d8abdd79d7b032f3d111d8a176db9a23d"
+      "sha256": "sha256:55c2d1241f2d81bee37c174269d9fa64f9fa7a8078aad5801a7443ed1ca33d81"
     },
     {
       "path": "patterns-manifest.json",
-      "sha256": "sha256:9175083e32b2df8708e7e38569bc0cd64ee5faf3269a322a3da4bb1bbe48230d"
+      "sha256": "sha256:4ebc24bb9ebcc4120641ed907a897e00f0ee311c328357cf726c5a56fe87c282"
     },
     {
       "path": "patterns/accordion.md",
@@ -57,7 +57,7 @@
     },
     {
       "path": "patterns/button.md",
-      "sha256": "sha256:8a4d4d2e30f474b9c315cd9a4261f424f3550ba1a6fd6319f1a6e7f7b5e9908e"
+      "sha256": "sha256:9ffb4a7383274ee39ab295a79e1e414f0722eb240537275da53c3e3d4bd7a9fb"
     },
     {
       "path": "patterns/card.md",
@@ -69,7 +69,7 @@
     },
     {
       "path": "patterns/checkbox.md",
-      "sha256": "sha256:bbe943faee30d85d3a50b156ce91a519625d1d6e743793e0f08d016d405dabbf"
+      "sha256": "sha256:de88ec893e25fbf60ae5782ebb9ea9e290ed9851dbba133501b5e40f10092f3d"
     },
     {
       "path": "patterns/color-picker.md",
@@ -93,7 +93,7 @@
     },
     {
       "path": "patterns/datepicker.md",
-      "sha256": "sha256:7ea34919e16fda0c634f30d63e98b67f0148b8d17fbc9bee2a9d3bebb7891b84"
+      "sha256": "sha256:bc6e0d08a03732fb23ea020b247499ebfaf41b2f8f53b41d5680e7c3cb16ddf8"
     },
     {
       "path": "patterns/drawer.md",
@@ -140,6 +140,10 @@
       "sha256": "sha256:543ccc234288a20c6f70cfa819b0ee0ba4e3e986f3a722c2a024f691cea62b56"
     },
     {
+      "path": "patterns/gauge-chart.md",
+      "sha256": "sha256:b5e14b23116849379485550cb0af28bd7f0c5535ee92a82658f713bb288aafcb"
+    },
+    {
       "path": "patterns/header.md",
       "sha256": "sha256:57e7368642793075ab796827feca49e83a3ffa45b7654935bdec968388ab720a"
     },
@@ -173,7 +177,7 @@
     },
     {
       "path": "patterns/link.md",
-      "sha256": "sha256:06021a7dd97b95cd9008b63e9fb21e37feafd3e286998a079b66a2c25e71d824"
+      "sha256": "sha256:807f582623e85cd2bda4114a0172b3950155857b2b1dd1dced46aabe2897e73f"
     },
     {
       "path": "patterns/list.md",
@@ -181,7 +185,7 @@
     },
     {
       "path": "patterns/logo-bar.md",
-      "sha256": "sha256:dd680bc0f60df4a2c53014f0ffcace70a383d002ac9e858312a5a07aabf99c05"
+      "sha256": "sha256:86d4289d758d9470a4c2dec65c481a82cb181a4833592be004e25f5c2d9ebfe2"
     },
     {
       "path": "patterns/marquee.md",
@@ -216,6 +220,10 @@
       "sha256": "sha256:3a0cecfc62cd88ee6c82698ac94e451a6f27dedab9357c5df23dea4b403babec"
     },
     {
+      "path": "patterns/pie-chart.md",
+      "sha256": "sha256:cb2c2c98611a0520151681b83f7137bc3f4f18d95bf142fe81b0e49352765f3e"
+    },
+    {
       "path": "patterns/popover.md",
       "sha256": "sha256:486a4b120656b0b06982c9d42dae3c32fd97cfd862b20b107bcf617d32386bce"
     },
@@ -233,7 +241,7 @@
     },
     {
       "path": "patterns/radio-button.md",
-      "sha256": "sha256:037b4ca8e5263d7847ad887dde927efb2196cb1df33182c615ba64df6b663e4a"
+      "sha256": "sha256:675d19366bd3ab5036d60033675c7ae5b439251cf1ba6fac58de7adf309e898c"
     },
     {
       "path": "patterns/rating.md",
@@ -265,7 +273,7 @@
     },
     {
       "path": "patterns/select.md",
-      "sha256": "sha256:9b3eb977d1abb474f996a66c5f099bd155555f2c2f9db1605e24a84d5fd3224e"
+      "sha256": "sha256:14022adccdd95cf04fb8289b358bbde285afd80ad041c7e2c8fb4ec32c3f9c2d"
     },
     {
       "path": "patterns/separator.md",
@@ -317,7 +325,7 @@
     },
     {
       "path": "patterns/textarea.md",
-      "sha256": "sha256:7226f28c3272ef634bda3037f44de82ae9e6283655f8738a2d70a2ac20934a18"
+      "sha256": "sha256:790267ae1e3e7741212cc45da24b8a408675ff6bcb8c70b6d0a9345cbe9764ee"
     },
     {
       "path": "patterns/toast.md",
@@ -352,8 +360,8 @@
       "sha256": "sha256:660bab9dfb9dd0bc559dfd88a6bea913b0def98300fa898155a0fdca687f50a1"
     }
   ],
-  "manifestDigest": "sha256:d4b412615775cc1fc500c6dcfd3e36d51dc3be7ec6a741edfc7f0969fb7e4ded",
-  "patternCount": 80,
+  "manifestDigest": "sha256:f94db7c94f99d74983078bdf35e5854584fdd7875af1bf7c7d6fbcb17b459ab5",
+  "patternCount": 82,
   "schemaVersion": 1,
-  "sourceDigest": "sha256:425360edf7bbe381a6390d0a4e195e2ee81d8baab25488c1d293f29eeb776af2"
+  "sourceDigest": "sha256:7032fb47ae522d5bb5bc4015dfd239b8208328c1aa3eddc3c82cfa373be27b9c"
 }

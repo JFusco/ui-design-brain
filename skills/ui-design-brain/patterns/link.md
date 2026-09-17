@@ -1,6 +1,6 @@
 ## Link
 
-**Also known as:** Anchor  ·  Hyperlink  ·  Text link  ·  CTA (navigates)
+**Also known as:** ActionButton (navigates)  ·  Anchor  ·  Hyperlink  ·  Text link  ·  CTA (navigates)
 
 A clickable reference to another resource — either an external page or a location within the current document.
 

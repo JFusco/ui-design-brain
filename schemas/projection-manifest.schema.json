@@ -23,7 +23,7 @@
     "schemaVersion": { "const": 1 },
     "generatedBy": { "const": "@verndale/ui-design-brain" },
     "packageVersion": { "type": "string", "minLength": 1 },
-    "catalogAuthorityVersion": { "const": "1.17.0" },
+    "catalogAuthorityVersion": { "const": "1.18.0" },
     "profile": { "const": "agent-skill" },
     "sourceDigest": { "$ref": "catalog-manifest.schema.json#/$defs/digest" },
     "manifestDigest": { "$ref": "catalog-manifest.schema.json#/$defs/digest" },
