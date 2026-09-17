@@ -1,3 +1,9 @@
+## [1.18.0](https://github.com/verndale/ui-design-brain/compare/v1.17.0...v1.18.0) (2026-09-17)
+
+### Features
+
+* **lib:** Update catalog authority version to 1.18.0 ([#65](https://github.com/verndale/ui-design-brain/issues/65)) ([169df4b](https://github.com/verndale/ui-design-brain/commit/169df4ba6068a85e2a24f47f1ae42938e1e88707)), closes [#64](https://github.com/verndale/ui-design-brain/issues/64)
+
 ## [1.17.0](https://github.com/verndale/ui-design-brain/compare/v1.16.1...v1.17.0) (2026-09-07)
 
 ### Features

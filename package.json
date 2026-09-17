@@ -1,6 +1,6 @@
 {
   "name": "@verndale/ui-design-brain",
-  "version": "1.17.0",
+  "version": "1.18.0",
   "private": false,
   "description": "Versioned catalog of production-grade UI component patterns (markdown + manifest) shared across Verndale AI tooling, distributed as an agent skill.",
   "license": "MIT",
