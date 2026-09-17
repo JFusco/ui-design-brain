@@ -2,9 +2,9 @@
 date: 2026-09-17
 topics: [component-catalog]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/65
 issue: https://github.com/verndale/ui-design-brain/issues/64
-issues: [https://github.com/verndale/ui-design-brain/issues/64]
+issues: ["https://github.com/verndale/ui-design-brain/issues/64"]
 ---
 # Add RadioGroupField alias to Radio button
 
