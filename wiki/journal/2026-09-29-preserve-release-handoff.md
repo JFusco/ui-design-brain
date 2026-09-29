@@ -2,7 +2,7 @@
 date: 2026-09-29
 topics: [packaging-and-distribution]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/76
 issue: https://github.com/verndale/ui-design-brain/issues/75
 issues: ["https://github.com/verndale/ui-design-brain/issues/75"]
 ---
