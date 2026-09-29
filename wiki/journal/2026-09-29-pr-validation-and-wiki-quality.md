@@ -2,8 +2,9 @@
 date: 2026-09-29
 topics: [graph-wiki-subsystem, packaging-and-distribution]
 plan: none
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/73
 issue: https://github.com/verndale/ui-design-brain/issues/72
+issues: ["https://github.com/verndale/ui-design-brain/issues/72"]
 ---
 # Visible PR descriptions and wiki-only quality
 

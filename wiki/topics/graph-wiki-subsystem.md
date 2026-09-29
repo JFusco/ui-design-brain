@@ -18,6 +18,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-09-29 — ci(git): scope wiki quality and validate PR bodies ([verndale/ui-design-brain PR #73](https://github.com/verndale/ui-design-brain/pull/73))
 - 2026-09-29 — chore(git): standardize repository delivery ([verndale/ui-design-brain PR #68](https://github.com/verndale/ui-design-brain/pull/68))
 - 2026-09-29 — Wiki issue-state reconciliation now runs Mondays at 11:30 UTC with manual replay retained ([journal](../journal/2026-09-28-git-delivery-standard.md)).
 - 2026-09-28 — Repository delivery uses labeled issues, updated-main branches, standalone Commitlint, deterministic PR bodies, and open PR review; release follows successful Quality at the tested revision ([issue #67](https://github.com/verndale/ui-design-brain/issues/67), [plan](../plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md), [journal](../journal/2026-09-28-git-delivery-standard.md)).
