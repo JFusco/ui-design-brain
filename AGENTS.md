@@ -19,7 +19,7 @@ Everything outside `skills/` is repo tooling (commits, release, CI). See [README
 
 ## Environment
 
-Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. Catalog content is markdown + JSON authored by hand. Run `pnpm catalog:build` after source changes so `catalog-manifest.json` carries fresh schema and digest provenance. Repository quality is `pnpm verify:ci`: ESLint, catalog/projection tests, the packed offline consumer fixture, and the knowledge-graph/context-wiki contract (see [Knowledge graph and repository wiki operations](#knowledge-graph-and-repository-wiki-operations)). The commit/release tooling is the maintainer's job (see below).
+Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. Catalog content is markdown + JSON authored by hand. Run `pnpm catalog:build` after source changes so `catalog-manifest.json` carries fresh schema and digest provenance. Repository quality is `pnpm verify:ci`: ESLint, catalog/projection tests, the packed offline consumer fixture, and the knowledge-graph/context-wiki contract (see [Knowledge graph and repository wiki operations](#knowledge-graph-and-repository-wiki-operations)). Follow Git delivery below for issue branches and PRs; do not manually tag or publish.
 
 ## Editing this skill
 
