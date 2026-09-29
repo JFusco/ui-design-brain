@@ -19,7 +19,7 @@ Everything outside `skills/` is repo tooling (commits, release, CI). See [README
 
 ## Environment
 
-Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. Catalog content is markdown + JSON authored by hand. Run `pnpm catalog:build` after source changes so `catalog-manifest.json` carries fresh schema and digest provenance. Repository quality is `pnpm verify:ci`: ESLint, catalog/projection tests, the packed offline consumer fixture, and the knowledge-graph/context-wiki contract (see [Knowledge graph and repository wiki operations](#knowledge-graph-and-repository-wiki-operations)). The commit/release tooling is the maintainer's job (see below).
+Node 24+ and pnpm 10+ (via Corepack); `pnpm install`. Catalog content is markdown + JSON authored by hand. Run `pnpm catalog:build` after source changes so `catalog-manifest.json` carries fresh schema and digest provenance. Repository quality is `pnpm verify:ci`: ESLint, catalog/projection tests, the packed offline consumer fixture, and the knowledge-graph/context-wiki contract (see [Knowledge graph and repository wiki operations](#knowledge-graph-and-repository-wiki-operations)). Follow Git delivery below for issue branches and PRs; do not manually tag or publish.
 
 ## Editing this skill
 
@@ -69,7 +69,7 @@ Capturing history is part of a substantive change: follow `wiki/MECHANICS.md` (j
 
 ## Git delivery and release
 
-Create a labeled GitHub issue with the `github-issue-creator` skill, update `main` from `origin/main`, then create an issue-keyed branch from that commit. Make scoped Conventional Commits with `git commit`; standalone Commitlint validates the local message and the PR title and commit range in CI. Use `.github/pull_request_template.md` for the six-section PR body, include `Closes #<issue-number>`, and run `pnpm run lint:pr`. Push the branch, open the PR against `main`, verify the saved title/body/issue link and required checks, and leave it open for review. Do not merge the PR. Do not manually tag or publish. Release runs only after Quality succeeds on a main push.
+For repository maintenance, create a labeled GitHub issue with the `github-issue-creator` skill, update `main` from `origin/main`, then create an issue-keyed branch from that commit. Make scoped Conventional Commits with `git commit`; standalone Commitlint validates the local message and the PR title and commit range in CI. Use `.github/pull_request_template.md` for the six-section PR body, include `Closes #<issue-number>`, and run `pnpm run lint:pr`. Push the branch, open the PR against `main`, verify the saved title/body/issue link and required checks, and leave it open for review. Do not merge a repository maintenance PR. Project-retrospective action-owned PRs follow its bespoke publication contract: merge after required checks by default, or stop at the PR or working tree when that mode was explicitly selected. Do not manually tag or publish. Release runs only after Quality succeeds on a main push.
 
 Never edit generated consumer projections directly. Change the catalog here; a later reviewed release can publish an immutable package version and consumers can promote their exact pins.
 

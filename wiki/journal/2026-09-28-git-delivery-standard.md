@@ -14,6 +14,7 @@ issues: ["https://github.com/verndale/ui-design-brain/issues/67"]
 
 ## What changed
 - Contributors create labeled issues, branch from updated main, use standalone Commitlint and deterministic PR bodies, and leave PRs open for review.
+- That review stop applies to repository maintenance. Project-retrospective action-owned Brain promotion retains its bespoke publication contract, including default merge after required checks and explicit stop-early modes.
 - Wiki bot writers continue their direct GitHub CLI PR handling with `BOT_TOKEN`.
 - Quality runs on main pushes; Release starts only after successful Quality at the tested revision, skips wiki-only revisions, and retains package preflight and tarball checks.
 - Actions use the declared pnpm 11.1.1 runtime.
