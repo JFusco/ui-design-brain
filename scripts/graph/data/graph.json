@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 154,
-    "edges": 405,
+    "nodes": 155,
+    "edges": 408,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 82,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 46,
+      "wiki-journal": 47,
       "wiki-plan": 12,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 82,
       "covers": 5,
-      "links-to": 127,
+      "links-to": 128,
       "plan": 9,
       "references": 4,
       "see-also": 118,
-      "topic": 60
+      "topic": 62
     }
   },
   "nodes": [
@@ -1430,8 +1430,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 14531,
-      "degree": 52
+      "bytes": 14728,
+      "degree": 53
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2726,6 +2726,31 @@
       "degree": 6
     },
     {
+      "id": "wiki/journal/2026-09-29-pr-validation-and-wiki-quality.md",
+      "label": "Visible PR descriptions and wiki-only quality",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "graph-wiki-subsystem",
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "72"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 72,
+          "url": "https://github.com/verndale/ui-design-brain/issues/72"
+        }
+      ],
+      "bytes": 1174,
+      "degree": 3
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -3373,7 +3398,7 @@
         }
       ],
       "bytes": 7244,
-      "degree": 21
+      "degree": 22
     },
     {
       "id": "wiki/topics/packaging-and-distribution.md",
@@ -3433,7 +3458,7 @@
         }
       ],
       "bytes": 6806,
-      "degree": 21
+      "degree": 22
     }
   ],
   "edges": [
@@ -4211,6 +4236,13 @@
     {
       "source": "wiki/INDEX.md",
       "target": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-29-pr-validation-and-wiki-quality.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -5766,6 +5798,16 @@
     },
     {
       "source": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-29-pr-validation-and-wiki-quality.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-29-pr-validation-and-wiki-quality.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     },
