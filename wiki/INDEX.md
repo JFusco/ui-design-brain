@@ -31,6 +31,7 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 ## Journal
 
+- 2026-09-29 — [Visible PR descriptions and wiki-only quality](journal/2026-09-29-pr-validation-and-wiki-quality.md) — visible PR headings and a lightweight Quality path for wiki-only changes.
 - 2026-09-28 — [Issue-linked Git delivery and release after Quality](journal/2026-09-28-git-delivery-standard.md) — standalone Commitlint, BOT_TOKEN, and tested public-package release.
 
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
