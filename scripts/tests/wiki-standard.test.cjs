@@ -296,6 +296,7 @@ test("the five workflow identities and focused commands remain stable", () => {
     assert.match(source, new RegExp(`^ {2}${job}:$`, "m"));
   }
   assert.match(quality, /pnpm run verify:ci/);
+  assert.match(quality, /cancel-in-progress: \$\{\{ github\.event_name == 'pull_request' \}\}/);
   assert.doesNotMatch(quality, /ci-journal-warn/);
   assert.equal((check.match(/pnpm run wiki:check/g) || []).length, 1);
   assert.match(check, /pull_request:\n {4}branches: \[main\]/);
