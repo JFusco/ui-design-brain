@@ -18,6 +18,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-09-29 — fix(ci): gate Release on unreleased history ([verndale/ui-design-brain PR #79](https://github.com/verndale/ui-design-brain/pull/79))
 - 2026-09-29 — fix(ci): preserve main Quality release handoff ([verndale/ui-design-brain PR #76](https://github.com/verndale/ui-design-brain/pull/76))
 - 2026-09-29 — ci(git): scope wiki quality and validate PR bodies ([verndale/ui-design-brain PR #73](https://github.com/verndale/ui-design-brain/pull/73))
 - 2026-09-29 — chore(git): standardize repository delivery ([verndale/ui-design-brain PR #68](https://github.com/verndale/ui-design-brain/pull/68))
