@@ -2714,7 +2714,7 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/67"
         }
       ],
-      "bytes": 1187,
+      "bytes": 1285,
       "degree": 6
     },
     {
@@ -2727,7 +2727,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 8759,
+      "bytes": 8777,
       "degree": 3
     },
     {
@@ -3341,7 +3341,7 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/8"
         }
       ],
-      "bytes": 6926,
+      "bytes": 7094,
       "degree": 21
     },
     {
@@ -4629,7 +4629,7 @@
       "source": "wiki/topics/graph-wiki-subsystem.md",
       "target": "wiki/journal/2026-09-28-git-delivery-standard.md",
       "type": "links-to",
-      "count": 1,
+      "count": 2,
       "anchors": []
     },
     {

@@ -17,6 +17,7 @@ issues: [https://github.com/verndale/ui-design-brain/issues/67]
 - Wiki bot writers continue their direct GitHub CLI PR handling with `BOT_TOKEN`.
 - Quality runs on main pushes; Release starts only after successful Quality at the tested revision, skips wiki-only revisions, and retains package preflight and tarball checks.
 - Actions use the declared pnpm 11.1.1 runtime.
+- Wiki issue-state reconciliation now runs Mondays at 11:30 UTC, matching agent-review-workflows.
 
 ## Files
 - `AGENTS.md`, `CONTRIBUTING.md`, `.github/workflows/`, `package.json`, `commitlint.config.cjs`, `scripts/tests/wiki-standard.test.cjs`

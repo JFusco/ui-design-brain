@@ -319,7 +319,7 @@ test("writers enforce replay, pagination, bot auth, race guards, and review bran
   assert.match(merge, /git fetch origin "\+refs\/heads\/\$\{branch\}:refs\/remotes\/origin\/\$\{branch\}"/);
   assert.match(merge, /bot\/wiki-sync\/\$\{PR_NUMBER\}/);
   assert.doesNotMatch(merge, /bot\/wiki-sync\/pr-/);
-  assert.match(issue, /cron: "30 11 \* \* \*" # Daily at 11:30 UTC/);
+  assert.match(issue, /cron: "30 11 \* \* 1" # Mondays at 11:30 UTC/);
   assert.match(issue, /workflow_dispatch: \{\}/);
   assert.match(issue, /gh pr reopen/);
   assert.match(issue, /git fetch origin "\+refs\/heads\/\$\{branch\}:refs\/remotes\/origin\/\$\{branch\}"/);
