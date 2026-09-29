@@ -1,7 +1,28 @@
-## Conventional commits
+## Summary
 
-If this PR merges with **squash and merge**, the **PR title** becomes the single commit on `main` and must match [Conventional Commits](https://www.conventionalcommits.org/) (same rules as this repo's commitlint), for example:
+<!-- Describe the outcome and why it is needed in 1-3 concise sentences. -->
 
-`feat(scope): Short imperative subject`
+## Linked issue
 
-Use a **lowercase scope** and a valid type (`feat`, `fix`, `docs`, `chore`, etc.). Commit hygiene is enforced by commitlint. The repo is not published to npm, but commit type still drives semantic versioning, tags, the changelog, and GitHub release artifacts.
+<!-- Use a GitHub closing keyword so the issue closes on merge, for example: Closes #123 -->
+
+## Changes
+
+<!-- List the concrete, in-scope changes. -->
+
+## Verification
+
+<!-- List the exact checks run and their outcomes. Distinguish local, hosted, and live-provider evidence. -->
+
+## Risk and rollback
+
+- Risk: <!-- Describe the remaining risk, or state why risk is negligible. -->
+- Rollback: <!-- Describe the smallest safe way to revert or disable the change. -->
+
+## Checklist
+
+- [ ] Scope matches the linked issue.
+- [ ] Tests and documentation are updated.
+- [ ] Wiki records are updated for substantive work.
+- [ ] No secrets, generated local artifacts, or unrelated changes are included.
+- [ ] `pnpm run verify:ci` passes.

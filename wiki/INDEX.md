@@ -31,6 +31,8 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 ## Journal
 
+- 2026-09-28 — [Issue-linked Git delivery and release after Quality](journal/2026-09-28-git-delivery-standard.md) — standalone Commitlint, BOT_TOKEN, and tested public-package release.
+
 <!-- Reverse-chronological, one line per entry: YYYY-MM-DD — [Title](journal/<file>.md) — hook. -->
 
 - 2026-09-17 — [Add ActionButton alias to Button and Link](journal/2026-09-17-add-actionbutton-alias-to-button.md) — context separates in-page actions from navigating controls without guessing (80 → 80).

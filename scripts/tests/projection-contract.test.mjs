@@ -236,7 +236,7 @@ test("the constrained public packed artifact can project in an offline consumer 
   assert.equal(packagedContent.status, 0, packagedContent.stderr);
   assert.doesNotMatch(
     packagedContent.stdout,
-    /verndale\/(?:ai-orchestration|COS-monorepo)|\bV00066\b|PR_BOT_TOKEN|RELEASE_NOTES_AI|@gmail\.com/i,
+    /verndale\/(?:ai-orchestration|COS-monorepo)|\bV00066\b|BOT_TOKEN|RELEASE_NOTES_AI|@gmail\.com/i,
   );
 
   await writeFile(path.join(consumer, "package.json"), `${JSON.stringify({

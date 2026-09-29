@@ -67,11 +67,11 @@ The repo carries a deterministic **knowledge graph** — over the manifest, patt
 
 Capturing history is part of a substantive change: follow `wiki/MECHANICS.md` (journal entry + archived plan + topic Decisions). Executed plans are archived with `pnpm wiki:archive-plan`; merge and issue workflows reconcile repo-qualified citations into Markdown and graph nodes derive offline `githubRefs` from them. Slack ingestion is intentionally **not** part of this subsystem.
 
-## Commits & release — the maintainer's job, not the agent's
+## Git delivery and release
 
-**Permission boundary:** edit files under `skills/ui-design-brain/` and `skills/_meta/` freely without asking — that's the autonomous zone. Everything in this section is the maintainer's.
+Create a labeled GitHub issue with the `github-issue-creator` skill, update `main` from `origin/main`, then create an issue-keyed branch from that commit. Make scoped Conventional Commits with `git commit`; standalone Commitlint validates the local message and the PR title and commit range in CI. Use `.github/pull_request_template.md` for the six-section PR body, include `Closes #<issue-number>`, and run `pnpm run lint:pr`. Push the branch, open the PR against `main`, verify the saved title/body/issue link and required checks, and leave it open for review. Do not merge the PR. Do not manually tag or publish. Release runs only after Quality succeeds on a main push.
 
-**Do not commit, push, merge, tag, release, or run the consumer sync.** Make the requested edits, then stop and hand back to the maintainer for review. The maintainer commits with `pnpm commit` (Conventional Commits, required scope) and pushes; `semantic-release` then runs on `main`. Never edit generated consumer projections directly — change the catalog here, release an immutable package version, and let the consumer's pinned sync promote it.
+Never edit generated consumer projections directly. Change the catalog here; a later reviewed release can publish an immutable package version and consumers can promote their exact pins.
 
 <!-- wiki-skill:start -->
 ## Context wiki navigation

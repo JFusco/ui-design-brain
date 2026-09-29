@@ -35,7 +35,7 @@ jobs:
       !startsWith(github.event.pull_request.head.ref, 'bot/wiki-'))
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.PR_BOT_TOKEN }}
+      GH_TOKEN: ${{ secrets.BOT_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -49,7 +49,7 @@ jobs:
           node-version: "24.14.0"
 
       - name: Enable pnpm via Corepack
-        run: corepack enable && corepack prepare pnpm@10.33.0 --activate
+        run: corepack enable && corepack prepare pnpm@11.1.1 --activate
 
       - name: Get pnpm store path
         id: pnpm-cache
@@ -68,7 +68,7 @@ jobs:
 
       - name: Require bot token
         run: |
-          test -n "$GH_TOKEN" || { echo '::error::PR_BOT_TOKEN is required'; exit 1; }
+          test -n "$GH_TOKEN" || { echo '::error::BOT_TOKEN is required'; exit 1; }
           gh auth setup-git
 
       - name: Build merged PR context

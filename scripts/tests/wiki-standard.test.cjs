@@ -306,7 +306,6 @@ test("the five workflow identities and focused commands remain stable", () => {
 test("writers enforce replay, pagination, bot auth, race guards, and review branches", () => {
   const merge = read(".github/workflows/wiki-sync.yml");
   const issue = read(".github/workflows/wiki-issue-sync.yml");
-  const pr = read(".github/workflows/pr.yml");
   assert.equal((merge.match(/--paginate --slurp/g) || []).length, 2);
   assert.doesNotMatch(merge, /--slurp --jq/);
   assert.match(merge, /workflow_dispatch:[\s\S]*pr_number:/);
@@ -327,27 +326,24 @@ test("writers enforce replay, pagination, bot auth, race guards, and review bran
   for (const source of [merge, issue]) {
     assert.match(source, /GRAPHIFY_SKIP_HOOK: "1"/);
     assert.doesNotMatch(source, /contents: write|pull-requests: write/);
-    assert.match(source, /GH_TOKEN: \$\{\{ secrets\.PR_BOT_TOKEN \}\}/);
+    assert.match(source, /GH_TOKEN: \$\{\{ secrets\.BOT_TOKEN \}\}/);
   }
-  assert.match(pr, /"bot\/wiki-\*\*"/);
-  assert.match(pr, /!startsWith\(github\.ref_name, 'bot\/wiki-'\)/);
 });
 
-test("runtime and Commitlint provider are pinned to the shared contract", () => {
-  const names = ["quality", "commitlint", "wiki-check", "wiki-sync", "wiki-issue-sync", "pr"];
+test("runtime and standalone Commitlint are pinned", () => {
+  const names = ["quality", "commitlint", "wiki-check", "wiki-sync", "wiki-issue-sync"];
   for (const name of names) {
     const source = read(`.github/workflows/${name}.yml`);
-    assert.match(source, /node-version: "24\.14\.0"/);
-    assert.match(source, /corepack prepare pnpm@10\.33\.0 --activate/);
+    assert.match(source, /node-version: ["']24\.14\.0["']/);
+    assert.match(source, /corepack (?:prepare pnpm@11\.1\.1 --activate|enable && corepack install)/);
   }
   const commitlint = read(".github/workflows/commitlint.yml");
-  assert.equal((commitlint.match(/pnpm exec commitlint --config commitlint\.config\.cjs/g) || []).length, 2);
+  assert.equal((commitlint.match(/pnpm run lint:commit/g) || []).length, 2);
+  assert.match(commitlint, /pnpm run lint:pr/);
   const pkg = JSON.parse(read("package.json"));
-  assert.equal(pkg.devDependencies["@verndale/ai-commit"], "2.7.0");
-  assert.equal(pkg.devDependencies["@commitlint/cli"], undefined);
-  assert.equal(read("commitlint.config.cjs"), 'module.exports = require("@verndale/ai-commit");\n');
-  assert.equal(read("pnpm-workspace.yaml"), 'publicHoistPattern:\n  - "@commitlint/cli"\n');
-  assert.equal(read(".husky/commit-msg"), '#!/usr/bin/env sh\npnpm exec ai-commit lint --edit "$1"\n');
+  assert.equal(pkg.devDependencies["@commitlint/cli"], "20.5.3");
+  assert.match(read("commitlint.config.cjs"), /@commitlint\/config-conventional/);
+  assert.equal(read(".husky/commit-msg"), '#!/usr/bin/env sh\npnpm run lint:commit --edit "$1"\n');
 });
 
 test("large paginated fixtures flatten to one valid file and commit array", () => {

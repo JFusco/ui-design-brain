@@ -9,7 +9,7 @@ This repository is the single source of truth for the `ui-design-brain` catalog,
     # edit files under skills/ui-design-brain/
     pnpm verify:ci
     git add -A
-    pnpm commit
+    git commit -m "chore(scope): Describe the change"
     git push
 
 ## What lives here
@@ -35,7 +35,7 @@ The `SKILL.md` `description` is shared by every consumer, so keep it neutral eno
 
 ## Commit Messages (Required)
 
-We enforce **Conventional Commits** through **`@verndale/ai-commit`** (commitlint preset). Types: `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`, `style`, `test`.
+We enforce **Conventional Commits** through standalone **Commitlint**. Types: `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`, `style`, `test`.
 
 Format (scope is **required**):
 
@@ -49,7 +49,7 @@ Examples:
 
 The first line is validated by **commitlint** via the `commit-msg` hook and in CI. Scope is required and lowercase; the subject is required, cannot end in a period, and is limited to 50 characters. The full header is limited to 120 characters and body/footer lines to 72. Subject casing is intentionally unrestricted. Conventional breaking-change/revert parsing and Commitlint's upstream default ignores are preserved; there is no repository-specific scope allowlist or ignore callback.
 
-The root [`commitlint.config.cjs`](commitlint.config.cjs) consumes the public `@verndale/ai-commit` export. The blocking local hook, the squash-merge PR title, and every commit in the immutable PR base/head range all use that same config. `pnpm lint:commits:last` is only a local one-commit convenience; CI always checks the full PR range. With the pinned pnpm 10, pass flags directly (`pnpm run lint:commit --edit …`): inserting a standalone `--` forwards it to Commitlint and causes following flags to be treated as positional input. Use `pnpm commit` (runs `ai-commit run`) for AI-assisted authoring; `OPENAI_API_KEY` in `.env` is optional. The direct `commitlint` hook remains authoritative.
+The root [`commitlint.config.cjs`](commitlint.config.cjs) uses the conventional preset. The local hook, PR title, and every commit in the immutable PR range use the same policy. Open an issue-linked PR with `.github/pull_request_template.md` and validate the body with `pnpm run lint:pr`.
 
 ## Quality gates
 
@@ -71,13 +71,11 @@ Consumer hooks invoke the already-installed exact package directly with Node. Th
 | Workflow | Trigger | Purpose |
 | --- | --- | --- |
 | [`.github/workflows/commitlint.yml`](.github/workflows/commitlint.yml) | PRs to `main`, including title edits | `Commit message lint / commitlint`: same-config checks for PR title + immutable base/head range |
-| [`.github/workflows/quality.yml`](.github/workflows/quality.yml) | PRs to `main`, `workflow_dispatch` | `Quality / quality`: lint + lifecycle self-tests + the check-only graph contract |
-| [`.github/workflows/pr.yml`](.github/workflows/pr.yml) | Pushes to non-`main`, `workflow_dispatch` | Dogfood: install deps, run **`pnpm run pr:create`** |
-| [`.github/workflows/release.yml`](.github/workflows/release.yml) | Pushes to `main` | verifies the source and clean tarball consumer, then `semantic-release`: public npm publication, version bump, `CHANGELOG.md`, Git tag + GitHub Release |
+| [`.github/workflows/quality.yml`](.github/workflows/quality.yml) | PRs and pushes to `main`, `workflow_dispatch` | `Quality / quality`: lint + lifecycle self-tests + the check-only graph contract |
+| [`.github/workflows/release.yml`](.github/workflows/release.yml) | Successful Quality on a main push | verifies the clean tarball consumer, then `semantic-release`: public npm publication, version bump, `CHANGELOG.md`, Git tag + GitHub Release |
 
-Add repository secret **`PR_BOT_TOKEN`** (classic PAT with **`repo`**) if the default **`GITHUB_TOKEN`** is not enough for **`pr.yml`**.
 
-Releases are driven by [`semantic-release`](.releaserc.cjs) on every push to `main` — Conventional Commit types decide the bump (`feat` → minor; `build`, `chore`, `ci`, `docs`, `fix`, `perf`, `refactor`, `revert`, `style`, and `test` → patch; `!` → major). The release workflow rejects aggregated `BREAKING CHANGE` bodies, runs the same source and packed-consumer gates as Accessibility Standards, and publishes through npm trusted publishing with GitHub Actions OIDC. No npm token or AI release-notes service is used. Preview locally with `pnpm release:dry`.
+Releases are driven by [`semantic-release`](.releaserc.cjs) after successful Quality on a push to `main` — Conventional Commit types decide the bump (`feat` → minor; `build`, `chore`, `ci`, `docs`, `fix`, `perf`, `refactor`, `revert`, `style`, and `test` → patch; `!` → major). The release workflow rejects aggregated `BREAKING CHANGE` bodies, runs the packed-consumer gate after Quality verifies the source, and publishes through npm trusted publishing with GitHub Actions OIDC. No npm token or AI release-notes service is used. Preview locally with `pnpm release:dry`.
 
 The source repository remains private. The public package is limited to the audited npm allowlist in `package.json`; consumers install one exact registry version from their lockfile and never fetch or select versions in hooks. npm provenance remains disabled because npm does not support automatic provenance for a public package published from a private GitHub source repository.
 

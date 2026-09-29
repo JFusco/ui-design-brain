@@ -39,6 +39,8 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
 
 ## Decisions
 
+- 2026-09-28 — Repository delivery uses labeled issues, updated-main branches, standalone Commitlint, deterministic PR bodies, and open PR review; release follows successful Quality at the tested revision ([issue #67](https://github.com/verndale/ui-design-brain/issues/67), [plan](../plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md), [journal](../journal/2026-09-28-git-delivery-standard.md)).
+
 - 2026-09-07 — Disabled Husky only for the already-gated semantic-release process and removed a projection-test assumption that package and catalog-authority versions must differ. The `1.17.0` release proved those values may legitimately match, and release-generated pushes must not recursively test a transient version-bumped worktree ([issue #62](https://github.com/verndale/ui-design-brain/issues/62), [journal](../journal/2026-09-07-fix-release-push-hooks.md)).
 - 2026-09-07 — Changed the pre-release artifact inspection from `npm publish --dry-run` to `npm pack --dry-run`. The former consults the registry and rejects the repository's last published version before semantic-release calculates the next one; the latter inspects the same package file set without creating that false gate ([issue #60](https://github.com/verndale/ui-design-brain/issues/60), [journal](../journal/2026-09-07-fix-release-artifact-inspection.md)).
 - 2026-08-31 — Keep the source repository private and distribute only the

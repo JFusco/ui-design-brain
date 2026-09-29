@@ -18,6 +18,8 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-09-28 — Repository delivery uses labeled issues, updated-main branches, standalone Commitlint, deterministic PR bodies, and open PR review; release follows successful Quality at the tested revision ([issue #67](https://github.com/verndale/ui-design-brain/issues/67), [plan](../plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md), [journal](../journal/2026-09-28-git-delivery-standard.md)).
+
 - 2026-08-31 — ci(release): standardize package workflow ([verndale/ui-design-brain PR #54](https://github.com/verndale/ui-design-brain/pull/54))
 - 2026-08-30 — feat(projector): add deterministic UI projections ([verndale/ui-design-brain PR #49](https://github.com/verndale/ui-design-brain/pull/49))
 - 2026-08-24 — Replaced generic hand-authored traversal prose with the canonical headless managed block while retaining the Brain catalog graph, evidence, authoring, and maintainer boundaries outside it ([plan](../plans/2026-08-24-deterministic-route-first-wiki-guidance-and-pr-127-recovery.md), [journal](../journal/2026-08-24-deterministic-agent-wiki-guidance.md)).

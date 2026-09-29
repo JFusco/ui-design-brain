@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 152,
-    "edges": 394,
+    "nodes": 154,
+    "edges": 405,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 82,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 45,
-      "wiki-plan": 11,
+      "wiki-journal": 46,
+      "wiki-plan": 12,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 82,
       "covers": 5,
-      "links-to": 121,
-      "plan": 8,
+      "links-to": 127,
+      "plan": 9,
       "references": 4,
       "see-also": 118,
-      "topic": 56
+      "topic": 60
     }
   },
   "nodes": [
@@ -34,7 +34,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 9461,
+      "bytes": 9646,
       "degree": 4
     },
     {
@@ -60,7 +60,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 7455,
+      "bytes": 6798,
       "degree": 2
     },
     {
@@ -1430,8 +1430,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 14341,
-      "degree": 51
+      "bytes": 14531,
+      "degree": 52
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2693,6 +2693,31 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "label": "Issue-linked Git delivery and release after Quality",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "graph-wiki-subsystem",
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "67"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 67,
+          "url": "https://github.com/verndale/ui-design-brain/issues/67"
+        }
+      ],
+      "bytes": 1187,
+      "degree": 6
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -2995,6 +3020,22 @@
       "degree": 8
     },
     {
+      "id": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
+      "label": "Standardize Git delivery in ui-design-brain",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "graph-wiki-subsystem",
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "githubRefs": [],
+      "bytes": 793,
+      "degree": 6
+    },
+    {
       "id": "wiki/plans/INDEX.md",
       "label": "Plan Audit",
       "type": "wiki-index",
@@ -3084,8 +3125,8 @@
           "url": "https://github.com/verndale/ui-design-brain/pull/46"
         }
       ],
-      "bytes": 4156,
-      "degree": 13
+      "bytes": 4371,
+      "degree": 14
     },
     {
       "id": "wiki/topics/agents-guidance.md",
@@ -3179,11 +3220,18 @@
         "9"
       ],
       "issues": [
+        "67",
         "43",
         "40",
         "8"
       ],
       "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 67,
+          "url": "https://github.com/verndale/ui-design-brain/issues/67"
+        },
         {
           "kind": "pull-request",
           "repository": "verndale/ui-design-brain",
@@ -3293,8 +3341,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/8"
         }
       ],
-      "bytes": 6499,
-      "degree": 17
+      "bytes": 6926,
+      "degree": 21
     },
     {
       "id": "wiki/topics/packaging-and-distribution.md",
@@ -3315,12 +3363,19 @@
       ],
       "prs": [],
       "issues": [
+        "67",
         "62",
         "60",
         "51",
         "47"
       ],
       "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 67,
+          "url": "https://github.com/verndale/ui-design-brain/issues/67"
+        },
         {
           "kind": "issue",
           "repository": "verndale/ui-design-brain",
@@ -3346,8 +3401,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 6379,
-      "degree": 17
+      "bytes": 6806,
+      "degree": 21
     }
   ],
   "edges": [
@@ -4124,6 +4179,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -4244,6 +4306,13 @@
     {
       "source": "wiki/plans/INDEX.md",
       "target": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -4558,6 +4627,13 @@
     },
     {
       "source": "wiki/topics/graph-wiki-subsystem.md",
+      "target": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/graph-wiki-subsystem.md",
       "target": "wiki/plans/2026-07-23-port-knowledge-graph-wiki-subsystem.md",
       "type": "links-to",
       "count": 1,
@@ -4585,6 +4661,13 @@
       "anchors": []
     },
     {
+      "source": "wiki/topics/graph-wiki-subsystem.md",
+      "target": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
       "type": "links-to",
@@ -4601,6 +4684,13 @@
     {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/journal/2026-09-07-fix-release-push-hooks.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-09-28-git-delivery-standard.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -4629,6 +4719,13 @@
     {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -4671,6 +4768,11 @@
     {
       "source": "wiki/journal/2026-08-31-standardize-package-release.md",
       "target": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "type": "plan"
+    },
+    {
+      "source": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "target": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
       "type": "plan"
     },
     {
@@ -5627,6 +5729,16 @@
       "type": "topic"
     },
     {
+      "source": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
       "source": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
@@ -5678,6 +5790,16 @@
     },
     {
       "source": "wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     }
