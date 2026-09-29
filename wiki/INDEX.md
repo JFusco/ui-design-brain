@@ -31,7 +31,8 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 ## Journal
 
-- 2026-09-29 — [Preserve tested main release handoff](journal/2026-09-29-preserve-release-handoff.md) — later wiki merges no longer cancel substantive Quality runs.
+- 2026-09-29 — [Gate release on fully verified main history](journal/2026-09-29-gate-verified-release.md) — current-main Quality checks all unreleased substantive changes.
+- 2026-09-29 — [Preserve tested main release handoff](journal/2026-09-29-preserve-release-handoff.md) — later wiki merges no longer cancel an in-progress main Quality run.
 - 2026-09-29 — [Visible PR descriptions and wiki-only quality](journal/2026-09-29-pr-validation-and-wiki-quality.md) — visible PR headings and a lightweight Quality path for wiki-only changes.
 - 2026-09-28 — [Issue-linked Git delivery and release after Quality](journal/2026-09-28-git-delivery-standard.md) — standalone Commitlint, BOT_TOKEN, and tested public-package release.
 

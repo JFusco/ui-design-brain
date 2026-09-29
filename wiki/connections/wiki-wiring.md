@@ -65,6 +65,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Add TextAreaField alias to Textarea](../../wiki/journal/2026-09-17-add-textareafield-alias-to-textarea.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Issue-linked Git delivery and release after Quality](../../wiki/journal/2026-09-28-git-delivery-standard.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
 - [Issue-linked Git delivery and release after Quality](../../wiki/journal/2026-09-28-git-delivery-standard.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
+- [Gate release on fully verified main history](../../wiki/journal/2026-09-29-gate-verified-release.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Visible PR descriptions and wiki-only quality](../../wiki/journal/2026-09-29-pr-validation-and-wiki-quality.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
 - [Visible PR descriptions and wiki-only quality](../../wiki/journal/2026-09-29-pr-validation-and-wiki-quality.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Preserve tested main release handoff](../../wiki/journal/2026-09-29-preserve-release-handoff.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
