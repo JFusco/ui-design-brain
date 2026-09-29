@@ -2,9 +2,9 @@
 date: 2026-09-28
 topics: [graph-wiki-subsystem, packaging-and-distribution]
 plan: plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md
-pr: pending
+pr: https://github.com/verndale/ui-design-brain/pull/68
 issue: https://github.com/verndale/ui-design-brain/issues/67
-issues: [https://github.com/verndale/ui-design-brain/issues/67]
+issues: ["https://github.com/verndale/ui-design-brain/issues/67"]
 ---
 # Issue-linked Git delivery and release after Quality
 
