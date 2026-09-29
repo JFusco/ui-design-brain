@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 156,
-    "edges": 411,
+    "nodes": 157,
+    "edges": 414,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 82,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 48,
+      "wiki-journal": 49,
       "wiki-plan": 12,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 82,
       "covers": 5,
-      "links-to": 130,
+      "links-to": 132,
       "plan": 9,
       "references": 4,
       "see-also": 118,
-      "topic": 63
+      "topic": 64
     }
   },
   "nodes": [
@@ -1430,8 +1430,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 14897,
-      "degree": 54
+      "bytes": 15080,
+      "degree": 55
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2726,6 +2726,30 @@
       "degree": 6
     },
     {
+      "id": "wiki/journal/2026-09-29-gate-verified-release.md",
+      "label": "Gate release on fully verified main history",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "78"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 78,
+          "url": "https://github.com/verndale/ui-design-brain/issues/78"
+        }
+      ],
+      "bytes": 1036,
+      "degree": 3
+    },
+    {
       "id": "wiki/journal/2026-09-29-pr-validation-and-wiki-quality.md",
       "label": "Visible PR descriptions and wiki-only quality",
       "type": "wiki-journal",
@@ -2771,7 +2795,8 @@
         "76"
       ],
       "issues": [
-        "75"
+        "75",
+        "78"
       ],
       "githubRefs": [
         {
@@ -2785,9 +2810,15 @@
           "repository": "verndale/ui-design-brain",
           "number": 75,
           "url": "https://github.com/verndale/ui-design-brain/issues/75"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 78,
+          "url": "https://github.com/verndale/ui-design-brain/issues/78"
         }
       ],
-      "bytes": 869,
+      "bytes": 900,
       "degree": 3
     },
     {
@@ -3473,8 +3504,8 @@
       ],
       "prs": [],
       "issues": [
+        "78",
         "67",
-        "75",
         "62",
         "60",
         "51",
@@ -3484,14 +3515,14 @@
         {
           "kind": "issue",
           "repository": "verndale/ui-design-brain",
-          "number": 67,
-          "url": "https://github.com/verndale/ui-design-brain/issues/67"
+          "number": 78,
+          "url": "https://github.com/verndale/ui-design-brain/issues/78"
         },
         {
           "kind": "issue",
           "repository": "verndale/ui-design-brain",
-          "number": 75,
-          "url": "https://github.com/verndale/ui-design-brain/issues/75"
+          "number": 67,
+          "url": "https://github.com/verndale/ui-design-brain/issues/67"
         },
         {
           "kind": "issue",
@@ -3518,8 +3549,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 7213,
-      "degree": 24
+      "bytes": 7333,
+      "degree": 26
     }
   ],
   "edges": [
@@ -4303,6 +4334,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-29-gate-verified-release.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/journal/2026-09-29-pr-validation-and-wiki-quality.md",
       "type": "links-to",
       "count": 1,
@@ -4822,6 +4860,13 @@
     {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-09-29-gate-verified-release.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -5873,6 +5918,11 @@
     },
     {
       "source": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-29-gate-verified-release.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     },
