@@ -14,6 +14,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Add deterministic UI Design Brain projections](../../wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md) → [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md)
 - [Prepare public npm-only distribution](../../wiki/journal/2026-08-31-public-npm-only-distribution.md) → [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md)
 - [Standardize package release workflow](../../wiki/journal/2026-08-31-standardize-package-release.md) → [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md)
+- [Issue-linked Git delivery and release after Quality](../../wiki/journal/2026-09-28-git-delivery-standard.md) → [Standardize Git delivery in ui-design-brain](../../wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md)
 
 ## Page → topic
 
@@ -62,6 +63,8 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Add RadioGroupField alias to Radio button](../../wiki/journal/2026-09-17-add-radiogroupfield-alias-to-radio-button.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Add SelectField alias to Select](../../wiki/journal/2026-09-17-add-selectfield-alias-to-select.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Add TextAreaField alias to Textarea](../../wiki/journal/2026-09-17-add-textareafield-alias-to-textarea.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
+- [Issue-linked Git delivery and release after Quality](../../wiki/journal/2026-09-28-git-delivery-standard.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
+- [Issue-linked Git delivery and release after Quality](../../wiki/journal/2026-09-28-git-delivery-standard.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Extract @verndale/ui-design-brain into its own published repo](../../wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Finalize ui-design-brain extraction (vendor-only, npm + sync)](../../wiki/plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: De-duplicate ui-design-brain via the skills CLI (vercel-labs/skills)](../../wiki/plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
@@ -73,6 +76,8 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Deterministic, Route-First Wiki Guidance and PR 127 Recovery](../../wiki/plans/2026-08-24-deterministic-route-first-wiki-guidance-and-pr-127-recovery.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
 - [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md) → [Component catalog — Design History](../../wiki/topics/component-catalog.md)
 - [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
+- [Standardize Git delivery in ui-design-brain](../../wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
+- [Standardize Git delivery in ui-design-brain](../../wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 
 ## Cross-area links (seams)
 
