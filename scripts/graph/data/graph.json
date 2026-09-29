@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 155,
-    "edges": 408,
+    "nodes": 156,
+    "edges": 411,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 82,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 47,
+      "wiki-journal": 48,
       "wiki-plan": 12,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 82,
       "covers": 5,
-      "links-to": 128,
+      "links-to": 130,
       "plan": 9,
       "references": 4,
       "see-also": 118,
-      "topic": 62
+      "topic": 63
     }
   },
   "nodes": [
@@ -1430,8 +1430,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 14728,
-      "degree": 53
+      "bytes": 14897,
+      "degree": 54
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2759,6 +2759,30 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-09-29-preserve-release-handoff.md",
+      "label": "Preserve tested main release handoff",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "75"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 75,
+          "url": "https://github.com/verndale/ui-design-brain/issues/75"
+        }
+      ],
+      "bytes": 825,
+      "degree": 3
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -3435,6 +3459,7 @@
       "prs": [],
       "issues": [
         "67",
+        "75",
         "62",
         "60",
         "51",
@@ -3446,6 +3471,12 @@
           "repository": "verndale/ui-design-brain",
           "number": 67,
           "url": "https://github.com/verndale/ui-design-brain/issues/67"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 75,
+          "url": "https://github.com/verndale/ui-design-brain/issues/75"
         },
         {
           "kind": "issue",
@@ -3472,8 +3503,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 6806,
-      "degree": 22
+      "bytes": 7213,
+      "degree": 24
     }
   ],
   "edges": [
@@ -4264,6 +4295,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-09-29-preserve-release-handoff.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -4769,6 +4807,13 @@
     {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/journal/2026-09-28-git-delivery-standard.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-09-29-preserve-release-handoff.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -5823,6 +5868,11 @@
     },
     {
       "source": "wiki/journal/2026-09-29-pr-validation-and-wiki-quality.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-09-29-preserve-release-handoff.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     },
