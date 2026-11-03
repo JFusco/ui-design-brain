@@ -31,6 +31,8 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 ## Journal
 
+- 2026-11-03 — [Verify the personal repository transfer](journal/2026-11-03-verify-personal-transfer.md) — confirm preserved history and public access, update origin, and track npm publication separately.
+
 - 2026-11-02 — [Prepare personal ownership and public distribution](journal/2026-11-02-personal-ownership-migration.md) — preserve history, move the checkout, prepare unscoped publication, and record the organization-policy transfer blocker.
 
 - 2026-09-29 — [Gate release on fully verified main history](journal/2026-09-29-gate-verified-release.md) — current-main Quality checks all unreleased substantive changes.

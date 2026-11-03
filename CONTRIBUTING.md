@@ -86,40 +86,42 @@ The migration targets `JFusco/ui-design-brain` and the unscoped npm package
 and tracked wiki. Preserve historical Verndale citations; GitHub redirects them
 after transfer. Never recreate the old repository path.
 
-The transfer attempt was rejected with `Organization members cannot transfer
-repositories` (HTTP 422). A Verndale organization owner must transfer the
-repository or change that policy. The source remains private until transfer and
-public-content review are complete. Paused workflows were restored after the
-rejection. No npm package has been renamed, published, or deprecated by this PR.
+The repository is public at `JFusco/ui-design-brain`. Transfer verification
+confirmed the original repository ID, all 11 original branches, 28 tags/releases,
+and all recorded issue/PR identities. Historical GitHub URLs redirect to the new
+owner, and the local origin now points at `git@github.com:JFusco/ui-design-brain.git`.
+The checkout is `/Users/joe.fusco/Projects/ui-design-brain`.
 
-Complete these steps in order:
+The earlier transfer rejection is preserved in the journal. Ownership and source
+preparation are tracked in issue #81; first npm publication and personal
+release/bot setup continue in [issue #83](https://github.com/JFusco/ui-design-brain/issues/83).
+The published package is still `@verndale/ui-design-brain@1.18.2`.
 
-1. Pause Release, Sync context wiki, and Sync wiki issue state; record Git refs,
-   repository settings, and GitHub record identities before the owner transfers
-   the existing repository. Review the historical content before making it public.
-2. Verify the same repository ID, Git refs, releases, PRs, issues, wiki content,
-   and old-link redirects. Review collaborator and branch-rule changes. Update
-   local `origin` to `git@github.com:JFusco/ui-design-brain.git`. The checkout is
-   `/Users/joe.fusco/Projects/ui-design-brain`.
-3. Merge the reviewed maintenance PR. Release requires the exact personal
+Release and both wiki writers are paused until personal publishing and bot
+credentials are verified. Quality and wiki-integrity workflows remain active.
+No npm package has been published or deprecated by this PR.
+
+Complete the remaining publication steps in order:
+
+1. Merge the reviewed maintenance PR. Release requires the exact personal
    repository, public visibility, `NPM_RELEASE_ENABLED=true`, and successful
    Quality for a main push. Leave the variable unset until publishing is ready.
-4. Authenticate as the intended npm owner and verify the unscoped name is
+2. Authenticate as the intended npm owner and verify the unscoped name is
    available. Supply a short-lived personal publishing credential through the
    `NPM_BOOTSTRAP_TOKEN` Actions secret, never through repository files. This
    credential is for the new package; do not reuse organization credentials.
-5. Set `NPM_RELEASE_ENABLED=true`, enable Release, and merge a reviewed
+3. Set `NPM_RELEASE_ENABLED=true`, enable Release, and merge a reviewed
    release-activation PR updating this contributor guide so a substantive main
    push runs Quality and triggers the normal release path. Do not manually publish or tag. The first planned
    unscoped version is `1.18.3`; reconcile the schema release pin if intervening
    releases change the next version.
-6. Verify the registry owner, version, repository URL, provenance, schema URLs,
+4. Verify the registry owner, version, repository URL, provenance, schema URLs,
    and clean consumer installation. Configure npm trusted publishing for owner
    `JFusco`, repository `ui-design-brain`, workflow `release.yml`, then remove
    `NPM_BOOTSTRAP_TOKEN`. Verify OIDC on the next reviewed release. Create the
    trusted publisher close to that release so its initial validation window
    does not expire.
-7. Replace any transferred organization bot credential with an appropriate
+5. Replace any transferred organization bot credential with an appropriate
    personal credential before enabling the wiki bots. Leave optional wiki AI
    disabled unless separately configured. Record the final migration receipts.
 

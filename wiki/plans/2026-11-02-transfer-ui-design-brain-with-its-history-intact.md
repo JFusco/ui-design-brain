@@ -4,10 +4,12 @@ executed: 2026-11-02
 date: 2026-11-02
 evidence:
   - "https://github.com/verndale/ui-design-brain/issues/81"
+  - "https://github.com/JFusco/ui-design-brain/pull/82"
+  - "https://github.com/JFusco/ui-design-brain/issues/83"
 source_tool: file
 source: "/Users/joe.fusco/Projects/.ui-design-brain-migration-20261102-222222/approved-plan.md"
 topics: [packaging-and-distribution]
-audit_note: "Local move and package migration prepared. Transfer rejected by GitHub organization policy (HTTP 422); repository remains private. Release and personal npm setup remain pending."
+audit_note: "Public transfer verified on 2026-11-03; local origin and source preparation updated in PR #82. Plan remains partial until first npm publication and personal automation are verified in issue #83."
 ---
 # Transfer UI Design Brain with its history intact
 

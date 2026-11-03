@@ -16,6 +16,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Standardize package release workflow](../../wiki/journal/2026-08-31-standardize-package-release.md) → [Deterministic UI Design Brain projections for COS and ai-orchestration](../../wiki/plans/2026-08-30-deterministic-ui-design-brain-projections.md)
 - [Issue-linked Git delivery and release after Quality](../../wiki/journal/2026-09-28-git-delivery-standard.md) → [Standardize Git delivery in ui-design-brain](../../wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md)
 - [Prepare personal ownership and public distribution](../../wiki/journal/2026-11-02-personal-ownership-migration.md) → [Transfer UI Design Brain with its history intact](../../wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)
+- [Verify the personal repository transfer](../../wiki/journal/2026-11-03-verify-personal-transfer.md) → [Transfer UI Design Brain with its history intact](../../wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)
 
 ## Page → topic
 
@@ -71,6 +72,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Visible PR descriptions and wiki-only quality](../../wiki/journal/2026-09-29-pr-validation-and-wiki-quality.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Preserve tested main release handoff](../../wiki/journal/2026-09-29-preserve-release-handoff.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Prepare personal ownership and public distribution](../../wiki/journal/2026-11-02-personal-ownership-migration.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
+- [Verify the personal repository transfer](../../wiki/journal/2026-11-03-verify-personal-transfer.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Extract @verndale/ui-design-brain into its own published repo](../../wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Finalize ui-design-brain extraction (vendor-only, npm + sync)](../../wiki/plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: De-duplicate ui-design-brain via the skills CLI (vercel-labs/skills)](../../wiki/plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)

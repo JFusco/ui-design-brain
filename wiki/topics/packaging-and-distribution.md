@@ -8,10 +8,9 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
 
 ## Current state
 
-- The source is still private at `verndale/ui-design-brain`. A transfer to
-  `JFusco/ui-design-brain` was requested but GitHub rejected it because organization
-  members cannot transfer repositories. An organization owner must complete or
-  enable that operation before public exposure.
+- The source is public at `JFusco/ui-design-brain`. The owner completed the
+  transfer; repository ID, original branches/tags, releases, and issue/PR
+  identities were verified. Historical GitHub URLs redirect to the new owner.
 - The migration branch prepares `ui-design-brain` as an unscoped package. The
   existing published package remains `@verndale/ui-design-brain@1.18.2`; no new
   package publication or old-package deprecation is claimed.
@@ -27,12 +26,16 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
   `NPM_RELEASE_ENABLED=true`, successful main-push Quality, and packed-consumer
   verification. The bootstrap uses a temporary personal credential, followed by
   OIDC trusted publishing and provenance. No manual tags or publication.
-- Transfer rejection was followed by restoring the existing workflow states.
-  Before a later transfer, pause release/wiki bots again and replace transferred
-  organization credentials before restoring personal automation. The exact
-  activation sequence is in [Contributing](../../CONTRIBUTING.md).
+- Local origin points at `git@github.com:JFusco/ui-design-brain.git`. Release and
+  both wiki writers are paused until personal credentials are verified. Quality
+  and wiki-integrity checks remain active. First publication and automation
+  activation are tracked in [JFusco/ui-design-brain issue #83](https://github.com/JFusco/ui-design-brain/issues/83);
+  ownership/source preparation closes with issue #81 and PR #82. The activation
+  sequence is in [Contributing](../../CONTRIBUTING.md).
 
 ## Decisions
+
+- 2026-11-03 — Verify the completed public transfer and preserve old citations through GitHub redirects. Update local origin and close ownership/source preparation through PR #82; track first unscoped publication, OIDC, and personal bot credentials in issue #83 so ownership completion does not imply a published npm replacement ([JFusco/ui-design-brain PR #82](https://github.com/JFusco/ui-design-brain/pull/82), [JFusco/ui-design-brain issue #83](https://github.com/JFusco/ui-design-brain/issues/83), [journal](../journal/2026-11-03-verify-personal-transfer.md)).
 
 - 2026-11-02 — Preserve the repository through an ownership transfer rather than a fresh copy because the wiki depends on historical GitHub records. Keep old citations, continue release numbering, and gate unscoped publication on the new public owner and explicit activation. The transfer is blocked by organization policy; local preparation does not establish public delivery ([verndale/ui-design-brain issue #81](https://github.com/verndale/ui-design-brain/issues/81), [journal](../journal/2026-11-02-personal-ownership-migration.md), [plan](../plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)).
 

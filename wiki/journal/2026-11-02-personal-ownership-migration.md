@@ -2,7 +2,7 @@
 date: 2026-11-02
 topics: [packaging-and-distribution]
 plan: plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md
-pr: pending
+pr: https://github.com/JFusco/ui-design-brain/pull/82
 issue: https://github.com/verndale/ui-design-brain/issues/81
 ---
 # Prepare personal ownership and public distribution

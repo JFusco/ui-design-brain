@@ -54,7 +54,7 @@ version or alter a lockfile.
 
 ## Security and release model
 
-Releases are immutable npm versions. The intended source repository is
+Releases are immutable npm versions. The public source repository is
 [`JFusco/ui-design-brain`](https://github.com/JFusco/ui-design-brain). Publication
 is gated on that repository being public and its release setup being enabled.
 Automated releases validate the catalog and a packed-consumer fixture. After
