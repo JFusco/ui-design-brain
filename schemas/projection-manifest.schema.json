@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/verndale/ui-design-brain/v1.16.0/schemas/projection-manifest.schema.json",
+  "$id": "https://raw.githubusercontent.com/JFusco/ui-design-brain/v1.18.3/schemas/projection-manifest.schema.json",
   "title": "UI Design Brain generated projection provenance",
   "type": "object",
   "additionalProperties": false,
@@ -21,7 +21,7 @@
   "properties": {
     "$schema": { "type": "string" },
     "schemaVersion": { "const": 1 },
-    "generatedBy": { "const": "@verndale/ui-design-brain" },
+    "generatedBy": { "const": "ui-design-brain" },
     "packageVersion": { "type": "string", "minLength": 1 },
     "catalogAuthorityVersion": { "const": "1.18.0" },
     "profile": { "const": "agent-skill" },

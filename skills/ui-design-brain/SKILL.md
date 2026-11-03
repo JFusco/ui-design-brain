@@ -5,7 +5,7 @@ description: Canonical catalog of production-grade UI component patterns (per-pa
 
 # Skill: ui-design-brain
 
-The canonical catalog of UI component patterns shared across Verndale AI tooling. Use it to resolve any design label to one canonical component name and to ground naming and accessibility decisions — whether you are writing a component spec or acceptance criteria, or generating interface code. It replaces generic UI guesses with named, inspectable patterns so spec, AC, and implementation share one vocabulary.
+The canonical catalog of UI component patterns for AI-assisted product delivery. Use it to resolve any design label to one canonical component name and to ground naming and accessibility decisions — whether you are writing a component spec or acceptance criteria, or generating interface code. It replaces generic UI guesses with named, inspectable patterns so spec, AC, and implementation share one vocabulary.
 
 ## Use when
 

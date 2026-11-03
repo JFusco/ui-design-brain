@@ -9,12 +9,12 @@ const packed = execFileSync('pnpm', ['pack', '--pack-destination', root], { cwd:
 const sandbox = await mkdtemp(join(tmpdir(), 'ui-design-brain-packed-'));
 
 try {
-  await writeFile(join(sandbox, 'package.json'), JSON.stringify({ private: true, dependencies: { '@verndale/ui-design-brain': `file:${join(root, packed)}` } }));
+  await writeFile(join(sandbox, 'package.json'), JSON.stringify({ private: true, dependencies: { 'ui-design-brain': `file:${join(root, packed)}` } }));
   execFileSync('pnpm', ['install', '--frozen-lockfile=false'], { cwd: sandbox, stdio: 'inherit' });
   const config = join(sandbox, 'ui-design-brain.config.json');
   await writeFile(config, `${JSON.stringify({
     schemaVersion: 1,
-    packageName: '@verndale/ui-design-brain',
+    packageName: 'ui-design-brain',
     packageVersion: pkg.version,
     catalogAuthorityVersion: '1.18.0',
     profile: 'agent-skill',

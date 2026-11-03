@@ -73,10 +73,10 @@ The pages are deliberately excluded from the graph's own nodes so they never bec
 date: YYYY-MM-DD
 topics: [<topic-slug>]              # topic slugs touched, or []
 plan: plans/YYYY-MM-DD-<slug>.md    # or none
-pr: https://github.com/verndale/ui-design-brain/pull/NNN   # or pending
-follow_up_pr: https://github.com/verndale/ui-design-brain/pull/NNN   # optional; or pending
-issue: https://github.com/verndale/ui-design-brain/issues/NNN   # optional; filled by merge sync from "Closes #N"
-issues: [https://github.com/verndale/ui-design-brain/issues/NNN] # optional all closing issues
+pr: https://github.com/JFusco/ui-design-brain/pull/NNN   # or pending
+follow_up_pr: https://github.com/JFusco/ui-design-brain/pull/NNN   # optional; or pending
+issue: https://github.com/JFusco/ui-design-brain/issues/NNN   # optional; filled by merge sync from "Closes #N"
+issues: [https://github.com/JFusco/ui-design-brain/issues/NNN] # optional all closing issues
 ---
 # <Title>
 

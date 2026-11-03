@@ -8,36 +8,33 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
 
 ## Current state
 
-- The source repository remains private. `@verndale/ui-design-brain` is publicly
-  published at `1.16.1-bootstrap.0` under the non-default `bootstrap` tag as a
-  constrained tarball containing only the
-  projector CLI, libraries, schemas, catalog skill, license, and public README.
-- `catalog-manifest.json` records schema version, the `1.17.0` canonical-vocabulary authority baseline, source and manifest digests, bounded authority, and every projected file digest.
-- The projector first becomes available in `1.16.0`; the implementation branch uses `1.16.0-next.0` so local artifacts are explicitly prerelease rather than falsely attributed to `v1.15.1`.
-- Consumers pin one immutable package artifact and declare package version, catalog-authority version, profile, and target in `ui-design-brain.config.json`.
-- `sync --if-needed` writes only a marker-owned target, validates a complete temporary projection, and promotes it atomically. `check` is read-only. Both fail closed on version, digest, file-set, or local-edit drift.
-- The one-time `sync --adopt` path accepts a legacy copy only when every Markdown/source file is byte-identical and JSON catalog data is semantically identical; it never adopts divergent guidance.
-- Consumer hooks call the installed Node file directly. They do not invoke `npx`, contact a registry, install dependencies, update a lockfile, or select a newer package.
-- The source pre-commit hook checks the generated catalog manifest and pre-push
-  runs projection plus packed offline-consumer tests. Release automation uses
-  GitHub Actions OIDC for npm trusted publishing; no long-lived publish token is
-  stored in the private repository or consumer CI. npm trusts
-  `verndale/ui-design-brain` `release.yml` for `npm publish` only.
-- Release workflow parity follows `accessibility-standards`: full Git history,
-  Node `24.14.0`, Corepack `pnpm@11.1.1`, frozen install, release-commit
-  preflight, source verification, clean packed-consumer verification, a
-  registry-independent `npm pack --dry-run`, then semantic-release. The pack
-  inspection deliberately does not use `npm publish --dry-run`: npm rejects an
-  already-published `package.json` version before semantic-release calculates
-  the next release. The semantic-release process alone runs with `HUSKY=0`
-  after those gates pass, so its generated release commit and tag do not
-  recursively run contributor pre-push hooks against a transient bumped
-  package version. Package and catalog-authority provenance are independent
-  values and may legitimately match. The npm provenance setting is explicitly
-  `false`: npm does not support automatic provenance for a public package
-  published from a private GitHub source repository.
+- The source is still private at `verndale/ui-design-brain`. A transfer to
+  `JFusco/ui-design-brain` was requested but GitHub rejected it because organization
+  members cannot transfer repositories. An organization owner must complete or
+  enable that operation before public exposure.
+- The migration branch prepares `ui-design-brain` as an unscoped package. The
+  existing published package remains `@verndale/ui-design-brain@1.18.2`; no new
+  package publication or old-package deprecation is claimed.
+- The local checkout moved intact to `/Users/joe.fusco/Projects/ui-design-brain`.
+  Existing Git history, releases, wiki records, and historical citations remain.
+- Catalog authority is `1.18.0` with 82 canonical patterns. The migration preserves
+  the canonical manifest and its digest; source provenance is regenerated for
+  neutral skill wording and schema URLs pinned to the planned `1.18.3` release.
+- Consumers pin an exact package and config. The command remains
+  `ui-design-brain`; new-package migration uses a fresh target because the
+  projector refuses old-package ownership, edited files, and version drift.
+- Release requires the personal repository, public visibility, explicit
+  `NPM_RELEASE_ENABLED=true`, successful main-push Quality, and packed-consumer
+  verification. The bootstrap uses a temporary personal credential, followed by
+  OIDC trusted publishing and provenance. No manual tags or publication.
+- Transfer rejection was followed by restoring the existing workflow states.
+  Before a later transfer, pause release/wiki bots again and replace transferred
+  organization credentials before restoring personal automation. The exact
+  activation sequence is in [Contributing](../../CONTRIBUTING.md).
 
 ## Decisions
+
+- 2026-11-02 — Preserve the repository through an ownership transfer rather than a fresh copy because the wiki depends on historical GitHub records. Keep old citations, continue release numbering, and gate unscoped publication on the new public owner and explicit activation. The transfer is blocked by organization policy; local preparation does not establish public delivery ([verndale/ui-design-brain issue #81](https://github.com/verndale/ui-design-brain/issues/81), [journal](../journal/2026-11-02-personal-ownership-migration.md), [plan](../plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)).
 
 - 2026-09-29 — Each main-push Quality run has a unique concurrency identity, while superseded pull-request runs still cancel. Push Quality checks every unreleased change since the latest reachable release tag; a current-main success can therefore trigger Release only after all unreleased substantive changes pass the full gate ([issue #78](https://github.com/verndale/ui-design-brain/issues/78), [journal](../journal/2026-09-29-gate-verified-release.md), [prior journal](../journal/2026-09-29-preserve-release-handoff.md)).
 - 2026-09-28 — Repository delivery uses labeled issues, updated-main branches, standalone Commitlint, deterministic PR bodies, and open PR review; release follows successful Quality at the tested revision ([issue #67](https://github.com/verndale/ui-design-brain/issues/67), [plan](../plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md), [journal](../journal/2026-09-28-git-delivery-standard.md)).

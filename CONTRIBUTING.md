@@ -1,6 +1,6 @@
 # Contributing
 
-This repository is the single source of truth for the `ui-design-brain` catalog, distributed as a private exact-version agent-skill projection. It enforces strict catalog, digest, and commit standards so consuming repositories receive identical generated content.
+This repository is the single source of truth for the `ui-design-brain` catalog, distributed as a public npm package with exact-version agent-skill projections. It enforces strict catalog, digest, and commit standards so consuming repositories receive identical generated content.
 
 ## Quick Start (TL;DR)
 
@@ -75,9 +75,56 @@ Consumer hooks invoke the already-installed exact package directly with Node. Th
 | [`.github/workflows/release.yml`](.github/workflows/release.yml) | Successful Quality on a main push | verifies the clean tarball consumer, then `semantic-release`: public npm publication, version bump, `CHANGELOG.md`, Git tag + GitHub Release |
 
 
-Releases are driven by [`semantic-release`](.releaserc.cjs) after successful Quality on a push to `main` — Conventional Commit types decide the bump (`feat` → minor; `build`, `chore`, `ci`, `docs`, `fix`, `perf`, `refactor`, `revert`, `style`, and `test` → patch; `!` → major). The release workflow rejects aggregated `BREAKING CHANGE` bodies, runs the packed-consumer gate after Quality verifies the source, and publishes through npm trusted publishing with GitHub Actions OIDC. No npm token or AI release-notes service is used. Preview locally with `pnpm release:dry`.
+Releases are driven by [`semantic-release`](.releaserc.cjs) after successful Quality on a push to `main` — Conventional Commit types decide the bump (`feat` → minor; `build`, `chore`, `ci`, `docs`, `fix`, `perf`, `refactor`, `revert`, `style`, and `test` → patch; `!` → major). The release workflow rejects aggregated `BREAKING CHANGE` bodies, runs the packed-consumer gate after Quality verifies the source, and publishes through npm trusted publishing with GitHub Actions OIDC. A temporary personal `NPM_BOOTSTRAP_TOKEN` is used only to establish the new npm package; remove it after configuring trusted publishing. No AI release-notes service is used. Preview locally with `pnpm release:dry`.
 
-The source repository remains private. The public package is limited to the audited npm allowlist in `package.json`; consumers install one exact registry version from their lockfile and never fetch or select versions in hooks. npm provenance remains disabled because npm does not support automatic provenance for a public package published from a private GitHub source repository.
+The public package is limited to the audited npm allowlist in `package.json`; consumers install one exact registry version from their lockfile and never fetch or select versions in hooks. Provenance is enabled for publication from the public personal repository.
+
+## Ownership migration and release activation
+
+The migration targets `JFusco/ui-design-brain` and the unscoped npm package
+`ui-design-brain`. Keep the complete Git history, tags, releases, PRs, issues,
+and tracked wiki. Preserve historical Verndale citations; GitHub redirects them
+after transfer. Never recreate the old repository path.
+
+The transfer attempt was rejected with `Organization members cannot transfer
+repositories` (HTTP 422). A Verndale organization owner must transfer the
+repository or change that policy. The source remains private until transfer and
+public-content review are complete. Paused workflows were restored after the
+rejection. No npm package has been renamed, published, or deprecated by this PR.
+
+Complete these steps in order:
+
+1. Pause Release, Sync context wiki, and Sync wiki issue state; record Git refs,
+   repository settings, and GitHub record identities before the owner transfers
+   the existing repository. Review the historical content before making it public.
+2. Verify the same repository ID, Git refs, releases, PRs, issues, wiki content,
+   and old-link redirects. Review collaborator and branch-rule changes. Update
+   local `origin` to `git@github.com:JFusco/ui-design-brain.git`. The checkout is
+   `/Users/joe.fusco/Projects/ui-design-brain`.
+3. Merge the reviewed maintenance PR. Release requires the exact personal
+   repository, public visibility, `NPM_RELEASE_ENABLED=true`, and successful
+   Quality for a main push. Leave the variable unset until publishing is ready.
+4. Authenticate as the intended npm owner and verify the unscoped name is
+   available. Supply a short-lived personal publishing credential through the
+   `NPM_BOOTSTRAP_TOKEN` Actions secret, never through repository files. This
+   credential is for the new package; do not reuse organization credentials.
+5. Set `NPM_RELEASE_ENABLED=true`, enable Release, and merge a reviewed
+   release-activation PR updating this contributor guide so a substantive main
+   push runs Quality and triggers the normal release path. Do not manually publish or tag. The first planned
+   unscoped version is `1.18.3`; reconcile the schema release pin if intervening
+   releases change the next version.
+6. Verify the registry owner, version, repository URL, provenance, schema URLs,
+   and clean consumer installation. Configure npm trusted publishing for owner
+   `JFusco`, repository `ui-design-brain`, workflow `release.yml`, then remove
+   `NPM_BOOTSTRAP_TOKEN`. Verify OIDC on the next reviewed release. Create the
+   trusted publisher close to that release so its initial validation window
+   does not expire.
+7. Replace any transferred organization bot credential with an appropriate
+   personal credential before enabling the wiki bots. Leave optional wiki AI
+   disabled unless separately configured. Record the final migration receipts.
+
+Deprecating `@verndale/ui-design-brain` and migrating other repositories are
+separate follow-ups. Existing immutable package versions remain available.
 
 ## Installation
 

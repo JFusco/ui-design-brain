@@ -16,7 +16,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { extractGithubRefs, formatGithubRef } = require("./lib/github.cjs");
 
-const DEFAULT_REPOSITORY = "verndale/ui-design-brain";
+const DEFAULT_REPOSITORY = "JFusco/ui-design-brain";
 
 function parseArgs(argv) {
   const a = { wiki: path.join(path.resolve(__dirname, "..", ".."), "wiki") };

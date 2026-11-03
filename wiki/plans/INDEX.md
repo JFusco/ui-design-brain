@@ -16,7 +16,7 @@ Every agent plan executed for this repo, gathered from Claude plan stores and Co
 - **out-of-scope** — targets another repo/product.
 - **not-verified** — recovered by `pnpm wiki:find-plans --archive`; nobody has checked yet whether it shipped.
 
-Totals: 11 implemented · 1 partial (12 plans).
+Totals: 11 implemented · 2 partial (13 plans).
 
 ## Plans
 
@@ -34,3 +34,4 @@ Totals: 11 implemented · 1 partial (12 plans).
 | 2026-08-23 | [Standardize wiki actions and evidence routing](2026-08-23-standardize-wiki-actions-and-evidence-routing.md) | implemented | [issue #43](https://github.com/verndale/ui-design-brain/issues/43), PR pending, [verndale/ui-design-brain PR #44](https://github.com/verndale/ui-design-brain/pull/44) | graph-wiki-subsystem |
 | 2026-08-24 | [Deterministic, Route-First Wiki Guidance and PR 127 Recovery](2026-08-24-deterministic-route-first-wiki-guidance-and-pr-127-recovery.md) | implemented | canonical headless AGENTS.md block installed with zero-drift dry run, [verndale/ui-design-brain PR #46](https://github.com/verndale/ui-design-brain/pull/46) | graph-wiki-subsystem |
 | 2026-09-29 | [Standardize Git delivery in ui-design-brain](2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md) | implemented | issue #67, [verndale/ui-design-brain PR #68](https://github.com/verndale/ui-design-brain/pull/68) | graph-wiki-subsystem, packaging-and-distribution |
+| 2026-11-02 | [Transfer UI Design Brain with its history intact](2026-11-02-transfer-ui-design-brain-with-its-history-intact.md) | partial | https://github.com/verndale/ui-design-brain/issues/81 | packaging-and-distribution |

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/verndale/ui-design-brain/v1.16.0/schemas/patterns-manifest.schema.json",
+  "$id": "https://raw.githubusercontent.com/JFusco/ui-design-brain/v1.18.3/schemas/patterns-manifest.schema.json",
   "title": "UI Design Brain patterns manifest",
   "type": "array",
   "items": {

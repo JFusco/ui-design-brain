@@ -19,6 +19,9 @@ env:
 jobs:
   release:
     if: >-
+      github.repository == 'JFusco/ui-design-brain' &&
+      github.event.repository.private == false &&
+      vars.NPM_RELEASE_ENABLED == 'true' &&
       github.event.workflow_run.conclusion == 'success' &&
       github.event.workflow_run.event == 'push' &&
       github.event.workflow_run.head_branch == 'main'
@@ -115,5 +118,6 @@ jobs:
         if: steps.scope.outputs.substantive == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          NPM_TOKEN: ${{ secrets.NPM_BOOTSTRAP_TOKEN }}
           HUSKY: '0'
         run: pnpm exec semantic-release

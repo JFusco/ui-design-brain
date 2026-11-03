@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/verndale/ui-design-brain/v1.16.0/schemas/catalog-manifest.schema.json",
+  "$schema": "https://raw.githubusercontent.com/JFusco/ui-design-brain/v1.18.3/schemas/catalog-manifest.schema.json",
   "authority": {
     "accessibilityProse": "non-normative-pending-parity",
     "excludes": [
@@ -21,7 +21,7 @@
   "files": [
     {
       "path": "SKILL.md",
-      "sha256": "sha256:8f12f85764fefd63026a64f82adead49b1dcfabbc6e9f9acbebe6df0b23f2dfe"
+      "sha256": "sha256:a57efbaa33a0f3be21607f4bf9edf0f76783f65c5565e387a6641a8d9f1868dd"
     },
     {
       "path": "index.md",
@@ -363,5 +363,5 @@
   "manifestDigest": "sha256:f94db7c94f99d74983078bdf35e5854584fdd7875af1bf7c7d6fbcb17b459ab5",
   "patternCount": 82,
   "schemaVersion": 1,
-  "sourceDigest": "sha256:7032fb47ae522d5bb5bc4015dfd239b8208328c1aa3eddc3c82cfa373be27b9c"
+  "sourceDigest": "sha256:68827907d7431d74191a18cb2fc256c5f791e272f269a2d439b15624848bb28a"
 }
