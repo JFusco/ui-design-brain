@@ -2918,11 +2918,19 @@
         "packaging-and-distribution"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "90"
+      ],
       "issues": [
         "89"
       ],
       "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "jfusco/ui-design-brain",
+          "number": 90,
+          "url": "https://github.com/jfusco/ui-design-brain/pull/90"
+        },
         {
           "kind": "issue",
           "repository": "jfusco/ui-design-brain",
@@ -2930,7 +2938,7 @@
           "url": "https://github.com/jfusco/ui-design-brain/issues/89"
         }
       ],
-      "bytes": 1780,
+      "bytes": 1822,
       "degree": 3
     },
     {
