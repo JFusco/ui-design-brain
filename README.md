@@ -8,9 +8,8 @@ license, and this public documentation. Repository operational material,
 including planning records, journals, source history, and workflows, is retained
 in the repository and is not included in the npm tarball.
 
-The move from `@verndale/ui-design-brain` to the unscoped package is being
-prepared. Use the new install command only after its first registry release;
-existing scoped versions remain available during the transition.
+The unscoped package is published under Joe Fusco’s npm account. Existing
+`@verndale/ui-design-brain` versions remain available while consumers migrate.
 
 ## Install
 
@@ -57,9 +56,9 @@ version or alter a lockfile.
 Releases are immutable npm versions. The public source repository is
 [`JFusco/ui-design-brain`](https://github.com/JFusco/ui-design-brain). Publication
 is gated on that repository being public and its release setup being enabled.
-Automated releases validate the catalog and a packed-consumer fixture. After
-the first package publication establishes ownership, subsequent releases use
-npm trusted publishing with GitHub Actions OIDC and provenance.
+Automated releases validate the catalog and a packed-consumer fixture, then use
+npm trusted publishing with GitHub Actions OIDC and provenance. The publishing
+workflow does not use an npm token.
 
 Review the published contents before release with:
 
@@ -69,7 +68,7 @@ npm pack --dry-run --ignore-scripts
 
 ## Migrating from the scoped package
 
-After the first unscoped release, replace the scoped dependency with an exact
+Replace the scoped dependency with an exact
 `ui-design-brain` version. In `ui-design-brain.config.json`, set `packageName`
 to `ui-design-brain`, pin the installed `packageVersion`, and update `$schema`
 to `./node_modules/ui-design-brain/schemas/consumer-config.schema.json` if used.

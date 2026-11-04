@@ -118,6 +118,5 @@ jobs:
         if: steps.scope.outputs.substantive == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          NPM_TOKEN: ${{ secrets.NPM_BOOTSTRAP_TOKEN }}
           HUSKY: '0'
         run: pnpm exec semantic-release

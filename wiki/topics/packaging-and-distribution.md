@@ -11,29 +11,32 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
 - The source is public at `JFusco/ui-design-brain`. The owner completed the
   transfer; repository ID, original branches/tags, releases, and issue/PR
   identities were verified. Historical GitHub URLs redirect to the new owner.
-- The migration branch prepares `ui-design-brain` as an unscoped package. The
-  existing published package remains `@verndale/ui-design-brain@1.18.2`; no new
-  package publication or old-package deprecation is claimed.
+- `ui-design-brain@1.18.3` is publicly published under npm account `jfusco` with
+  GitHub provenance. A clean exact-version install, projection, no-op repeat
+  sync, check, and all four public schema URLs were verified. Existing scoped
+  versions remain available; no old-package deprecation is claimed.
 - The local checkout moved intact to `/Users/joe.fusco/Projects/ui-design-brain`.
   Existing Git history, releases, wiki records, and historical citations remain.
 - Catalog authority is `1.18.0` with 82 canonical patterns. The migration preserves
   the canonical manifest and its digest; source provenance is regenerated for
-  neutral skill wording and schema URLs pinned to the planned `1.18.3` release.
+  neutral skill wording and schema URLs pinned to the existing `1.18.3` release.
 - Consumers pin an exact package and config. The command remains
   `ui-design-brain`; new-package migration uses a fresh target because the
   projector refuses old-package ownership, edited files, and version drift.
-- Release requires the personal repository, public visibility, explicit
-  `NPM_RELEASE_ENABLED=true`, successful main-push Quality, and packed-consumer
-  verification. The bootstrap uses a temporary personal credential, followed by
-  OIDC trusted publishing and provenance. No manual tags or publication.
-- Local origin points at `git@github.com:JFusco/ui-design-brain.git`. Release and
-  both wiki writers are paused until personal credentials are verified. Quality
-  and wiki-integrity checks remain active. First publication and automation
-  activation are tracked in [JFusco/ui-design-brain issue #83](https://github.com/JFusco/ui-design-brain/issues/83);
-  ownership/source preparation closes with issue #81 and PR #82. The activation
-  sequence is in [Contributing](../../CONTRIBUTING.md).
+- Release requires the public personal repository, `NPM_RELEASE_ENABLED=true`,
+  successful main-push Quality, and packed-consumer verification. npm trusts
+  `JFusco/ui-design-brain` and `release.yml`; the bootstrap GitHub secret is
+  removed and the workflow uses OIDC without an npm token. The closeout release
+  verifies this token-free path in issue #83.
+- Local origin points at `git@github.com:JFusco/ui-design-brain.git`. Release,
+  Quality, and wiki-integrity checks are active. Both wiki writers remain paused
+  pending personal bot credential verification in
+  [JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84).
+  Optional wiki AI is disabled. See [Contributing](../../CONTRIBUTING.md).
 
 ## Decisions
+
+- 2026-11-03 — Establish the unscoped npm package with a temporary personal credential, verify the registry artifact independently of workflow status, then configure OIDC through passkey approval and remove the bootstrap secret and workflow reference. Keep wiki-bot restoration in its own issue while the closeout release proves OIDC ([JFusco/ui-design-brain issue #83](https://github.com/JFusco/ui-design-brain/issues/83), [JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84), [release v1.18.3](https://github.com/JFusco/ui-design-brain/releases/tag/v1.18.3), [journal](../journal/2026-11-03-first-personal-npm-release.md)).
 
 - 2026-11-03 — Verify the completed public transfer and preserve old citations through GitHub redirects. Update local origin and close ownership/source preparation through PR #82; track first unscoped publication, OIDC, and personal bot credentials in issue #83 so ownership completion does not imply a published npm replacement ([JFusco/ui-design-brain PR #82](https://github.com/JFusco/ui-design-brain/pull/82), [JFusco/ui-design-brain issue #83](https://github.com/JFusco/ui-design-brain/issues/83), [journal](../journal/2026-11-03-verify-personal-transfer.md)).
 

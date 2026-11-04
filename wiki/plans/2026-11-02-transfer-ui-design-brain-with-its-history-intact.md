@@ -9,7 +9,7 @@ evidence:
 source_tool: file
 source: "/Users/joe.fusco/Projects/.ui-design-brain-migration-20261102-222222/approved-plan.md"
 topics: [packaging-and-distribution]
-audit_note: "Public transfer verified on 2026-11-03; local origin and source preparation updated in PR #82. Plan remains partial until first npm publication and personal automation are verified in issue #83."
+audit_note: "Public transfer and first unscoped npm release verified. OIDC configured and bootstrap GitHub secret removed; issue #83 verifies the closeout release. Plan remains partial pending wiki writer restoration in issue #84."
 ---
 # Transfer UI Design Brain with its history intact
 
