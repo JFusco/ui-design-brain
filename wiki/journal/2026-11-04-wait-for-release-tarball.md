@@ -2,7 +2,7 @@
 date: 2026-11-04
 topics: [packaging-and-distribution]
 plan: none
-pr: pending
+pr: https://github.com/jfusco/ui-design-brain/pull/93
 issue: https://github.com/JFusco/ui-design-brain/issues/92
 issues: ["https://github.com/jfusco/ui-design-brain/issues/92"]
 ---
