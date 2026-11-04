@@ -26,3 +26,19 @@ test('new-package publication requires personal ownership, public visibility, an
   assert.equal(metadata.repository.url, 'git+https://github.com/JFusco/ui-design-brain.git');
   assert.equal(metadata.publishConfig.provenance, true);
 });
+
+test('a published release waits for npm, then notifies the Pin Courier runner', () => {
+  const workflow = fs.readFileSync(path.join(ROOT, '.github/workflows/release.yml'), 'utf8');
+  const order = [
+    '- name: Record pre-release revision',
+    '- name: Publish, tag, changelog, and GitHub release',
+    '- name: Detect a published release',
+    '- name: Wait for the release on the npm registry',
+    '- name: Mint Pin Courier token',
+    '- name: Notify the Renovate runner',
+  ].map((step) => workflow.indexOf(step));
+  assert.ok(order.every((index, i) => index > 0 && (i === 0 || index > order[i - 1])));
+  assert.match(workflow, /- name: Mint Pin Courier token\s+id: courier\s+if: steps\.released\.outputs\.published == 'true'/);
+  assert.match(workflow, /repositories: renovate-config\s+permission-contents: write/);
+  assert.match(workflow, /dispatches -f event_type=package-released/);
+});

@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 162,
-    "edges": 436,
+    "nodes": 163,
+    "edges": 439,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 82,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 53,
+      "wiki-journal": 54,
       "wiki-plan": 13,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 82,
       "covers": 5,
-      "links-to": 144,
+      "links-to": 146,
       "plan": 13,
       "references": 4,
       "see-also": 118,
-      "topic": 70
+      "topic": 71
     }
   },
   "nodes": [
@@ -1439,8 +1439,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 15911,
-      "degree": 59
+      "bytes": 16111,
+      "degree": 60
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2910,6 +2910,30 @@
       "degree": 4
     },
     {
+      "id": "wiki/journal/2026-11-03-notify-renovate-runner.md",
+      "label": "Notify the Renovate runner after each release",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "89"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 89,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/89"
+        }
+      ],
+      "bytes": 1780,
+      "degree": 3
+    },
+    {
       "id": "wiki/journal/2026-11-03-restore-personal-wiki-writers.md",
       "label": "Restore personal wiki writers",
       "type": "wiki-journal",
@@ -3811,6 +3835,7 @@
       ],
       "issues": [
         "84",
+        "89",
         "83",
         "81",
         "78",
@@ -3826,6 +3851,12 @@
           "repository": "jfusco/ui-design-brain",
           "number": 84,
           "url": "https://github.com/jfusco/ui-design-brain/issues/84"
+        },
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 89,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/89"
         },
         {
           "kind": "issue",
@@ -3882,8 +3913,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 8796,
-      "degree": 37
+      "bytes": 9149,
+      "degree": 39
     }
   ],
   "edges": [
@@ -4702,6 +4733,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-11-03-notify-renovate-runner.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/journal/2026-11-03-restore-personal-wiki-writers.md",
       "type": "links-to",
       "count": 1,
@@ -5270,6 +5308,13 @@
     {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/journal/2026-11-03-first-personal-npm-release.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-11-03-notify-renovate-runner.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -6385,6 +6430,11 @@
     },
     {
       "source": "wiki/journal/2026-11-03-first-personal-npm-release.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-11-03-notify-renovate-runner.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     },
