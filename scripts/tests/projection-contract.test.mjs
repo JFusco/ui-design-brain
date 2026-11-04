@@ -5,6 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
+import { sha256 } from "../../lib/digest.mjs";
 
 import {
   AUTHORITY,
@@ -31,9 +32,9 @@ async function fixture(t, target = "generated/ui-design-brain") {
   const metadata = await readPackage(packageRoot);
   const configPath = path.join(root, "ui-design-brain.config.json");
   await writeFile(configPath, `${JSON.stringify({
-    $schema: "./node_modules/@verndale/ui-design-brain/schemas/consumer-config.schema.json",
+    $schema: "./node_modules/ui-design-brain/schemas/consumer-config.schema.json",
     schemaVersion: 1,
-    packageName: "@verndale/ui-design-brain",
+    packageName: "ui-design-brain",
     packageVersion: metadata.version,
     catalogAuthorityVersion: "1.18.0",
     profile: "agent-skill",
@@ -76,7 +77,7 @@ test("all shipped JSON schemas are valid and the pre-projector package fails exp
     await rm(legacyRoot, { recursive: true, force: true });
   });
   await writeFile(path.join(legacyRoot, "package.json"), `${JSON.stringify({
-    name: "@verndale/ui-design-brain",
+    name: "ui-design-brain",
     version: "1.15.1",
     private: false,
     publishConfig: { access: "public" },
@@ -131,6 +132,42 @@ test("sync refuses unmanaged or locally edited targets", async (t) => {
     checkProjection({ configPath: managed.configPath, packageRoot }),
     /generated projection file is stale or edited: SKILL.md/,
   );
+});
+
+test("migration rejects scoped configuration and preserves an old-package projection", async (t) => {
+  const consumer = await fixture(t);
+  const config = JSON.parse(await readFile(consumer.configPath, "utf8"));
+  config.packageName = "@verndale/ui-design-brain";
+  await writeFile(consumer.configPath, JSON.stringify(config));
+  await assert.rejects(
+    syncProjection({ configPath: consumer.configPath, packageRoot }),
+    /config.packageName must be ui-design-brain/,
+  );
+
+  config.packageName = "ui-design-brain";
+  await writeFile(consumer.configPath, JSON.stringify(config));
+  await syncProjection({ configPath: consumer.configPath, packageRoot });
+  const manifestPath = path.join(consumer.targetPath, PROJECTION_MANIFEST);
+  const markerPath = path.join(consumer.targetPath, GENERATED_MARKER);
+  const provenance = JSON.parse(await readFile(manifestPath, "utf8"));
+  provenance.generatedBy = "@verndale/ui-design-brain";
+  const legacyManifest = `${JSON.stringify(provenance)}\n`;
+  const legacyMarker = (await readFile(markerPath, "utf8"))
+    .replace("generator=ui-design-brain", "generator=@verndale/ui-design-brain")
+    .replace(/provenanceDigest=.+/, `provenanceDigest=${sha256(legacyManifest)}`);
+  await writeFile(manifestPath, legacyManifest);
+  await writeFile(markerPath, legacyMarker);
+  const catalogBefore = await readFile(path.join(consumer.targetPath, "SKILL.md"));
+
+  for (const adopt of [false, true]) {
+    await assert.rejects(
+      syncProjection({ configPath: consumer.configPath, packageRoot, ifNeeded: true, adopt }),
+      /refusing to overwrite target with invalid projection-manifest.json/,
+    );
+    assert.equal(await readFile(manifestPath, "utf8"), legacyManifest);
+    assert.equal(await readFile(markerPath, "utf8"), legacyMarker);
+    assert.deepEqual(await readFile(path.join(consumer.targetPath, "SKILL.md")), catalogBefore);
+  }
 });
 
 test("--adopt accepts only a byte-identical legacy catalog with semantic manifest formatting", async (t) => {
@@ -242,7 +279,7 @@ test("the constrained public packed artifact can project in an offline consumer 
   await writeFile(path.join(consumer, "package.json"), `${JSON.stringify({
     name: "ui-design-brain-packed-consumer",
     private: true,
-    dependencies: { "@verndale/ui-design-brain": `file:${tarball}` },
+    dependencies: { "ui-design-brain": `file:${tarball}` },
   }, null, 2)}\n`);
   const installed = spawnSync(
     "npm",
@@ -255,13 +292,13 @@ test("the constrained public packed artifact can project in an offline consumer 
   const configPath = path.join(consumer, "ui-design-brain.config.json");
   await writeFile(configPath, `${JSON.stringify({
     schemaVersion: 1,
-    packageName: "@verndale/ui-design-brain",
+    packageName: "ui-design-brain",
     packageVersion: metadata.version,
     catalogAuthorityVersion: "1.18.0",
     profile: "agent-skill",
     target: "generated/ui-design-brain",
   }, null, 2)}\n`);
-  const cli = path.join(consumer, "node_modules/@verndale/ui-design-brain/bin/ui-design-brain.mjs");
+  const cli = path.join(consumer, "node_modules/ui-design-brain/bin/ui-design-brain.mjs");
   const synced = spawnSync(process.execPath, [cli, "sync", "--if-needed", "--config", configPath], {
     cwd: consumer,
     encoding: "utf8",

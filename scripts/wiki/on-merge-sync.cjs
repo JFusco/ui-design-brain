@@ -21,7 +21,7 @@ const { slugify, addJournalLine, addTopicDecision } = require("./lib/wiki-io.cjs
 const { canonicalRef, extractClosingIssues, extractGithubRefs, normalizeRepository, refKey } = require("./lib/github.cjs");
 const ai = require("./lib/ai.cjs");
 
-const DEFAULT_REPOSITORY = "verndale/ui-design-brain";
+const DEFAULT_REPOSITORY = "JFusco/ui-design-brain";
 
 function parseArgs(argv) {
   const a = { repo: path.resolve(__dirname, "..", "..") };

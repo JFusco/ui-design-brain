@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 157,
-    "edges": 414,
+    "nodes": 160,
+    "edges": 426,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 82,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 49,
-      "wiki-plan": 12,
+      "wiki-journal": 51,
+      "wiki-plan": 13,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 82,
       "covers": 5,
-      "links-to": 132,
-      "plan": 9,
+      "links-to": 139,
+      "plan": 11,
       "references": 4,
       "see-also": 118,
-      "topic": 64
+      "topic": 67
     }
   },
   "nodes": [
@@ -34,7 +34,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 9911,
+      "bytes": 9901,
       "degree": 4
     },
     {
@@ -58,10 +58,19 @@
       "topics": [],
       "aliases": [],
       "prs": [],
-      "issues": [],
-      "githubRefs": [],
-      "bytes": 6798,
-      "degree": 2
+      "issues": [
+        "83"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 83,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/83"
+        }
+      ],
+      "bytes": 9847,
+      "degree": 3
     },
     {
       "id": "README.md",
@@ -73,7 +82,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 2229,
+      "bytes": 3546,
       "degree": 1
     },
     {
@@ -1417,7 +1426,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 2748,
+      "bytes": 2747,
       "degree": 3
     },
     {
@@ -1430,8 +1439,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 15080,
-      "degree": 55
+      "bytes": 15537,
+      "degree": 57
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2830,6 +2839,77 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-11-02-personal-ownership-migration.md",
+      "label": "Prepare personal ownership and public distribution",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [
+        "82"
+      ],
+      "issues": [
+        "81"
+      ],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "jfusco/ui-design-brain",
+          "number": 82,
+          "url": "https://github.com/jfusco/ui-design-brain/pull/82"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 81,
+          "url": "https://github.com/verndale/ui-design-brain/issues/81"
+        }
+      ],
+      "bytes": 2170,
+      "degree": 4
+    },
+    {
+      "id": "wiki/journal/2026-11-03-verify-personal-transfer.md",
+      "label": "Verify the personal repository transfer",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [
+        "82"
+      ],
+      "issues": [
+        "81",
+        "83"
+      ],
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "jfusco/ui-design-brain",
+          "number": 82,
+          "url": "https://github.com/jfusco/ui-design-brain/pull/82"
+        },
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 81,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/81"
+        },
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 83,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/83"
+        }
+      ],
+      "bytes": 1890,
+      "degree": 4
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -2839,7 +2919,7 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 8777,
+      "bytes": 8769,
       "degree": 3
     },
     {
@@ -3157,6 +3237,45 @@
       "degree": 6
     },
     {
+      "id": "wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md",
+      "label": "Transfer UI Design Brain with its history intact",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [
+        "82"
+      ],
+      "issues": [
+        "81",
+        "83"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 81,
+          "url": "https://github.com/verndale/ui-design-brain/issues/81"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "jfusco/ui-design-brain",
+          "number": 82,
+          "url": "https://github.com/jfusco/ui-design-brain/pull/82"
+        },
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 83,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/83"
+        }
+      ],
+      "bytes": 4933,
+      "degree": 5
+    },
+    {
       "id": "wiki/plans/INDEX.md",
       "label": "Plan Audit",
       "type": "wiki-index",
@@ -3173,11 +3292,14 @@
         "41",
         "44",
         "46",
-        "68"
+        "68",
+        "82"
       ],
       "issues": [
         "47",
-        "43"
+        "43",
+        "81",
+        "83"
       ],
       "githubRefs": [
         {
@@ -3251,10 +3373,28 @@
           "repository": "verndale/ui-design-brain",
           "number": 68,
           "url": "https://github.com/verndale/ui-design-brain/pull/68"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 81,
+          "url": "https://github.com/verndale/ui-design-brain/issues/81"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "jfusco/ui-design-brain",
+          "number": 82,
+          "url": "https://github.com/jfusco/ui-design-brain/pull/82"
+        },
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 83,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/83"
         }
       ],
-      "bytes": 4459,
-      "degree": 14
+      "bytes": 4882,
+      "degree": 15
     },
     {
       "id": "wiki/topics/agents-guidance.md",
@@ -3517,8 +3657,12 @@
         "offline sync",
         "exact package pin"
       ],
-      "prs": [],
+      "prs": [
+        "82"
+      ],
       "issues": [
+        "83",
+        "81",
         "78",
         "67",
         "62",
@@ -3527,6 +3671,24 @@
         "47"
       ],
       "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 83,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/83"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "jfusco/ui-design-brain",
+          "number": 82,
+          "url": "https://github.com/jfusco/ui-design-brain/pull/82"
+        },
+        {
+          "kind": "issue",
+          "repository": "verndale/ui-design-brain",
+          "number": 81,
+          "url": "https://github.com/verndale/ui-design-brain/issues/81"
+        },
         {
           "kind": "issue",
           "repository": "verndale/ui-design-brain",
@@ -3564,8 +3726,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 7333,
-      "degree": 26
+      "bytes": 7663,
+      "degree": 33
     }
   ],
   "edges": [
@@ -4370,6 +4532,20 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-11-02-personal-ownership-migration.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-11-03-verify-personal-transfer.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -4497,6 +4673,13 @@
     {
       "source": "wiki/plans/INDEX.md",
       "target": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -4853,6 +5036,13 @@
     },
     {
       "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "CONTRIBUTING.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/journal/2026-08-30-deterministic-ui-design-brain-projections.md",
       "type": "links-to",
       "count": 1,
@@ -4895,6 +5085,20 @@
     },
     {
       "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-11-02-personal-ownership-migration.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-11-03-verify-personal-transfer.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
       "type": "links-to",
       "count": 1,
@@ -4924,6 +5128,13 @@
     {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -4971,6 +5182,16 @@
     {
       "source": "wiki/journal/2026-09-28-git-delivery-standard.md",
       "target": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
+      "type": "plan"
+    },
+    {
+      "source": "wiki/journal/2026-11-02-personal-ownership-migration.md",
+      "target": "wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md",
+      "type": "plan"
+    },
+    {
+      "source": "wiki/journal/2026-11-03-verify-personal-transfer.md",
+      "target": "wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md",
       "type": "plan"
     },
     {
@@ -5957,6 +6178,16 @@
       "type": "topic"
     },
     {
+      "source": "wiki/journal/2026-11-02-personal-ownership-migration.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-11-03-verify-personal-transfer.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
       "source": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
@@ -6018,6 +6249,11 @@
     },
     {
       "source": "wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     }

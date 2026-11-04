@@ -4,7 +4,7 @@ Guidance for any AI coding agent (Claude Code, Codex, Cursor, Copilot, …) work
 
 ## What this repo is
 
-`@verndale/ui-design-brain` is the single source of truth for **one** agent skill — a catalog of canonical UI component patterns. All catalog content lives under `skills/ui-design-brain/` and nowhere else:
+`ui-design-brain` is the single source of truth for **one** agent skill — a catalog of canonical UI component patterns. All catalog content lives under `skills/ui-design-brain/` and nowhere else:
 
 - `SKILL.md` — skill entry point (frontmatter + resolve-and-load workflow)
 - `index.md` — flat list of all canonical component names (first hop)

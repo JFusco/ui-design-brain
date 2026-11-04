@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 
-// Knowledge-graph builder for @verndale/ui-design-brain. Walks the repo and emits a
+// Knowledge-graph builder for ui-design-brain. Walks the repo and emits a
 // typed node/edge graph to scripts/graph/data/graph.json for the interactive viewer
 // (scripts/graph/viewer/).
 //
