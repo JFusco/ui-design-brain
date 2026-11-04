@@ -18,6 +18,8 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-11-03 — Add an explicit manual, read-only BOT_TOKEN audit to Wiki integrity before restoring personal-account writers. Verify repository-owner identity and push access without exposing credentials; retain the existing review branches and disabled AI ([JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84), [journal](../journal/2026-11-03-restore-personal-wiki-writers.md)).
+
 - 2026-09-29 — fix(ci): gate Release on unreleased history ([verndale/ui-design-brain PR #79](https://github.com/verndale/ui-design-brain/pull/79))
 - 2026-09-29 — fix(ci): preserve main Quality release handoff ([verndale/ui-design-brain PR #76](https://github.com/verndale/ui-design-brain/pull/76))
 - 2026-09-29 — ci(git): scope wiki quality and validate PR bodies ([verndale/ui-design-brain PR #73](https://github.com/verndale/ui-design-brain/pull/73))

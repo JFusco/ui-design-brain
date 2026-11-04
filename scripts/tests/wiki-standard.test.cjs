@@ -303,7 +303,11 @@ test("the five workflow identities and focused commands remain stable", () => {
   assert.equal((check.match(/pnpm run wiki:check/g) || []).length, 1);
   assert.match(check, /pull_request:\n {4}branches: \[main\]/);
   assert.match(check, /push:\n {4}branches: \[main\]/);
-  assert.match(check, /workflow_dispatch: \{\}/);
+  assert.match(check, /workflow_dispatch:[\s\S]*verify_bot:/);
+  assert.match(check, /if: github\.event_name == 'workflow_dispatch' && inputs\.verify_bot/);
+  assert.match(check, /EXPECTED_OWNER: \$\{\{ github\.repository_owner \}\}/);
+  assert.ok(check.includes('test "${login,,}" = "${EXPECTED_OWNER,,}"'));
+  assert.ok(check.includes(".permissions.push == true"));
 });
 
 test("writers enforce replay, pagination, bot auth, race guards, and review branches", () => {

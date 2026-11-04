@@ -31,6 +31,8 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 ## Journal
 
+- 2026-11-03 — [Restore personal wiki writers](journal/2026-11-03-restore-personal-wiki-writers.md) — audit inherited credentials before restoring reviewed wiki automation.
+
 - 2026-11-03 — [Publish the first personal npm package](journal/2026-11-03-first-personal-npm-release.md) — verified unscoped registry delivery, passkey-approved OIDC, and bootstrap removal.
 
 - 2026-11-03 — [Verify the personal repository transfer](journal/2026-11-03-verify-personal-transfer.md) — confirm preserved history and public access, update origin, and track npm publication separately.

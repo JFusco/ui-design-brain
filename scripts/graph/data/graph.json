@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 161,
-    "edges": 430,
+    "nodes": 162,
+    "edges": 434,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 82,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 52,
+      "wiki-journal": 53,
       "wiki-plan": 13,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 82,
       "covers": 5,
-      "links-to": 141,
+      "links-to": 143,
       "plan": 12,
       "references": 4,
       "see-also": 118,
-      "topic": 68
+      "topic": 70
     }
   },
   "nodes": [
@@ -1439,8 +1439,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 15733,
-      "degree": 58
+      "bytes": 15911,
+      "degree": 59
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2902,6 +2902,31 @@
       "degree": 4
     },
     {
+      "id": "wiki/journal/2026-11-03-restore-personal-wiki-writers.md",
+      "label": "Restore personal wiki writers",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "graph-wiki-subsystem",
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "84"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 84,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/84"
+        }
+      ],
+      "bytes": 1140,
+      "degree": 4
+    },
+    {
       "id": "wiki/journal/2026-11-03-verify-personal-transfer.md",
       "label": "Verify the personal repository transfer",
       "type": "wiki-journal",
@@ -3523,12 +3548,19 @@
         "9"
       ],
       "issues": [
+        "84",
         "67",
         "43",
         "40",
         "8"
       ],
       "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 84,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/84"
+        },
         {
           "kind": "pull-request",
           "repository": "verndale/ui-design-brain",
@@ -3668,8 +3700,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/8"
         }
       ],
-      "bytes": 7704,
-      "degree": 22
+      "bytes": 8122,
+      "degree": 24
     },
     {
       "id": "wiki/topics/packaging-and-distribution.md",
@@ -3765,7 +3797,7 @@
         }
       ],
       "bytes": 8352,
-      "degree": 35
+      "degree": 36
     }
   ],
   "edges": [
@@ -4584,6 +4616,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-11-03-restore-personal-wiki-writers.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/journal/2026-11-03-verify-personal-transfer.md",
       "type": "links-to",
       "count": 1,
@@ -5042,6 +5081,13 @@
       "target": "wiki/journal/2026-09-28-git-delivery-standard.md",
       "type": "links-to",
       "count": 2,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/graph-wiki-subsystem.md",
+      "target": "wiki/journal/2026-11-03-restore-personal-wiki-writers.md",
+      "type": "links-to",
+      "count": 1,
       "anchors": []
     },
     {
@@ -6241,6 +6287,16 @@
     },
     {
       "source": "wiki/journal/2026-11-03-first-personal-npm-release.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-11-03-restore-personal-wiki-writers.md",
+      "target": "wiki/topics/graph-wiki-subsystem.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-11-03-restore-personal-wiki-writers.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     },
