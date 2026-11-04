@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 163,
-    "edges": 439,
+    "nodes": 164,
+    "edges": 443,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 82,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 54,
+      "wiki-journal": 55,
       "wiki-plan": 13,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 82,
       "covers": 5,
-      "links-to": 146,
+      "links-to": 149,
       "plan": 13,
       "references": 4,
       "see-also": 118,
-      "topic": 71
+      "topic": 72
     }
   },
   "nodes": [
@@ -1439,8 +1439,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 16111,
-      "degree": 60
+      "bytes": 16320,
+      "degree": 61
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -2939,7 +2939,7 @@
         }
       ],
       "bytes": 1822,
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "wiki/journal/2026-11-03-restore-personal-wiki-writers.md",
@@ -3018,6 +3018,30 @@
         }
       ],
       "bytes": 1890,
+      "degree": 4
+    },
+    {
+      "id": "wiki/journal/2026-11-04-wait-for-release-tarball.md",
+      "label": "Wait for the release tarball before notifying Renovate",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "92"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 92,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/92"
+        }
+      ],
+      "bytes": 1338,
       "degree": 4
     },
     {
@@ -3844,6 +3868,7 @@
       "issues": [
         "84",
         "89",
+        "92",
         "83",
         "81",
         "78",
@@ -3865,6 +3890,12 @@
           "repository": "jfusco/ui-design-brain",
           "number": 89,
           "url": "https://github.com/jfusco/ui-design-brain/issues/89"
+        },
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 92,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/92"
         },
         {
           "kind": "issue",
@@ -3921,8 +3952,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 9149,
-      "degree": 39
+      "bytes": 9429,
+      "degree": 41
     }
   ],
   "edges": [
@@ -4762,6 +4793,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-11-04-wait-for-release-tarball.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -4791,6 +4829,13 @@
     {
       "source": "wiki/INDEX.md",
       "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/journal/2026-11-04-wait-for-release-tarball.md",
+      "target": "wiki/journal/2026-11-03-notify-renovate-runner.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -5337,6 +5382,13 @@
     {
       "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/journal/2026-11-03-verify-personal-transfer.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-11-04-wait-for-release-tarball.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -6458,6 +6510,11 @@
     },
     {
       "source": "wiki/journal/2026-11-03-verify-personal-transfer.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/journal/2026-11-04-wait-for-release-tarball.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     },
