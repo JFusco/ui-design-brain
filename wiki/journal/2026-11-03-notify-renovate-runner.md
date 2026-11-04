@@ -2,9 +2,9 @@
 date: 2026-11-03
 topics: [packaging-and-distribution]
 plan: none
-pr: pending
+pr: https://github.com/jfusco/ui-design-brain/pull/90
 issue: https://github.com/JFusco/ui-design-brain/issues/89
-issues: ["https://github.com/JFusco/ui-design-brain/issues/89"]
+issues: ["https://github.com/jfusco/ui-design-brain/issues/89"]
 ---
 # Notify the Renovate runner after each release
 
