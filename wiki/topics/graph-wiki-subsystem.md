@@ -20,6 +20,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-11-04 — ci(wiki): restore verified personal wiki automation ([jfusco/ui-design-brain PR #87](https://github.com/jfusco/ui-design-brain/pull/87))
 - 2026-11-03 — The personal BOT_TOKEN passed the read-only audit, then both writers were enabled. The merge writer created reviewed PR #86 from PR #85; issue refresh completed without changes. Both retained their existing branch/PR model and optional AI stayed disabled ([JFusco/ui-design-brain PR #86](https://github.com/JFusco/ui-design-brain/pull/86), [journal](../journal/2026-11-03-restore-personal-wiki-writers.md)).
 
 - 2026-11-03 — Add an explicit manual, read-only BOT_TOKEN audit to Wiki integrity before restoring personal-account writers. Verify repository-owner identity and push access without exposing credentials; retain the existing review branches and disabled AI ([JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84), [journal](../journal/2026-11-03-restore-personal-wiki-writers.md)).

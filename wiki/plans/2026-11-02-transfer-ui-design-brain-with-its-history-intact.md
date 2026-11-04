@@ -12,6 +12,7 @@ evidence:
   - "https://github.com/JFusco/ui-design-brain/actions/runs/41748857832"
   - "https://github.com/JFusco/ui-design-brain/actions/runs/41748907159"
   - "jfusco/ui-design-brain PR #85 https://github.com/jfusco/ui-design-brain/pull/85 (merged 2026-11-04)"
+  - "jfusco/ui-design-brain PR #87 https://github.com/jfusco/ui-design-brain/pull/87 (merged 2026-11-04)"
 source_tool: file
 source: "/Users/joe.fusco/Projects/.ui-design-brain-migration-20261102-222222/approved-plan.md"
 topics: [packaging-and-distribution]
