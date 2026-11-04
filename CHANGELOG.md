@@ -1,3 +1,5 @@
+## [1.18.6](https://github.com/JFusco/ui-design-brain/compare/v1.18.5...v1.18.6) (2026-11-04)
+
 ## [1.18.5](https://github.com/JFusco/ui-design-brain/compare/v1.18.4...v1.18.5) (2026-11-04)
 
 ## [1.18.4](https://github.com/JFusco/ui-design-brain/compare/v1.18.3...v1.18.4) (2026-11-04)
