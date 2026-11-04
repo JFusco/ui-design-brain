@@ -75,6 +75,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Preserve tested main release handoff](../../wiki/journal/2026-09-29-preserve-release-handoff.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Prepare personal ownership and public distribution](../../wiki/journal/2026-11-02-personal-ownership-migration.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Publish the first personal npm package](../../wiki/journal/2026-11-03-first-personal-npm-release.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
+- [Notify the Renovate runner after each release](../../wiki/journal/2026-11-03-notify-renovate-runner.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Restore personal wiki writers](../../wiki/journal/2026-11-03-restore-personal-wiki-writers.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
 - [Restore personal wiki writers](../../wiki/journal/2026-11-03-restore-personal-wiki-writers.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Verify the personal repository transfer](../../wiki/journal/2026-11-03-verify-personal-transfer.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)

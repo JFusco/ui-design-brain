@@ -36,6 +36,8 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
 
 ## Decisions
 
+- 2026-11-03 — Notify the central Pin Courier runner after each publication instead of waiting for its six-hour schedule; wait for the npm registry first because Renovate reads the registry document ([JFusco/ui-design-brain issue #89](https://github.com/JFusco/ui-design-brain/issues/89), [journal](../journal/2026-11-03-notify-renovate-runner.md)).
+
 - 2026-11-03 — Complete personal automation after the OIDC-only `1.18.4` release: audit BOT_TOKEN as JFusco, verify a generated reconciliation PR and successful issue refresh, and restore both wiki writers while retaining disabled AI ([JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84), [journal](../journal/2026-11-03-restore-personal-wiki-writers.md)).
 
 - 2026-11-03 — Establish the unscoped npm package with a temporary personal credential, verify the registry artifact independently of workflow status, then configure OIDC through passkey approval and remove the bootstrap secret and workflow reference. Keep wiki-bot restoration in its own issue while the closeout release proves OIDC ([JFusco/ui-design-brain issue #83](https://github.com/JFusco/ui-design-brain/issues/83), [JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84), [release v1.18.3](https://github.com/JFusco/ui-design-brain/releases/tag/v1.18.3), [journal](../journal/2026-11-03-first-personal-npm-release.md)).
