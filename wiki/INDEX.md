@@ -31,6 +31,8 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 ## Journal
 
+- 2026-11-04 — [Wait for the release tarball before notifying Renovate](journal/2026-11-04-wait-for-release-tarball.md) — require the npm tarball, not only the packument, before the Pin Courier dispatch.
+
 - 2026-11-03 — [Notify the Renovate runner after each release](journal/2026-11-03-notify-renovate-runner.md) — wait for npm, then dispatch Pin Courier so consumers get update PRs within minutes.
 
 - 2026-11-03 — [Restore personal wiki writers](journal/2026-11-03-restore-personal-wiki-writers.md) — audit inherited credentials before restoring reviewed wiki automation.

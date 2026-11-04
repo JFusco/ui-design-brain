@@ -37,6 +37,7 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
 ## Decisions
 
 - 2026-11-03 — Notify the central Pin Courier runner after each publication instead of waiting for its six-hour schedule; wait for the npm registry first because Renovate reads the registry document ([JFusco/ui-design-brain issue #89](https://github.com/JFusco/ui-design-brain/issues/89), [journal](../journal/2026-11-03-notify-renovate-runner.md)).
+- 2026-11-04 — Wait for the version's tarball as well as the packument, because consumers install the tarball and it can lag ([JFusco/ui-design-brain issue #92](https://github.com/JFusco/ui-design-brain/issues/92), [journal](../journal/2026-11-04-wait-for-release-tarball.md)).
 
 - 2026-11-03 — Complete personal automation after the OIDC-only `1.18.4` release: audit BOT_TOKEN as JFusco, verify a generated reconciliation PR and successful issue refresh, and restore both wiki writers while retaining disabled AI ([JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84), [journal](../journal/2026-11-03-restore-personal-wiki-writers.md)).
 
