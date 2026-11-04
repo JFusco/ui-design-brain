@@ -11,7 +11,7 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
 - The source is public at `JFusco/ui-design-brain`. The owner completed the
   transfer; repository ID, original branches/tags, releases, and issue/PR
   identities were verified. Historical GitHub URLs redirect to the new owner.
-- `ui-design-brain@1.18.3` is publicly published under npm account `jfusco` with
+- `ui-design-brain@1.18.4` is publicly published under npm account `jfusco` with
   GitHub provenance. A clean exact-version install, projection, no-op repeat
   sync, check, and all four public schema URLs were verified. Existing scoped
   versions remain available; no old-package deprecation is claimed.
@@ -27,14 +27,16 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
   successful main-push Quality, and packed-consumer verification. npm trusts
   `JFusco/ui-design-brain` and `release.yml`; the bootstrap GitHub secret is
   removed and the workflow uses OIDC without an npm token. The closeout release
-  verifies this token-free path in issue #83.
+  verified this token-free path with release `1.18.4` in issue #83.
 - Local origin points at `git@github.com:JFusco/ui-design-brain.git`. Release,
-  Quality, and wiki-integrity checks are active. Both wiki writers remain paused
-  pending personal bot credential verification in
+  Quality, and wiki-integrity checks are active. Both wiki writers are active
+  with personal BOT_TOKEN ownership, branch pushes, and PR creation verified in
   [JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84).
   Optional wiki AI is disabled. See [Contributing](../../CONTRIBUTING.md).
 
 ## Decisions
+
+- 2026-11-03 — Complete personal automation after the OIDC-only `1.18.4` release: audit BOT_TOKEN as JFusco, verify a generated reconciliation PR and successful issue refresh, and restore both wiki writers while retaining disabled AI ([JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84), [journal](../journal/2026-11-03-restore-personal-wiki-writers.md)).
 
 - 2026-11-03 — Establish the unscoped npm package with a temporary personal credential, verify the registry artifact independently of workflow status, then configure OIDC through passkey approval and remove the bootstrap secret and workflow reference. Keep wiki-bot restoration in its own issue while the closeout release proves OIDC ([JFusco/ui-design-brain issue #83](https://github.com/JFusco/ui-design-brain/issues/83), [JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84), [release v1.18.3](https://github.com/JFusco/ui-design-brain/releases/tag/v1.18.3), [journal](../journal/2026-11-03-first-personal-npm-release.md)).
 

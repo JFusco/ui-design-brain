@@ -102,15 +102,18 @@ Release is active with `NPM_RELEASE_ENABLED=true`. npm trusts GitHub repository
 `JFusco/ui-design-brain` and workflow `release.yml`; publishing requires a public
 repository and successful Quality on a main push. The temporary bootstrap
 GitHub secret was removed, and the workflow contains no npm token reference.
-Publication closeout in issue #83 verifies this OIDC-only path through the next
-normal release. Disable Release or set `NPM_RELEASE_ENABLED=false` to pause
-publication; do not manually tag or publish.
+Release `1.18.4` verified this OIDC-only path in issue #83. Disable Release or
+set `NPM_RELEASE_ENABLED=false` to pause publication; do not manually tag or
+publish.
 
-Both wiki writers remain paused while the transferred bot credential is verified
-in [issue #84](https://github.com/JFusco/ui-design-brain/issues/84). Quality and
-wiki integrity remain active, and optional wiki AI remains disabled. Verify or
-replace the bot credential before restoring the writer workflows; preserve the
-existing review-PR model and unrelated Renovate configuration.
+Both wiki writers are active with BOT_TOKEN verified as belonging to `JFusco`
+and able to push review branches and create PRs. Reconciliation of merged PR
+#85 produced reviewed PR #86; the issue-state refresh succeeded with no changes.
+Receipts are recorded in [issue #84](https://github.com/JFusco/ui-design-brain/issues/84).
+To audit a replacement token before restoring writers, manually run Wiki
+integrity with `verify_bot=true`; the audit only reads account and repository
+access. Preserve the review-PR model and unrelated Renovate configuration.
+Optional wiki AI remains disabled.
 
 Deprecating `@verndale/ui-design-brain` and migrating other repositories are
 separate follow-ups. Existing immutable package versions remain available.

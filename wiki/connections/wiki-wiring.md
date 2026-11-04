@@ -17,6 +17,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Issue-linked Git delivery and release after Quality](../../wiki/journal/2026-09-28-git-delivery-standard.md) → [Standardize Git delivery in ui-design-brain](../../wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md)
 - [Prepare personal ownership and public distribution](../../wiki/journal/2026-11-02-personal-ownership-migration.md) → [Transfer UI Design Brain with its history intact](../../wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)
 - [Publish the first personal npm package](../../wiki/journal/2026-11-03-first-personal-npm-release.md) → [Transfer UI Design Brain with its history intact](../../wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)
+- [Restore personal wiki writers](../../wiki/journal/2026-11-03-restore-personal-wiki-writers.md) → [Transfer UI Design Brain with its history intact](../../wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)
 - [Verify the personal repository transfer](../../wiki/journal/2026-11-03-verify-personal-transfer.md) → [Transfer UI Design Brain with its history intact](../../wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)
 
 ## Page → topic
