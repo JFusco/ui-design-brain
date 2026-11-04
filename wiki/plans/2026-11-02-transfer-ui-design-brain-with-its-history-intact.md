@@ -1,16 +1,21 @@
 ---
-status: partial
+status: implemented
 executed: 2026-11-02
 date: 2026-11-02
 evidence:
   - "https://github.com/verndale/ui-design-brain/issues/81"
   - "https://github.com/JFusco/ui-design-brain/pull/82"
   - "https://github.com/JFusco/ui-design-brain/issues/83"
+  - "https://github.com/JFusco/ui-design-brain/releases/tag/v1.18.4"
+  - "https://github.com/JFusco/ui-design-brain/issues/84"
+  - "https://github.com/JFusco/ui-design-brain/pull/86"
+  - "https://github.com/JFusco/ui-design-brain/actions/runs/41748857832"
+  - "https://github.com/JFusco/ui-design-brain/actions/runs/41748907159"
   - "jfusco/ui-design-brain PR #85 https://github.com/jfusco/ui-design-brain/pull/85 (merged 2026-11-04)"
 source_tool: file
 source: "/Users/joe.fusco/Projects/.ui-design-brain-migration-20261102-222222/approved-plan.md"
 topics: [packaging-and-distribution]
-audit_note: "Public transfer and first unscoped npm release verified. OIDC configured and bootstrap GitHub secret removed; issue #83 verifies the closeout release. Plan remains partial pending wiki writer restoration in issue #84."
+audit_note: "Public transfer, preserved history, personal checkout, unscoped npm delivery, OIDC-only 1.18.4 publication, and bootstrap secret removal verified. Personal BOT_TOKEN ownership/access audited; both writers restored and exercised successfully, with generated PR #86 reviewed and merged."
 ---
 # Transfer UI Design Brain with its history intact
 

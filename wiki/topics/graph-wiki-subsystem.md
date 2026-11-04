@@ -7,6 +7,8 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Current state
 
+- Both wiki writers are active under the verified JFusco credential. Wiki integrity offers an explicit `verify_bot` manual audit; normal push/PR checks receive no bot credential. Optional wiki AI remains disabled.
+
 - `pnpm graph:build` derives `scripts/graph/data/graph.json` from the catalog + root docs + wiki; `pnpm graph:view` renders it on loopback with a vendored Sigma.js stack; `pnpm graph:check` byte-compares a fresh rebuild and gates freshness without writes.
 - Node types: `root-doc`, `skill`, `skill-index`, `manifest`, `ui-pattern`, `wiki-*`. Edges: `catalogs`, `see-also`, `references`, `links-to`, `topic`, `plan`, `covers`. The `catalogs` edge (manifest → each pattern) doubles as the catalog integrity gate.
 - The manifest is required and validated before generated writes. Topic, plan, and `covers` declarations remain in the graph when unresolved so one shared dangling-edge predicate fails loudly. Malformed plan paths also dangle instead of being discarded; `none`/`pending` sentinels and normalized `plans/`/`wiki/plans/` paths remain valid.
@@ -17,6 +19,10 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 - Fence-aware evidence and Markdown-link extraction track delimiter length, and issue refresh refuses symlinked pages or wiki roots. Reconciliation validates the PR URL, repository, number, paths, and commits before writes; writer branches are fetched for lease-safe updates and closed unmerged review PRs are reopened. CLI and browser routing share byte weighting, URL suffix normalization, explicit authority, and fail-closed policy checks.
 
 ## Decisions
+
+- 2026-11-03 — The personal BOT_TOKEN passed the read-only audit, then both writers were enabled. The merge writer created reviewed PR #86 from PR #85; issue refresh completed without changes. Both retained their existing branch/PR model and optional AI stayed disabled ([JFusco/ui-design-brain PR #86](https://github.com/JFusco/ui-design-brain/pull/86), [journal](../journal/2026-11-03-restore-personal-wiki-writers.md)).
+
+- 2026-11-03 — Add an explicit manual, read-only BOT_TOKEN audit to Wiki integrity before restoring personal-account writers. Verify repository-owner identity and push access without exposing credentials; retain the existing review branches and disabled AI ([JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84), [journal](../journal/2026-11-03-restore-personal-wiki-writers.md)).
 
 - 2026-09-29 — fix(ci): gate Release on unreleased history ([verndale/ui-design-brain PR #79](https://github.com/verndale/ui-design-brain/pull/79))
 - 2026-09-29 — fix(ci): preserve main Quality release handoff ([verndale/ui-design-brain PR #76](https://github.com/verndale/ui-design-brain/pull/76))

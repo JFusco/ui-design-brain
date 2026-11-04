@@ -5,7 +5,12 @@ on:
     branches: [main]
   push:
     branches: [main]
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      verify_bot:
+        description: "Verify personal BOT_TOKEN ownership and repository access without writes"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -51,3 +56,22 @@ jobs:
 
       - name: Validate wiki and graph
         run: pnpm run wiki:check
+
+  verify-bot:
+    if: github.event_name == 'workflow_dispatch' && inputs.verify_bot
+    runs-on: ubuntu-latest
+    permissions: {}
+    env:
+      GH_TOKEN: ${{ secrets.BOT_TOKEN }}
+      EXPECTED_OWNER: ${{ github.repository_owner }}
+    steps:
+      - name: Verify bot identity and repository access
+        run: |
+          test -n "$GH_TOKEN" || { echo '::error::BOT_TOKEN is required'; exit 1; }
+          login="$(gh api user --jq '.login')"
+          test "${login,,}" = "${EXPECTED_OWNER,,}" \
+            || { echo "::error::BOT_TOKEN belongs to $login, expected $EXPECTED_OWNER"; exit 1; }
+          gh api "repos/$GITHUB_REPOSITORY" --jq '.permissions.push == true' | grep -qx true \
+            || { echo '::error::BOT_TOKEN lacks repository push access'; exit 1; }
+          echo "Verified BOT_TOKEN owner $login and push access to $GITHUB_REPOSITORY."
+          echo "BOT_TOKEN belongs to $login and has push access to $GITHUB_REPOSITORY. No writes performed." >> "$GITHUB_STEP_SUMMARY"
