@@ -1,11 +1,13 @@
 {
   "name": "ui-design-brain",
-  "version": "1.18.2",
+  "version": "1.18.3",
   "private": false,
   "description": "Versioned catalog of production-grade UI component patterns (markdown + manifest) for AI-assisted product delivery, distributed as an agent skill.",
   "license": "MIT",
   "author": "Joe Fusco",
-  "contributors": ["Verndale"],
+  "contributors": [
+    "Verndale"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JFusco/ui-design-brain.git"

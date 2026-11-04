@@ -1,3 +1,10 @@
+## [1.18.3](https://github.com/JFusco/ui-design-brain/compare/v1.18.2...v1.18.3) (2026-11-04)
+
+### Bug Fixes
+
+* **ci:** gate Release on unreleased history ([c9d1915](https://github.com/JFusco/ui-design-brain/commit/c9d191570a089403859554073964adfef1785930)), closes [#78](https://github.com/JFusco/ui-design-brain/issues/78)
+* **ci:** preserve main Quality release handoff ([fb18f6e](https://github.com/JFusco/ui-design-brain/commit/fb18f6e6e81de5aea16580a0eec1e4ef02195fe7))
+
 ## [1.18.2](https://github.com/verndale/ui-design-brain/compare/v1.18.1...v1.18.2) (2026-09-29)
 
 ## [1.18.1](https://github.com/verndale/ui-design-brain/compare/v1.18.0...v1.18.1) (2026-09-17)
