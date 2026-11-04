@@ -6,6 +6,7 @@ evidence:
   - "https://github.com/verndale/ui-design-brain/issues/81"
   - "https://github.com/JFusco/ui-design-brain/pull/82"
   - "https://github.com/JFusco/ui-design-brain/issues/83"
+  - "jfusco/ui-design-brain PR #85 https://github.com/jfusco/ui-design-brain/pull/85 (merged 2026-11-04)"
 source_tool: file
 source: "/Users/joe.fusco/Projects/.ui-design-brain-migration-20261102-222222/approved-plan.md"
 topics: [packaging-and-distribution]
