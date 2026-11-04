@@ -2,8 +2,9 @@
 date: 2026-11-03
 topics: [packaging-and-distribution]
 plan: plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md
-pr: pending
+pr: https://github.com/jfusco/ui-design-brain/pull/85
 issue: https://github.com/JFusco/ui-design-brain/issues/83
+issues: ["https://github.com/jfusco/ui-design-brain/issues/83"]
 ---
 # Publish the first personal npm package
 
