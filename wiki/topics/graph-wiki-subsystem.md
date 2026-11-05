@@ -20,6 +20,7 @@ The deterministic knowledge graph + Sigma.js viewer and the context wiki (journa
 
 ## Decisions
 
+- 2026-11-05 — ci(commitlint): refuse drafts and skip wiki releases ([jfusco/ui-design-brain PR #99](https://github.com/jfusco/ui-design-brain/pull/99))
 - 2026-11-04 — ci(wiki): restore verified personal wiki automation ([jfusco/ui-design-brain PR #87](https://github.com/jfusco/ui-design-brain/pull/87))
 - 2026-11-03 — The personal BOT_TOKEN passed the read-only audit, then both writers were enabled. The merge writer created reviewed PR #86 from PR #85; issue refresh completed without changes. Both retained their existing branch/PR model and optional AI stayed disabled ([JFusco/ui-design-brain PR #86](https://github.com/JFusco/ui-design-brain/pull/86), [journal](../journal/2026-11-03-restore-personal-wiki-writers.md)).
 
