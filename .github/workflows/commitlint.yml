@@ -36,19 +36,22 @@ jobs:
         run: corepack enable && corepack install
       - name: Install locked dependencies
         run: pnpm install --frozen-lockfile
+      - name: Identify trusted Pin Courier PR
+        id: pin_courier
+        run: node scripts/is-pin-courier-pr.cjs
       - name: Validate PR body
-        if: ${{ !startsWith(github.event.pull_request.head.ref, 'bot/') }}
+        if: ${{ !startsWith(github.event.pull_request.head.ref, 'bot/') && steps.pin_courier.outputs.trusted != 'true' }}
         env:
           PR_BODY: ${{ github.event.pull_request.body }}
         run: pnpm run lint:pr
 
       - name: Lint PR title
-        if: github.event_name == 'pull_request'
+        if: ${{ github.event_name == 'pull_request' && steps.pin_courier.outputs.trusted != 'true' }}
         env:
           PR_TITLE: ${{ github.event.pull_request.title }}
         run: printf '%s\n' "$PR_TITLE" | pnpm run lint:commit --verbose
       - name: Lint immutable PR commit range
-        if: github.event_name == 'pull_request'
+        if: ${{ github.event_name == 'pull_request' && steps.pin_courier.outputs.trusted != 'true' }}
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
