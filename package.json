@@ -1,6 +1,6 @@
 {
   "name": "ui-design-brain",
-  "version": "1.18.7",
+  "version": "1.18.8",
   "private": false,
   "description": "Versioned catalog of production-grade UI component patterns (markdown + manifest) for AI-assisted product delivery, distributed as an agent skill.",
   "license": "MIT",
