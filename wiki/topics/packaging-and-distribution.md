@@ -36,6 +36,7 @@ How `ui-design-brain` became a standalone catalog and how consumers receive an e
 
 ## Decisions
 
+- 2026-11-05 — Adopted the shared Renovate `maintenance` preset for devDependencies and GitHub Actions on Mondays, with a Pin Courier App-identity commitlint exemption and `[skip release]` maintenance merges, because nothing else updated this repository's own dependencies ([issue #95](https://github.com/JFusco/ui-design-brain/issues/95), [journal](../journal/2026-11-05-adopt-renovate-maintenance.md)).
 - 2026-11-03 — Notify the central Pin Courier runner after each publication instead of waiting for its six-hour schedule; wait for the npm registry first because Renovate reads the registry document ([JFusco/ui-design-brain issue #89](https://github.com/JFusco/ui-design-brain/issues/89), [journal](../journal/2026-11-03-notify-renovate-runner.md)).
 - 2026-11-04 — Wait for the version's tarball as well as the packument, because consumers install the tarball and it can lag ([JFusco/ui-design-brain issue #92](https://github.com/JFusco/ui-design-brain/issues/92), [journal](../journal/2026-11-04-wait-for-release-tarball.md)).
 
