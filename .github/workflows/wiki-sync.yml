@@ -122,7 +122,7 @@ jobs:
             echo "No wiki changes for ${GITHUB_REPOSITORY}#${PR_NUMBER}."
             exit 0
           fi
-          git commit -m "docs(wiki): reconcile merged PR #${PR_NUMBER}"
+          git commit -m "docs(wiki): reconcile merged PR #${PR_NUMBER} [skip release]"
           git push --force-with-lease origin "$branch"
           echo "changed=true" >> "$GITHUB_OUTPUT"
           echo "branch=${branch}" >> "$GITHUB_OUTPUT"
