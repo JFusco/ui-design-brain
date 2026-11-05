@@ -2,9 +2,9 @@
 date: 2026-11-05
 topics: [packaging-and-distribution]
 plan: none
-pr: pending
+pr: https://github.com/jfusco/ui-design-brain/pull/96
 issue: https://github.com/JFusco/ui-design-brain/issues/95
-issues: [https://github.com/JFusco/ui-design-brain/issues/95]
+issues: ["https://github.com/jfusco/ui-design-brain/issues/95"]
 ---
 # Adopt Renovate dependency maintenance
 
