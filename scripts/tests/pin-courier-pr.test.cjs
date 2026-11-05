@@ -10,14 +10,16 @@ const { isPinCourierPR } = require('../is-pin-courier-pr.cjs');
 const ROOT = path.resolve(__dirname, '../..');
 const repository = 'JFusco/ui-design-brain';
 const pull = () => ({
+  draft: false,
   user: { login: 'pin-courier[bot]', id: 351979519, type: 'Bot' },
   head: { ref: 'renovate/npm-minor-and-patch', repo: { full_name: repository } },
   base: { ref: 'main', repo: { full_name: repository } },
 });
 
-test('only the installed Pin Courier App on its own Renovate branch gets a metadata exception', () => {
+test('only the installed Pin Courier App on its own ready Renovate branch gets a metadata exception', () => {
   assert.equal(isPinCourierPR(pull(), repository), true);
   for (const mutate of [
+    (p) => { p.draft = true; },
     (p) => { p.user.login = 'other[bot]'; },
     (p) => { p.user.id = 1; },
     (p) => { p.user.type = 'User'; },
@@ -34,10 +36,22 @@ test('only the installed Pin Courier App on its own Renovate branch gets a metad
   assert.equal(isPinCourierPR(pull(), ''), false);
 });
 
-test('all metadata lint steps use the App guard while Quality stays enforced', () => {
+test('each metadata lint step carries the exact App guard after the guard step, and Quality stays enforced', () => {
   const lint = fs.readFileSync(path.join(ROOT, '.github/workflows/commitlint.yml'), 'utf8');
-  assert.match(lint, /run: node scripts\/is-pin-courier-pr\.cjs/);
-  assert.equal(lint.match(/steps\.pin_courier\.outputs\.trusted != 'true'/g).length, 3);
+  const guard = "      - name: Identify trusted Pin Courier PR\n        id: pin_courier\n        run: node scripts/is-pin-courier-pr.cjs\n";
+  assert.ok(lint.includes(guard));
+  const steps = [
+    ["Validate PR body", "${{ !startsWith(github.event.pull_request.head.ref, 'bot/') && steps.pin_courier.outputs.trusted != 'true' }}"],
+    ['Lint PR title', "${{ github.event_name == 'pull_request' && steps.pin_courier.outputs.trusted != 'true' }}"],
+    ['Lint immutable PR commit range', "${{ github.event_name == 'pull_request' && steps.pin_courier.outputs.trusted != 'true' }}"],
+  ];
+  for (const [name, condition] of steps) {
+    const step = `      - name: ${name}\n        if: ${condition}\n`;
+    assert.ok(lint.includes(step), `${name} must carry its exact condition`);
+    assert.ok(lint.indexOf(guard) < lint.indexOf(step), `${name} must follow the guard step`);
+  }
+  assert.equal(lint.match(/steps\.pin_courier\.outputs\.trusted != 'true'/g).length, steps.length);
+  assert.match(lint, /types: \[opened, synchronize, reopened, edited, ready_for_review\]/);
   const quality = fs.readFileSync(path.join(ROOT, '.github/workflows/quality.yml'), 'utf8');
   assert.match(quality, /run: pnpm run verify:ci/);
   assert.doesNotMatch(quality, /pin_courier|is-pin-courier/);

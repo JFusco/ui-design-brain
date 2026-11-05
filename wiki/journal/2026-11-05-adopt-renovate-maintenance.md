@@ -16,8 +16,8 @@ issues: ["https://github.com/jfusco/ui-design-brain/issues/95"]
 ## What changed
 
 - `renovate.json` mirrors cms-field-vocabulary's: `github>JFusco/renovate-config:maintenance`, Mondays in America/New_York, exact pins, ten concurrent pull requests, and npm and Actions minor and patch updates grouped into one pull request each.
-- Maintenance commits and titles end with `[skip release]`, so merging one publishes nothing; both packages have no runtime dependencies, and semantic-release excludes such commits. The suffix pushes titles past the 50-character subject rule, so `commitlint.yml` now skips "Validate PR body", "Lint PR title" and "Lint immutable PR commit range" when `scripts/is-pin-courier-pr.cjs` identifies the installed Pin Courier App (login, numeric id, Bot type, same-repository `renovate/` head, `main` base). A branch-prefix exemption was ruled out because any user can push a `renovate/` branch; Quality is unchanged and still runs `verify:ci` on every pull request.
-- `scripts/tests/pin-courier-pr.test.cjs` pins the identity guard and the three conditions.
+- Maintenance commits and titles end with `[skip release]`, so merging one publishes nothing of its own; both packages have no runtime dependencies, and semantic-release excludes such commits. Wiki reconcile commits now carry the same marker ([issue #98](https://github.com/JFusco/ui-design-brain/issues/98)); the one already pending after 1.18.8 ships with the next substantive release. The suffix pushes titles past the 50-character subject rule, so `commitlint.yml` now skips "Validate PR body", "Lint PR title" and "Lint immutable PR commit range" when `scripts/is-pin-courier-pr.cjs` identifies the installed Pin Courier App (login, numeric id, Bot type, same-repository `renovate/` head, `main` base). A branch-prefix exemption was ruled out because any user can push a `renovate/` branch; Quality is unchanged and still runs `verify:ci` on every pull request.
+- `scripts/tests/pin-courier-pr.test.cjs` pins the identity guard (including that a draft is refused), each step's exact condition, the guard step's ordering and the `ready_for_review` trigger.
 
 ## Files
 

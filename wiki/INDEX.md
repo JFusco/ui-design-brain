@@ -31,7 +31,7 @@ Why this repo is the way it is: executed plans, decisions, and change history. R
 
 ## Journal
 
-- 2026-11-05 — [Adopt Renovate dependency maintenance](journal/2026-11-05-adopt-renovate-maintenance.md) — Monday grouped devDependency and Actions updates via the shared maintenance preset; Pin Courier identity, not a branch prefix, exempts PR metadata lint; maintenance merges publish nothing.
+- 2026-11-05 — [Adopt Renovate dependency maintenance](journal/2026-11-05-adopt-renovate-maintenance.md) — Monday grouped devDependency and Actions updates via the shared maintenance preset; Pin Courier identity, not a branch prefix, exempts PR metadata lint; maintenance and wiki reconcile merges publish nothing of their own.
 
 - 2026-11-04 — [Wait for the release tarball before notifying Renovate](journal/2026-11-04-wait-for-release-tarball.md) — require the npm tarball, not only the packument, before the Pin Courier dispatch.
 
