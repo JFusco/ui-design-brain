@@ -13,7 +13,7 @@ module.exports = {
   tagFormat: 'v${version}',
   plugins: [
     [
-      '@semantic-release/commit-analyzer',
+      './scripts/semantic-release-analyzer.cjs',
       {
         preset: 'conventionalcommits',
         releaseRules: [
@@ -25,7 +25,7 @@ module.exports = {
       },
     ],
 
-    ['@semantic-release/release-notes-generator', { preset: 'conventionalcommits', presetConfig: {} }],
+    ['./scripts/semantic-release-notes.cjs', { preset: 'conventionalcommits', presetConfig: {} }],
 
     [
       '@semantic-release/npm',

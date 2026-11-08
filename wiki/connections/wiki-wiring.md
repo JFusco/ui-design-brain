@@ -19,6 +19,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Publish the first personal npm package](../../wiki/journal/2026-11-03-first-personal-npm-release.md) → [Transfer UI Design Brain with its history intact](../../wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)
 - [Restore personal wiki writers](../../wiki/journal/2026-11-03-restore-personal-wiki-writers.md) → [Transfer UI Design Brain with its history intact](../../wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)
 - [Verify the personal repository transfer](../../wiki/journal/2026-11-03-verify-personal-transfer.md) → [Transfer UI Design Brain with its history intact](../../wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md)
+- [Suppress maintenance releases per commit](../../wiki/journal/2026-11-08-release-maintenance-policy.md) → [Harden publisher release maintenance](../../wiki/plans/2026-11-08-harden-publisher-release-maintenance.md)
 
 ## Page → topic
 
@@ -81,6 +82,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Verify the personal repository transfer](../../wiki/journal/2026-11-03-verify-personal-transfer.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Wait for the release tarball before notifying Renovate](../../wiki/journal/2026-11-04-wait-for-release-tarball.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Adopt Renovate dependency maintenance](../../wiki/journal/2026-11-05-adopt-renovate-maintenance.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
+- [Suppress maintenance releases per commit](../../wiki/journal/2026-11-08-release-maintenance-policy.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Extract @verndale/ui-design-brain into its own published repo](../../wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: Finalize ui-design-brain extraction (vendor-only, npm + sync)](../../wiki/plans/2026-06-11-finalize-ui-design-brain-npm-package-vendoring.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Plan: De-duplicate ui-design-brain via the skills CLI (vercel-labs/skills)](../../wiki/plans/2026-06-12-dedupe-ui-design-brain-via-skills-cli-plan.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
@@ -95,6 +97,7 @@ Part of the [connections map](../connections.md), generated from the knowledge g
 - [Standardize Git delivery in ui-design-brain](../../wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md) → [Knowledge graph & context wiki — Design History](../../wiki/topics/graph-wiki-subsystem.md)
 - [Standardize Git delivery in ui-design-brain](../../wiki/plans/2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 - [Transfer UI Design Brain with its history intact](../../wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
+- [Harden publisher release maintenance](../../wiki/plans/2026-11-08-harden-publisher-release-maintenance.md) → [Packaging & distribution — Design History](../../wiki/topics/packaging-and-distribution.md)
 
 ## Cross-area links (seams)
 

@@ -38,8 +38,8 @@ test('a published release waits for npm, then notifies the Pin Courier runner', 
     '- name: Notify the Renovate runner',
   ].map((step) => workflow.indexOf(step));
   assert.ok(order.every((index, i) => index > 0 && (i === 0 || index > order[i - 1])));
-  assert.match(workflow, /- name: Mint Pin Courier token\s+id: courier\s+if: steps\.released\.outputs\.published == 'true'/);
+  assert.match(workflow, /- name: Mint Pin Courier token\s+id: courier\s+if: \$\{\{ always\(\) && steps\.released\.outputs\.published == 'true' \}\}/);
   assert.match(workflow, /repositories: renovate-config\s+permission-contents: write/);
-  assert.match(workflow, /versions\?\.\[version\]\?\.dist\?\.tarball;\s+if \(tarball && \(await fetch\(tarball, \{ method: 'HEAD' \}\)\)\.ok\)/);
-  assert.match(workflow, /dispatches -f event_type=package-released/);
+  assert.match(workflow, /run: node scripts\/registry-readiness\.cjs/);
+  assert.match(workflow, /run: node scripts\/notify-pin-courier\.cjs/);
 });
