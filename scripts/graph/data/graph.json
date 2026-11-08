@@ -3108,7 +3108,8 @@
       ],
       "aliases": [],
       "prs": [
-        "102"
+        "102",
+        "105"
       ],
       "issues": [
         "101",
@@ -3120,6 +3121,12 @@
           "repository": "jfusco/ui-design-brain",
           "number": 102,
           "url": "https://github.com/jfusco/ui-design-brain/pull/102"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "jfusco/ui-design-brain",
+          "number": 105,
+          "url": "https://github.com/jfusco/ui-design-brain/pull/105"
         },
         {
           "kind": "issue",
@@ -3134,7 +3141,7 @@
           "url": "https://github.com/jfusco/ui-design-brain/issues/104"
         }
       ],
-      "bytes": 1835,
+      "bytes": 1998,
       "degree": 4
     },
     {
@@ -3540,10 +3547,19 @@
         "packaging-and-distribution"
       ],
       "aliases": [],
-      "prs": [],
+      "prs": [
+        "105"
+      ],
       "issues": [],
-      "githubRefs": [],
-      "bytes": 887,
+      "githubRefs": [
+        {
+          "kind": "pull-request",
+          "repository": "jfusco/ui-design-brain",
+          "number": 105,
+          "url": "https://github.com/jfusco/ui-design-brain/pull/105"
+        }
+      ],
+      "bytes": 995,
       "degree": 3
     },
     {
@@ -3566,7 +3582,8 @@
         "68",
         "82",
         "85",
-        "87"
+        "87",
+        "105"
       ],
       "issues": [
         "47",
@@ -3683,9 +3700,15 @@
           "repository": "jfusco/ui-design-brain",
           "number": 87,
           "url": "https://github.com/jfusco/ui-design-brain/pull/87"
+        },
+        {
+          "kind": "pull-request",
+          "repository": "jfusco/ui-design-brain",
+          "number": 105,
+          "url": "https://github.com/jfusco/ui-design-brain/pull/105"
         }
       ],
-      "bytes": 5413,
+      "bytes": 5499,
       "degree": 16
     },
     {

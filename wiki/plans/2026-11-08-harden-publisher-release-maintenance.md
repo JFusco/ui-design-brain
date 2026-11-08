@@ -5,6 +5,7 @@ date: 2026-11-08
 evidence:
   - "scripts/semantic-release-analyzer.cjs"
   - "scripts/tests/release-policy.test.cjs"
+  - "jfusco/ui-design-brain PR #105 https://github.com/jfusco/ui-design-brain/pull/105 (merged 2026-11-08)"
 source_tool: file
 source: "/tmp/pin-courier-implementation/ui-design-brain-plan.md"
 topics: [packaging-and-distribution]
