@@ -2,8 +2,9 @@
 date: 2026-11-08
 topics: [packaging-and-distribution]
 plan: plans/2026-11-08-harden-publisher-release-maintenance.md
-pr: pending
+pr: https://github.com/jfusco/ui-design-brain/pull/102
 issue: https://github.com/JFusco/ui-design-brain/issues/101
+issues: ["https://github.com/jfusco/ui-design-brain/issues/101"]
 ---
 # Suppress maintenance releases per commit
 
