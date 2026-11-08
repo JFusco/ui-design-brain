@@ -2,7 +2,8 @@
 date: 2026-11-08
 topics: [packaging-and-distribution]
 plan: plans/2026-11-08-harden-publisher-release-maintenance.md
-pr: pending
+pr: https://github.com/JFusco/ui-design-brain/pull/102
+follow_up_pr: pending
 issue: https://github.com/JFusco/ui-design-brain/issues/101
 ---
 # Suppress maintenance releases per commit
@@ -18,3 +19,8 @@ The analyzer and release notes share a literal complete-message filter. Release 
 ## Verification
 
 Isolated Git histories exercise the installed release engine with fake publication and dispatch hooks, including suppressed breaking changes, mixed histories, and manual reruns. Live publication and generated Dependabot metadata still require rollout observations.
+
+
+## Preset adoption follow-up
+
+[Preset adoption issue](https://github.com/JFusco/ui-design-brain/issues/104) adopts the reviewed maintenance overlay with explicit Monday lockfile refresh. Redundant local grouping is removed so first-party exemptions keep precedence. Isolated Git tests now create actual merge and squash histories with isolated Git configuration. The real notification CLI runs through a fake dispatch endpoint to verify failure and notification-only retry. Policy tests passed without live publication or dispatch. Actual generated Dependabot metadata and natural dependency delivery remain separate acceptance observations.
