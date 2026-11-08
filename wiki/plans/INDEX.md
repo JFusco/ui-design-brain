@@ -16,7 +16,7 @@ Every agent plan executed for this repo, gathered from Claude plan stores and Co
 - **out-of-scope** — targets another repo/product.
 - **not-verified** — recovered by `pnpm wiki:find-plans --archive`; nobody has checked yet whether it shipped.
 
-Totals: 12 implemented · 1 partial (13 plans).
+Totals: 13 implemented · 1 partial (14 plans).
 
 ## Plans
 
@@ -35,3 +35,4 @@ Totals: 12 implemented · 1 partial (13 plans).
 | 2026-08-24 | [Deterministic, Route-First Wiki Guidance and PR 127 Recovery](2026-08-24-deterministic-route-first-wiki-guidance-and-pr-127-recovery.md) | implemented | canonical headless AGENTS.md block installed with zero-drift dry run, [verndale/ui-design-brain PR #46](https://github.com/verndale/ui-design-brain/pull/46) | graph-wiki-subsystem |
 | 2026-09-29 | [Standardize Git delivery in ui-design-brain](2026-09-29-standardize-git-delivery-in-ui-design-brain--02e08425b49a.md) | implemented | issue #67, [verndale/ui-design-brain PR #68](https://github.com/verndale/ui-design-brain/pull/68) | graph-wiki-subsystem, packaging-and-distribution |
 | 2026-11-02 | [Transfer UI Design Brain with its history intact](2026-11-02-transfer-ui-design-brain-with-its-history-intact.md) | implemented | https://github.com/verndale/ui-design-brain/issues/81, [JFusco/ui-design-brain PR #82](https://github.com/JFusco/ui-design-brain/pull/82), OIDC-only release v1.18.4 verified in [JFusco/ui-design-brain issue #83](https://github.com/JFusco/ui-design-brain/issues/83), [jfusco/ui-design-brain PR #85](https://github.com/jfusco/ui-design-brain/pull/85), wiki writers restored in [JFusco/ui-design-brain issue #84](https://github.com/JFusco/ui-design-brain/issues/84), [jfusco/ui-design-brain PR #87](https://github.com/jfusco/ui-design-brain/pull/87) | packaging-and-distribution |
+| 2026-11-08 | [Harden publisher release maintenance](2026-11-08-harden-publisher-release-maintenance.md) | implemented | scripts/semantic-release-analyzer.cjs, scripts/tests/release-policy.test.cjs | packaging-and-distribution |

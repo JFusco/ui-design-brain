@@ -1,7 +1,7 @@
 {
   "counts": {
-    "nodes": 165,
-    "edges": 446,
+    "nodes": 167,
+    "edges": 452,
     "byType": {
       "root-doc": 4,
       "skill-index": 1,
@@ -9,18 +9,18 @@
       "ui-pattern": 82,
       "skill": 1,
       "wiki-index": 3,
-      "wiki-journal": 56,
-      "wiki-plan": 13,
+      "wiki-journal": 57,
+      "wiki-plan": 14,
       "wiki-topic": 4
     },
     "byEdgeType": {
       "catalogs": 82,
       "covers": 5,
-      "links-to": 151,
-      "plan": 13,
+      "links-to": 154,
+      "plan": 14,
       "references": 4,
       "see-also": 118,
-      "topic": 73
+      "topic": 75
     }
   },
   "nodes": [
@@ -1439,8 +1439,8 @@
       "prs": [],
       "issues": [],
       "githubRefs": [],
-      "bytes": 16653,
-      "degree": 62
+      "bytes": 16826,
+      "degree": 63
     },
     {
       "id": "wiki/journal/2026-07-23-close-consumer-catalog-gaps.md",
@@ -3099,6 +3099,30 @@
       "degree": 3
     },
     {
+      "id": "wiki/journal/2026-11-08-release-maintenance-policy.md",
+      "label": "Suppress maintenance releases per commit",
+      "type": "wiki-journal",
+      "dir": "wiki/journal",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [
+        "101"
+      ],
+      "githubRefs": [
+        {
+          "kind": "issue",
+          "repository": "jfusco/ui-design-brain",
+          "number": 101,
+          "url": "https://github.com/jfusco/ui-design-brain/issues/101"
+        }
+      ],
+      "bytes": 1126,
+      "degree": 4
+    },
+    {
       "id": "wiki/MECHANICS.md",
       "label": "Wiki Mechanics",
       "type": "wiki-index",
@@ -3493,6 +3517,21 @@
       "degree": 7
     },
     {
+      "id": "wiki/plans/2026-11-08-harden-publisher-release-maintenance.md",
+      "label": "Harden publisher release maintenance",
+      "type": "wiki-plan",
+      "dir": "wiki/plans",
+      "topics": [
+        "packaging-and-distribution"
+      ],
+      "aliases": [],
+      "prs": [],
+      "issues": [],
+      "githubRefs": [],
+      "bytes": 887,
+      "degree": 3
+    },
+    {
       "id": "wiki/plans/INDEX.md",
       "label": "Plan Audit",
       "type": "wiki-index",
@@ -3631,8 +3670,8 @@
           "url": "https://github.com/jfusco/ui-design-brain/pull/87"
         }
       ],
-      "bytes": 5183,
-      "degree": 15
+      "bytes": 5413,
+      "degree": 16
     },
     {
       "id": "wiki/topics/agents-guidance.md",
@@ -4020,8 +4059,8 @@
           "url": "https://github.com/verndale/ui-design-brain/issues/47"
         }
       ],
-      "bytes": 9836,
-      "degree": 43
+      "bytes": 10069,
+      "degree": 46
     }
   ],
   "edges": [
@@ -4875,6 +4914,13 @@
     },
     {
       "source": "wiki/INDEX.md",
+      "target": "wiki/journal/2026-11-08-release-maintenance-policy.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/INDEX.md",
       "target": "wiki/plans/INDEX.md",
       "type": "links-to",
       "count": 2,
@@ -5016,6 +5062,13 @@
     {
       "source": "wiki/plans/INDEX.md",
       "target": "wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/plans/INDEX.md",
+      "target": "wiki/plans/2026-11-08-harden-publisher-release-maintenance.md",
       "type": "links-to",
       "count": 1,
       "anchors": []
@@ -5477,6 +5530,13 @@
     },
     {
       "source": "wiki/topics/packaging-and-distribution.md",
+      "target": "wiki/journal/2026-11-08-release-maintenance-policy.md",
+      "type": "links-to",
+      "count": 1,
+      "anchors": []
+    },
+    {
+      "source": "wiki/topics/packaging-and-distribution.md",
       "target": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
       "type": "links-to",
       "count": 1,
@@ -5580,6 +5640,11 @@
     {
       "source": "wiki/journal/2026-11-03-verify-personal-transfer.md",
       "target": "wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md",
+      "type": "plan"
+    },
+    {
+      "source": "wiki/journal/2026-11-08-release-maintenance-policy.md",
+      "target": "wiki/plans/2026-11-08-harden-publisher-release-maintenance.md",
       "type": "plan"
     },
     {
@@ -6606,6 +6671,11 @@
       "type": "topic"
     },
     {
+      "source": "wiki/journal/2026-11-08-release-maintenance-policy.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
       "source": "wiki/plans/2026-06-11-extract-ui-design-brain-into-published-npm-package-plan.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
@@ -6672,6 +6742,11 @@
     },
     {
       "source": "wiki/plans/2026-11-02-transfer-ui-design-brain-with-its-history-intact.md",
+      "target": "wiki/topics/packaging-and-distribution.md",
+      "type": "topic"
+    },
+    {
+      "source": "wiki/plans/2026-11-08-harden-publisher-release-maintenance.md",
       "target": "wiki/topics/packaging-and-distribution.md",
       "type": "topic"
     }
